@@ -1,0 +1,281 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Sun Jun 29 01:16:37 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     dphy_raw_fifo
+Constraint file: dphy_raw_fifo_temp_lse.sdc 
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk501 [get_nets WrClock]
+            230 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 0.045ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3DX    CK             FF_14  (from WrClock +)
+   Destination:    FD1S3DX    D              FF_0  (to WrClock -)
+
+   Delay:                   4.955ns  (0.0% logic, 100.0% route), 7 logic levels.
+
+ Constraint Details:
+
+      4.955ns data_path FF_14 to FF_0 meets
+      5.000ns delay constraint less
+      0.000ns L_S requirement (totaling 5.000ns) by 0.045ns
+
+ Path Details: FF_14 to FF_0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              FF_14 (from WrClock)
+Route         6   e 1.478                                  r_gcount_w25
+LUT4        ---     0.000                to                LUT4_7
+Route         3   e 1.239                                  rcount_w4
+LUT4        ---     0.000                to                LUT4_5
+Route         2   e 1.158                                  rcount_w1
+A1_TO_FCO   ---     0.000           B[2] to COUT           full_cmp_0
+Route         1   e 0.020                                  co0_5
+FCI_TO_FCO  ---     0.000            CIN to COUT           full_cmp_1
+Route         1   e 0.020                                  co1_5
+FCI_TO_FCO  ---     0.000            CIN to COUT           full_cmp_2
+Route         1   e 0.020                                  full_d_c
+FCI_TO_F    ---     0.000            CIN to S[2]           a1
+Route         1   e 1.020                                  full_d
+                  --------
+                    4.955  (0.0% logic, 100.0% route), 7 logic levels.
+
+
+Passed:  The following path meets requirements by 0.045ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3DX    CK             FF_14  (from WrClock +)
+   Destination:    FD1S3DX    D              FF_0  (to WrClock -)
+
+   Delay:                   4.955ns  (0.0% logic, 100.0% route), 7 logic levels.
+
+ Constraint Details:
+
+      4.955ns data_path FF_14 to FF_0 meets
+      5.000ns delay constraint less
+      0.000ns L_S requirement (totaling 5.000ns) by 0.045ns
+
+ Path Details: FF_14 to FF_0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              FF_14 (from WrClock)
+Route         6   e 1.478                                  r_gcount_w25
+LUT4        ---     0.000                to                LUT4_6
+Route         3   e 1.239                                  rcount_w3
+LUT4        ---     0.000                to                LUT4_4
+Route         2   e 1.158                                  rcount_w0
+A1_TO_FCO   ---     0.000           B[2] to COUT           full_cmp_0
+Route         1   e 0.020                                  co0_5
+FCI_TO_FCO  ---     0.000            CIN to COUT           full_cmp_1
+Route         1   e 0.020                                  co1_5
+FCI_TO_FCO  ---     0.000            CIN to COUT           full_cmp_2
+Route         1   e 0.020                                  full_d_c
+FCI_TO_F    ---     0.000            CIN to S[2]           a1
+Route         1   e 1.020                                  full_d
+                  --------
+                    4.955  (0.0% logic, 100.0% route), 7 logic levels.
+
+
+Passed:  The following path meets requirements by 0.045ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3DX    CK             FF_14  (from WrClock +)
+   Destination:    FD1S3DX    D              FF_8  (to WrClock -)
+
+   Delay:                   4.955ns  (0.0% logic, 100.0% route), 7 logic levels.
+
+ Constraint Details:
+
+      4.955ns data_path FF_14 to FF_8 meets
+      5.000ns delay constraint less
+      0.000ns L_S requirement (totaling 5.000ns) by 0.045ns
+
+ Path Details: FF_14 to FF_8
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              FF_14 (from WrClock)
+Route         6   e 1.478                                  r_gcount_w25
+LUT4        ---     0.000                to                LUT4_6
+Route         3   e 1.239                                  rcount_w3
+LUT4        ---     0.000                to                LUT4_4
+Route         2   e 1.158                                  rcount_w0
+A1_TO_FCO   ---     0.000           B[2] to COUT           wfill_0
+Route         1   e 0.020                                  co0_2
+FCI_TO_FCO  ---     0.000            CIN to COUT           wfill_1
+Route         1   e 0.020                                  co1_2
+FCI_TO_FCO  ---     0.000            CIN to COUT           wfill_2
+Route         1   e 0.020                                  co2_2
+FCI_TO_F    ---     0.000            CIN to S[2]           wfill_3
+Route         1   e 1.020                                  wfill_sub_5
+                  --------
+                    4.955  (0.0% logic, 100.0% route), 7 logic levels.
+
+Report: 4.955 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk500 [get_nets RdClock]
+            230 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 0.045ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3DX    CK             FF_20  (from RdClock +)
+   Destination:    FD1S3BX    D              FF_1  (to RdClock -)
+
+   Delay:                   4.955ns  (0.0% logic, 100.0% route), 7 logic levels.
+
+ Constraint Details:
+
+      4.955ns data_path FF_20 to FF_1 meets
+      5.000ns delay constraint less
+      0.000ns L_S requirement (totaling 5.000ns) by 0.045ns
+
+ Path Details: FF_20 to FF_1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              FF_20 (from RdClock)
+Route         6   e 1.478                                  w_gcount_r25
+LUT4        ---     0.000                to                LUT4_12
+Route         3   e 1.239                                  wcount_r4
+LUT4        ---     0.000                to                LUT4_10
+Route         2   e 1.158                                  wcount_r1
+A1_TO_FCO   ---     0.000           B[2] to COUT           empty_cmp_0
+Route         1   e 0.020                                  co0_4
+FCI_TO_FCO  ---     0.000            CIN to COUT           empty_cmp_1
+Route         1   e 0.020                                  co1_4
+FCI_TO_FCO  ---     0.000            CIN to COUT           empty_cmp_2
+Route         1   e 0.020                                  empty_d_c
+FCI_TO_F    ---     0.000            CIN to S[2]           a0
+Route         1   e 1.020                                  empty_d
+                  --------
+                    4.955  (0.0% logic, 100.0% route), 7 logic levels.
+
+
+Passed:  The following path meets requirements by 0.045ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3DX    CK             FF_20  (from RdClock +)
+   Destination:    FD1S3BX    D              FF_1  (to RdClock -)
+
+   Delay:                   4.955ns  (0.0% logic, 100.0% route), 7 logic levels.
+
+ Constraint Details:
+
+      4.955ns data_path FF_20 to FF_1 meets
+      5.000ns delay constraint less
+      0.000ns L_S requirement (totaling 5.000ns) by 0.045ns
+
+ Path Details: FF_20 to FF_1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              FF_20 (from RdClock)
+Route         6   e 1.478                                  w_gcount_r25
+LUT4        ---     0.000                to                LUT4_11
+Route         3   e 1.239                                  wcount_r3
+LUT4        ---     0.000                to                LUT4_9
+Route         2   e 1.158                                  wcount_r0
+A1_TO_FCO   ---     0.000           B[2] to COUT           empty_cmp_0
+Route         1   e 0.020                                  co0_4
+FCI_TO_FCO  ---     0.000            CIN to COUT           empty_cmp_1
+Route         1   e 0.020                                  co1_4
+FCI_TO_FCO  ---     0.000            CIN to COUT           empty_cmp_2
+Route         1   e 0.020                                  empty_d_c
+FCI_TO_F    ---     0.000            CIN to S[2]           a0
+Route         1   e 1.020                                  empty_d
+                  --------
+                    4.955  (0.0% logic, 100.0% route), 7 logic levels.
+
+
+Passed:  The following path meets requirements by 0.045ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3DX    CK             FF_20  (from RdClock +)
+   Destination:    FD1S3DX    D              FF_2  (to RdClock -)
+
+   Delay:                   4.955ns  (0.0% logic, 100.0% route), 7 logic levels.
+
+ Constraint Details:
+
+      4.955ns data_path FF_20 to FF_2 meets
+      5.000ns delay constraint less
+      0.000ns L_S requirement (totaling 5.000ns) by 0.045ns
+
+ Path Details: FF_20 to FF_2
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              FF_20 (from RdClock)
+Route         6   e 1.478                                  w_gcount_r25
+LUT4        ---     0.000                to                LUT4_11
+Route         3   e 1.239                                  wcount_r3
+LUT4        ---     0.000                to                LUT4_9
+Route         2   e 1.158                                  wcount_r0
+A1_TO_FCO   ---     0.000           A[2] to COUT           rfill_0
+Route         1   e 0.020                                  co0_3
+FCI_TO_FCO  ---     0.000            CIN to COUT           rfill_1
+Route         1   e 0.020                                  co1_3
+FCI_TO_FCO  ---     0.000            CIN to COUT           rfill_2
+Route         1   e 0.020                                  co2_3
+FCI_TO_F    ---     0.000            CIN to S[2]           rfill_3
+Route         1   e 1.020                                  rfill_sub_5
+                  --------
+                    4.955  (0.0% logic, 100.0% route), 7 logic levels.
+
+Report: 4.955 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk501 [get_nets WrClock]               |     5.000 ns|     4.955 ns|     7  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk500 [get_nets RdClock]               |     5.000 ns|     4.955 ns|     7  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  460 paths, 126 nets, and 354 connections (86.6% coverage)
+
+
+Peak memory: 57786368 bytes, TRCE: 1929216 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

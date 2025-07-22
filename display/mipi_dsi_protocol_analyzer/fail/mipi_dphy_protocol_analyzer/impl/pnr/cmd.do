@@ -1,0 +1,20 @@
+-d C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\mipi_dphy_protocol_analyzer\impl\gwsynthesis\mipi_dphy_protocol_analyzer.vg
+-p GW1NR-9C-LQFP144P-6
+-pn GW1NR-LV9LQ144PC6/I5
+-cst C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\mipi_dphy_protocol_analyzer\src\mipi_dphy_protocol_analyzer.cst
+-cfg C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\mipi_dphy_protocol_analyzer\impl\pnr\device.cfg
+-sdc C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\mipi_dphy_protocol_analyzer\src\mipi_dphy_protocol_analyzer.sdc
+-gao_crc 0101001110110111
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-place_option 0
+-route_option 0
+-clock_route_order 0
+-correct_hold 1
+-route_maxfan 23
+-global_freq 50.000
+-rtl_gao

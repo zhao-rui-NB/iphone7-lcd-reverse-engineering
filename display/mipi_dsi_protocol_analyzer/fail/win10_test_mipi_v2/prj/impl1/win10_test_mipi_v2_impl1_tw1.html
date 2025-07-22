@@ -1,0 +1,442 @@
+<HTML>
+<HEAD><TITLE>Lattice Map TRACE Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Map TRACE Report</big></U></B>
+
+Loading design for application trce from file win10_test_mipi_v2_impl1_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LIF-MD6000
+Package:     CKFBGA80
+Performance: 6
+Loading device for application trce from file 'sn5w6000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.38.
+Performance Hardware Data Status:   Final          Version 41.1.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2</big></U></B>
+Tue Jul 15 02:06:15 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_set_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o win10_test_mipi_v2_impl1.tw1 -gui -msgset C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/promote.xml win10_test_mipi_v2_impl1_map.ncd win10_test_mipi_v2_impl1.prf 
+Design file:     win10_test_mipi_v2_impl1_map.ncd
+Preference file: win10_test_mipi_v2_impl1.prf
+Device,speed:    LIF-MD6000,6
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_set_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#map_twr_pref_0_0' Target='right'>FREQUENCY NET "rxhsbyteclk" 75.000000 MHz (0 errors)</A></LI>            130 items scored, 0 timing errors detected.
+Report:  261.917MHz is the maximum frequency for this preference.
+
+<LI><A href='#map_twr_pref_0_1' Target='right'>FREQUENCY NET "clk_50m_pll_in" 50.000000 MHz (0 errors)</A></LI>            0 items scored, 0 timing errors detected.
+
+<LI><A href='#map_twr_pref_0_2' Target='right'>FREQUENCY NET "sys_clk_c" 100.000000 MHz (0 errors)</A></LI>            4096 items scored, 0 timing errors detected.
+Report:  127.926MHz is the maximum frequency for this preference.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_0_0"></A>Preference: FREQUENCY NET "rxhsbyteclk" 75.000000 MHz ;
+            130 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 4.757ns (weighted slack = 9.514ns)
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         MIPIDPHYA  Port           mipi_rx_inst/Inst_MIPIDPHYA(ASIC)  (from rxhsbyteclk -)
+   Destination:    PDPW8KE    Port           dphy_raw_fifo_inst/pdp_ram_0_1_0(ASIC)  (to rxhsbyteclk +)
+
+   Delay:               0.969ns  (40.9% logic, 59.1% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.969ns physical path delay mipi_rx_inst/Inst_MIPIDPHYA to dphy_raw_fifo_inst/pdp_ram_0_1_0 meets
+      6.667ns delay constraint less
+      0.941ns DATA_SET requirement (totaling 5.726ns) by 4.757ns
+
+ Physical Path Details:
+
+      Data path mipi_rx_inst/Inst_MIPIDPHYA to dphy_raw_fifo_inst/pdp_ram_0_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     0.396 *YA.HSBYTECLKD to *.D1HSRXDATA15 mipi_rx_inst/Inst_MIPIDPHYA
+ROUTE         1   e 0.573 *.D1HSRXDATA15 to *am_0_1_0.DI13 q[31] (to rxhsbyteclk)
+                  --------
+                    0.969   (40.9% logic, 59.1% route), 1 logic levels.
+
+Report:  261.917MHz is the maximum frequency for this preference.
+
+
+================================================================================
+<A name="map_twr_pref_0_1"></A>Preference: FREQUENCY NET "clk_50m_pll_in" 50.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+<A name="map_twr_pref_0_2"></A>Preference: FREQUENCY NET "sys_clk_c" 100.000000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 2.183ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_byte_aligner_lane1/data_squence__i25  (from sys_clk_c +)
+   Destination:    FF         Data in        mipi_byte_aligner_lane1/seq_offset__i0  (to sys_clk_c +)
+
+   Delay:               7.398ns  (30.3% logic, 69.7% route), 10 logic levels.
+
+ Constraint Details:
+
+      7.398ns physical path delay mipi_byte_aligner_lane1/SLICE_174 to mipi_byte_aligner_lane1/SLICE_181 meets
+     10.000ns delay constraint less
+      0.419ns DIN_SET requirement (totaling 9.581ns) by 2.183ns
+
+ Physical Path Details:
+
+      Data path mipi_byte_aligner_lane1/SLICE_174 to mipi_byte_aligner_lane1/SLICE_181:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.422 *SLICE_174.CLK to */SLICE_174.Q0 mipi_byte_aligner_lane1/SLICE_174 (from sys_clk_c)
+ROUTE         6   e 0.573 */SLICE_174.Q0 to */SLICE_783.B1 mipi_byte_aligner_lane1/data_squence[25]
+CTOF_DEL    ---     0.202 */SLICE_783.B1 to */SLICE_783.F1 mipi_byte_aligner_lane1/SLICE_783
+ROUTE         3   e 0.573 */SLICE_783.F1 to */SLICE_789.A0 mipi_byte_aligner_lane1/n17836
+CTOF_DEL    ---     0.202 */SLICE_789.A0 to */SLICE_789.F0 mipi_byte_aligner_lane1/SLICE_789
+ROUTE         1   e 0.573 */SLICE_789.F0 to */SLICE_780.B1 mipi_byte_aligner_lane1/n15086
+CTOF_DEL    ---     0.202 */SLICE_780.B1 to */SLICE_780.F1 mipi_byte_aligner_lane1/SLICE_780
+ROUTE         3   e 0.573 */SLICE_780.F1 to */SLICE_772.B1 mipi_byte_aligner_lane1/n31_adj_2373
+CTOF_DEL    ---     0.202 */SLICE_772.B1 to */SLICE_772.F1 mipi_byte_aligner_lane1/SLICE_772
+ROUTE         1   e 0.573 */SLICE_772.F1 to */SLICE_741.C1 mipi_byte_aligner_lane1/n15052
+CTOF_DEL    ---     0.202 */SLICE_741.C1 to */SLICE_741.F1 mipi_byte_aligner_lane1/SLICE_741
+ROUTE         1   e 0.573 */SLICE_741.F1 to */SLICE_745.B1 mipi_byte_aligner_lane1/n1862
+CTOF_DEL    ---     0.202 */SLICE_745.B1 to */SLICE_745.F1 mipi_byte_aligner_lane1/SLICE_745
+ROUTE         1   e 0.573 */SLICE_745.F1 to */SLICE_750.C1 mipi_byte_aligner_lane1/n55
+CTOF_DEL    ---     0.202 */SLICE_750.C1 to */SLICE_750.F1 mipi_byte_aligner_lane1/SLICE_750
+ROUTE         1   e 0.573 */SLICE_750.F1 to */SLICE_758.A1 mipi_byte_aligner_lane1/n177
+CTOF_DEL    ---     0.202 */SLICE_758.A1 to */SLICE_758.F1 mipi_byte_aligner_lane1/SLICE_758
+ROUTE         1   e 0.573 */SLICE_758.F1 to */SLICE_181.A0 mipi_byte_aligner_lane1/found_offect_3__N_386[0]
+CTOF_DEL    ---     0.202 */SLICE_181.A0 to */SLICE_181.F0 mipi_byte_aligner_lane1/SLICE_181
+ROUTE         1   e 0.001 */SLICE_181.F0 to *SLICE_181.DI0 mipi_byte_aligner_lane1/n5046 (to sys_clk_c)
+                  --------
+                    7.398   (30.3% logic, 69.7% route), 10 logic levels.
+
+Report:  127.926MHz is the maximum frequency for this preference.
+
+<A name="mtw1_set_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "rxhsbyteclk" 75.000000   |             |             |
+MHz ;                                   |   75.000 MHz|  261.917 MHz|   1  
+                                        |             |             |
+FREQUENCY NET "clk_50m_pll_in"          |             |             |
+50.000000 MHz ;                         |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "sys_clk_c" 100.000000    |             |             |
+MHz ;                                   |  100.000 MHz|  127.926 MHz|  10  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="mtw1_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 4 clocks:
+
+Clock Domain: sys_clk_c   Source: pll_sys_clk_inst/PLLInst_0.CLKOP   Loads: 338
+   Covered under: FREQUENCY NET "sys_clk_c" 100.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: rxhsbyteclk   Source: mipi_rx_inst/Inst_MIPIDPHYA.HSBYTECLKD
+      Not reported because source and destination domains are unrelated.
+
+   Clock Domain: jtck[0]   Source: JTAG_TCK.PAD
+      Not reported because source and destination domains are unrelated.
+
+Clock Domain: rxhsbyteclk   Source: mipi_rx_inst/Inst_MIPIDPHYA.HSBYTECLKD   Loads: 18
+   Covered under: FREQUENCY NET "rxhsbyteclk" 75.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: sys_clk_c   Source: pll_sys_clk_inst/PLLInst_0.CLKOP
+      Not reported because source and destination domains are unrelated.
+
+Clock Domain: jtck[0]   Source: JTAG_TCK.PAD   Loads: 263
+   No transfer within this clock domain is found
+
+Clock Domain: clk_50m_pll_in   Source: PLLREFCS_inst.PLLCSOUT   Loads: 1
+   No transfer within this clock domain is found
+
+
+<A name="mtw1_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 14222 paths, 3 nets, and 4296 connections (53.12% coverage)
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2</big></U></B>
+Tue Jul 15 02:06:15 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_hold_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o win10_test_mipi_v2_impl1.tw1 -gui -msgset C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/promote.xml win10_test_mipi_v2_impl1_map.ncd win10_test_mipi_v2_impl1.prf 
+Design file:     win10_test_mipi_v2_impl1_map.ncd
+Preference file: win10_test_mipi_v2_impl1.prf
+Device,speed:    LIF-MD6000,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<FONT COLOR=red><LI><A href='#map_twr_pref_1_0' Target='right'><FONT COLOR=red>FREQUENCY NET "rxhsbyteclk" 75.000000 MHz (6 errors)</FONT></A></LI>
+</FONT>            130 items scored, 6 timing errors detected.
+
+<LI><A href='#map_twr_pref_1_1' Target='right'>FREQUENCY NET "clk_50m_pll_in" 50.000000 MHz (0 errors)</A></LI>            0 items scored, 0 timing errors detected.
+
+<FONT COLOR=red><LI><A href='#map_twr_pref_1_2' Target='right'><FONT COLOR=red>FREQUENCY NET "sys_clk_c" 100.000000 MHz (58 errors)</FONT></A></LI>
+</FONT>            4096 items scored, 58 timing errors detected.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_1_0"></A>Preference: FREQUENCY NET "rxhsbyteclk" 75.000000 MHz ;
+            130 items scored, 6 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 0.047ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              dphy_raw_fifo_inst/FF_73  (from rxhsbyteclk +)
+   Destination:    FF         Data in        dphy_raw_fifo_inst/FF_73  (to rxhsbyteclk +)
+
+   Delay:               0.268ns  (78.0% logic, 22.0% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.268ns physical path delay dphy_raw_fifo_inst/SLICE_1 to dphy_raw_fifo_inst/SLICE_1 exceeds
+      0.315ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling 0.315ns) by 0.047ns
+
+ Physical Path Details:
+
+      Data path dphy_raw_fifo_inst/SLICE_1 to dphy_raw_fifo_inst/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.142 *t/SLICE_1.CLK to *st/SLICE_1.Q0 dphy_raw_fifo_inst/SLICE_1 (from rxhsbyteclk)
+ROUTE         4   e 0.058 *st/SLICE_1.Q0 to *st/SLICE_1.A0 dphy_raw_fifo_inst/wcount_0
+CTOF_DEL    ---     0.067 *st/SLICE_1.A0 to *st/SLICE_1.F0 dphy_raw_fifo_inst/SLICE_1
+ROUTE         1   e 0.001 *st/SLICE_1.F0 to *t/SLICE_1.DI0 dphy_raw_fifo_inst/iwcount_0 (to rxhsbyteclk)
+                  --------
+                    0.268   (78.0% logic, 22.0% route), 2 logic levels.
+
+
+================================================================================
+<A name="map_twr_pref_1_1"></A>Preference: FREQUENCY NET "clk_50m_pll_in" 50.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+<A name="map_twr_pref_1_2"></A>Preference: FREQUENCY NET "sys_clk_c" 100.000000 MHz ;
+            4096 items scored, 58 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 0.841ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_raw_data_controller_inst/dphy_raw_fifo_Reset_16  (from sys_clk_c +)
+   Destination:    PDPW8KE    Port           dphy_raw_fifo_inst/pdp_ram_0_0_1(ASIC)  (to sys_clk_c +)
+
+   Delay:               0.341ns  (41.6% logic, 58.4% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.341ns physical path delay SLICE_119 to dphy_raw_fifo_inst/pdp_ram_0_0_1 exceeds
+      1.182ns RST_HLD and
+      0.000ns delay constraint requirement (totaling 1.182ns) by 0.841ns
+
+ Physical Path Details:
+
+      Data path SLICE_119 to dphy_raw_fifo_inst/pdp_ram_0_0_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.142  SLICE_119.CLK to   SLICE_119.Q0 SLICE_119 (from sys_clk_c)
+ROUTE        38   e 0.199   SLICE_119.Q0 to *ram_0_0_1.RST dphy_raw_fifo_Reset (to sys_clk_c)
+                  --------
+                    0.341   (41.6% logic, 58.4% route), 1 logic levels.
+
+<A name="mtw1_hold_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "rxhsbyteclk" 75.000000   |             |             |
+MHz ;                                   |     0.000 ns|    -0.047 ns|   2 *
+                                        |             |             |
+FREQUENCY NET "clk_50m_pll_in"          |             |             |
+50.000000 MHz ;                         |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "sys_clk_c" 100.000000    |             |             |
+MHz ;                                   |     0.000 ns|    -0.841 ns|   1 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+2 preferences(marked by "*" above) not met.
+
+No net is responsible for more than 10% of the timing errors.
+
+
+<A name="mtw1_hold_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 4 clocks:
+
+Clock Domain: sys_clk_c   Source: pll_sys_clk_inst/PLLInst_0.CLKOP   Loads: 338
+   Covered under: FREQUENCY NET "sys_clk_c" 100.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: rxhsbyteclk   Source: mipi_rx_inst/Inst_MIPIDPHYA.HSBYTECLKD
+      Not reported because source and destination domains are unrelated.
+
+   Clock Domain: jtck[0]   Source: JTAG_TCK.PAD
+      Not reported because source and destination domains are unrelated.
+
+Clock Domain: rxhsbyteclk   Source: mipi_rx_inst/Inst_MIPIDPHYA.HSBYTECLKD   Loads: 18
+   Covered under: FREQUENCY NET "rxhsbyteclk" 75.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: sys_clk_c   Source: pll_sys_clk_inst/PLLInst_0.CLKOP
+      Not reported because source and destination domains are unrelated.
+
+Clock Domain: jtck[0]   Source: JTAG_TCK.PAD   Loads: 263
+   No transfer within this clock domain is found
+
+Clock Domain: clk_50m_pll_in   Source: PLLREFCS_inst.PLLCSOUT   Loads: 1
+   No transfer within this clock domain is found
+
+
+<A name="mtw1_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
+---------------
+
+Timing errors: 64  Score: 4868
+Cumulative negative slack: 4868
+
+Constraints cover 14222 paths, 3 nets, and 4569 connections (56.50% coverage)
+
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
+---------------
+
+Timing errors: 0 (setup), 64 (hold)
+Score: 0 (setup), 4868 (hold)
+Cumulative negative slack: 4868 (0+4868)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

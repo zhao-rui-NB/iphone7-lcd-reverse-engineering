@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE		ispXCF	SYSTEM	"IspXCF.dtd" >
+<ispXCF version="3.12">
+	<Comment></Comment>
+	<Chain>
+		<Comm>Slave SPI</Comm>
+		<Device>
+			<SelectedProg value="TRUE"/>
+			<Pos>1</Pos>
+			<Vendor>WinBond</Vendor>
+			<Family>LIFMD</Family>
+			<Name>LIF-MD6000</Name>
+			<Package>All</Package>
+			<PON>LIF-MD6000</PON>
+			<Bypass>
+				<InstrLen>8</InstrLen>
+				<InstrVal>11111111</InstrVal>
+				<BScanLen>1</BScanLen>
+				<BScanVal>0</BScanVal>
+			</Bypass>
+			<File>C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/win10_test_mipi_v2_impl1.bit</File>
+			<FileTime>07/15/25 02:06:29</FileTime>
+			<JedecChecksum>0xBBF3</JedecChecksum>
+			<Operation>Fast Program</Operation>
+			<Option>
+				<SVFVendor>JTAG STANDARD</SVFVendor>
+				<IOState>HighZ</IOState>
+				<PreloadLength>39</PreloadLength>
+				<IOVectorData>0xFFFFFFFFFF</IOVectorData>
+				<SVFProcessor>SVF Processor</SVFProcessor>
+				<Usercode>0x00000000</Usercode>
+				<AccessMode>SSPI SRAM Programming</AccessMode>
+			</Option>
+		</Device>
+	</Chain>
+	<ProjectOptions>
+		<Program>SEQUENTIAL</Program>
+		<Process>ENTIRED CHAIN</Process>
+		<OperationOverride>No Override</OperationOverride>
+		<StartTAP>TLR</StartTAP>
+		<EndTAP>TLR</EndTAP>
+		<DisableCheckBoard value="TRUE"/>
+		<VerifyUsercode value="FALSE"/>
+		<TCKDelay>1</TCKDelay>
+	</ProjectOptions>
+	<CableOptions>
+		<CableName>USB</CableName>
+		<PortAdd>EzUSB-0</PortAdd>
+		<USBID>\\?\usb#vid_1134&amp;amp;pid_8001#6&amp;amp;39d724fe&amp;amp;0&amp;amp;6#</USBID>
+		<JTAGPinSetting>
+			TRST	ABSENT;
+			ISPEN	ABSENT;
+		</JTAGPinSetting>
+	</CableOptions>
+</ispXCF>

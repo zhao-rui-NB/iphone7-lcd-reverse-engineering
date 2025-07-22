@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW1NR-9C" package="LQFP144P" speed="6" partNumber="GW1NR-LV9LQ144PC6/I5"/>
+    <FileList>
+        <File path="C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\recv_corsslink_data\recv_corsslink_data\src\HSPI_Tx.v" type="verilog"/>
+        <File path="C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\recv_corsslink_data\recv_corsslink_data\src\crc32_32b.v" type="verilog"/>
+        <File path="C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\recv_corsslink_data\recv_corsslink_data\src\data_storage_controller.v" type="verilog"/>
+        <File path="C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\recv_corsslink_data\recv_corsslink_data\src\debounce.v" type="verilog"/>
+        <File path="C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\recv_corsslink_data\recv_corsslink_data\src\fake_fifo_test_data.v" type="verilog"/>
+        <File path="C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\recv_corsslink_data\recv_corsslink_data\src\fifo_hs\fifo_hs_input.v" type="verilog"/>
+        <File path="C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\recv_corsslink_data\recv_corsslink_data\src\fifo_hs_output\fifo_hs_output.v" type="verilog"/>
+        <File path="C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\recv_corsslink_data\recv_corsslink_data\src\gowin_ddr\gowin_ddr.v" type="verilog"/>
+        <File path="C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\recv_corsslink_data\recv_corsslink_data\src\gowin_rpll\gowin_rpll.v" type="verilog"/>
+        <File path="C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\recv_corsslink_data\recv_corsslink_data\src\hspi_sender.v" type="verilog"/>
+        <File path="C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\recv_corsslink_data\recv_corsslink_data\src\hspi_sender_btn.v" type="verilog"/>
+        <File path="C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\recv_corsslink_data\recv_corsslink_data\src\psram_memory_interface_hs_v2\psram_memory_interface_hs_v2.v" type="verilog"/>
+        <File path="C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\recv_corsslink_data\recv_corsslink_data\src\top.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="global_freq" value="50.000"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\recv_corsslink_data\recv_corsslink_data\impl\gwsynthesis\recv_corsslink_data.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="top_module" value="top"/>
+        <Option type="vcc" value="1.2"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

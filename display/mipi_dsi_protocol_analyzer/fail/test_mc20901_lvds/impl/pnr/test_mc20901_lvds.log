@@ -1,0 +1,35 @@
+Reading netlist file: "C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\test_mc20901_lvds\impl\gwsynthesis\test_mc20901_lvds.vg"
+Parsing netlist file "C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\test_mc20901_lvds\impl\gwsynthesis\test_mc20901_lvds.vg" completed
+Processing netlist completed
+Reading constraint file: "C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\test_mc20901_lvds\src\test_mc20901_lvds.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+WARN  (TA1044) : Input delay set on clock port is ignored
+WARN  (TA1132) :  'hs_a_p' was determined to be a clock but was not created.
+WARN  (TA1132) :  'tck_pad_i' was determined to be a clock but was not created.
+WARN  (TA1132) :  'mipi_rx/DPHY_RX_INST/u_idesx8/Inst3_CLKDIV/CLKOUT.default_gen_clk' was determined to be a clock but was not created.
+WARN  (TA1117) : Can't calculate clocks' relationship between: "lane_ck" and "hs_a_p"
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+WARN  (PR1014) : Generic routing resource will be used to clock signal '\mipi_rx/DPHY_RX_INST/HS_CLK ' by the specified constraint. And then it may lead to the excessive delay or skew
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\test_mc20901_lvds\impl\pnr\test_mc20901_lvds.power.html" completed
+Generate file "C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\test_mc20901_lvds\impl\pnr\test_mc20901_lvds.pin.html" completed
+Generate file "C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\test_mc20901_lvds\impl\pnr\test_mc20901_lvds.rpt.html" completed
+Generate file "C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\test_mc20901_lvds\impl\pnr\test_mc20901_lvds.rpt.txt" completed
+Generate file "C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\test_mc20901_lvds\impl\pnr\test_mc20901_lvds.tr.html" completed
+Wed Jun 11 19:34:23 2025
+

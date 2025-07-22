@@ -1,0 +1,549 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Tue Jul 15 02:06:12 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     top
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk2 [get_nets rxhsbyteclk]
+            110 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 0.222ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3DX    CK             \dphy_raw_fifo_inst/FF_0  (from \mipi_rx_inst/d0_olsn +)
+   Destination:    FD1S3DX    D              \dphy_raw_fifo_inst/FF_0  (to \mipi_rx_inst/d0_olsn +)
+
+   Delay:                   4.778ns  (0.0% logic, 100.0% route), 8 logic levels.
+
+ Constraint Details:
+
+      4.778ns data_path \dphy_raw_fifo_inst/FF_0 to \dphy_raw_fifo_inst/FF_0 meets
+      5.000ns delay constraint less
+      0.000ns L_S requirement (totaling 5.000ns) by 0.222ns
+
+ Path Details: \dphy_raw_fifo_inst/FF_0 to \dphy_raw_fifo_inst/FF_0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              \dphy_raw_fifo_inst/FF_0 (from \mipi_rx_inst/d0_olsn)
+Route         1   e 1.020                                  \dphy_raw_fifo_inst/Full
+LUT4        ---     0.000              A to Z              \dphy_raw_fifo_inst/INV_1
+Route         1   e 1.020                                  \dphy_raw_fifo_inst/invout_1
+LUT4        ---     0.000              B to Z              \dphy_raw_fifo_inst/AND2_t14
+Route        22   e 1.638                                  \dphy_raw_fifo_inst/wren_i
+A1_TO_FCO   ---     0.000           B[2] to COUT           \dphy_raw_fifo_inst/full_cmp_ci_a
+Route         1   e 0.020                                  \dphy_raw_fifo_inst/cmp_ci_1
+FCI_TO_FCO  ---     0.000            CIN to COUT           \dphy_raw_fifo_inst/full_cmp_0
+Route         1   e 0.020                                  \dphy_raw_fifo_inst/co0_5
+FCI_TO_FCO  ---     0.000            CIN to COUT           \dphy_raw_fifo_inst/full_cmp_1
+Route         1   e 0.020                                  \dphy_raw_fifo_inst/co1_5
+FCI_TO_FCO  ---     0.000            CIN to COUT           \dphy_raw_fifo_inst/full_cmp_2
+Route         1   e 0.020                                  \dphy_raw_fifo_inst/full_d_c
+FCI_TO_F    ---     0.000            CIN to S[2]           \dphy_raw_fifo_inst/a1
+Route         1   e 1.020                                  \dphy_raw_fifo_inst/full_d
+                  --------
+                    4.778  (0.0% logic, 100.0% route), 8 logic levels.
+
+
+Passed:  The following path meets requirements by 0.222ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3DX    CK             \dphy_raw_fifo_inst/FF_0  (from \mipi_rx_inst/d0_olsn +)
+   Destination:    FD1S3DX    D              \dphy_raw_fifo_inst/FF_0  (to \mipi_rx_inst/d0_olsn +)
+
+   Delay:                   4.778ns  (0.0% logic, 100.0% route), 8 logic levels.
+
+ Constraint Details:
+
+      4.778ns data_path \dphy_raw_fifo_inst/FF_0 to \dphy_raw_fifo_inst/FF_0 meets
+      5.000ns delay constraint less
+      0.000ns L_S requirement (totaling 5.000ns) by 0.222ns
+
+ Path Details: \dphy_raw_fifo_inst/FF_0 to \dphy_raw_fifo_inst/FF_0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              \dphy_raw_fifo_inst/FF_0 (from \mipi_rx_inst/d0_olsn)
+Route         1   e 1.020                                  \dphy_raw_fifo_inst/Full
+LUT4        ---     0.000              A to Z              \dphy_raw_fifo_inst/INV_1
+Route         1   e 1.020                                  \dphy_raw_fifo_inst/invout_1
+LUT4        ---     0.000              B to Z              \dphy_raw_fifo_inst/AND2_t14
+Route        22   e 1.638                                  \dphy_raw_fifo_inst/wren_i
+A1_TO_FCO   ---     0.000           A[2] to COUT           \dphy_raw_fifo_inst/full_cmp_ci_a
+Route         1   e 0.020                                  \dphy_raw_fifo_inst/cmp_ci_1
+FCI_TO_FCO  ---     0.000            CIN to COUT           \dphy_raw_fifo_inst/full_cmp_0
+Route         1   e 0.020                                  \dphy_raw_fifo_inst/co0_5
+FCI_TO_FCO  ---     0.000            CIN to COUT           \dphy_raw_fifo_inst/full_cmp_1
+Route         1   e 0.020                                  \dphy_raw_fifo_inst/co1_5
+FCI_TO_FCO  ---     0.000            CIN to COUT           \dphy_raw_fifo_inst/full_cmp_2
+Route         1   e 0.020                                  \dphy_raw_fifo_inst/full_d_c
+FCI_TO_F    ---     0.000            CIN to S[2]           \dphy_raw_fifo_inst/a1
+Route         1   e 1.020                                  \dphy_raw_fifo_inst/full_d
+                  --------
+                    4.778  (0.0% logic, 100.0% route), 8 logic levels.
+
+
+Passed:  The following path meets requirements by 0.301ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3DX    CK             \dphy_raw_fifo_inst/FF_14  (from \mipi_rx_inst/d0_olsn +)
+   Destination:    FD1S3DX    D              \dphy_raw_fifo_inst/FF_0  (to \mipi_rx_inst/d0_olsn +)
+
+   Delay:                   4.699ns  (0.0% logic, 100.0% route), 7 logic levels.
+
+ Constraint Details:
+
+      4.699ns data_path \dphy_raw_fifo_inst/FF_14 to \dphy_raw_fifo_inst/FF_0 meets
+      5.000ns delay constraint less
+      0.000ns L_S requirement (totaling 5.000ns) by 0.301ns
+
+ Path Details: \dphy_raw_fifo_inst/FF_14 to \dphy_raw_fifo_inst/FF_0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              \dphy_raw_fifo_inst/FF_14 (from \mipi_rx_inst/d0_olsn)
+Route         5   e 1.441                                  \dphy_raw_fifo_inst/r_gcount_w25
+LUT4        ---     0.000                to                \dphy_raw_fifo_inst/LUT4_7
+Route         2   e 1.158                                  \dphy_raw_fifo_inst/r_gcount_w22
+LUT4        ---     0.000                to                \dphy_raw_fifo_inst/LUT4_5
+Route         1   e 1.020                                  \dphy_raw_fifo_inst/rcount_w1
+A1_TO_FCO   ---     0.000           B[2] to COUT           \dphy_raw_fifo_inst/full_cmp_0
+Route         1   e 0.020                                  \dphy_raw_fifo_inst/co0_5
+FCI_TO_FCO  ---     0.000            CIN to COUT           \dphy_raw_fifo_inst/full_cmp_1
+Route         1   e 0.020                                  \dphy_raw_fifo_inst/co1_5
+FCI_TO_FCO  ---     0.000            CIN to COUT           \dphy_raw_fifo_inst/full_cmp_2
+Route         1   e 0.020                                  \dphy_raw_fifo_inst/full_d_c
+FCI_TO_F    ---     0.000            CIN to S[2]           \dphy_raw_fifo_inst/a1
+Route         1   e 1.020                                  \dphy_raw_fifo_inst/full_d
+                  --------
+                    4.699  (0.0% logic, 100.0% route), 7 logic levels.
+
+Report: 4.778 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets jtck[0]]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 8.576ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i0  (from jtck[0] +)
+   Destination:    FD1S3AX    D              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_out_18  (to jtck[0] -)
+
+   Delay:                  11.076ns  (0.0% logic, 100.0% route), 9 logic levels.
+
+ Constraint Details:
+
+     11.076ns data_path \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i0 to \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_out_18 violates
+      2.500ns delay constraint less
+      0.000ns L_S requirement (totaling 2.500ns) by 8.576ns
+
+ Path Details: \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i0 to \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_out_18
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i0 (from jtck[0])
+Route         1   e 1.020                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/instruction[0]
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/i1_2_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/n15980
+LUT4        ---     0.000              C to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/i1_4_lut
+Route         7   e 1.409                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/n4519
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/i1_2_lut_4_lut_adj_141
+Route        24   e 1.655                                  jshift[0]_keep
+LUT4        ---     0.000              B to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/capture_dr_I_0_365_2_lut_rep_289_3_lut
+Route       165   e 1.535                                  \top_reveal_coretop_instance/top_la0_inst_0/jtck_N_701_enable_3
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i15663_4_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/n16618
+MUXL5       ---     0.000             SD to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i15275
+Route         3   e 1.239                                  \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtdo_N_1147
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i7379_2_lut
+Route         2   e 1.158                                  \top_reveal_coretop_instance/er2_tdo[0]
+LUT4        ---     0.000              D to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_r_I_0_4_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_r
+                  --------
+                   11.076  (0.0% logic, 100.0% route), 9 logic levels.
+
+
+Error:  The following path violates requirements by 8.576ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i0  (from jtck[0] +)
+   Destination:    FD1P3BX    D              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/tm_crc_i0_i0  (to jtck[0] -)
+
+   Delay:                  11.076ns  (0.0% logic, 100.0% route), 9 logic levels.
+
+ Constraint Details:
+
+     11.076ns data_path \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i0 to \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/tm_crc_i0_i0 violates
+      2.500ns delay constraint less
+      0.000ns L_S requirement (totaling 2.500ns) by 8.576ns
+
+ Path Details: \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i0 to \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/tm_crc_i0_i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i0 (from jtck[0])
+Route         1   e 1.020                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/instruction[0]
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/i1_2_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/n15980
+LUT4        ---     0.000              C to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/i1_4_lut
+Route         7   e 1.409                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/n4519
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/i1_2_lut_4_lut_adj_141
+Route        24   e 1.655                                  jshift[0]_keep
+LUT4        ---     0.000              B to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/capture_dr_I_0_365_2_lut_rep_289_3_lut
+Route       165   e 1.535                                  \top_reveal_coretop_instance/top_la0_inst_0/jtck_N_701_enable_3
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i15663_4_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/n16618
+MUXL5       ---     0.000             SD to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i15275
+Route         3   e 1.239                                  \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtdo_N_1147
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i7379_2_lut
+Route         2   e 1.158                                  \top_reveal_coretop_instance/er2_tdo[0]
+LUT4        ---     0.000              D to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i7386_4_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/tm_crc_15__N_1048[0]
+                  --------
+                   11.076  (0.0% logic, 100.0% route), 9 logic levels.
+
+
+Error:  The following path violates requirements by 8.576ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i2  (from jtck[0] +)
+   Destination:    FD1S3AX    D              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_out_18  (to jtck[0] -)
+
+   Delay:                  11.076ns  (0.0% logic, 100.0% route), 9 logic levels.
+
+ Constraint Details:
+
+     11.076ns data_path \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i2 to \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_out_18 violates
+      2.500ns delay constraint less
+      0.000ns L_S requirement (totaling 2.500ns) by 8.576ns
+
+ Path Details: \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i2 to \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_out_18
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i2 (from jtck[0])
+Route         1   e 1.020                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/instruction[2]
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/i1_2_lut_adj_142
+Route         1   e 1.020                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/n15978
+LUT4        ---     0.000              D to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/i1_4_lut
+Route         7   e 1.409                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/n4519
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/i1_2_lut_4_lut_adj_141
+Route        24   e 1.655                                  jshift[0]_keep
+LUT4        ---     0.000              B to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/capture_dr_I_0_365_2_lut_rep_289_3_lut
+Route       165   e 1.535                                  \top_reveal_coretop_instance/top_la0_inst_0/jtck_N_701_enable_3
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i15663_4_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/n16618
+MUXL5       ---     0.000             SD to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i15275
+Route         3   e 1.239                                  \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtdo_N_1147
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i7379_2_lut
+Route         2   e 1.158                                  \top_reveal_coretop_instance/er2_tdo[0]
+LUT4        ---     0.000              D to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_r_I_0_4_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_r
+                  --------
+                   11.076  (0.0% logic, 100.0% route), 9 logic levels.
+
+Warning: 11.076 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets sys_clk_N]
+            2450 items scored, 2450 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 6.998ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \mipi_byte_aligner_lane0/data_squence__i28  (from sys_clk_N +)
+   Destination:    FD1P3DX    D              \mipi_byte_aligner_lane0/seq_offset__i0  (to sys_clk_N +)
+
+   Delay:                  11.998ns  (0.0% logic, 100.0% route), 11 logic levels.
+
+ Constraint Details:
+
+     11.998ns data_path \mipi_byte_aligner_lane0/data_squence__i28 to \mipi_byte_aligner_lane0/seq_offset__i0 violates
+      5.000ns delay constraint less
+      0.000ns L_S requirement (totaling 5.000ns) by 6.998ns
+
+ Path Details: \mipi_byte_aligner_lane0/data_squence__i28 to \mipi_byte_aligner_lane0/seq_offset__i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              \mipi_byte_aligner_lane0/data_squence__i28 (from sys_clk_N)
+Route         5   e 1.441                                  \mipi_byte_aligner_lane0/data_squence[28]
+LUT4        ---     0.000              B to Z              \mipi_byte_aligner_lane0/i1_2_lut_adj_247
+Route         1   e 1.020                                  \mipi_byte_aligner_lane0/n14984
+LUT4        ---     0.000              C to Z              \mipi_byte_aligner_lane0/i1_4_lut
+Route         2   e 1.158                                  \mipi_byte_aligner_lane0/n6_adj_2349
+LUT4        ---     0.000              C to Z              \mipi_byte_aligner_lane0/i1_2_lut_3_lut_adj_246
+Route         1   e 1.020                                  \mipi_byte_aligner_lane0/n15038
+LUT4        ---     0.000              A to Z              \mipi_byte_aligner_lane0/i1_4_lut_adj_276
+Route         3   e 1.239                                  \mipi_byte_aligner_lane0/n31_adj_2344
+LUT4        ---     0.000              A to Z              \mipi_byte_aligner_lane0/i1_2_lut_adj_318
+Route         1   e 1.020                                  \mipi_byte_aligner_lane0/n15022
+LUT4        ---     0.000              C to Z              \mipi_byte_aligner_lane0/i1_4_lut_adj_317
+Route         1   e 1.020                                  \mipi_byte_aligner_lane0/n119
+LUT4        ---     0.000              D to Z              \mipi_byte_aligner_lane0/i7313_4_lut
+Route         1   e 1.020                                  \mipi_byte_aligner_lane0/n1850
+LUT4        ---     0.000              A to Z              \mipi_byte_aligner_lane0/i7317_4_lut
+Route         1   e 1.020                                  \mipi_byte_aligner_lane0/n177
+LUT4        ---     0.000              D to Z              \mipi_byte_aligner_lane0/i1_4_lut_adj_315
+Route         1   e 1.020                                  \mipi_byte_aligner_lane0/n131
+LUT4        ---     0.000              D to Z              \mipi_byte_aligner_lane0/i7308_4_lut
+Route         1   e 1.020                                  \mipi_byte_aligner_lane0/n5044
+                  --------
+                   11.998  (0.0% logic, 100.0% route), 11 logic levels.
+
+
+Error:  The following path violates requirements by 6.954ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \mipi_byte_aligner_lane0/data_squence__i27  (from sys_clk_N +)
+   Destination:    FD1P3DX    D              \mipi_byte_aligner_lane0/seq_offset__i0  (to sys_clk_N +)
+
+   Delay:                  11.954ns  (0.0% logic, 100.0% route), 11 logic levels.
+
+ Constraint Details:
+
+     11.954ns data_path \mipi_byte_aligner_lane0/data_squence__i27 to \mipi_byte_aligner_lane0/seq_offset__i0 violates
+      5.000ns delay constraint less
+      0.000ns L_S requirement (totaling 5.000ns) by 6.954ns
+
+ Path Details: \mipi_byte_aligner_lane0/data_squence__i27 to \mipi_byte_aligner_lane0/seq_offset__i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              \mipi_byte_aligner_lane0/data_squence__i27 (from sys_clk_N)
+Route         4   e 1.397                                  \mipi_byte_aligner_lane0/data_squence[27]
+LUT4        ---     0.000              A to Z              \mipi_byte_aligner_lane0/i1_2_lut_adj_247
+Route         1   e 1.020                                  \mipi_byte_aligner_lane0/n14984
+LUT4        ---     0.000              C to Z              \mipi_byte_aligner_lane0/i1_4_lut
+Route         2   e 1.158                                  \mipi_byte_aligner_lane0/n6_adj_2349
+LUT4        ---     0.000              C to Z              \mipi_byte_aligner_lane0/i1_2_lut_3_lut_adj_246
+Route         1   e 1.020                                  \mipi_byte_aligner_lane0/n15038
+LUT4        ---     0.000              A to Z              \mipi_byte_aligner_lane0/i1_4_lut_adj_276
+Route         3   e 1.239                                  \mipi_byte_aligner_lane0/n31_adj_2344
+LUT4        ---     0.000              A to Z              \mipi_byte_aligner_lane0/i1_2_lut_adj_318
+Route         1   e 1.020                                  \mipi_byte_aligner_lane0/n15022
+LUT4        ---     0.000              C to Z              \mipi_byte_aligner_lane0/i1_4_lut_adj_317
+Route         1   e 1.020                                  \mipi_byte_aligner_lane0/n119
+LUT4        ---     0.000              D to Z              \mipi_byte_aligner_lane0/i7313_4_lut
+Route         1   e 1.020                                  \mipi_byte_aligner_lane0/n1850
+LUT4        ---     0.000              A to Z              \mipi_byte_aligner_lane0/i7317_4_lut
+Route         1   e 1.020                                  \mipi_byte_aligner_lane0/n177
+LUT4        ---     0.000              D to Z              \mipi_byte_aligner_lane0/i1_4_lut_adj_315
+Route         1   e 1.020                                  \mipi_byte_aligner_lane0/n131
+LUT4        ---     0.000              D to Z              \mipi_byte_aligner_lane0/i7308_4_lut
+Route         1   e 1.020                                  \mipi_byte_aligner_lane0/n5044
+                  --------
+                   11.954  (0.0% logic, 100.0% route), 11 logic levels.
+
+
+Error:  The following path violates requirements by 6.862ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \mipi_byte_aligner_lane0/data_squence__i15  (from sys_clk_N +)
+   Destination:    FD1S3DX    D              \mipi_byte_aligner_lane0/data_out__i15  (to sys_clk_N +)
+
+   Delay:                  11.862ns  (0.0% logic, 100.0% route), 10 logic levels.
+
+ Constraint Details:
+
+     11.862ns data_path \mipi_byte_aligner_lane0/data_squence__i15 to \mipi_byte_aligner_lane0/data_out__i15 violates
+      5.000ns delay constraint less
+      0.000ns L_S requirement (totaling 5.000ns) by 6.862ns
+
+ Path Details: \mipi_byte_aligner_lane0/data_squence__i15 to \mipi_byte_aligner_lane0/data_out__i15
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              \mipi_byte_aligner_lane0/data_squence__i15 (from sys_clk_N)
+Route        14   e 1.647                                  \mipi_byte_aligner_lane0/data_squence[15]
+LUT4        ---     0.000              B to Z              \mipi_byte_aligner_lane0/i1_2_lut_adj_291
+Route         2   e 1.158                                  \mipi_byte_aligner_lane0/n15300
+LUT4        ---     0.000              B to Z              \mipi_byte_aligner_lane0/i1_4_lut_adj_290
+Route         1   e 1.020                                  \mipi_byte_aligner_lane0/n15278
+LUT4        ---     0.000              A to Z              \mipi_byte_aligner_lane0/i1_4_lut_adj_289
+Route         1   e 1.020                                  \mipi_byte_aligner_lane0/n15290
+LUT4        ---     0.000              A to Z              \mipi_byte_aligner_lane0/i1_4_lut_adj_288
+Route         3   e 1.239                                  \mipi_byte_aligner_lane0/n31_adj_2341
+LUT4        ---     0.000              C to Z              \mipi_byte_aligner_lane0/i2_rep_26_2_lut_3_lut_4_lut
+Route         3   e 1.239                                  \mipi_byte_aligner_lane0/n14667
+LUT4        ---     0.000              B to Z              \mipi_byte_aligner_lane0/i1_4_lut_adj_322
+Route         2   e 1.158                                  \mipi_byte_aligner_lane0/n14547
+LUT4        ---     0.000              B to Z              \mipi_byte_aligner_lane0/i15581_4_lut
+Route         5   e 1.341                                  \mipi_byte_aligner_lane0/n1_adj_2362
+MUXL5       ---     0.000           BLUT to Z              \mipi_byte_aligner_lane0/i15846
+Route         1   e 1.020                                  \mipi_byte_aligner_lane0/n17505
+LUT4        ---     0.000              C to Z              \mipi_byte_aligner_lane0/n309_bdd_2_lut_15843_3_lut
+Route         1   e 1.020                                  \mipi_byte_aligner_lane0/n17494
+                  --------
+                   11.862  (0.0% logic, 100.0% route), 10 logic levels.
+
+Warning: 11.998 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets rxhsbyteclk]             |     5.000 ns|     4.778 ns|     8  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets jtck[0]]                 |     5.000 ns|    22.152 ns|     9 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets sys_clk_N]               |     5.000 ns|    11.998 ns|    11 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\top_reveal_coretop_instance/JTAG_SOFT_i|        |        |
+nst_0/jtag_cntl_inst/j_dec/n4519        |       7|    3855|     58.89%
+                                        |        |        |
+jshift[0]_keep                          |      24|    2478|     37.86%
+                                        |        |        |
+\top_reveal_coretop_instance/top_la0_ins|        |        |
+t_0/jtag_int_u/n17742                   |      16|    2222|     33.94%
+                                        |        |        |
+\mipi_byte_aligner_lane1/n16314         |       4|    1966|     30.03%
+                                        |        |        |
+\top_reveal_coretop_instance/JTAG_SOFT_i|        |        |
+nst_0/jtag_cntl_inst/j_dec/n15980       |       1|    1734|     26.49%
+                                        |        |        |
+\top_reveal_coretop_instance/JTAG_SOFT_i|        |        |
+nst_0/jtag_cntl_inst/j_dec/n15978       |       1|    1727|     26.38%
+                                        |        |        |
+\top_reveal_coretop_instance/jce2[0]    |      19|    1618|     24.72%
+                                        |        |        |
+\mipi_byte_aligner_lane1/n17734         |      12|    1584|     24.20%
+                                        |        |        |
+\mipi_byte_aligner_lane1/n16188         |       2|    1178|     18.00%
+                                        |        |        |
+\mipi_byte_aligner_lane1/n14803         |       2|    1014|     15.49%
+                                        |        |        |
+\top_reveal_coretop_instance/JTAG_SOFT_i|        |        |
+nst_0/jtag_cntl_inst/instruction[0]     |       1|     875|     13.37%
+                                        |        |        |
+\top_reveal_coretop_instance/JTAG_SOFT_i|        |        |
+nst_0/jtag_cntl_inst/instruction[2]     |       1|     868|     13.26%
+                                        |        |        |
+\top_reveal_coretop_instance/JTAG_SOFT_i|        |        |
+nst_0/jtag_cntl_inst/instruction[6]     |       1|     859|     13.12%
+                                        |        |        |
+\top_reveal_coretop_instance/JTAG_SOFT_i|        |        |
+nst_0/jtag_cntl_inst/instruction[7]     |       1|     859|     13.12%
+                                        |        |        |
+\top_reveal_coretop_instance/top_la0_ins|        |        |
+t_0/n10767                              |       8|     800|     12.22%
+                                        |        |        |
+\top_reveal_coretop_instance/n17739     |       5|     788|     12.04%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 6546  Score: 62046530
+
+Constraints cover  41298 paths, 2439 nets, and 7307 connections (82.0% coverage)
+
+
+Peak memory: 99471360 bytes, TRCE: 6770688 bytes, DLYMAN: 819200 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

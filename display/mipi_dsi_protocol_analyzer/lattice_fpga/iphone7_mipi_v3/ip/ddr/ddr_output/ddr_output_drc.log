@@ -1,0 +1,3 @@
+Results of NGD DRC are available in ddr_output_drc.log.
+WARNING - synthesis: DRC checking was skipped because the -ngo option was used.
+Writing NGD file C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/ddr/ddr_output/ddr_output.ngo.

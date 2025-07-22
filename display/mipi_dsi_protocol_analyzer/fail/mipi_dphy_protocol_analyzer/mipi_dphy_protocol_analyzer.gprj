@@ -1,0 +1,38 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW1NR-9C" pn="GW1NR-LV9LQ144PC6/I5">gw1nr9c-012</Device>
+    <FileList>
+        <File path="src/data_storage_controller.v" type="file.verilog" enable="1"/>
+        <File path="src/fifo_hs_lane_to_psram/fifo_hs_lane_to_psram.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_clkdiv/gowin_clkdiv.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rpll/gowin_rpll.v" type="file.verilog" enable="1"/>
+        <File path="src/mipi_byte_aligner.v" type="file.verilog" enable="1"/>
+        <File path="src/mipi_lane_state_detection.v" type="file.verilog" enable="1"/>
+        <File path="src/mipi_multi_lane_aligner.v" type="file.verilog" enable="1"/>
+        <File path="src/mipi_rx_advance/mipi_rx_advance.v" type="file.verilog" enable="1"/>
+        <File path="src/psram_memory_interface_hs/psram_memory_interface_hs.v" type="file.verilog" enable="1"/>
+        <File path="src/test_data_storage_controller.v" type="file.verilog" enable="0"/>
+        <File path="src/test_mipi_rx.v" type="file.verilog" enable="1"/>
+        <File path="src/test_psram.v" type="file.verilog" enable="0"/>
+        <File path="src/test_uart_protocol_processor.v" type="file.verilog" enable="0"/>
+        <File path="src/test_uart_tx.v" type="file.verilog" enable="0"/>
+        <File path="src/top.v" type="file.verilog" enable="1"/>
+        <File path="src/uart_protocol_processor.v" type="file.verilog" enable="1"/>
+        <File path="src/uart_rx.v" type="file.verilog" enable="1"/>
+        <File path="src/uart_tx.v" type="file.verilog" enable="1"/>
+        <File path="src/mipi_dphy_protocol_analyzer.cst" type="file.cst" enable="1"/>
+        <File path="src/test_mipi_rx.cst" type="file.cst" enable="0"/>
+        <File path="src/mipi_dphy_protocol_analyzer.sdc" type="file.sdc" enable="1"/>
+        <File path="src/test_mipi_rx.sdc" type="file.sdc" enable="0"/>
+        <File path="src/test_data_storage_controller.rao" type="file.gao" enable="0"/>
+        <File path="src/test_mipi_rx.rao" type="file.gao" enable="0"/>
+        <File path="src/test_psram.rao" type="file.gao" enable="0"/>
+        <File path="src/test_uart_protocol_processor.rao" type="file.gao" enable="0"/>
+        <File path="src/top.rao" type="file.gao" enable="0"/>
+        <File path="src/top_mc.rao" type="file.gao" enable="1"/>
+        <File path="src/uart_protocol_processor.rao" type="file.gao" enable="0"/>
+    </FileList>
+</Project>

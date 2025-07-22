@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "win10_test_mipi_v2_impl1.log"
+-o "win10_test_mipi_v2_impl1.csv"
+-pr "win10_test_mipi_v2_impl1.prf"

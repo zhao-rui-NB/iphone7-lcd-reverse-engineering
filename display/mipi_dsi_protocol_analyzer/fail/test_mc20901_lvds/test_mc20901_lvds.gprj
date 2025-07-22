@@ -1,0 +1,15 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW1NR-9C" pn="GW1NR-LV9LQ144PC6/I5">gw1nr9c-012</Device>
+    <FileList>
+        <File path="src/mipi_lane_state_detection.v" type="file.verilog" enable="1"/>
+        <File path="src/mipi_rx_advance/mipi_rx_advance.v" type="file.verilog" enable="1"/>
+        <File path="src/read_lvds.v" type="file.verilog" enable="1"/>
+        <File path="src/test_mc20901_lvds.cst" type="file.cst" enable="1"/>
+        <File path="src/test_mc20901_lvds.sdc" type="file.sdc" enable="1"/>
+        <File path="src/read_lvds.rao" type="file.gao" enable="1"/>
+    </FileList>
+</Project>

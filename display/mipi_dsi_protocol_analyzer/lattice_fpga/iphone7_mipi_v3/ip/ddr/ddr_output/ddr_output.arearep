@@ -1,0 +1,10 @@
+----------------------------------------------------------------------
+Report for cell ddr_output.TECH
+Register bits:  0 of 6047 (0.000%)
+I/O cells:      18
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                GSR         1          100.0
+                                 OB        18          100.0
+                            ODDRX1F        18          100.0
+                              TOTAL        37

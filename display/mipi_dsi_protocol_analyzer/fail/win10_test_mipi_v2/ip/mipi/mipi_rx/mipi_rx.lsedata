@@ -1,0 +1,443 @@
+<top name = "mipi_rx"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+    <clockitem name = "clk_n"  type = "net" />
+    <clockitem name = "clk_p"  type = "net" />
+    <clockitem name = "rxhsbyteclk"  type = "net" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 3
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "mipi_rx">
+
+    <!--
+        Top Level Pins: 54
+    -->
+
+    <pins>
+        <pitem  name = "clk_cd"  direction = "out"  />
+        <pitem  name = "clk_n"  direction = "inout"  />
+        <pitem  name = "clk_p"  direction = "inout"  />
+        <pitem  name = "clk_rxhsen"  direction = "in"  />
+        <pitem  name = "clk_rxlpen"  direction = "in"  />
+        <pitem  name = "clk_rxlpn"  direction = "out"  />
+        <pitem  name = "clk_rxlpp"  direction = "out"  />
+        <pitem  name = "clkhsbyte"  direction = "out"  />
+        <pitem  name = "d0_cd"  direction = "out"  />
+        <pitem  name = "d0_hsdeseren"  direction = "in"  />
+        <pitem  name = "d0_rxhsen"  direction = "in"  />
+        <pitem  name = "d0_rxlpen"  direction = "in"  />
+        <pitem  name = "d0_rxlpn"  direction = "out"  />
+        <pitem  name = "d0_rxlpp"  direction = "out"  />
+        <pitem  name = "d0_txlpn"  direction = "in"  />
+        <pitem  name = "d0_txlpp"  direction = "in"  />
+        <pitem  name = "rxhsbyteclk"  direction = "out"  />
+        <pitem  name = "usrstdby"  direction = "in"  />
+        <pitem  name = "data_n[1]"  direction = "inout"  />
+        <pitem  name = "data_n[0]"  direction = "inout"  />
+        <pitem  name = "data_p[1]"  direction = "inout"  />
+        <pitem  name = "data_p[0]"  direction = "inout"  />
+        <pitem  name = "q[31]"  direction = "out"  />
+        <pitem  name = "q[30]"  direction = "out"  />
+        <pitem  name = "q[29]"  direction = "out"  />
+        <pitem  name = "q[28]"  direction = "out"  />
+        <pitem  name = "q[27]"  direction = "out"  />
+        <pitem  name = "q[26]"  direction = "out"  />
+        <pitem  name = "q[25]"  direction = "out"  />
+        <pitem  name = "q[24]"  direction = "out"  />
+        <pitem  name = "q[23]"  direction = "out"  />
+        <pitem  name = "q[22]"  direction = "out"  />
+        <pitem  name = "q[21]"  direction = "out"  />
+        <pitem  name = "q[20]"  direction = "out"  />
+        <pitem  name = "q[19]"  direction = "out"  />
+        <pitem  name = "q[18]"  direction = "out"  />
+        <pitem  name = "q[17]"  direction = "out"  />
+        <pitem  name = "q[16]"  direction = "out"  />
+        <pitem  name = "q[15]"  direction = "out"  />
+        <pitem  name = "q[14]"  direction = "out"  />
+        <pitem  name = "q[13]"  direction = "out"  />
+        <pitem  name = "q[12]"  direction = "out"  />
+        <pitem  name = "q[11]"  direction = "out"  />
+        <pitem  name = "q[10]"  direction = "out"  />
+        <pitem  name = "q[9]"  direction = "out"  />
+        <pitem  name = "q[8]"  direction = "out"  />
+        <pitem  name = "q[7]"  direction = "out"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 10
+    -->
+
+    <instance  name = "OR2_t3"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "A"  direction = "in"  />
+        <pitem  name = "B"  direction = "in"  />
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "d0_olsp"  />
+        <nitem  name = "d0_olsn"  />
+        <nitem  name = "d0_cd"  />
+        </nets>
+    </instance>
+
+    <instance  name = "INV_2"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "A"  direction = "in"  />
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "clk_rxhsen"  />
+        <nitem  name = "clk_rxhsen_inv"  />
+        </nets>
+    </instance>
+
+    <instance  name = "AND2_t2"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "A"  direction = "in"  />
+        <pitem  name = "B"  direction = "in"  />
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "clk_rxhsen_inv"  />
+        <nitem  name = "clk_rxlpen"  />
+        <nitem  name = "clkrxlpen"  />
+        </nets>
+    </instance>
+
+    <instance  name = "INV_1"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "A"  direction = "in"  />
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "d0_rxhsen"  />
+        <nitem  name = "d0_rxhsen_inv"  />
+        </nets>
+    </instance>
+
+    <instance  name = "AND2_t1"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "A"  direction = "in"  />
+        <pitem  name = "B"  direction = "in"  />
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "d0_rxhsen_inv"  />
+        <nitem  name = "d0_rxlpen"  />
+        <nitem  name = "d0rxlpen"  />
+        </nets>
+    </instance>
+
+    <instance  name = "INV_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "A"  direction = "in"  />
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "d0_rxlpen"  />
+        <nitem  name = "d0_rxlpen_inv"  />
+        </nets>
+    </instance>
+
+    <instance  name = "AND2_t0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "A"  direction = "in"  />
+        <pitem  name = "B"  direction = "in"  />
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "d0_rxhsen_inv"  />
+        <nitem  name = "d0_rxlpen_inv"  />
+        <nitem  name = "d0txlpen"  />
+        </nets>
+    </instance>
+
+    <instance  name = "scuba_vlo_inst"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "scuba_vhi_inst"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "scuba_vhi"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst_MIPIDPHYA"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CKP"  direction = "inout"  />
+        <pitem  name = "CKN"  direction = "inout"  />
+        <pitem  name = "CLKHSBYTE"  direction = "out"  />
+        <pitem  name = "CLKRXHSEN"  direction = "in"  />
+        <pitem  name = "CLKDRXLPP"  direction = "out"  />
+        <pitem  name = "CLKRXLPEN"  direction = "in"  />
+        <pitem  name = "CLKDRXLPN"  direction = "out"  />
+        <pitem  name = "CLKCDEN"  direction = "in"  />
+        <pitem  name = "CLKDCDN"  direction = "out"  />
+        <pitem  name = "CLKDTXLPP"  direction = "in"  />
+        <pitem  name = "CLKTXLPEN"  direction = "in"  />
+        <pitem  name = "CLKDTXLPN"  direction = "in"  />
+        <pitem  name = "CLKTXHSEN"  direction = "in"  />
+        <pitem  name = "CLKTXHSGATE"  direction = "in"  />
+        <pitem  name = "CLKTXHSPD"  direction = "in"  />
+        <pitem  name = "HSBYTECLKD"  direction = "out"  />
+        <pitem  name = "LBEN"  direction = "in"  />
+        <pitem  name = "PDDPHY"  direction = "in"  />
+        <pitem  name = "PDBIAS"  direction = "in"  />
+        <pitem  name = "PDCKG"  direction = "in"  />
+        <pitem  name = "CLKREF"  direction = "in"  />
+        <pitem  name = "PDPLL"  direction = "in"  />
+        <pitem  name = "DP0"  direction = "inout"  />
+        <pitem  name = "DP1"  direction = "inout"  />
+        <pitem  name = "DN0"  direction = "inout"  />
+        <pitem  name = "DN1"  direction = "inout"  />
+        <pitem  name = "D0DRXLPP"  direction = "out"  />
+        <pitem  name = "D0RXLPEN"  direction = "in"  />
+        <pitem  name = "D0DRXLPN"  direction = "out"  />
+        <pitem  name = "D0DCDP"  direction = "out"  />
+        <pitem  name = "D0CDEN"  direction = "in"  />
+        <pitem  name = "D0DCDN"  direction = "out"  />
+        <pitem  name = "D0DTXLPP"  direction = "in"  />
+        <pitem  name = "D0TXLPEN"  direction = "in"  />
+        <pitem  name = "D0DTXLPN"  direction = "in"  />
+        <pitem  name = "D0RXHSEN"  direction = "in"  />
+        <pitem  name = "D0HSRXDATA15"  direction = "out"  />
+        <pitem  name = "D0HSRXDATA14"  direction = "out"  />
+        <pitem  name = "D0HSRXDATA13"  direction = "out"  />
+        <pitem  name = "D0HSRXDATA12"  direction = "out"  />
+        <pitem  name = "D0HSRXDATA11"  direction = "out"  />
+        <pitem  name = "D0HSRXDATA10"  direction = "out"  />
+        <pitem  name = "D0HSRXDATA9"  direction = "out"  />
+        <pitem  name = "D0HSRXDATA8"  direction = "out"  />
+        <pitem  name = "D0HSRXDATA7"  direction = "out"  />
+        <pitem  name = "D0HSRXDATA6"  direction = "out"  />
+        <pitem  name = "D0HSRXDATA5"  direction = "out"  />
+        <pitem  name = "D0HSRXDATA4"  direction = "out"  />
+        <pitem  name = "D0HSRXDATA3"  direction = "out"  />
+        <pitem  name = "D0HSRXDATA2"  direction = "out"  />
+        <pitem  name = "D0HSRXDATA1"  direction = "out"  />
+        <pitem  name = "D0HSRXDATA0"  direction = "out"  />
+        <pitem  name = "D0HSDESEREN"  direction = "in"  />
+        <pitem  name = "D0TXHSEN"  direction = "in"  />
+        <pitem  name = "D0HSTXDATA15"  direction = "in"  />
+        <pitem  name = "D0HSTXDATA14"  direction = "in"  />
+        <pitem  name = "D0HSTXDATA13"  direction = "in"  />
+        <pitem  name = "D0HSTXDATA12"  direction = "in"  />
+        <pitem  name = "D0HSTXDATA11"  direction = "in"  />
+        <pitem  name = "D0HSTXDATA10"  direction = "in"  />
+        <pitem  name = "D0HSTXDATA9"  direction = "in"  />
+        <pitem  name = "D0HSTXDATA8"  direction = "in"  />
+        <pitem  name = "D0HSTXDATA7"  direction = "in"  />
+        <pitem  name = "D0HSTXDATA6"  direction = "in"  />
+        <pitem  name = "D0HSTXDATA5"  direction = "in"  />
+        <pitem  name = "D0HSTXDATA4"  direction = "in"  />
+        <pitem  name = "D0HSTXDATA3"  direction = "in"  />
+        <pitem  name = "D0HSTXDATA2"  direction = "in"  />
+        <pitem  name = "D0HSTXDATA1"  direction = "in"  />
+        <pitem  name = "D0HSTXDATA0"  direction = "in"  />
+        <pitem  name = "D0HSSEREN"  direction = "in"  />
+        <pitem  name = "D0TXHSPD"  direction = "in"  />
+        <pitem  name = "D1RXLPEN"  direction = "in"  />
+        <pitem  name = "D1CDEN"  direction = "in"  />
+        <pitem  name = "D1DTXLPP"  direction = "in"  />
+        <pitem  name = "D1TXLPEN"  direction = "in"  />
+        <pitem  name = "D1DTXLPN"  direction = "in"  />
+        <pitem  name = "D1RXHSEN"  direction = "in"  />
+        <pitem  name = "D1HSRXDATA15"  direction = "out"  />
+        <pitem  name = "D1HSRXDATA14"  direction = "out"  />
+        <pitem  name = "D1HSRXDATA13"  direction = "out"  />
+        <pitem  name = "D1HSRXDATA12"  direction = "out"  />
+        <pitem  name = "D1HSRXDATA11"  direction = "out"  />
+        <pitem  name = "D1HSRXDATA10"  direction = "out"  />
+        <pitem  name = "D1HSRXDATA9"  direction = "out"  />
+        <pitem  name = "D1HSRXDATA8"  direction = "out"  />
+        <pitem  name = "D1HSRXDATA7"  direction = "out"  />
+        <pitem  name = "D1HSRXDATA6"  direction = "out"  />
+        <pitem  name = "D1HSRXDATA5"  direction = "out"  />
+        <pitem  name = "D1HSRXDATA4"  direction = "out"  />
+        <pitem  name = "D1HSRXDATA3"  direction = "out"  />
+        <pitem  name = "D1HSRXDATA2"  direction = "out"  />
+        <pitem  name = "D1HSRXDATA1"  direction = "out"  />
+        <pitem  name = "D1HSRXDATA0"  direction = "out"  />
+        <pitem  name = "D1HSDESEREN"  direction = "in"  />
+        <pitem  name = "D1TXHSEN"  direction = "in"  />
+        <pitem  name = "D1HSTXDATA15"  direction = "in"  />
+        <pitem  name = "D1HSTXDATA14"  direction = "in"  />
+        <pitem  name = "D1HSTXDATA13"  direction = "in"  />
+        <pitem  name = "D1HSTXDATA12"  direction = "in"  />
+        <pitem  name = "D1HSTXDATA11"  direction = "in"  />
+        <pitem  name = "D1HSTXDATA10"  direction = "in"  />
+        <pitem  name = "D1HSTXDATA9"  direction = "in"  />
+        <pitem  name = "D1HSTXDATA8"  direction = "in"  />
+        <pitem  name = "D1HSTXDATA7"  direction = "in"  />
+        <pitem  name = "D1HSTXDATA6"  direction = "in"  />
+        <pitem  name = "D1HSTXDATA5"  direction = "in"  />
+        <pitem  name = "D1HSTXDATA4"  direction = "in"  />
+        <pitem  name = "D1HSTXDATA3"  direction = "in"  />
+        <pitem  name = "D1HSTXDATA2"  direction = "in"  />
+        <pitem  name = "D1HSTXDATA1"  direction = "in"  />
+        <pitem  name = "D1HSTXDATA0"  direction = "in"  />
+        <pitem  name = "D1HSSEREN"  direction = "in"  />
+        <pitem  name = "D1TXHSPD"  direction = "in"  />
+        <pitem  name = "D2RXLPEN"  direction = "in"  />
+        <pitem  name = "D2CDEN"  direction = "in"  />
+        <pitem  name = "D2DTXLPP"  direction = "in"  />
+        <pitem  name = "D2TXLPEN"  direction = "in"  />
+        <pitem  name = "D2DTXLPN"  direction = "in"  />
+        <pitem  name = "D2RXHSEN"  direction = "in"  />
+        <pitem  name = "D2HSDESEREN"  direction = "in"  />
+        <pitem  name = "D2TXHSEN"  direction = "in"  />
+        <pitem  name = "D2HSTXDATA15"  direction = "in"  />
+        <pitem  name = "D2HSTXDATA14"  direction = "in"  />
+        <pitem  name = "D2HSTXDATA13"  direction = "in"  />
+        <pitem  name = "D2HSTXDATA12"  direction = "in"  />
+        <pitem  name = "D2HSTXDATA11"  direction = "in"  />
+        <pitem  name = "D2HSTXDATA10"  direction = "in"  />
+        <pitem  name = "D2HSTXDATA9"  direction = "in"  />
+        <pitem  name = "D2HSTXDATA8"  direction = "in"  />
+        <pitem  name = "D2HSTXDATA7"  direction = "in"  />
+        <pitem  name = "D2HSTXDATA6"  direction = "in"  />
+        <pitem  name = "D2HSTXDATA5"  direction = "in"  />
+        <pitem  name = "D2HSTXDATA4"  direction = "in"  />
+        <pitem  name = "D2HSTXDATA3"  direction = "in"  />
+        <pitem  name = "D2HSTXDATA2"  direction = "in"  />
+        <pitem  name = "D2HSTXDATA1"  direction = "in"  />
+        <pitem  name = "D2HSTXDATA0"  direction = "in"  />
+        <pitem  name = "D2HSSEREN"  direction = "in"  />
+        <pitem  name = "D2TXHSPD"  direction = "in"  />
+        <pitem  name = "D3RXLPEN"  direction = "in"  />
+        <pitem  name = "D3CDEN"  direction = "in"  />
+        <pitem  name = "D3DTXLPP"  direction = "in"  />
+        <pitem  name = "D3TXLPEN"  direction = "in"  />
+        <pitem  name = "D3DTXLPN"  direction = "in"  />
+        <pitem  name = "D3RXHSEN"  direction = "in"  />
+        <pitem  name = "D3HSDESEREN"  direction = "in"  />
+        <pitem  name = "D3TXHSEN"  direction = "in"  />
+        <pitem  name = "D3HSTXDATA15"  direction = "in"  />
+        <pitem  name = "D3HSTXDATA14"  direction = "in"  />
+        <pitem  name = "D3HSTXDATA13"  direction = "in"  />
+        <pitem  name = "D3HSTXDATA12"  direction = "in"  />
+        <pitem  name = "D3HSTXDATA11"  direction = "in"  />
+        <pitem  name = "D3HSTXDATA10"  direction = "in"  />
+        <pitem  name = "D3HSTXDATA9"  direction = "in"  />
+        <pitem  name = "D3HSTXDATA8"  direction = "in"  />
+        <pitem  name = "D3HSTXDATA7"  direction = "in"  />
+        <pitem  name = "D3HSTXDATA6"  direction = "in"  />
+        <pitem  name = "D3HSTXDATA5"  direction = "in"  />
+        <pitem  name = "D3HSTXDATA4"  direction = "in"  />
+        <pitem  name = "D3HSTXDATA3"  direction = "in"  />
+        <pitem  name = "D3HSTXDATA2"  direction = "in"  />
+        <pitem  name = "D3HSTXDATA1"  direction = "in"  />
+        <pitem  name = "D3HSTXDATA0"  direction = "in"  />
+        <pitem  name = "D3HSSEREN"  direction = "in"  />
+        <pitem  name = "D3TXHSPD"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "clk_p"  />
+        <nitem  name = "clk_n"  />
+        <nitem  name = "clkhsbyte"  />
+        <nitem  name = "clk_rxhsen"  />
+        <nitem  name = "clk_rxlpp"  />
+        <nitem  name = "clkrxlpen"  />
+        <nitem  name = "clk_rxlpn"  />
+        <nitem  name = "scuba_vhi"  />
+        <nitem  name = "clk_cd"  />
+        <nitem  name = "scuba_vlo"  />
+        <nitem  name = "rxhsbyteclk"  />
+        <nitem  name = "usrstdby"  />
+        <nitem  name = "data_p[0]"  />
+        <nitem  name = "data_p[1]"  />
+        <nitem  name = "data_n[0]"  />
+        <nitem  name = "data_n[1]"  />
+        <nitem  name = "d0_rxlpp"  />
+        <nitem  name = "d0rxlpen"  />
+        <nitem  name = "d0_rxlpn"  />
+        <nitem  name = "d0_olsp"  />
+        <nitem  name = "d0_olsn"  />
+        <nitem  name = "d0_txlpp"  />
+        <nitem  name = "d0txlpen"  />
+        <nitem  name = "d0_txlpn"  />
+        <nitem  name = "d0_rxhsen"  />
+        <nitem  name = "q[30]"  />
+        <nitem  name = "q[28]"  />
+        <nitem  name = "q[26]"  />
+        <nitem  name = "q[24]"  />
+        <nitem  name = "q[22]"  />
+        <nitem  name = "q[20]"  />
+        <nitem  name = "q[18]"  />
+        <nitem  name = "q[16]"  />
+        <nitem  name = "q[14]"  />
+        <nitem  name = "q[12]"  />
+        <nitem  name = "q[10]"  />
+        <nitem  name = "q[8]"  />
+        <nitem  name = "q[6]"  />
+        <nitem  name = "q[4]"  />
+        <nitem  name = "q[2]"  />
+        <nitem  name = "q[0]"  />
+        <nitem  name = "d0_hsdeseren"  />
+        <nitem  name = "q[31]"  />
+        <nitem  name = "q[29]"  />
+        <nitem  name = "q[27]"  />
+        <nitem  name = "q[25]"  />
+        <nitem  name = "q[23]"  />
+        <nitem  name = "q[21]"  />
+        <nitem  name = "q[19]"  />
+        <nitem  name = "q[17]"  />
+        <nitem  name = "q[15]"  />
+        <nitem  name = "q[13]"  />
+        <nitem  name = "q[11]"  />
+        <nitem  name = "q[9]"  />
+        <nitem  name = "q[7]"  />
+        <nitem  name = "q[5]"  />
+        <nitem  name = "q[3]"  />
+        <nitem  name = "q[1]"  />
+        </nets>
+    </instance>
+
+    <!--
+        Views in design "mipi_rx": 0
+    -->
+
+    <views>
+    </views>
+
+</unit>
+
+</library>
+
+</top>

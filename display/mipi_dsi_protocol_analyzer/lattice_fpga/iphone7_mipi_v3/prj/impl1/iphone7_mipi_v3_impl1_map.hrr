@@ -1,0 +1,392 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	    1024.00        100.0
+                                  LUT4	    1173.00        100.0
+                               DISTRAM	      24.00        100.0
+                                 IOBUF	         23        100.0
+                                PFUREG	        798        100.0
+                                RIPPLE	        121        100.0
+                                   EBR	         11        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                        reveal_coretop	          1        45.1
+                           mipi_uniq_1	          1        54.0
+                     ddr_output_uniq_1	          1         0.0
+---------------------------------------------------
+Report for cell reveal_coretop
+   Instance path: top/top_reveal_coretop_instance
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     461.58        45.1
+                                  LUT4	     576.33        49.1
+                                PFUREG	        443        55.5
+                                RIPPLE	         37        30.6
+                                   EBR	          9        81.8
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               top_la0	          1        41.9
+                             JTAG_SOFT	          1         3.1
+---------------------------------------------------
+Report for cell top_la0
+   Instance path: top/top_reveal_coretop_instance/top_la0_inst_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     429.17        41.9
+                                  LUT4	     540.33        46.1
+                                PFUREG	        406        50.9
+                                RIPPLE	         37        30.6
+                                   EBR	          9        81.8
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                          top_la0_trig	          1         7.5
+rvl_tm(NUM_TRACE_SIGNALS=33,NUM_TRACE_SAMPLES=2048,NUM_TRIGGER_SIGNALS=1,NUM_TRIG_MAX=1,REVEAL_SIG=636047501,LSCC_FAMILY="LIFMD")	          1        17.4
+rvl_jtag_int(NUM_TRACE_SIGNALS=33,NUM_TRIGGER_SIGNALS=1)	          1        17.0
+---------------------------------------------------
+Report for cell top_la0_trig
+   Instance path: top/top_reveal_coretop_instance/top_la0_inst_0/trig_u
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      76.58         7.5
+                                  LUT4	      98.50         8.4
+                                PFUREG	         65         8.1
+                                RIPPLE	          9         7.4
+                                   EBR	          1         9.1
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                 rvl_tu(NUM_TU_BITS=1)	          1         0.8
+    rvl_tcnt(NUM_TE=1,NUM_TCNT_BITS=3)	          1         1.2
+rvl_te(NUM_TU=1,NUM_TE_ROW=2,NUM_TE_COL=1,TE_EBR=1,NUM_TE_EVENT_CNT_BITS=0,LSCC_FAMILY="LIFMD")	          1         4.0
+         rvl_decode(NUM_TU=1,NUM_TE=1)	          1         1.4
+---------------------------------------------------
+Report for cell rvl_tu(NUM_TU_BITS=1)
+   Instance path: top/top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.83         0.8
+                                  LUT4	       9.00         0.8
+                                PFUREG	          8         1.0
+---------------------------------------------------
+Report for cell rvl_te(NUM_TU=1,NUM_TE_ROW=2,NUM_TE_COL=1,TE_EBR=1,NUM_TE_EVENT_CNT_BITS=0,LSCC_FAMILY="LIFMD")
+   Instance path: top/top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      41.08         4.0
+                                  LUT4	      43.33         3.7
+                                PFUREG	         45         5.6
+                                RIPPLE	          9         7.4
+                                   EBR	          1         9.1
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+    pmi_ram_dpLbnonesadr1121121164d4da	          1         0.0
+---------------------------------------------------
+Report for cell pmi_ram_dpLbnonesadr1121121164d4da
+   Instance path: top/top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg112112
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         9.1
+---------------------------------------------------
+Report for cell rvl_tcnt(NUM_TE=1,NUM_TCNT_BITS=3)
+   Instance path: top/top_reveal_coretop_instance/top_la0_inst_0/trig_u/tcnt_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      12.50         1.2
+                                  LUT4	      17.00         1.4
+                                PFUREG	         12         1.5
+---------------------------------------------------
+Report for cell rvl_decode(NUM_TU=1,NUM_TE=1)
+   Instance path: top/top_reveal_coretop_instance/top_la0_inst_0/trig_u/decode_u
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      14.33         1.4
+                                  LUT4	      27.17         2.3
+---------------------------------------------------
+Report for cell rvl_tm(NUM_TRACE_SIGNALS=33,NUM_TRACE_SAMPLES=2048,NUM_TRIGGER_SIGNALS=1,NUM_TRIG_MAX=1,REVEAL_SIG=636047501,LSCC_FAMILY="LIFMD")
+   Instance path: top/top_reveal_coretop_instance/top_la0_inst_0/tm_u
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     178.67        17.4
+                                  LUT4	     195.67        16.7
+                                PFUREG	        190        23.8
+                                RIPPLE	         24        19.8
+                                   EBR	          8        72.7
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+pmi_ram_dpLbnonesadr33112048331120481218f65e	          1         0.9
+---------------------------------------------------
+Report for cell pmi_ram_dpLbnonesadr33112048331120481218f65e
+   Instance path: top/top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg3311204833112048
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       9.50         0.9
+                                  LUT4	      33.00         2.8
+                                PFUREG	          2         0.3
+                                   EBR	          8        72.7
+---------------------------------------------------
+Report for cell rvl_jtag_int(NUM_TRACE_SIGNALS=33,NUM_TRIGGER_SIGNALS=1)
+   Instance path: top/top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     173.92        17.0
+                                  LUT4	     246.17        21.0
+                                PFUREG	        151        18.9
+                                RIPPLE	          4         3.3
+---------------------------------------------------
+Report for cell JTAG_SOFT
+   Instance path: top/top_reveal_coretop_instance/JTAG_SOFT_inst_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      32.08         3.1
+                                  LUT4	      35.00         3.0
+                                PFUREG	         37         4.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                        jtag_cntl_soft	          1         3.0
+---------------------------------------------------
+Report for cell jtag_cntl_soft
+   Instance path: top/top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      31.08         3.0
+                                  LUT4	      33.00         2.8
+                                PFUREG	         37         4.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                    jtag_register_soft	          1         1.1
+                    jtag_tap_cntl_soft	          1         1.5
+                       jtag_logic_soft	          1         0.2
+                    jtag_inst_dec_soft	          1         0.2
+---------------------------------------------------
+Report for cell jtag_tap_cntl_soft
+   Instance path: top/top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_tap
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      15.50         1.5
+                                  LUT4	      20.00         1.7
+                                PFUREG	         19         2.4
+---------------------------------------------------
+Report for cell jtag_register_soft
+   Instance path: top/top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      11.50         1.1
+                                  LUT4	       5.00         0.4
+                                PFUREG	         17         2.1
+---------------------------------------------------
+Report for cell jtag_logic_soft
+   Instance path: top/top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_logic
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.58         0.2
+                                  LUT4	       3.00         0.3
+                                PFUREG	          1         0.1
+---------------------------------------------------
+Report for cell jtag_inst_dec_soft
+   Instance path: top/top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.50         0.2
+                                  LUT4	       5.00         0.4
+---------------------------------------------------
+Report for cell mipi_uniq_1
+   Instance path: top/mipi_rx
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     552.50        54.0
+                                  LUT4	     572.00        48.8
+                               DISTRAM	      24.00        100.0
+                                PFUREG	        355        44.5
+                                RIPPLE	         84        69.4
+                                   EBR	          2        18.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                        mipi_rx_uniq_1	          1        54.0
+---------------------------------------------------
+Report for cell mipi_rx_uniq_1
+   Instance path: top/mipi_rx/mipi_rx_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     552.50        54.0
+                                  LUT4	     572.00        48.8
+                               DISTRAM	      24.00        100.0
+                                PFUREG	        355        44.5
+                                RIPPLE	         84        69.4
+                                   EBR	          2        18.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                mipi_rx_dphy_rx_uniq_1	          1        54.0
+---------------------------------------------------
+Report for cell mipi_rx_dphy_rx_uniq_1
+   Instance path: top/mipi_rx/mipi_rx_inst/dphy_rx_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     552.50        54.0
+                                  LUT4	     572.00        48.8
+                               DISTRAM	      24.00        100.0
+                                PFUREG	        355        44.5
+                                RIPPLE	         84        69.4
+                                   EBR	          2        18.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                mipi_rx_rx_global_ctrl	          1         3.6
+                  mipi_rx_dphy_rx_wrap	          1        50.2
+           mipi_rx_dphy_wrapper_uniq_1	          1         0.1
+---------------------------------------------------
+Report for cell mipi_rx_rx_global_ctrl
+   Instance path: top/mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      37.00         3.6
+                                  LUT4	      39.00         3.3
+                                PFUREG	         34         4.3
+                                RIPPLE	          9         7.4
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+rx_global_ctrl(NUM_RX_LANE=2,RX_GEAR=16,BYTECLK_MHZ=75,RX_CLK_MODE="HS_ONLY",SETTLEPER=7)	          1         3.6
+---------------------------------------------------
+Report for cell rx_global_ctrl(NUM_RX_LANE=2,RX_GEAR=16,BYTECLK_MHZ=75,RX_CLK_MODE="HS_ONLY",SETTLEPER=7)
+   Instance path: top/mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      37.00         3.6
+                                  LUT4	      39.00         3.3
+                                PFUREG	         34         4.3
+                                RIPPLE	          9         7.4
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            lp_hs_ctrl	          1         2.0
+                         lp_hs_ctrl_U0	          1         0.0
+---------------------------------------------------
+Report for cell lp_hs_ctrl
+   Instance path: top/mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      20.00         2.0
+                                  LUT4	      32.00         2.7
+                                PFUREG	         17         2.1
+---------------------------------------------------
+Report for cell lp_hs_ctrl_U0
+   Instance path: top/mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_CONTROL_LANE_1.lp_hs_ctrl_d1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell mipi_rx_dphy_rx_wrap
+   Instance path: top/mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     514.50        50.2
+                                  LUT4	     532.00        45.4
+                               DISTRAM	      24.00        100.0
+                                PFUREG	        321        40.2
+                                RIPPLE	         75        62.0
+                                   EBR	          2        18.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+dphy_rx_wrap_renamed_due_excessive_length_1	          1        50.2
+---------------------------------------------------
+Report for cell dphy_rx_wrap_renamed_due_excessive_length_1
+   Instance path: top/mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     514.50        50.2
+                                  LUT4	     532.00        45.4
+                               DISTRAM	      24.00        100.0
+                                PFUREG	        321        40.2
+                                RIPPLE	         75        62.0
+                                   EBR	          2        18.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+word_align(DPHY_RX_IP="MIXEL",RX_GEAR=16,NUM_RX_LANE=2,BYTECLK_MHZ=75)	          1        29.3
+rx_fifo(RX_FIFO_IMPL="SINGLE",NUM_RX_LANE=2,RX_GEAR=16,FR_FIFO_DEPTH=512,FR_PKT_DLY=4,CTR_WIDTH=1)	          1        11.2
+lane_align(NUM_RX_LANE=2,FIFO_DEPTH=4,FIFO_TYPE="LUT")	          1         9.8
+---------------------------------------------------
+Report for cell word_align(DPHY_RX_IP="MIXEL",RX_GEAR=16,NUM_RX_LANE=2,BYTECLK_MHZ=75)
+   Instance path: top/mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/WORD_ALIGN_ON.w_align
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     299.67        29.3
+                                  LUT4	     446.33        38.1
+                                PFUREG	        106        13.3
+---------------------------------------------------
+Report for cell rx_fifo(RX_FIFO_IMPL="SINGLE",NUM_RX_LANE=2,RX_GEAR=16,FR_FIFO_DEPTH=512,FR_PKT_DLY=4,CTR_WIDTH=1)
+   Instance path: top/mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     114.83        11.2
+                                  LUT4	      71.67         6.1
+                                PFUREG	        127        15.9
+                                RIPPLE	         45        37.2
+                                   EBR	          2        18.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+rx_fifo_single(NUM_RX_LANE=2,RX_GEAR=16,FR_FIFO_DEPTH=512,FR_PKT_DLY=4)	          1        11.2
+---------------------------------------------------
+Report for cell rx_fifo_single(NUM_RX_LANE=2,RX_GEAR=16,FR_FIFO_DEPTH=512,FR_PKT_DLY=4)
+   Instance path: top/mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     114.83        11.2
+                                  LUT4	      71.67         6.1
+                                PFUREG	        127        15.9
+                                RIPPLE	         45        37.2
+                                   EBR	          2        18.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+pmi_fifo_dcELar151105125125123232104c3636	          1         9.2
+---------------------------------------------------
+Report for cell pmi_fifo_dcELar151105125125123232104c3636
+   Instance path: top/mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      94.00         9.2
+                                  LUT4	      46.00         3.9
+                                PFUREG	        113        14.2
+                                RIPPLE	         39        32.2
+                                   EBR	          2        18.2
+---------------------------------------------------
+Report for cell lane_align(NUM_RX_LANE=2,FIFO_DEPTH=4,FIFO_TYPE="LUT")
+   Instance path: top/mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     100.00         9.8
+                                  LUT4	      14.00         1.2
+                               DISTRAM	      24.00        100.0
+                                PFUREG	         88        11.0
+                                RIPPLE	         30        24.8
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+             pmi_fifoLLr1304416b8506c3	          2         9.3
+---------------------------------------------------
+Report for cell pmi_fifoLLr1304416b8506c3
+   Instance path: top/mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/pmi_genpmi_fifoLIFMDreg1304416
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      47.75         4.7
+                                  LUT4	       6.50         0.6
+                               DISTRAM	      12.00        50.0
+                                PFUREG	         41         5.1
+                                RIPPLE	         15        12.4
+---------------------------------------------------
+Report for cell pmi_fifoLLr1304416b8506c3
+   Instance path: top/mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/pmi_genpmi_fifoLIFMDreg1304416_18
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      47.75         4.7
+                                  LUT4	       6.50         0.6
+                               DISTRAM	      12.00        50.0
+                                PFUREG	         41         5.1
+                                RIPPLE	         15        12.4
+---------------------------------------------------
+Report for cell mipi_rx_dphy_wrapper_uniq_1
+   Instance path: top/mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.1
+                                  LUT4	       1.00         0.1
+---------------------------------------------------
+Report for cell ddr_output_uniq_1
+   Instance path: top/ddr_output_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)

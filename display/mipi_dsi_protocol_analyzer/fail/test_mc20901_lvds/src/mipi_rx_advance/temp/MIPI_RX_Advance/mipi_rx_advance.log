@@ -1,0 +1,89 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp'
+Analyzing included file 'dphy_define.v'("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+Back to file 'C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp'("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+Undeclared symbol 'clk_byte', assumed default net type 'wire'("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+Undeclared symbol 'lane0_iodelay_lock', assumed default net type 'wire'("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+Undeclared symbol 'lane1_iodelay_lock', assumed default net type 'wire'("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+Undeclared symbol 'lane2_iodelay_lock', assumed default net type 'wire'("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+Undeclared symbol 'lane3_iodelay_lock', assumed default net type 'wire'("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX_TOP.v'
+Analyzing included file 'dphy_define.v'("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX_TOP.v":21)
+Back to file 'C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX_TOP.v'("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX_TOP.v":21)
+Compiling module 'MIPI_RX_Advance_Top'("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX_TOP.v":23)
+Compiling module '**'("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX2565) : Input '**' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+NOTE  (EX0101) : Current top module is "MIPI_RX_Advance_Top"
+WARN  (EX0211) : The output port "q3[7]" of module "~idesx4x8.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "q3[6]" of module "~idesx4x8.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "q3[5]" of module "~idesx4x8.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "q3[4]" of module "~idesx4x8.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "q3[3]" of module "~idesx4x8.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "q3[2]" of module "~idesx4x8.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "q3[1]" of module "~idesx4x8.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "q3[0]" of module "~idesx4x8.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane0_delay[7]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane0_delay[6]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane0_delay[5]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane0_delay[4]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane0_delay[3]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane0_delay[2]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane0_delay[1]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane0_delay[0]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane0_delay_update" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane1_delay[7]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane1_delay[6]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane1_delay[5]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane1_delay[4]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane1_delay[3]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane1_delay[2]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane1_delay[1]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane1_delay[0]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane1_delay_update" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane2_delay[7]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane2_delay[6]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane2_delay[5]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane2_delay[4]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane2_delay[3]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane2_delay[2]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane2_delay[1]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane2_delay[0]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane2_delay_update" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane3_delay[7]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane3_delay[6]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane3_delay[5]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane3_delay[4]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane3_delay[3]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane3_delay[2]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane3_delay[1]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane3_delay[0]" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane3_delay_update" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane3_iodelay_lock" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane2_iodelay_lock" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane1_iodelay_lock" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+WARN  (EX0211) : The output port "lane0_iodelay_lock" of module "~Aligner.MIPI_RX_Advance_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+[5%] Running netlist conversion ...
+WARN  (CV0016) : Input hs_en is unused("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX_TOP.v":258)
+WARN  (CV0016) : Input clk_term_en is unused("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX_TOP.v":261)
+WARN  (CV0016) : Input data_term_en is unused("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX_TOP.v":262)
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "~Aligner.MIPI_RX_Advance_Top" instantiated to "u_Aligner" is swept in optimizing("C:\Gowin\Gowin_V1.9.11.02_x64\IDE\ipcore\MIPI_RX_Advance\data\DPHY_RX.vp":1833)
+[95%] Generate netlist file "C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\test_mc20901_lvds\src\mipi_rx_advance\temp\MIPI_RX_Advance\mipi_rx_advance.vg" completed
+Generate template file "C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\test_mc20901_lvds\src\mipi_rx_advance\temp\MIPI_RX_Advance\mipi_rx_advance_tmp.v" completed
+[100%] Generate report file "C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\test_mc20901_lvds\src\mipi_rx_advance\temp\MIPI_RX_Advance\mipi_rx_advance_syn.rpt.html" completed
+GowinSynthesis finish

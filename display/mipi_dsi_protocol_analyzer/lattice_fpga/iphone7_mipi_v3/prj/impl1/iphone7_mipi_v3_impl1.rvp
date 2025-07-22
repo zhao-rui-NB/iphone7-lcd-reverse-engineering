@@ -1,0 +1,45 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Bali Reveal project file
+
+#device options
+[Device]
+part = LIF-MD6000-6KMG80I
+family = LIFMD
+device = LIF-MD6000
+speed = 6
+package = CKFBGA80
+operation = Industrial
+
+#design options
+[Design]
+title = iphone7_mipi_v3
+path = C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1
+core_generate = C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1
+search_path = C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj
+top = top
+lpf = C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/iphone7_mipi_v3.lpf
+synthesis = lse
+
+#strategy options
+VHDL2008 = false
+
+#HDLs options
+[HDLs]
+C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi/mipi_rx/mipi_rx.v = Verilog
+C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi/mipi_rx/mipi_rx_dphy_rx.v = Verilog
+C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi/mipi_rx/mipi_rx_dphy_wrapper.v = Verilog
+C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi/mipi_rx/mipi_rx_capture_ctrl_bb.v = Verilog
+C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi/mipi_rx/mipi_rx_dphy_rx_wrap_bb.v = Verilog
+C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi/mipi_rx/mipi_rx_rx_global_ctrl_bb.v = Verilog
+C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi/mipi_rx/mipi_rx_soft_dphy_rx_bb.v = Verilog
+C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi/mipi.v = Verilog
+C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/src/top.v = Verilog
+C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/ddr/ddr_output/ddr_output.v = Verilog
+C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/ddr/ddr.v = Verilog
+[HDL_Defines]
+SBP_SYNTHESIS=
+[HDL_Param]
+[Generated]
+C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/reveal_workspace/tmpreveal/top_la0_trig_gen.v=Verilog
+C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/reveal_workspace/tmpreveal/top_la0_gen.v=Verilog
+C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v=Verilog,work

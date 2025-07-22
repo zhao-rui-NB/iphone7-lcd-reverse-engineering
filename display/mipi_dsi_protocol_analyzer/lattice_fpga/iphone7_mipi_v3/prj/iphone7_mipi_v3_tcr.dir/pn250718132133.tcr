@@ -1,0 +1,5 @@
+#Start recording tcl command: 7/17/2025 20:50:33
+#Project Location: C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj; Project name: iphone7_mipi_v3
+prj_project open "C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/iphone7_mipi_v3.ldf"
+sbp_design open -dsgn "C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi/mipi.sbx"
+#Stop recording: 7/18/2025 13:21:33

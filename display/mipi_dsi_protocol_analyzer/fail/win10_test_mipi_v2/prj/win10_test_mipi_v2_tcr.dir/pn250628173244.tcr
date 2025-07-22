@@ -1,0 +1,5 @@
+#Start recording tcl command: 6/28/2025 17:32:19
+#Project Location: C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2; Project name: win10_test_mipi_v2
+prj_project new -name "win10_test_mipi_v2" -impl "impl1" -dev LIF-MD6000-6KMG80I -synthesis "lse"
+prj_project save
+#Stop recording: 6/28/2025 17:32:44

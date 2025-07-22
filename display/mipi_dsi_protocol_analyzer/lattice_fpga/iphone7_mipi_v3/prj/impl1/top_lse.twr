@@ -1,0 +1,349 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Tue Jul 22 00:50:52 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     top
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets byte_hs_clk]
+            1815 items scored, 1556 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 2.892ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_i0_i3  (from \mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FD1P3DX    D              \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_i0_i2  (to \mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:                   7.892ns  (0.0% logic, 100.0% route), 6 logic levels.
+
+ Constraint Details:
+
+      7.892ns data_path \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_i0_i3 to \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_i0_i2 violates
+      5.000ns delay constraint less
+      0.000ns L_S requirement (totaling 5.000ns) by 2.892ns
+
+ Path Details: \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_i0_i3 to \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_i0_i2
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_i0_i3 (from \mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+Route         6   e 1.478                                  \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr[3]
+LUT4        ---     0.000              B to Z              \top_reveal_coretop_instance/top_la0_inst_0/tm_u/i7778_2_lut
+Route         5   e 1.341                                  \top_reveal_coretop_instance/top_la0_inst_0/tm_u/n8092
+LUT4        ---     0.000              C to Z              \top_reveal_coretop_instance/top_la0_inst_0/tm_u/i1_4_lut_adj_164
+Route         4   e 1.297                                  \top_reveal_coretop_instance/top_la0_inst_0/tm_u/n21
+LUT4        ---     0.000              B to Z              \top_reveal_coretop_instance/top_la0_inst_0/tm_u/i673_3_lut_rep_152
+Route         4   e 1.297                                  \top_reveal_coretop_instance/top_la0_inst_0/tm_u/n8766
+LUT4        ---     0.000              C to Z              \top_reveal_coretop_instance/top_la0_inst_0/tm_u/i1_4_lut_adj_156
+Route         9   e 1.459                                  \top_reveal_coretop_instance/top_la0_inst_0/tm_u/n730
+LUT4        ---     0.000              C to Z              \top_reveal_coretop_instance/top_la0_inst_0/tm_u/mux_251_i3_4_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_10__N_1070[2]
+                  --------
+                    7.892  (0.0% logic, 100.0% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 2.892ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_i0_i3  (from \mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FD1P3DX    D              \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_i0_i3  (to \mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:                   7.892ns  (0.0% logic, 100.0% route), 6 logic levels.
+
+ Constraint Details:
+
+      7.892ns data_path \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_i0_i3 to \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_i0_i3 violates
+      5.000ns delay constraint less
+      0.000ns L_S requirement (totaling 5.000ns) by 2.892ns
+
+ Path Details: \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_i0_i3 to \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_i0_i3
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_i0_i3 (from \mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+Route         6   e 1.478                                  \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr[3]
+LUT4        ---     0.000              B to Z              \top_reveal_coretop_instance/top_la0_inst_0/tm_u/i7778_2_lut
+Route         5   e 1.341                                  \top_reveal_coretop_instance/top_la0_inst_0/tm_u/n8092
+LUT4        ---     0.000              C to Z              \top_reveal_coretop_instance/top_la0_inst_0/tm_u/i1_4_lut_adj_164
+Route         4   e 1.297                                  \top_reveal_coretop_instance/top_la0_inst_0/tm_u/n21
+LUT4        ---     0.000              B to Z              \top_reveal_coretop_instance/top_la0_inst_0/tm_u/i673_3_lut_rep_152
+Route         4   e 1.297                                  \top_reveal_coretop_instance/top_la0_inst_0/tm_u/n8766
+LUT4        ---     0.000              C to Z              \top_reveal_coretop_instance/top_la0_inst_0/tm_u/i1_4_lut_adj_156
+Route         9   e 1.459                                  \top_reveal_coretop_instance/top_la0_inst_0/tm_u/n730
+LUT4        ---     0.000              C to Z              \top_reveal_coretop_instance/top_la0_inst_0/tm_u/mux_251_i4_4_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_10__N_1070[3]
+                  --------
+                    7.892  (0.0% logic, 100.0% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 2.892ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_i0_i3  (from \mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FD1P3DX    D              \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_i0_i4  (to \mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:                   7.892ns  (0.0% logic, 100.0% route), 6 logic levels.
+
+ Constraint Details:
+
+      7.892ns data_path \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_i0_i3 to \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_i0_i4 violates
+      5.000ns delay constraint less
+      0.000ns L_S requirement (totaling 5.000ns) by 2.892ns
+
+ Path Details: \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_i0_i3 to \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_i0_i4
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_i0_i3 (from \mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+Route         6   e 1.478                                  \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr[3]
+LUT4        ---     0.000              B to Z              \top_reveal_coretop_instance/top_la0_inst_0/tm_u/i7778_2_lut
+Route         5   e 1.341                                  \top_reveal_coretop_instance/top_la0_inst_0/tm_u/n8092
+LUT4        ---     0.000              C to Z              \top_reveal_coretop_instance/top_la0_inst_0/tm_u/i1_4_lut_adj_164
+Route         4   e 1.297                                  \top_reveal_coretop_instance/top_la0_inst_0/tm_u/n21
+LUT4        ---     0.000              B to Z              \top_reveal_coretop_instance/top_la0_inst_0/tm_u/i673_3_lut_rep_152
+Route         4   e 1.297                                  \top_reveal_coretop_instance/top_la0_inst_0/tm_u/n8766
+LUT4        ---     0.000              C to Z              \top_reveal_coretop_instance/top_la0_inst_0/tm_u/i1_4_lut_adj_156
+Route         9   e 1.459                                  \top_reveal_coretop_instance/top_la0_inst_0/tm_u/n730
+LUT4        ---     0.000              C to Z              \top_reveal_coretop_instance/top_la0_inst_0/tm_u/mux_251_i5_4_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/top_la0_inst_0/tm_u/post_trig_cntr_10__N_1070[4]
+                  --------
+                    7.892  (0.0% logic, 100.0% route), 6 logic levels.
+
+Warning: 7.892 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets jtck[0]]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 11.148ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i1  (from jtck[0] +)
+   Destination:    FD1S3AX    D              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_out_18  (to jtck[0] -)
+
+   Delay:                  13.648ns  (0.0% logic, 100.0% route), 11 logic levels.
+
+ Constraint Details:
+
+     13.648ns data_path \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i1 to \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_out_18 violates
+      2.500ns delay constraint less
+      0.000ns L_S requirement (totaling 2.500ns) by 11.148ns
+
+ Path Details: \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i1 to \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_out_18
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i1 (from jtck[0])
+Route         5   e 1.441                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/instruction[1]
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/i1_2_lut
+Route         2   e 1.158                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/n4
+LUT4        ---     0.000              D to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/i2_4_lut
+Route         2   e 1.158                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/ip_b_i
+LUT4        ---     0.000              C to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_logic/isptcy_ener1_N_1236_I_0_2_lut_3_lut
+Route        17   e 1.586                                  \top_reveal_coretop_instance/jce2[0]
+LUT4        ---     0.000              B to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/capture_dr_I_0_365_2_lut_rep_146_3_lut
+Route        57   e 1.828                                  \top_reveal_coretop_instance/top_la0_inst_0/jtck_N_45_enable_30
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i7781_4_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/n8255
+MUXL5       ---     0.000             SD to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i7570
+Route         3   e 1.239                                  \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtdo_N_279
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i4071_2_lut
+Route         2   e 1.158                                  \top_reveal_coretop_instance/er2_tdo[0]
+LUT4        ---     0.000              B to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/i1_2_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/n7619
+LUT4        ---     0.000              D to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/i1_4_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/n7625
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_r_I_0_4_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_r
+                  --------
+                   13.648  (0.0% logic, 100.0% route), 11 logic levels.
+
+
+Error:  The following path violates requirements by 11.148ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i3  (from jtck[0] +)
+   Destination:    FD1S3AX    D              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_out_18  (to jtck[0] -)
+
+   Delay:                  13.648ns  (0.0% logic, 100.0% route), 11 logic levels.
+
+ Constraint Details:
+
+     13.648ns data_path \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i3 to \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_out_18 violates
+      2.500ns delay constraint less
+      0.000ns L_S requirement (totaling 2.500ns) by 11.148ns
+
+ Path Details: \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i3 to \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_out_18
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i3 (from jtck[0])
+Route         5   e 1.441                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/instruction[3]
+LUT4        ---     0.000              B to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/i1_2_lut
+Route         2   e 1.158                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/n4
+LUT4        ---     0.000              D to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/i2_4_lut
+Route         2   e 1.158                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/ip_b_i
+LUT4        ---     0.000              C to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_logic/isptcy_ener1_N_1236_I_0_2_lut_3_lut
+Route        17   e 1.586                                  \top_reveal_coretop_instance/jce2[0]
+LUT4        ---     0.000              B to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/capture_dr_I_0_365_2_lut_rep_146_3_lut
+Route        57   e 1.828                                  \top_reveal_coretop_instance/top_la0_inst_0/jtck_N_45_enable_30
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i7781_4_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/n8255
+MUXL5       ---     0.000             SD to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i7570
+Route         3   e 1.239                                  \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtdo_N_279
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i4071_2_lut
+Route         2   e 1.158                                  \top_reveal_coretop_instance/er2_tdo[0]
+LUT4        ---     0.000              B to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/i1_2_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/n7619
+LUT4        ---     0.000              D to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/i1_4_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/n7625
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_r_I_0_4_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_r
+                  --------
+                   13.648  (0.0% logic, 100.0% route), 11 logic levels.
+
+
+Error:  The following path violates requirements by 11.146ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i0  (from jtck[0] +)
+   Destination:    FD1S3AX    D              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_out_18  (to jtck[0] -)
+
+   Delay:                  13.646ns  (0.0% logic, 100.0% route), 11 logic levels.
+
+ Constraint Details:
+
+     13.646ns data_path \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i0 to \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_out_18 violates
+      2.500ns delay constraint less
+      0.000ns L_S requirement (totaling 2.500ns) by 11.146ns
+
+ Path Details: \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i0 to \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_out_18
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instruction_i0_i0 (from jtck[0])
+Route         2   e 1.258                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/instruction[0]
+LUT4        ---     0.000              B to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/i2_2_lut_rep_175
+Route         2   e 1.158                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/n8789
+LUT4        ---     0.000              B to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/i3_4_lut
+Route         4   e 1.297                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/n2636
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_logic/shiftdr_ss_I_0_28_2_lut_4_lut
+Route        21   e 1.628                                  jshift[0]_keep
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/capture_dr_I_0_365_2_lut_rep_146_3_lut
+Route        57   e 1.828                                  \top_reveal_coretop_instance/top_la0_inst_0/jtck_N_45_enable_30
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i7781_4_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/n8255
+MUXL5       ---     0.000             SD to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i7570
+Route         3   e 1.239                                  \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtdo_N_279
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i4071_2_lut
+Route         2   e 1.158                                  \top_reveal_coretop_instance/er2_tdo[0]
+LUT4        ---     0.000              B to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/i1_2_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/n7619
+LUT4        ---     0.000              D to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/i1_4_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/n7625
+LUT4        ---     0.000              A to Z              \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_r_I_0_4_lut
+Route         1   e 1.020                                  \top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/tdo_r
+                  --------
+                   13.646  (0.0% logic, 100.0% route), 11 logic levels.
+
+Warning: 13.648 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets byte_hs_clk]             |     5.000 ns|     7.892 ns|     6 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets jtck[0]]                 |     5.000 ns|    27.296 ns|    11 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+jshift[0]_keep                          |      21|    2365|     41.84%
+                                        |        |        |
+\top_reveal_coretop_instance/JTAG_SOFT_i|        |        |
+nst_0/jtag_cntl_inst/n2636              |       4|    2313|     40.92%
+                                        |        |        |
+\top_reveal_coretop_instance/jce2[0]    |      17|    1731|     30.63%
+                                        |        |        |
+\top_reveal_coretop_instance/JTAG_SOFT_i|        |        |
+nst_0/jtag_cntl_inst/ip_b_i             |       2|    1721|     30.45%
+                                        |        |        |
+\top_reveal_coretop_instance/JTAG_SOFT_i|        |        |
+nst_0/jtag_cntl_inst/n9                 |       3|    1340|     23.71%
+                                        |        |        |
+\top_reveal_coretop_instance/top_la0_ins|        |        |
+t_0/jtck_N_45_enable_30                 |      57|    1097|     19.41%
+                                        |        |        |
+\top_reveal_coretop_instance/JTAG_SOFT_i|        |        |
+nst_0/jtag_cntl_inst/n8789              |       2|    1027|     18.17%
+                                        |        |        |
+\top_reveal_coretop_instance/top_la0_ins|        |        |
+t_0/jtag_int_u/n8762                    |       9|    1001|     17.71%
+                                        |        |        |
+\top_reveal_coretop_instance/JTAG_SOFT_i|        |        |
+nst_0/jtag_cntl_inst/n4                 |       2|     716|     12.67%
+                                        |        |        |
+\top_reveal_coretop_instance/top_la0_ins|        |        |
+t_0/n100                                |       3|     705|     12.47%
+                                        |        |        |
+\top_reveal_coretop_instance/top_la0_ins|        |        |
+t_0/tm_u/n7551                          |       1|     705|     12.47%
+                                        |        |        |
+\top_reveal_coretop_instance/JTAG_SOFT_i|        |        |
+nst_0/jtag_cntl_inst/instruction[6]     |       2|     702|     12.42%
+                                        |        |        |
+\top_reveal_coretop_instance/JTAG_SOFT_i|        |        |
+nst_0/jtag_cntl_inst/instruction[0]     |       2|     693|     12.26%
+                                        |        |        |
+\top_reveal_coretop_instance/JTAG_SOFT_i|        |        |
+nst_0/jtag_cntl_inst/instruction[2]     |       1|     670|     11.85%
+                                        |        |        |
+\top_reveal_coretop_instance/JTAG_SOFT_i|        |        |
+nst_0/jtag_cntl_inst/instruction[5]     |       1|     670|     11.85%
+                                        |        |        |
+\top_reveal_coretop_instance/JTAG_SOFT_i|        |        |
+nst_0/jtag_cntl_inst/n8116              |       1|     600|     10.62%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 5652  Score: 52253710
+
+Constraints cover  17060 paths, 1033 nets, and 3103 connections (77.2% coverage)
+
+
+Peak memory: 96030720 bytes, TRCE: 5722112 bytes, DLYMAN: 327680 bytes
+CPU_TIME_REPORT: 0 secs 

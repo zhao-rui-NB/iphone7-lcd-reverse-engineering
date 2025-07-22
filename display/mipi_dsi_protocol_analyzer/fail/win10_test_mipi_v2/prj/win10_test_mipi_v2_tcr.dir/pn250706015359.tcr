@@ -1,0 +1,25 @@
+#Start recording tcl command: 7/6/2025 00:19:01
+#Project Location: C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj; Project name: win10_test_mipi_v2
+prj_project open "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/win10_test_mipi_v2.ldf"
+prj_src exclude "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs_align.rvl"
+prj_run Export -impl impl1 -task Bitgen
+sbp_design new -dsgn "output_io" -path "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/output_io" -device "LIF-MD6000-6KMG80I"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/output_io/ddr_io"
+source "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/output_io/ddr_io/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/output_io/ddr_io"
+source "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/output_io/ddr_io/generate_ngd.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+sbp_builder export_add -comp {output_io/ddr_io}
+sbp_design gen
+prj_src add "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/output_io/output_io.sbx"
+rvl_trace trig_option OutNetType=IO
+rvl_project open C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs_align.rvl
+prj_src enable "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs_align.rvl"
+prj_src exclude "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs_align.rvl"
+rva_project open "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs_align.rva"
+rvl_project close -force
+rva_project close
+#Stop recording: 7/6/2025 01:53:59

@@ -1,0 +1,36 @@
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.14.0.75.2 -- WARNING: Map write only section -- Tue Jul 22 00:50:53 2025
+
+SYSCONFIG SLAVE_SPI_PORT=ENABLE MASTER_SPI_PORT=DISABLE I2C_PORT=DISABLE MCCLK_FREQ=6 MY_ASSP=OFF ONE_TIME_PROGRAM_SRAM=DISABLE ONE_TIME_PROGRAM_NVCM=DISABLE SECURITY_SRAM=DISABLE SECURITY_NVCM=DISABLE TRANSFR=OFF BOOT_UP_SEQUENCE=NVCM CDONE_PORT=CDONE_USER_IO DONE_EX=OFF ;
+LOCATE COMP "ddr_output_clk" SITE "E1" ;
+LOCATE COMP "ddr_data_out[16]" SITE "F1" ;
+LOCATE COMP "ddr_data_out[15]" SITE "J3" ;
+LOCATE COMP "ddr_data_out[14]" SITE "K3" ;
+LOCATE COMP "ddr_data_out[13]" SITE "J4" ;
+LOCATE COMP "ddr_data_out[12]" SITE "K4" ;
+LOCATE COMP "ddr_data_out[11]" SITE "J5" ;
+LOCATE COMP "ddr_data_out[10]" SITE "K5" ;
+LOCATE COMP "ddr_data_out[9]" SITE "J6" ;
+LOCATE COMP "ddr_data_out[8]" SITE "K6" ;
+LOCATE COMP "ddr_data_out[7]" SITE "K7" ;
+LOCATE COMP "ddr_data_out[6]" SITE "J7" ;
+LOCATE COMP "ddr_data_out[5]" SITE "J8" ;
+LOCATE COMP "ddr_data_out[4]" SITE "K8" ;
+LOCATE COMP "ddr_data_out[3]" SITE "K10" ;
+LOCATE COMP "ddr_data_out[2]" SITE "K9" ;
+LOCATE COMP "ddr_data_out[1]" SITE "H9" ;
+LOCATE COMP "ddr_data_out[0]" SITE "H10" ;
+LOCATE COMP "JTAG_TCK" SITE "K2" ;
+LOCATE COMP "JTAG_TMS" SITE "F2" ;
+LOCATE COMP "JTAG_TDO" SITE "E2" ;
+LOCATE COMP "JTAG_TDI" SITE "D1" ;
+LOCATE COMP "rst_n" SITE "D9" ;
+FREQUENCY NET "mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o" 75.000000 MHz ;
+SCHEMATIC END ;
+RVL_ALIAS "byte_hs_clk" "byte_hs_clk"; 
+RVL_ALIAS "byte_hs_clk" "byte_hs_clk"; 
+RVL_ALIAS "byte_hs_clk" "byte_hs_clk"; 
+BLOCK RESETPATHS ;
+BLOCK ASYNCPATHS ;
+BLOCK JTAGPATHS ;
+INDUSTRIAL ;

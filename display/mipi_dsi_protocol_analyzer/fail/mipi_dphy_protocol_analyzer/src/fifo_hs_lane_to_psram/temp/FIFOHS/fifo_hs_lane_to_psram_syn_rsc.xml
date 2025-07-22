@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="FIFO_HS_LANE_TO_PSRAM_Top" Register="56" Alu="11" Lut="49" Bsram="2" T_Register="56(56)" T_Alu="11(11)" T_Lut="49(49)" T_Bsram="2(2)"/>

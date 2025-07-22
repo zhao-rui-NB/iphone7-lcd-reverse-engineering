@@ -1,0 +1,930 @@
+
+             Lattice Mapping Report File for Design Module 'top'
+
+
+Design Information
+------------------
+
+Command line:   map -a LIFMD -p LIF-MD6000 -t CKFBGA80 -s 6 -oc Industrial
+     win10_test_mipi_v2_impl1.ngd -o win10_test_mipi_v2_impl1_map.ncd -pr
+     win10_test_mipi_v2_impl1.prf -mp win10_test_mipi_v2_impl1.mrp -lpf C:/Users
+     /rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/win10_test_mipi_v
+     2_impl1.lpf -lpf C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/pr
+     j/win10_test_mipi_v2.lpf -gui -msgset
+     C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LIF-MD6000CKFBGA80
+Target Performance:   6
+Mapper:  sn5w00,  version:  Diamond (64-bit) 3.12.0.240.2
+Mapped on:  07/15/25  02:06:13
+
+Design Summary
+--------------
+
+   Number of registers:    971 out of  6047 (16%)
+      PFU registers:          971 out of  5936 (16%)
+      PIO registers:            0 out of   111 (0%)
+   Number of SLICEs:      1162 out of  2968 (39%)
+      SLICEs as Logic/ROM:   1138 out of  2968 (38%)
+      SLICEs as RAM:           24 out of  2226 (1%)
+      SLICEs as Carry:         56 out of  2968 (2%)
+   Number of LUT4s:        1630 out of  5936 (27%)
+      Number used as logic LUTs:        1470
+      Number used as distributed RAM:    48
+      Number used as ripple logic:      112
+      Number used as shift registers:     0
+   Number of PIO sites used: 27 out of 37 (73%)
+   Number of IDDR/ODDR/TDDR cells used: 18 out of 111 (16%)
+      Number of IDDR cells:   0
+      Number of ODDR cells:  18
+      Number of TDDR cells:   0
+   Number of PIO using at least one IDDR/ODDR/TDDR: 18 (0 differential)
+      Number of PIO using IDDR only:        0 (0 differential)
+      Number of PIO using ODDR only:       18 (0 differential)
+      Number of PIO using TDDR only:        0 (0 differential)
+      Number of PIO using IDDR/ODDR:        0 (0 differential)
+      Number of PIO using IDDR/TDDR:        0 (0 differential)
+      Number of PIO using ODDR/TDDR:        0 (0 differential)
+      Number of PIO using IDDR/ODDR/TDDR:   0 (0 differential)
+   Number of block RAMs:  11 out of 20 (55%)
+   Number of GSRs:  1 out of 1 (100%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   DTR used :   No
+   Number of Power Management Unit (PMU):  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 2 (0%)
+   Number of Dynamic Bank Controller (BCLVDSOB):  0 out of 2 (0%)
+   Number of DCC:  0 out of 14 (0%)
+   Number of DCS:  0 out of 1 (0%)
+   Number of PLLs:  1 out of 1 (100%)
+   Number of DDRDLLs:  0 out of 2 (0%)
+
+                                    Page 1
+
+
+
+
+Design:  top                                           Date:  07/15/25  02:06:13
+
+Design Summary (cont)
+---------------------
+   Number of CLKDIV:  0 out of 4 (0%)
+   Number of ECLKSYNC:  0 out of 4 (0%)
+   Number of MIPIDPHY:  1 out of 2 (50%)
+   Number of I2C:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  7
+     Net clk_50m_c: 1 loads, 1 rising, 0 falling (Driver: PIO clk_50m )
+     Net clk_50m_pll_in: 1 loads, 1 rising, 0 falling (Driver: PLLREFCS_inst )
+     Net jtck[0]: 263 loads, 21 rising, 242 falling (Driver: PIO JTAG_TCK )
+     Net rxhsbyteclk: 18 loads, 18 rising, 0 falling (Driver:
+     mipi_rx_inst/Inst_MIPIDPHYA )
+     Net sys_clk_c: 337 loads, 337 rising, 0 falling (Driver:
+     pll_sys_clk_inst/PLLInst_0 )
+     Net clk_n: 0 loads, 0 rising, 0 falling (No Driver)
+     Net clk_p: 0 loads, 0 rising, 0 falling (No Driver)
+   Number of Clock Enables:  60
+     Net hs_burst_flag_N: 2 loads, 0 LSLICEs
+     Net mipi_rx_inst/d0rxlpen: 2 loads, 0 LSLICEs
+     Net mipi_byte_aligner_lane1/sys_clk_c_enable_108: 2 loads, 2 LSLICEs
+     Net sys_clk_c_enable_92: 34 loads, 34 LSLICEs
+     Net sys_clk_c_enable_109: 2 loads, 2 LSLICEs
+     Net mipi_multi_lane_aligner_inst/sys_clk_c_enable_116: 2 loads, 2 LSLICEs
+     Net mipi_multi_lane_aligner_inst/sys_clk_c_enable_33: 2 loads, 2 LSLICEs
+     Net mipi_multi_lane_aligner_inst/sys_clk_c_enable_115: 20 loads, 20 LSLICEs
+     
+     Net dphy_raw_fifo_inst/rden_i: 13 loads, 9 LSLICEs
+     Net dphy_raw_fifo_inst/Full: 11 loads, 9 LSLICEs
+     Net top_reveal_coretop_instance/jtck_N_701_enable_82: 8 loads, 8 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/sys_clk_N_keep_e
+     nable_106: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/sys_clk_N_keep_e
+     nable_107: 1 loads, 1 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/op_code_2__N_1313: 2
+     loads, 2 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_16: 2
+     loads, 2 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/jtck_N_701_enabl
+     e_29: 8 loads, 8 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/sys_clk_N_keep_e
+     nable_14: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtck_N_701_enable_3: 1
+     loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/sys_clk_N_keep_enable
+     _93: 8 loads, 8 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_17: 1
+     loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/sys_clk_N_keep_e
+     nable_97: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_77: 2
+     loads, 2 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_78: 2
+
+                                    Page 2
+
+
+
+
+Design:  top                                           Date:  07/15/25  02:06:13
+
+Design Summary (cont)
+---------------------
+     loads, 2 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/reg0_read_N_1618: 1 loads, 1
+     LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_19: 1
+     loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_43: 5
+     loads, 5 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_15: 1
+     loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/sample_en_d: 4 loads, 4
+     LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/sys_clk_N_keep_enable_4: 2
+     loads, 2 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtck_N_701_enable_267: 26
+     loads, 26 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_35: 6
+     loads, 6 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/trace_dout_int_136__N_1
+     859: 5 loads, 5 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/sys_clk_N_keep_enable_51: 5
+     loads, 5 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_59: 5
+     loads, 5 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/sys_clk_N_keep_enable_67: 5
+     loads, 5 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/sys_clk_N_keep_enable_75: 5
+     loads, 5 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_94: 2
+     loads, 2 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_20: 1
+     loads, 1 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/sys_clk_N_keep_enable_21: 1
+     loads, 1 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/sys_clk_N_keep_enable_22: 1
+     loads, 1 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/sys_clk_N_keep_enable_105:
+     5 loads, 5 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/sys_clk_N_keep_enable_24: 1
+     loads, 1 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/sys_clk_N_keep_enable_96: 1
+     loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtck_N_701_enable_317: 25
+     loads, 25 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtck_N_701_enable_354: 19
+     loads, 19 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/sys_clk_N_keep_enable_95: 1
+
+                                    Page 3
+
+
+
+
+Design:  top                                           Date:  07/15/25  02:06:13
+
+Design Summary (cont)
+---------------------
+     loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable
+     _67: 23 loads, 23 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable
+     _377: 5 loads, 5 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable
+     _218: 20 loads, 20 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable
+     _179: 25 loads, 25 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable
+     _129: 26 loads, 26 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_4:
+     1 loads, 1 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_5:
+     1 loads, 1 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_7:
+     2 loads, 2 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable
+     _32: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable
+     _369: 8 loads, 8 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable
+     _33: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/JTAG_SOFT_inst_0/ShiftIR: 4 loads, 4
+     LSLICEs
+     Net top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/tlreset: 1
+     loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instr
+     _cap_upir: 4 loads, 4 LSLICEs
+   Number of local set/reset loads for net key1_c merged into GSR:  220
+   Number of LSRs:  2
+     Net dphy_raw_fifo_Reset: 34 loads, 32 LSLICEs
+     Net top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/tlreset:
+     229 loads, 229 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/tlreset:
+     230 loads
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtck_N_701_enable_3: 164
+     loads
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/n17737: 155 loads
+     
+     Net top_reveal_coretop_instance/n17: 142 loads
+     Net align_rst_n_d: 97 loads
+     Net mipi_byte_aligner_lane1/seq_offset[0]: 70 loads
+     Net hs_burst_flag_N: 66 loads
+     Net mipi_byte_aligner_lane0/seq_offset[0]: 66 loads
+     Net top_reveal_coretop_instance/top_la0_inst_0/addr[0]: 42 loads
+     Net mipi_byte_aligner_lane1/seq_offset[1]: 41 loads
+
+
+
+
+
+                                    Page 4
+
+
+
+
+Design:  top                                           Date:  07/15/25  02:06:13
+
+
+
+
+   Number of warnings:  10
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: Using local reset signal 'key1_c' to infer global GSR net.
+WARNING - map: The reset of EBR 'top_reveal_coretop_instance/top_la0_inst_0/trig
+     _u/te_0/pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg112112/pmi_ram_dpLbnon
+     esadr1121121164d4da_0_0_0' cannot be controlled. The local reset is not
+     connected to any control signal and set to GND. The global reset is
+     disabled via GSR property. To control the EBR reset, either connect the
+     local reset to a control signal or force the GSR property to be enabled.
+WARNING - map: The reset of EBR 'top_reveal_coretop_instance/top_la0_inst_0/tm_u
+     /pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbno
+     nesadr1379512137951211f54079_0_7_0' cannot be controlled. The local reset
+     is not connected to any control signal and set to GND. The global reset is
+     disabled via GSR property. To control the EBR reset, either connect the
+     local reset to a control signal or force the GSR property to be enabled.
+WARNING - map: The reset of EBR 'top_reveal_coretop_instance/top_la0_inst_0/tm_u
+     /pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbno
+     nesadr1379512137951211f54079_0_0_7' cannot be controlled. The local reset
+     is not connected to any control signal and set to GND. The global reset is
+     disabled via GSR property. To control the EBR reset, either connect the
+     local reset to a control signal or force the GSR property to be enabled.
+WARNING - map: The reset of EBR 'top_reveal_coretop_instance/top_la0_inst_0/tm_u
+     /pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbno
+     nesadr1379512137951211f54079_0_1_6' cannot be controlled. The local reset
+     is not connected to any control signal and set to GND. The global reset is
+     disabled via GSR property. To control the EBR reset, either connect the
+     local reset to a control signal or force the GSR property to be enabled.
+WARNING - map: The reset of EBR 'top_reveal_coretop_instance/top_la0_inst_0/tm_u
+     /pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbno
+     nesadr1379512137951211f54079_0_2_5' cannot be controlled. The local reset
+     is not connected to any control signal and set to GND. The global reset is
+     disabled via GSR property. To control the EBR reset, either connect the
+     local reset to a control signal or force the GSR property to be enabled.
+WARNING - map: The reset of EBR 'top_reveal_coretop_instance/top_la0_inst_0/tm_u
+     /pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbno
+     nesadr1379512137951211f54079_0_3_4' cannot be controlled. The local reset
+     is not connected to any control signal and set to GND. The global reset is
+     disabled via GSR property. To control the EBR reset, either connect the
+     local reset to a control signal or force the GSR property to be enabled.
+WARNING - map: The reset of EBR 'top_reveal_coretop_instance/top_la0_inst_0/tm_u
+     /pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbno
+     nesadr1379512137951211f54079_0_4_3' cannot be controlled. The local reset
+     is not connected to any control signal and set to GND. The global reset is
+     disabled via GSR property. To control the EBR reset, either connect the
+     local reset to a control signal or force the GSR property to be enabled.
+WARNING - map: The reset of EBR 'top_reveal_coretop_instance/top_la0_inst_0/tm_u
+     /pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbno
+     nesadr1379512137951211f54079_0_5_2' cannot be controlled. The local reset
+     is not connected to any control signal and set to GND. The global reset is
+     disabled via GSR property. To control the EBR reset, either connect the
+
+                                    Page 5
+
+
+
+
+Design:  top                                           Date:  07/15/25  02:06:13
+
+Design Errors/Warnings (cont)
+-----------------------------
+     local reset to a control signal or force the GSR property to be enabled.
+WARNING - map: The reset of EBR 'top_reveal_coretop_instance/top_la0_inst_0/tm_u
+     /pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbno
+     nesadr1379512137951211f54079_0_6_1' cannot be controlled. The local reset
+     is not connected to any control signal and set to GND. The global reset is
+     disabled via GSR property. To control the EBR reset, either connect the
+     local reset to a control signal or force the GSR property to be enabled.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| clk_50m             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ddr_output_clk      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| output_multi_lane_align_data_out[16]| OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| output_multi_lane_align_data_out[15]| OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| output_multi_lane_align_data_out[14]| OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| output_multi_lane_align_data_out[13]| OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| output_multi_lane_align_data_out[12]| OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| output_multi_lane_align_data_out[11]| OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| output_multi_lane_align_data_out[10]| OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| output_multi_lane_align_data_out[9]| OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| output_multi_lane_align_data_out[8]| OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| output_multi_lane_align_data_out[7]| OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| output_multi_lane_align_data_out[6]| OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| output_multi_lane_align_data_out[5]| OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| output_multi_lane_align_data_out[4]| OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| output_multi_lane_align_data_out[3]| OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| output_multi_lane_align_data_out[2]| OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| output_multi_lane_align_data_out[1]| OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| output_multi_lane_align_data_out[0]| OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| JTAG_TCK            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| JTAG_TMS            | INPUT     | LVCMOS25  |            |
+
+                                    Page 6
+
+
+
+
+Design:  top                                           Date:  07/15/25  02:06:13
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| JTAG_TDO            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| JTAG_TDI            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| key1                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sys_clk             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| hs_burst_flag       | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sys_clk_div2        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/i1_2_lut
+     _4_lut_adj_143 undriven or does not drive anything - clipped.
+Block top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/rti_r_I_
+     0_2_lut_4_lut undriven or does not drive anything - clipped.
+Block top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/rti_r_I_
+     0_27_2_lut_4_lut undriven or does not drive anything - clipped.
+Block top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/i1_2_lut
+     _4_lut undriven or does not drive anything - clipped.
+Block top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_tap/rti_r_69
+     undriven or does not drive anything - clipped.
+Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/pmi_ram_dpLIFMDbina
+     rynonespeedasyncdisablereg112112/scuba_vhi_inst undriven or does not drive
+     anything - clipped.
+Signal top_reveal_coretop_instance/jtck_N_701 was merged into signal jtck[0]
+Signal top_reveal_coretop_instance/JTAG_SOFT_inst_0/tck_N_2299 was merged into
+     signal jtck[0]
+Signal top_reveal_coretop_instance/jrstn[0] was merged into signal
+     top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/tlreset
+Signal top_reveal_coretop_instance/er2_tdo[0] was merged into signal
+     top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtdo_N_1147
+Signal
+     top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_27
+     was merged into signal top_reveal_coretop_instance/jrstn[0]
+Signal top_reveal_coretop_instance/top_la0_inst_0/jrstn_N_699 was merged into
+     signal top_reveal_coretop_instance/jrstn[0]
+Signal dphy_raw_fifo_inst/rRst was merged into signal dphy_raw_fifo_Reset
+Signal dphy_raw_fifo_inst/invout_0 was merged into signal dphy_raw_fifo_Empty_N
+Signal dphy_raw_fifo_inst/invout_1 was merged into signal
+     dphy_raw_fifo_inst/Full
+Signal sys_rst_n_N_10 was merged into signal key1_c
+Signal n16459 was merged into signal addr_15
+Signal mipi_rx_inst/d0_rxhsen_inv was merged into signal hs_burst_flag_N
+Signal top_reveal_coretop_instance/top_la0_inst_0/reset_rvl_n undriven or does
+     not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal mipi_rx_inst/clk_rxhsen_inv undriven or does not drive anything -
+     clipped.
+Signal mipi_rx_inst/d0txlpen undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinarynone
+
+                                    Page 7
+
+
+
+
+Design:  top                                           Date:  07/15/25  02:06:13
+
+Removed logic (cont)
+--------------------
+     speedasyncdisablereg13795121379512/scuba_vlo undriven or does not drive
+     anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinarynone
+     speedasyncdisablereg13795121379512/scuba_vhi undriven or does not drive
+     anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/pmi_ram_dpLIFMDbin
+     arynonespeedasyncdisablereg112112/scuba_vlo undriven or does not drive
+     anything - clipped.
+Signal mipi_rx_inst/clkrxlpen undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/jupdate[0] undriven or does not drive
+     anything - clipped.
+Signal top_reveal_coretop_instance/n320 undriven or does not drive anything -
+     clipped.
+Signal top_reveal_coretop_instance/n318 undriven or does not drive anything -
+     clipped.
+Signal top_reveal_coretop_instance/n325 undriven or does not drive anything -
+     clipped.
+Signal top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/rti_r
+     undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_1289_add_4_
+     7/S1 undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_1289_add_4_
+     7/CO undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/sub_56_add_2_1/S0
+     undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/sub_56_add_2_1/CI
+     undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/sub_56_add_2_9/CO
+     undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_1289_add_4_
+     1/S0 undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_1289_add_4_
+     1/CI undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/sub_59_add_2_9/CO
+     undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/sub_57_add_2_1/S0
+     undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/sub_57_add_2_1/CI
+     undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/sub_59_add_2_1/S0
+     undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/sub_59_add_2_1/CI
+     undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_wr_addr_cntr_1292_add_
+     4_1/S0 undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_wr_addr_cntr_1292_add_
+     4_1/CI undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/sub_57_add_2_9/CO
+     undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_wr_addr_cntr_1292_add_
+     4_9/CO undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_rd_addr_cntr_1291_add_
+     4_1/S0 undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_rd_addr_cntr_1291_add_
+     4_1/CI undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_rd_addr_cntr_1291_add_
+
+                                    Page 8
+
+
+
+
+Design:  top                                           Date:  07/15/25  02:06:13
+
+Removed logic (cont)
+--------------------
+     4_9/CO undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_1293_add
+     _4_1/S0 undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_1293_add
+     _4_1/CI undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_1293_add
+     _4_17/S1 undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_1293_add
+     _4_17/CO undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/pmi_ram_dpLIFMDbin
+     arynonespeedasyncdisablereg112112/scuba_vhi undriven or does not drive
+     anything - clipped.
+Signal dphy_raw_fifo_inst/a1/S1 undriven or does not drive anything - clipped.
+Signal dphy_raw_fifo_inst/a1/CO undriven or does not drive anything - clipped.
+Signal dphy_raw_fifo_inst/full_cmp_2/S1 undriven or does not drive anything -
+     clipped.
+Signal dphy_raw_fifo_inst/full_cmp_2/S0 undriven or does not drive anything -
+     clipped.
+Signal dphy_raw_fifo_inst/full_cmp_1/S1 undriven or does not drive anything -
+     clipped.
+Signal dphy_raw_fifo_inst/full_cmp_1/S0 undriven or does not drive anything -
+     clipped.
+Signal dphy_raw_fifo_inst/full_cmp_0/S1 undriven or does not drive anything -
+     clipped.
+Signal dphy_raw_fifo_inst/full_cmp_0/S0 undriven or does not drive anything -
+     clipped.
+Signal dphy_raw_fifo_inst/full_cmp_ci_a/S1 undriven or does not drive anything -
+     clipped.
+Signal dphy_raw_fifo_inst/full_cmp_ci_a/S0 undriven or does not drive anything -
+     clipped.
+Signal dphy_raw_fifo_inst/full_cmp_ci_a/CI undriven or does not drive anything -
+     clipped.
+Signal dphy_raw_fifo_inst/a0/S1 undriven or does not drive anything - clipped.
+Signal dphy_raw_fifo_inst/a0/CO undriven or does not drive anything - clipped.
+Signal dphy_raw_fifo_inst/empty_cmp_2/S1 undriven or does not drive anything -
+     clipped.
+Signal dphy_raw_fifo_inst/empty_cmp_2/S0 undriven or does not drive anything -
+     clipped.
+Signal dphy_raw_fifo_inst/empty_cmp_1/S1 undriven or does not drive anything -
+     clipped.
+Signal dphy_raw_fifo_inst/empty_cmp_1/S0 undriven or does not drive anything -
+     clipped.
+Signal dphy_raw_fifo_inst/empty_cmp_0/S1 undriven or does not drive anything -
+     clipped.
+Signal dphy_raw_fifo_inst/empty_cmp_0/S0 undriven or does not drive anything -
+     clipped.
+Signal dphy_raw_fifo_inst/empty_cmp_ci_a/S1 undriven or does not drive anything
+     - clipped.
+Signal dphy_raw_fifo_inst/empty_cmp_ci_a/S0 undriven or does not drive anything
+     - clipped.
+Signal dphy_raw_fifo_inst/empty_cmp_ci_a/CI undriven or does not drive anything
+     - clipped.
+Signal dphy_raw_fifo_inst/r_gctr_2/CO undriven or does not drive anything -
+     clipped.
+Signal dphy_raw_fifo_inst/r_gctr_cia/S1 undriven or does not drive anything -
+     clipped.
+
+                                    Page 9
+
+
+
+
+Design:  top                                           Date:  07/15/25  02:06:13
+
+Removed logic (cont)
+--------------------
+Signal dphy_raw_fifo_inst/r_gctr_cia/S0 undriven or does not drive anything -
+     clipped.
+Signal dphy_raw_fifo_inst/r_gctr_cia/CI undriven or does not drive anything -
+     clipped.
+Signal dphy_raw_fifo_inst/w_gctr_2/CO undriven or does not drive anything -
+     clipped.
+Signal dphy_raw_fifo_inst/w_gctr_cia/S1 undriven or does not drive anything -
+     clipped.
+Signal dphy_raw_fifo_inst/w_gctr_cia/S0 undriven or does not drive anything -
+     clipped.
+Signal dphy_raw_fifo_inst/w_gctr_cia/CI undriven or does not drive anything -
+     clipped.
+Block top_reveal_coretop_instance/i16242 was optimized away.
+Block top_reveal_coretop_instance/JTAG_SOFT_inst_0/i16243 was optimized away.
+Block top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_logic/i15607
+     _2_lut was optimized away.
+Block top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i7379_2_lut was
+     optimized away.
+Block top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i2622_2_lut was
+     optimized away.
+Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/jrstn_I_0_1_lut was
+     optimized away.
+Block dphy_raw_fifo_inst/OR2_t12 was optimized away.
+Block dphy_raw_fifo_inst/INV_0 was optimized away.
+Block dphy_raw_fifo_inst/INV_1 was optimized away.
+Block sys_rst_n_I_0_1_lut was optimized away.
+Block i15337_3_lut was optimized away.
+Block mipi_rx_inst/INV_1 was optimized away.
+Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/tcnt_0/i15602_2_lut was
+     optimized away.
+Block i2 was optimized away.
+Block mipi_rx_inst/INV_2 was optimized away.
+Block mipi_rx_inst/AND2_t0 was optimized away.
+Block top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinarynones
+     peedasyncdisablereg13795121379512/scuba_vlo_inst was optimized away.
+Block top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinarynones
+     peedasyncdisablereg13795121379512/scuba_vhi_inst was optimized away.
+Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/pmi_ram_dpLIFMDbina
+     rynonespeedasyncdisablereg112112/scuba_vlo_inst was optimized away.
+Block mipi_rx_inst/AND2_t2 was optimized away.
+
+Memory Usage
+------------
+
+/dphy_raw_fifo_inst:
+    EBRs: 2
+    RAM SLICEs: 0
+    Logic SLICEs: 52
+    PFU Registers: 62
+    -Contains EBR pdp_ram_0_0_1:  TYPE= PDPW8KE,  Width= 18,  Depth_R= 32,
+         Depth_W= 32,  REGMODE= NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE=
+         SYNC,  GSR= DISABLED,  MEM_INIT_FILE= ,  MEM_LPC_FILE=
+         dphy_raw_fifo.lpc
+    -Contains EBR pdp_ram_0_1_0:  TYPE= PDPW8KE,  Width= 14,  Depth_R= 32,
+         Depth_W= 32,  REGMODE= NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE=
+         SYNC,  GSR= DISABLED,  MEM_INIT_FILE= ,  MEM_LPC_FILE=
+
+                                   Page 10
+
+
+
+
+Design:  top                                           Date:  07/15/25  02:06:13
+
+Memory Usage (cont)
+-------------------
+         dphy_raw_fifo.lpc
+/mipi_multi_lane_aligner_inst/fifo_memory_00:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/mipi_multi_lane_aligner_inst/fifo_memory_01:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/mipi_multi_lane_aligner_inst/fifo_memory_02:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/mipi_multi_lane_aligner_inst/fifo_memory_03:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/mipi_multi_lane_aligner_inst/fifo_memory_10:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/mipi_multi_lane_aligner_inst/fifo_memory_11:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/mipi_multi_lane_aligner_inst/fifo_memory_12:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/mipi_multi_lane_aligner_inst/fifo_memory_13:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinarynonespeeda
+     syncdisablereg13795121379512:
+    EBRs: 8
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR pmi_ram_dpLbnonesadr1379512137951211f54079_0_7_0:  TYPE=
+         PDPW8KE,  Width= 11,  Depth_R= 512,  Depth_W= 512,  REGMODE= OUTREG,
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpLbnonesadr1379512137951211f54079__PMIP__512__137__137B
+    -Contains EBR pmi_ram_dpLbnonesadr1379512137951211f54079_0_0_7:  TYPE=
+         PDPW8KE,  Width= 18,  Depth_R= 512,  Depth_W= 512,  REGMODE= OUTREG,
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  GSR= DISABLED,
+         MEM_LPC_FILE=
+
+                                   Page 11
+
+
+
+
+Design:  top                                           Date:  07/15/25  02:06:13
+
+Memory Usage (cont)
+-------------------
+         pmi_ram_dpLbnonesadr1379512137951211f54079__PMIP__512__137__137B
+    -Contains EBR pmi_ram_dpLbnonesadr1379512137951211f54079_0_1_6:  TYPE=
+         PDPW8KE,  Width= 18,  Depth_R= 512,  Depth_W= 512,  REGMODE= OUTREG,
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpLbnonesadr1379512137951211f54079__PMIP__512__137__137B
+    -Contains EBR pmi_ram_dpLbnonesadr1379512137951211f54079_0_2_5:  TYPE=
+         PDPW8KE,  Width= 18,  Depth_R= 512,  Depth_W= 512,  REGMODE= OUTREG,
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpLbnonesadr1379512137951211f54079__PMIP__512__137__137B
+    -Contains EBR pmi_ram_dpLbnonesadr1379512137951211f54079_0_3_4:  TYPE=
+         PDPW8KE,  Width= 18,  Depth_R= 512,  Depth_W= 512,  REGMODE= OUTREG,
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpLbnonesadr1379512137951211f54079__PMIP__512__137__137B
+    -Contains EBR pmi_ram_dpLbnonesadr1379512137951211f54079_0_4_3:  TYPE=
+         PDPW8KE,  Width= 18,  Depth_R= 512,  Depth_W= 512,  REGMODE= OUTREG,
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpLbnonesadr1379512137951211f54079__PMIP__512__137__137B
+    -Contains EBR pmi_ram_dpLbnonesadr1379512137951211f54079_0_5_2:  TYPE=
+         PDPW8KE,  Width= 18,  Depth_R= 512,  Depth_W= 512,  REGMODE= OUTREG,
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpLbnonesadr1379512137951211f54079__PMIP__512__137__137B
+    -Contains EBR pmi_ram_dpLbnonesadr1379512137951211f54079_0_6_1:  TYPE=
+         PDPW8KE,  Width= 18,  Depth_R= 512,  Depth_W= 512,  REGMODE= OUTREG,
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpLbnonesadr1379512137951211f54079__PMIP__512__137__137B
+/top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/pmi_ram_dpLIFMDbinarynon
+     espeedasyncdisablereg112112:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR pmi_ram_dpLbnonesadr1121121164d4da_0_0_0:  TYPE= DP8KE,
+         Width_B= 1,  Depth_A= 2,  Depth_B= 2,  REGMODE_A= OUTREG,  REGMODE_B=
+         OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  WRITEMODE_A=
+         NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,  MEM_LPC_FILE=
+         pmi_ram_dpLbnonesadr1121121164d4da__PMIP__2__1__1B
+
+     
+
+PLL/DLL Summary
+---------------
+
+PLL 1:                                     Pin/Node Value
+  PLL Instance Name:                                pll_sys_clk_inst/PLLInst_0
+  PLL Type:                                         EHXPLLM
+  Input Clock:                             PIN      clk_50m_c
+  Input Clock2:                            NODE     GND_net
+  Input Clock select:                               NONE
+  Output Clock(P):                         PIN,NODE sys_clk_c
+  Output Clock(S):                                  NONE
+
+                                   Page 12
+
+
+
+
+Design:  top                                           Date:  07/15/25  02:06:13
+
+PLL/DLL Summary (cont)
+----------------------
+  Output Clock(S2):                                 NONE
+  Output Clock(S3):                                 NONE
+  Feedback Signal:                         NODE     sys_clk_c
+  Reset Signal:                                     NONE
+  PLL LOCK signal:                                  NONE
+  PLL Internal LOCK Signal:                         NONE
+  Input Clock Frequency (MHz):                      50.0000
+  Output Clock(P) Frequency (MHz):                  100.0000
+  Output Clock(S) Frequency (MHz):                  NA
+  Output Clock(S2) Frequency (MHz):                 NA
+  Output Clock(S3) Frequency (MHz):                 NA
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              NONE
+  Pre Divider B Input:                              NONE
+  Pre Divider C Input:                              NONE
+  Pre Divider D Input:                              NONE
+  FB_MODE:                                          CLKOP
+  CLKI Divider:                                     1
+  CLKFB Divider:                                    2
+  CLKOP Divider:                                    9
+  CLKOS Divider:                                    9
+  CLKOS2 Divider:                                   1
+  CLKOS3 Divider:                                   1
+  Fractional N Divider:                             NONE
+  CLKOP Desired Phase Shift(degree):                0
+  CLKOP Trim Option Rising/Falling:                 FALLING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                90
+  CLKOS Trim Option Rising/Falling:                 FALLING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               0
+  CLKOS2 Trim Option Rising/Falling:                NONE
+  CLKOS2 Trim Option Delay:                         NONE
+  CLKOS3 Desired Phase Shift(degree):               0
+  CLKOS3 Trim Option Rising/Falling:                NONE
+  CLKOS3 Trim Option Delay:                         NONE
+
+ASIC Components
+---------------
+
+Instance Name: mipi_rx_inst/Inst_MIPIDPHYA
+         Type: MIPIDPHYA
+Instance Name: PLLREFCS_inst
+         Type: PLLREFCS
+Instance Name: pll_sys_clk_inst/PLLInst_0
+         Type: EHXPLLM
+Instance Name: dphy_raw_fifo_inst/pdp_ram_0_0_1
+         Type: PDPW8KE
+Instance Name: dphy_raw_fifo_inst/pdp_ram_0_1_0
+         Type: PDPW8KE
+Instance Name: top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/pmi_ram_dp
+     LIFMDbinarynonespeedasyncdisablereg112112/pmi_ram_dpLbnonesadr1121121164d4d
+     a_0_0_0
+
+                                   Page 13
+
+
+
+
+Design:  top                                           Date:  07/15/25  02:06:13
+
+ASIC Components (cont)
+----------------------
+         Type: DP8KE
+Instance Name: top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbi
+     narynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbnonesadr137951213795
+     1211f54079_0_7_0
+         Type: PDPW8KE
+Instance Name: top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbi
+     narynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbnonesadr137951213795
+     1211f54079_0_0_7
+         Type: PDPW8KE
+Instance Name: top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbi
+     narynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbnonesadr137951213795
+     1211f54079_0_1_6
+         Type: PDPW8KE
+Instance Name: top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbi
+     narynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbnonesadr137951213795
+     1211f54079_0_2_5
+         Type: PDPW8KE
+Instance Name: top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbi
+     narynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbnonesadr137951213795
+     1211f54079_0_3_4
+         Type: PDPW8KE
+Instance Name: top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbi
+     narynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbnonesadr137951213795
+     1211f54079_0_4_3
+         Type: PDPW8KE
+Instance Name: top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbi
+     narynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbnonesadr137951213795
+     1211f54079_0_5_2
+         Type: PDPW8KE
+Instance Name: top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbi
+     narynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbnonesadr137951213795
+     1211f54079_0_6_1
+         Type: PDPW8KE
+
+GSR Usage
+---------
+
+GSR Component:
+   The local reset signal 'key1_c' of the design has been inferred as Global Set
+        Reset (GSR). The reset signal used for GSR control is 'key1_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 68 MB
+        
+
+
+                                   Page 14
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights
+     reserved.

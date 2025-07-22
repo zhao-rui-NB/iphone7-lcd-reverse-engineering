@@ -1,0 +1,362 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  972 of 6047 (16.074%)
+I/O cells:      27
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2         5          100.0
+                              CCU2C        56          100.0
+                           DPR16X4C         8          100.0
+                            EHXPLLM         1          100.0
+                            FD1P3AX        18          100.0
+                            FD1P3BX        42          100.0
+                            FD1P3DX       632          100.0
+                            FD1S3AX         5          100.0
+                            FD1S3BX         4          100.0
+                            FD1S3DX       271          100.0
+                                GSR         1          100.0
+                                 IB         5          100.0
+                                INV         6          100.0
+                            L6MUX21         1          100.0
+                               LUT4      1444          100.0
+                          MIPIDPHYA         1          100.0
+                                 OB        21          100.0
+                                OBZ         1          100.0
+                            ODDRX1F        18          100.0
+                                OR2         2          100.0
+                            PDPW8KE         2          100.0
+                              PFUMX        53          100.0
+                           PLLREFCS         1          100.0
+                           ROM16X1A        14          100.0
+                               XOR2        10          100.0
+ pmi_ram_dpLbnonesadr1121121164d4da         1          100.0
+pmi_ram_dpLbnonesadr1379512137951211f54079         1          100.0
+SUB MODULES
+                          JTAG_SOFT         1
+                  ddr_output_uniq_1         1
+               dphy_raw_fifo_uniq_1         1
+                     jtag_cntl_soft         1
+                 jtag_inst_dec_soft         1
+                    jtag_logic_soft         1
+                 jtag_register_soft         1
+                 jtag_tap_cntl_soft         1
+           mipi_byte_aligner_uniq_1         1
+           mipi_byte_aligner_uniq_2         1
+   mipi_lane_state_detection_uniq_1         1
+     mipi_multi_lane_aligner_uniq_1         1
+    mipi_raw_data_controller_uniq_1         1
+                     mipi_rx_uniq_1         1
+                 pll_sys_clk_uniq_1         1
+                     reveal_coretop         1
+      rvl_decode(NUM_TU=1,NUM_TE=1)         1
+rvl_jtag_int(NUM_TRACE_SIGNALS=137,NUM_TRIGGER_SIGNALS=1)         1
+ rvl_tcnt(NUM_TE=1,NUM_TCNT_BITS=3)         1
+rvl_te(NUM_TU=1,NUM_TE_ROW=2,NUM_TE_COL=1,TE_EBR=1,NUM_TE_EVENT_CNT_BITS=0,LSCC_FAMILY="LIFMD")         1
+rvl_tm(NUM_TRACE_SIGNALS=137,NUM_TRIGGER_SIGNALS=1,NUM_TRIG_MAX=1,REVEAL_SIG=635314565,LSCC_FAMILY="LIFMD")         1
+              rvl_tu(NUM_TU_BITS=1)         1
+                            top_la0         1
+                       top_la0_trig         1
+                              TOTAL      2648
+----------------------------------------------------------------------
+Report for cell mipi_rx_uniq_1.v1
+Instance Path : mipi_rx_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2         3           60.0
+                                INV         2           33.3
+                          MIPIDPHYA         1          100.0
+                                OR2         1           50.0
+                              TOTAL         7
+----------------------------------------------------------------------
+Report for cell mipi_raw_data_controller_uniq_1.v1
+Instance Path : mipi_raw_data_controller_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3DX        35           12.9
+                               LUT4        35            2.4
+                              TOTAL        70
+----------------------------------------------------------------------
+Report for cell ddr_output_uniq_1.v1
+Instance Path : ddr_output_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            ODDRX1F        18          100.0
+                              TOTAL        18
+----------------------------------------------------------------------
+Report for cell mipi_byte_aligner_uniq_2.v1
+Instance Path : mipi_byte_aligner_lane1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3DX        36            5.7
+                            FD1S3DX        19            7.0
+                               LUT4       301           20.8
+                              PFUMX        10           18.9
+                              TOTAL       366
+----------------------------------------------------------------------
+Report for cell mipi_multi_lane_aligner_uniq_1.v1
+Instance Path : mipi_multi_lane_aligner_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                           DPR16X4C         8          100.0
+                            FD1P3DX        44            7.0
+                            FD1S3DX         9            3.3
+                               LUT4        82            5.7
+                              PFUMX         4            7.5
+                              TOTAL       147
+----------------------------------------------------------------------
+Report for cell mipi_lane_state_detection_uniq_1.v1
+Instance Path : mipi_lane_state_detection_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         3           60.0
+                            FD1S3BX         1           25.0
+                            FD1S3DX         4            1.5
+                               LUT4         6            0.4
+                              TOTAL        14
+----------------------------------------------------------------------
+Report for cell pll_sys_clk_uniq_1.v1
+Instance Path : pll_sys_clk_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            EHXPLLM         1          100.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell mipi_byte_aligner_uniq_1.v1
+Instance Path : mipi_byte_aligner_lane0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3DX        36            5.7
+                            FD1S3DX        18            6.6
+                               LUT4       291           20.2
+                              PFUMX        14           26.4
+                              TOTAL       359
+----------------------------------------------------------------------
+Report for cell dphy_raw_fifo_uniq_1.v1
+Instance Path : dphy_raw_fifo_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2         2           40.0
+                              CCU2C        18           32.1
+                            FD1P3BX         2            4.8
+                            FD1P3DX        34            5.4
+                            FD1S3BX         1           25.0
+                            FD1S3DX        25            9.2
+                                INV         2           33.3
+                                OR2         1           50.0
+                            PDPW8KE         2          100.0
+                           ROM16X1A        14          100.0
+                               XOR2        10          100.0
+                              TOTAL       111
+----------------------------------------------------------------------
+Report for cell reveal_coretop.v1
+Instance Path : top_reveal_coretop_instance
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C        38           67.9
+                            FD1P3AX        18          100.0
+                            FD1P3BX        40           95.2
+                            FD1P3DX       482           76.3
+                            FD1S3AX         1           20.0
+                            FD1S3BX         2           50.0
+                            FD1S3DX       161           59.4
+                                INV         2           33.3
+                            L6MUX21         1          100.0
+                               LUT4       718           49.7
+                              PFUMX        21           39.6
+ pmi_ram_dpLbnonesadr1121121164d4da         1          100.0
+pmi_ram_dpLbnonesadr1379512137951211f54079         1          100.0
+SUB MODULES
+                          JTAG_SOFT         1
+                     jtag_cntl_soft         1
+                 jtag_inst_dec_soft         1
+                    jtag_logic_soft         1
+                 jtag_register_soft         1
+                 jtag_tap_cntl_soft         1
+      rvl_decode(NUM_TU=1,NUM_TE=1)         1
+rvl_jtag_int(NUM_TRACE_SIGNALS=137,NUM_TRIGGER_SIGNALS=1)         1
+ rvl_tcnt(NUM_TE=1,NUM_TCNT_BITS=3)         1
+rvl_te(NUM_TU=1,NUM_TE_ROW=2,NUM_TE_COL=1,TE_EBR=1,NUM_TE_EVENT_CNT_BITS=0,LSCC_FAMILY="LIFMD")         1
+rvl_tm(NUM_TRACE_SIGNALS=137,NUM_TRIGGER_SIGNALS=1,NUM_TRIG_MAX=1,REVEAL_SIG=635314565,LSCC_FAMILY="LIFMD")         1
+              rvl_tu(NUM_TU_BITS=1)         1
+                            top_la0         1
+                       top_la0_trig         1
+                              TOTAL      1500
+----------------------------------------------------------------------
+Report for cell top_la0.v1
+Instance Path : top_reveal_coretop_instance.top_la0_inst_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C        38           67.9
+                            FD1P3AX        18          100.0
+                            FD1P3BX        34           81.0
+                            FD1P3DX       472           74.7
+                            FD1S3DX       142           52.4
+                            L6MUX21         1          100.0
+                               LUT4       679           47.0
+                              PFUMX        21           39.6
+ pmi_ram_dpLbnonesadr1121121164d4da         1          100.0
+pmi_ram_dpLbnonesadr1379512137951211f54079         1          100.0
+SUB MODULES
+      rvl_decode(NUM_TU=1,NUM_TE=1)         1
+rvl_jtag_int(NUM_TRACE_SIGNALS=137,NUM_TRIGGER_SIGNALS=1)         1
+ rvl_tcnt(NUM_TE=1,NUM_TCNT_BITS=3)         1
+rvl_te(NUM_TU=1,NUM_TE_ROW=2,NUM_TE_COL=1,TE_EBR=1,NUM_TE_EVENT_CNT_BITS=0,LSCC_FAMILY="LIFMD")         1
+rvl_tm(NUM_TRACE_SIGNALS=137,NUM_TRIGGER_SIGNALS=1,NUM_TRIG_MAX=1,REVEAL_SIG=635314565,LSCC_FAMILY="LIFMD")         1
+              rvl_tu(NUM_TU_BITS=1)         1
+                       top_la0_trig         1
+                              TOTAL      1414
+----------------------------------------------------------------------
+Report for cell top_la0_trig.v1
+Instance Path : top_reveal_coretop_instance.top_la0_inst_0.trig_u
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C         9           16.1
+                            FD1P3AX        16           88.9
+                            FD1P3BX         2            4.8
+                            FD1P3DX        32            5.1
+                            FD1S3DX        15            5.5
+                               LUT4        91            6.3
+                              PFUMX         2            3.8
+ pmi_ram_dpLbnonesadr1121121164d4da         1          100.0
+SUB MODULES
+      rvl_decode(NUM_TU=1,NUM_TE=1)         1
+ rvl_tcnt(NUM_TE=1,NUM_TCNT_BITS=3)         1
+rvl_te(NUM_TU=1,NUM_TE_ROW=2,NUM_TE_COL=1,TE_EBR=1,NUM_TE_EVENT_CNT_BITS=0,LSCC_FAMILY="LIFMD")         1
+              rvl_tu(NUM_TU_BITS=1)         1
+                              TOTAL       172
+----------------------------------------------------------------------
+Report for cell rvl_tu(NUM_TU_BITS=1).v1
+Instance Path : top_reveal_coretop_instance.top_la0_inst_0.trig_u.tu_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3DX         5            0.8
+                            FD1S3DX         3            1.1
+                               LUT4        10            0.7
+                              PFUMX         1            1.9
+                              TOTAL        19
+----------------------------------------------------------------------
+Report for cell rvl_te(NUM_TU=1,NUM_TE_ROW=2,NUM_TE_COL=1,TE_EBR=1,NUM_TE_EVENT_CNT_BITS=0,LSCC_FAMILY="LIFMD").v1
+Instance Path : top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C         9           16.1
+                            FD1P3AX        16           88.9
+                            FD1P3BX         1            2.4
+                            FD1P3DX        21            3.3
+                            FD1S3DX         7            2.6
+                               LUT4        43            3.0
+ pmi_ram_dpLbnonesadr1121121164d4da         1          100.0
+                              TOTAL        98
+----------------------------------------------------------------------
+Report for cell rvl_tcnt(NUM_TE=1,NUM_TCNT_BITS=3).v1
+Instance Path : top_reveal_coretop_instance.top_la0_inst_0.trig_u.tcnt_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3BX         1            2.4
+                            FD1P3DX         6            0.9
+                            FD1S3DX         5            1.8
+                               LUT4        27            1.9
+                              TOTAL        39
+----------------------------------------------------------------------
+Report for cell rvl_decode(NUM_TU=1,NUM_TE=1).v1
+Instance Path : top_reveal_coretop_instance.top_la0_inst_0.trig_u.decode_u
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         7            0.5
+                              TOTAL         7
+----------------------------------------------------------------------
+Report for cell rvl_tm(NUM_TRACE_SIGNALS=137,NUM_TRIGGER_SIGNALS=1,NUM_TRIG_MAX=1,REVEAL_SIG=635314565,LSCC_FAMILY="LIFMD").v1
+Instance Path : top_reveal_coretop_instance.top_la0_inst_0.tm_u
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C        20           35.7
+                            FD1P3DX       227           35.9
+                            FD1S3DX       117           43.2
+                               LUT4       110            7.6
+                              PFUMX         8           15.1
+pmi_ram_dpLbnonesadr1379512137951211f54079         1          100.0
+                              TOTAL       483
+----------------------------------------------------------------------
+Report for cell rvl_jtag_int(NUM_TRACE_SIGNALS=137,NUM_TRIGGER_SIGNALS=1).v1
+Instance Path : top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C         9           16.1
+                            FD1P3AX         2           11.1
+                            FD1P3BX        32           76.2
+                            FD1P3DX       213           33.7
+                            FD1S3DX        10            3.7
+                            L6MUX21         1          100.0
+                               LUT4       478           33.1
+                              PFUMX        11           20.8
+                              TOTAL       756
+----------------------------------------------------------------------
+Report for cell JTAG_SOFT.v1
+Instance Path : top_reveal_coretop_instance.JTAG_SOFT_inst_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3BX         6           14.3
+                            FD1P3DX        10            1.6
+                            FD1S3AX         1           20.0
+                            FD1S3BX         2           50.0
+                            FD1S3DX        19            7.0
+                                INV         1           16.7
+                               LUT4        36            2.5
+SUB MODULES
+                     jtag_cntl_soft         1
+                 jtag_inst_dec_soft         1
+                    jtag_logic_soft         1
+                 jtag_register_soft         1
+                 jtag_tap_cntl_soft         1
+                              TOTAL        80
+----------------------------------------------------------------------
+Report for cell jtag_cntl_soft.v1
+Instance Path : top_reveal_coretop_instance.JTAG_SOFT_inst_0.jtag_cntl_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3BX         6           14.3
+                            FD1P3DX        10            1.6
+                            FD1S3AX         1           20.0
+                            FD1S3BX         2           50.0
+                            FD1S3DX        19            7.0
+                               LUT4        29            2.0
+SUB MODULES
+                 jtag_inst_dec_soft         1
+                    jtag_logic_soft         1
+                 jtag_register_soft         1
+                 jtag_tap_cntl_soft         1
+                              TOTAL        71
+----------------------------------------------------------------------
+Report for cell jtag_tap_cntl_soft.v1
+Instance Path : top_reveal_coretop_instance.JTAG_SOFT_inst_0.jtag_cntl_inst.j_tap
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3BX         2           50.0
+                            FD1S3DX        18            6.6
+                               LUT4        13            0.9
+                              TOTAL        33
+----------------------------------------------------------------------
+Report for cell jtag_register_soft.v1
+Instance Path : top_reveal_coretop_instance.JTAG_SOFT_inst_0.jtag_cntl_inst.j_reg
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3BX         6           14.3
+                            FD1P3DX        10            1.6
+                            FD1S3AX         1           20.0
+                               LUT4         2            0.1
+                              TOTAL        19
+----------------------------------------------------------------------
+Report for cell jtag_logic_soft.v1
+Instance Path : top_reveal_coretop_instance.JTAG_SOFT_inst_0.jtag_cntl_inst.j_logic
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3DX         1            0.4
+                               LUT4         1            0.1
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell jtag_inst_dec_soft.v1
+Instance Path : top_reveal_coretop_instance.JTAG_SOFT_inst_0.jtag_cntl_inst.j_dec
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        13            0.9
+                              TOTAL        13

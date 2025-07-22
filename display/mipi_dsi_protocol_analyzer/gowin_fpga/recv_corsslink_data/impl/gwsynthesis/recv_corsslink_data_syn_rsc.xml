@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Lut="4" T_Register="901(0)" T_Alu="52(0)" T_Lut="1732(4)" T_Bsram="6(0)">
+ <SubModule name="ddr_inst"/>
+ <SubModule name="fifo_hs_input_inst" Register="66" Alu="13" Lut="58" Bsram="2" T_Register="66(66)" T_Alu="13(13)" T_Lut="58(58)" T_Bsram="2(2)"/>
+ <SubModule name="pll_inst"/>
+ <SubModule name="psram_inst" Register="504" Alu="26" Lut="883" Bsram="2" T_Register="504(504)" T_Alu="26(26)" T_Lut="883(883)" T_Bsram="2(2)"/>
+ <SubModule name="fifo_hs_output_inst" Register="62" Alu="13" Lut="88" Bsram="2" T_Register="62(62)" T_Alu="13(13)" T_Lut="88(88)" T_Bsram="2(2)"/>
+ <SubModule name="data_storage_controller_inst" Register="139" Lut="302" T_Register="145(139)" T_Lut="304(302)">
+  <SubModule name="debounce_save" Register="3" Lut="1" T_Register="3(3)" T_Lut="1(1)"/>
+  <SubModule name="debounce_output" Register="3" Lut="1" T_Register="3(3)" T_Lut="1(1)"/>
+ </SubModule>
+ <SubModule name="hspi_sender_inst" Register="92" Lut="184" T_Register="124(92)" T_Lut="395(184)">
+  <SubModule name="u_crc32_32b" Register="32" Lut="211" T_Register="32(32)" T_Lut="211(211)"/>
+ </SubModule>
+</Module>

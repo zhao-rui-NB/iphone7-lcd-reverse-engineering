@@ -1,0 +1,91 @@
+<Project ModBy="Analyzer" Name="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs_align.rvs" Date="2025-06-29">
+ <Core Name="top_LA0">
+  <Setting>
+   <Capture SamplesPerTrig="2048" NumTrigsCap="1"/>
+   <Event EventCnt="0" CntEnableRun="0"/>
+   <TrigSetting PreTrgSamples="" AND_ALL="0" PostTrgSamples="" TURadix="0"/>
+  </Setting>
+  <Dataset Name="Base">
+   <Trace>
+    <Sig Name="hs_burst_flag"/>
+    <Bus Name="mipi_byte_aligner_lane0/data_out" Radix="0">
+     <Sig Name="mipi_byte_aligner_lane0/data_out:0"/>
+     <Sig Name="mipi_byte_aligner_lane0/data_out:1"/>
+     <Sig Name="mipi_byte_aligner_lane0/data_out:2"/>
+     <Sig Name="mipi_byte_aligner_lane0/data_out:3"/>
+     <Sig Name="mipi_byte_aligner_lane0/data_out:4"/>
+     <Sig Name="mipi_byte_aligner_lane0/data_out:5"/>
+     <Sig Name="mipi_byte_aligner_lane0/data_out:6"/>
+     <Sig Name="mipi_byte_aligner_lane0/data_out:7"/>
+     <Sig Name="mipi_byte_aligner_lane0/data_out:8"/>
+     <Sig Name="mipi_byte_aligner_lane0/data_out:9"/>
+     <Sig Name="mipi_byte_aligner_lane0/data_out:10"/>
+     <Sig Name="mipi_byte_aligner_lane0/data_out:11"/>
+     <Sig Name="mipi_byte_aligner_lane0/data_out:12"/>
+     <Sig Name="mipi_byte_aligner_lane0/data_out:13"/>
+     <Sig Name="mipi_byte_aligner_lane0/data_out:14"/>
+     <Sig Name="mipi_byte_aligner_lane0/data_out:15"/>
+    </Bus>
+    <Sig Name="mipi_byte_aligner_lane0/data_out_valid"/>
+    <Bus Name="mipi_byte_aligner_lane1/data_out" Radix="0">
+     <Sig Name="mipi_byte_aligner_lane1/data_out:0"/>
+     <Sig Name="mipi_byte_aligner_lane1/data_out:1"/>
+     <Sig Name="mipi_byte_aligner_lane1/data_out:2"/>
+     <Sig Name="mipi_byte_aligner_lane1/data_out:3"/>
+     <Sig Name="mipi_byte_aligner_lane1/data_out:4"/>
+     <Sig Name="mipi_byte_aligner_lane1/data_out:5"/>
+     <Sig Name="mipi_byte_aligner_lane1/data_out:6"/>
+     <Sig Name="mipi_byte_aligner_lane1/data_out:7"/>
+     <Sig Name="mipi_byte_aligner_lane1/data_out:8"/>
+     <Sig Name="mipi_byte_aligner_lane1/data_out:9"/>
+     <Sig Name="mipi_byte_aligner_lane1/data_out:10"/>
+     <Sig Name="mipi_byte_aligner_lane1/data_out:11"/>
+     <Sig Name="mipi_byte_aligner_lane1/data_out:12"/>
+     <Sig Name="mipi_byte_aligner_lane1/data_out:13"/>
+     <Sig Name="mipi_byte_aligner_lane1/data_out:14"/>
+     <Sig Name="mipi_byte_aligner_lane1/data_out:15"/>
+    </Bus>
+    <Sig Name="mipi_byte_aligner_lane1/data_out_valid"/>
+    <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out_valid"/>
+    <Bus Name="mipi_multi_lane_aligner_inst/lanes_data_out" Radix="0">
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:0"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:1"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:2"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:3"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:4"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:5"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:6"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:7"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:8"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:9"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:10"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:11"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:12"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:13"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:14"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:15"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:16"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:17"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:18"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:19"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:20"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:21"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:22"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:23"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:24"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:25"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:26"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:27"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:28"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:29"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:30"/>
+     <Sig Name="mipi_multi_lane_aligner_inst/lanes_data_out:31"/>
+    </Bus>
+   </Trace>
+   <Trigger>
+    <TU Operator="6" Name="TU1" ID="1" Value="1" Radix="0"/>
+    <TE Enable="1" Expression="TU1" Name="TE1" ID="1"/>
+   </Trigger>
+  </Dataset>
+ </Core>
+</Project>

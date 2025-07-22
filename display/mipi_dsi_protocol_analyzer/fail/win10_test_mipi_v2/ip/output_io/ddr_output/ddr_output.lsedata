@@ -1,0 +1,657 @@
+<top name = "ddr_output"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+    <clockitem name = "refclk"  type = "port" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 1
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "ddr_output">
+
+    <!--
+        Top Level Pins: 54
+    -->
+
+    <pins>
+        <pitem  name = "clkout"  direction = "out"  />
+        <pitem  name = "refclk"  direction = "in"  />
+        <pitem  name = "reset"  direction = "in"  />
+        <pitem  name = "data[33]"  direction = "in"  />
+        <pitem  name = "data[32]"  direction = "in"  />
+        <pitem  name = "data[31]"  direction = "in"  />
+        <pitem  name = "data[30]"  direction = "in"  />
+        <pitem  name = "data[29]"  direction = "in"  />
+        <pitem  name = "data[28]"  direction = "in"  />
+        <pitem  name = "data[27]"  direction = "in"  />
+        <pitem  name = "data[26]"  direction = "in"  />
+        <pitem  name = "data[25]"  direction = "in"  />
+        <pitem  name = "data[24]"  direction = "in"  />
+        <pitem  name = "data[23]"  direction = "in"  />
+        <pitem  name = "data[22]"  direction = "in"  />
+        <pitem  name = "data[21]"  direction = "in"  />
+        <pitem  name = "data[20]"  direction = "in"  />
+        <pitem  name = "data[19]"  direction = "in"  />
+        <pitem  name = "data[18]"  direction = "in"  />
+        <pitem  name = "data[17]"  direction = "in"  />
+        <pitem  name = "data[16]"  direction = "in"  />
+        <pitem  name = "data[15]"  direction = "in"  />
+        <pitem  name = "data[14]"  direction = "in"  />
+        <pitem  name = "data[13]"  direction = "in"  />
+        <pitem  name = "data[12]"  direction = "in"  />
+        <pitem  name = "data[11]"  direction = "in"  />
+        <pitem  name = "data[10]"  direction = "in"  />
+        <pitem  name = "data[9]"  direction = "in"  />
+        <pitem  name = "data[8]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "dout[16]"  direction = "out"  />
+        <pitem  name = "dout[15]"  direction = "out"  />
+        <pitem  name = "dout[14]"  direction = "out"  />
+        <pitem  name = "dout[13]"  direction = "out"  />
+        <pitem  name = "dout[12]"  direction = "out"  />
+        <pitem  name = "dout[11]"  direction = "out"  />
+        <pitem  name = "dout[10]"  direction = "out"  />
+        <pitem  name = "dout[9]"  direction = "out"  />
+        <pitem  name = "dout[8]"  direction = "out"  />
+        <pitem  name = "dout[7]"  direction = "out"  />
+        <pitem  name = "dout[6]"  direction = "out"  />
+        <pitem  name = "dout[5]"  direction = "out"  />
+        <pitem  name = "dout[4]"  direction = "out"  />
+        <pitem  name = "dout[3]"  direction = "out"  />
+        <pitem  name = "dout[2]"  direction = "out"  />
+        <pitem  name = "dout[1]"  direction = "out"  />
+        <pitem  name = "dout[0]"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 38
+    -->
+
+    <instance  name = "Inst4_ODDRX1F16"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "SCLK"  direction = "in"  />
+        <pitem  name = "RST"  direction = "in"  />
+        <pitem  name = "D0"  direction = "in"  />
+        <pitem  name = "D1"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "refclk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "data[16]"  />
+        <nitem  name = "data[33]"  />
+        <nitem  name = "buf_douto16"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst4_ODDRX1F15"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "SCLK"  direction = "in"  />
+        <pitem  name = "RST"  direction = "in"  />
+        <pitem  name = "D0"  direction = "in"  />
+        <pitem  name = "D1"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "refclk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "data[15]"  />
+        <nitem  name = "data[32]"  />
+        <nitem  name = "buf_douto15"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst4_ODDRX1F14"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "SCLK"  direction = "in"  />
+        <pitem  name = "RST"  direction = "in"  />
+        <pitem  name = "D0"  direction = "in"  />
+        <pitem  name = "D1"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "refclk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "data[14]"  />
+        <nitem  name = "data[31]"  />
+        <nitem  name = "buf_douto14"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst4_ODDRX1F13"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "SCLK"  direction = "in"  />
+        <pitem  name = "RST"  direction = "in"  />
+        <pitem  name = "D0"  direction = "in"  />
+        <pitem  name = "D1"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "refclk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "data[13]"  />
+        <nitem  name = "data[30]"  />
+        <nitem  name = "buf_douto13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst4_ODDRX1F12"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "SCLK"  direction = "in"  />
+        <pitem  name = "RST"  direction = "in"  />
+        <pitem  name = "D0"  direction = "in"  />
+        <pitem  name = "D1"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "refclk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "data[12]"  />
+        <nitem  name = "data[29]"  />
+        <nitem  name = "buf_douto12"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst4_ODDRX1F11"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "SCLK"  direction = "in"  />
+        <pitem  name = "RST"  direction = "in"  />
+        <pitem  name = "D0"  direction = "in"  />
+        <pitem  name = "D1"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "refclk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "data[11]"  />
+        <nitem  name = "data[28]"  />
+        <nitem  name = "buf_douto11"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst4_ODDRX1F10"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "SCLK"  direction = "in"  />
+        <pitem  name = "RST"  direction = "in"  />
+        <pitem  name = "D0"  direction = "in"  />
+        <pitem  name = "D1"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "refclk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "data[10]"  />
+        <nitem  name = "data[27]"  />
+        <nitem  name = "buf_douto10"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst4_ODDRX1F9"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "SCLK"  direction = "in"  />
+        <pitem  name = "RST"  direction = "in"  />
+        <pitem  name = "D0"  direction = "in"  />
+        <pitem  name = "D1"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "refclk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "data[9]"  />
+        <nitem  name = "data[26]"  />
+        <nitem  name = "buf_douto9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst4_ODDRX1F8"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "SCLK"  direction = "in"  />
+        <pitem  name = "RST"  direction = "in"  />
+        <pitem  name = "D0"  direction = "in"  />
+        <pitem  name = "D1"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "refclk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "data[8]"  />
+        <nitem  name = "data[25]"  />
+        <nitem  name = "buf_douto8"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst4_ODDRX1F7"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "SCLK"  direction = "in"  />
+        <pitem  name = "RST"  direction = "in"  />
+        <pitem  name = "D0"  direction = "in"  />
+        <pitem  name = "D1"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "refclk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "data[7]"  />
+        <nitem  name = "data[24]"  />
+        <nitem  name = "buf_douto7"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst4_ODDRX1F6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "SCLK"  direction = "in"  />
+        <pitem  name = "RST"  direction = "in"  />
+        <pitem  name = "D0"  direction = "in"  />
+        <pitem  name = "D1"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "refclk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "data[6]"  />
+        <nitem  name = "data[23]"  />
+        <nitem  name = "buf_douto6"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst4_ODDRX1F5"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "SCLK"  direction = "in"  />
+        <pitem  name = "RST"  direction = "in"  />
+        <pitem  name = "D0"  direction = "in"  />
+        <pitem  name = "D1"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "refclk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "data[5]"  />
+        <nitem  name = "data[22]"  />
+        <nitem  name = "buf_douto5"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst4_ODDRX1F4"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "SCLK"  direction = "in"  />
+        <pitem  name = "RST"  direction = "in"  />
+        <pitem  name = "D0"  direction = "in"  />
+        <pitem  name = "D1"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "refclk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "data[4]"  />
+        <nitem  name = "data[21]"  />
+        <nitem  name = "buf_douto4"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst4_ODDRX1F3"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "SCLK"  direction = "in"  />
+        <pitem  name = "RST"  direction = "in"  />
+        <pitem  name = "D0"  direction = "in"  />
+        <pitem  name = "D1"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "refclk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "data[3]"  />
+        <nitem  name = "data[20]"  />
+        <nitem  name = "buf_douto3"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst4_ODDRX1F2"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "SCLK"  direction = "in"  />
+        <pitem  name = "RST"  direction = "in"  />
+        <pitem  name = "D0"  direction = "in"  />
+        <pitem  name = "D1"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "refclk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "data[2]"  />
+        <nitem  name = "data[19]"  />
+        <nitem  name = "buf_douto2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst4_ODDRX1F1"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "SCLK"  direction = "in"  />
+        <pitem  name = "RST"  direction = "in"  />
+        <pitem  name = "D0"  direction = "in"  />
+        <pitem  name = "D1"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "refclk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "data[1]"  />
+        <nitem  name = "data[18]"  />
+        <nitem  name = "buf_douto1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst4_ODDRX1F0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "SCLK"  direction = "in"  />
+        <pitem  name = "RST"  direction = "in"  />
+        <pitem  name = "D0"  direction = "in"  />
+        <pitem  name = "D1"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "refclk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "data[0]"  />
+        <nitem  name = "data[17]"  />
+        <nitem  name = "buf_douto0"  />
+        </nets>
+    </instance>
+
+    <instance  name = "scuba_vlo_inst"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "scuba_vhi_inst"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "scuba_vhi"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst3_ODDRX1F"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "SCLK"  direction = "in"  />
+        <pitem  name = "RST"  direction = "in"  />
+        <pitem  name = "D0"  direction = "in"  />
+        <pitem  name = "D1"  direction = "in"  />
+        <pitem  name = "Q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "refclk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "scuba_vhi"  />
+        <nitem  name = "scuba_vlo"  />
+        <nitem  name = "buf_clkout"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst2_OB"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "buf_clkout"  />
+        <nitem  name = "clkout"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst1_OB16"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "buf_douto16"  />
+        <nitem  name = "dout[16]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst1_OB15"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "buf_douto15"  />
+        <nitem  name = "dout[15]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst1_OB14"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "buf_douto14"  />
+        <nitem  name = "dout[14]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst1_OB13"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "buf_douto13"  />
+        <nitem  name = "dout[13]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst1_OB12"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "buf_douto12"  />
+        <nitem  name = "dout[12]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst1_OB11"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "buf_douto11"  />
+        <nitem  name = "dout[11]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst1_OB10"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "buf_douto10"  />
+        <nitem  name = "dout[10]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst1_OB9"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "buf_douto9"  />
+        <nitem  name = "dout[9]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst1_OB8"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "buf_douto8"  />
+        <nitem  name = "dout[8]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst1_OB7"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "buf_douto7"  />
+        <nitem  name = "dout[7]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst1_OB6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "buf_douto6"  />
+        <nitem  name = "dout[6]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst1_OB5"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "buf_douto5"  />
+        <nitem  name = "dout[5]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst1_OB4"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "buf_douto4"  />
+        <nitem  name = "dout[4]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst1_OB3"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "buf_douto3"  />
+        <nitem  name = "dout[3]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst1_OB2"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "buf_douto2"  />
+        <nitem  name = "dout[2]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst1_OB1"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "buf_douto1"  />
+        <nitem  name = "dout[1]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Inst1_OB0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "I"  direction = "in"  />
+        <pitem  name = "O"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "buf_douto0"  />
+        <nitem  name = "dout[0]"  />
+        </nets>
+    </instance>
+
+    <!--
+        Views in design "ddr_output": 0
+    -->
+
+    <views>
+    </views>
+
+</unit>
+
+</library>
+
+</top>

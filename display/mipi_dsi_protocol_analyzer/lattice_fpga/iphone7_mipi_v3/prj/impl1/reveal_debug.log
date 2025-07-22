@@ -1,0 +1,1698 @@
+Logfile for Reveal Analyzer
+Version: Diamond 3.14.0.75.2
+Platform: Windows8 64bit
+Filename: C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/reveal_debug.log
+First created: 週日 七月 20 20:30:09 2025
+[20:30:17] Detect USB port
+[20:30:17] Connecting cableserver to detect cable port....
+[20:30:24] @Connect
+[20:30:24] @QueryCable
+[20:30:24] @Read
+[20:30:24] cable[0]=EzUSB-0,USB
+[20:30:24] cable[1]=FTUSB-0,USB2
+[20:30:24] cable[2]=FTUSB-1,USB2
+[20:30:24] @Disconnect
+[20:31:02] runProject on device [JTAG_SOFT] using C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/top.rva [top.rvl]
+[20:31:02] Connecting cableserver to run Reveal debugger....
+[20:31:02] @Connect
+[20:31:02] @SetSharableApplications,2,Reveal,Mico
+[20:31:03] @SetCablePort,USB,EzUSB-0,8,0,0,1,1,0,0,0,1
+[20:31:03] @LockCable
+[20:31:03] @GetServerStatus
+[20:31:03] @Read
+[20:31:03] @SetTargetDevice,0
+[20:31:03] Connecting core0....
+[20:31:03] @ShiftIR,8,0,ER1
+[20:31:03] @ShiftDR,21,0,data (select core0)
+[20:31:03] @ShiftIR,8,0,ER2
+[20:31:03] Configuring core0....
+[20:31:03] @JumpState,RUN_TEST_IDLE
+[20:31:03] @JumpState,RUN_TEST_IDLE
+[20:31:03] @JumpState,RUN_TEST_IDLE
+[20:31:03] @ShiftIR,8,0,NOP
+[20:31:03] @JumpState,RUN_TEST_IDLE
+[20:31:03] @ShiftIR,8,0,ER2
+[20:31:03] @Set Odd Parity readback
+[20:31:03] @Set Odd Parity
+[20:31:03] @Set LA Start/Stop readback
+[20:31:03] @Set LA Start/Stop 
+[20:31:03] #Reveal IP Version = 1_6_042617
+[20:31:03] @Get Pattern
+[20:31:03] #pattern readout = a5a5
+[20:31:03] pattern readout passed!
+[20:31:03] @Get Tracy Signature
+[20:31:03] @Get Tracy Signature
+[20:31:03] #signature from core0 = 636044867
+[20:31:03] signature from core0 passed!
+[20:31:03] @Set Opcode Value
+[20:31:03] @Set Comp Value
+[20:31:03] @Set Mask Value
+[20:31:03] @Set Then Num
+[20:31:03] @Set NEXT THEN
+[20:31:03] @Set Cnt Cntg
+[20:31:03] @Set Event Count
+[20:31:03] @Get BurstWrite CRC
+[20:31:03] @Set Truth Tbl Addr Cnter Init
+[20:31:03] @Set Truth Table Prog
+[20:31:03] Configuring in burst mode....
+[20:31:03] @Get BurstWrite CRC
+[20:31:03] @Enable TE Trig
+[20:31:03] @Enable Trig Output OR All readback
+[20:31:03] @Enable Trig Output OR All
+[20:31:03] @Set Pre-Trig Sample
+[20:31:03] @Set Post-Trig Sample
+[20:31:03] finished configuration of core0
+[20:31:03] Starting all active cores....
+[20:31:03] @ShiftIR,8,0,ER1
+[20:31:03] @ShiftDR,21,0,data (select active cores)
+[20:31:03] @ShiftIR,8,0,ER2
+[20:31:03] @Set LA Start cores
+[20:31:03] @UnlockCable
+[20:31:03] Running all active cores....
+[20:31:03] @LockCable
+[20:31:03] Polling trigger memory of core0....
+[20:31:03] @ShiftIR,8,0,ER1
+[20:31:03] @ShiftDR,21,0,data (select core0)
+[20:31:03] @ShiftIR,8,0,ER2
+[20:31:03] @Get Force Trigger bit
+[20:31:03] #TM_CTL_0=5
+[20:31:03] @Get Trig Detected Cnt
+[20:31:03] #numDetectedTriggers = 1
+[20:31:03] @Get Mem Block Full Cnt
+[20:31:03] #memFullCnt = 1
+[20:31:03] Downloading trigger memory of core0....
+[20:31:03] @Is LA Armed
+[20:31:03] @Set LA Start/Stop readback
+[20:31:03] @Set LA Start/Stop 
+[20:31:03] @Set LA Start/Stop readback
+[20:31:03] @Set LA Start/Stop 
+[20:31:03] @Get Trig Detected Cnt
+[20:31:03] #numDetectedTriggers = 1
+[20:31:03] @Get Mem Block Full Cnt
+[20:31:03] #memFullCnt = 1
+[20:31:03] @Get Last Addr Written
+[20:31:03] #lastAddrWritten = 1920
+[20:31:03] @Get Multiple Trig Enbl
+[20:31:03] #traceWidth=33, userSelectedTriggers=1, numTrigEnable=1
+[20:31:03] @Get BurstRead CRC
+[20:31:03] @Set Trace Mem Cnter Init
+[20:31:03] Uploading in burst mode....
+[20:31:03] @ShiftDR,67584,1,data (burst read)
+[20:31:03] @GetTDO,data,67584
+[20:31:03] @Get BurstRead CRC
+[20:31:03] @Get BurstRead CRC
+[20:31:03] @Get Pre-Trig Sample Num
+[20:31:03] @Get Post-Trig Sample Num
+[20:31:03] @Get Pre-Trig Samples Captured
+[20:31:03] @Get Trig Ptr
+[20:31:03] #trigPtr = 6
+[20:31:03] #dataSize=5, numRead=2048, trace_out=1921
+[20:31:03] #trig0={blockPosition:0,triggerPosition:1}
+[20:31:03] finished download trigger memory of core0
+[20:31:03] @UnlockCable
+[20:31:03] @ReleaseCablePort
+[20:31:03] @Disconnect
+[20:31:03] All messages logged in file C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/reveal_debug.log
+[20:31:04] runProject on device [JTAG_SOFT] using C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/top.rva [top.rvl]
+[20:31:04] Connecting cableserver to run Reveal debugger....
+[20:31:04] @Connect
+[20:31:04] @SetSharableApplications,2,Reveal,Mico
+[20:31:04] @SetCablePort,USB,EzUSB-0,8,0,0,1,1,0,0,0,1
+[20:31:04] @LockCable
+[20:31:04] @GetServerStatus
+[20:31:04] @Read
+[20:31:04] @SetTargetDevice,0
+[20:31:04] Connecting core0....
+[20:31:04] @ShiftIR,8,0,ER1
+[20:31:04] @ShiftDR,21,0,data (select core0)
+[20:31:04] @ShiftIR,8,0,ER2
+[20:31:04] Configuring core0....
+[20:31:04] @JumpState,RUN_TEST_IDLE
+[20:31:04] @JumpState,RUN_TEST_IDLE
+[20:31:04] @JumpState,RUN_TEST_IDLE
+[20:31:04] @ShiftIR,8,0,NOP
+[20:31:04] @JumpState,RUN_TEST_IDLE
+[20:31:04] @ShiftIR,8,0,ER2
+[20:31:04] @Set Odd Parity readback
+[20:31:04] @Set Odd Parity
+[20:31:04] @Set LA Start/Stop readback
+[20:31:04] @Set LA Start/Stop 
+[20:31:04] #Reveal IP Version = 1_6_042617
+[20:31:04] @Get Pattern
+[20:31:04] #pattern readout = a5a5
+[20:31:04] pattern readout passed!
+[20:31:04] @Get Tracy Signature
+[20:31:04] @Get Tracy Signature
+[20:31:04] #signature from core0 = 636044867
+[20:31:04] signature from core0 passed!
+[20:31:04] @Set Opcode Value
+[20:31:04] @Set Comp Value
+[20:31:04] @Set Mask Value
+[20:31:04] @Set Then Num
+[20:31:04] @Set NEXT THEN
+[20:31:04] @Set Cnt Cntg
+[20:31:04] @Set Event Count
+[20:31:04] @Get BurstWrite CRC
+[20:31:04] @Set Truth Tbl Addr Cnter Init
+[20:31:04] @Set Truth Table Prog
+[20:31:04] Configuring in burst mode....
+[20:31:04] @Get BurstWrite CRC
+[20:31:04] @Enable TE Trig
+[20:31:04] @Enable Trig Output OR All readback
+[20:31:04] @Enable Trig Output OR All
+[20:31:04] @Set Pre-Trig Sample
+[20:31:04] @Set Post-Trig Sample
+[20:31:04] finished configuration of core0
+[20:31:04] Starting all active cores....
+[20:31:04] @ShiftIR,8,0,ER1
+[20:31:04] @ShiftDR,21,0,data (select active cores)
+[20:31:04] @ShiftIR,8,0,ER2
+[20:31:04] @Set LA Start cores
+[20:31:04] @UnlockCable
+[20:31:04] Running all active cores....
+[20:31:04] @LockCable
+[20:31:04] Polling trigger memory of core0....
+[20:31:04] @ShiftIR,8,0,ER1
+[20:31:04] @ShiftDR,21,0,data (select core0)
+[20:31:04] @ShiftIR,8,0,ER2
+[20:31:04] @Get Force Trigger bit
+[20:31:04] #TM_CTL_0=5
+[20:31:04] @Get Trig Detected Cnt
+[20:31:04] #numDetectedTriggers = 1
+[20:31:04] @Get Mem Block Full Cnt
+[20:31:04] #memFullCnt = 1
+[20:31:04] Downloading trigger memory of core0....
+[20:31:04] @Is LA Armed
+[20:31:04] @Set LA Start/Stop readback
+[20:31:04] @Set LA Start/Stop 
+[20:31:04] @Set LA Start/Stop readback
+[20:31:04] @Set LA Start/Stop 
+[20:31:04] @Get Trig Detected Cnt
+[20:31:04] #numDetectedTriggers = 1
+[20:31:04] @Get Mem Block Full Cnt
+[20:31:04] #memFullCnt = 1
+[20:31:04] @Get Last Addr Written
+[20:31:04] #lastAddrWritten = 1920
+[20:31:04] @Get Multiple Trig Enbl
+[20:31:04] #traceWidth=33, userSelectedTriggers=1, numTrigEnable=1
+[20:31:04] @Get BurstRead CRC
+[20:31:04] @Set Trace Mem Cnter Init
+[20:31:04] Uploading in burst mode....
+[20:31:04] @ShiftDR,67584,1,data (burst read)
+[20:31:04] @GetTDO,data,67584
+[20:31:04] @Get BurstRead CRC
+[20:31:04] @Get BurstRead CRC
+[20:31:04] @Get Pre-Trig Sample Num
+[20:31:04] @Get Post-Trig Sample Num
+[20:31:04] @Get Pre-Trig Samples Captured
+[20:31:04] @Get Trig Ptr
+[20:31:04] #trigPtr = 6
+[20:31:04] #dataSize=5, numRead=2048, trace_out=1921
+[20:31:04] #trig0={blockPosition:0,triggerPosition:1}
+[20:31:04] finished download trigger memory of core0
+[20:31:04] @UnlockCable
+[20:31:04] @ReleaseCablePort
+[20:31:04] @Disconnect
+[20:31:04] All messages logged in file C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/reveal_debug.log
+[20:31:18] runProject on device [JTAG_SOFT] using C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/top.rva [top.rvl]
+[20:31:18] Connecting cableserver to run Reveal debugger....
+[20:31:18] @Connect
+[20:31:18] @SetSharableApplications,2,Reveal,Mico
+[20:31:18] @SetCablePort,USB,EzUSB-0,8,0,0,1,1,0,0,0,1
+[20:31:18] @LockCable
+[20:31:18] @GetServerStatus
+[20:31:18] @Read
+[20:31:18] @SetTargetDevice,0
+[20:31:18] Connecting core0....
+[20:31:18] @ShiftIR,8,0,ER1
+[20:31:18] @ShiftDR,21,0,data (select core0)
+[20:31:18] @ShiftIR,8,0,ER2
+[20:31:18] Configuring core0....
+[20:31:18] @JumpState,RUN_TEST_IDLE
+[20:31:18] @JumpState,RUN_TEST_IDLE
+[20:31:18] @JumpState,RUN_TEST_IDLE
+[20:31:18] @ShiftIR,8,0,NOP
+[20:31:18] @JumpState,RUN_TEST_IDLE
+[20:31:18] @ShiftIR,8,0,ER2
+[20:31:18] @Set Odd Parity readback
+[20:31:18] @Set Odd Parity
+[20:31:18] @Set LA Start/Stop readback
+[20:31:18] @Set LA Start/Stop 
+[20:31:18] #Reveal IP Version = 1_6_042617
+[20:31:18] @Get Pattern
+[20:31:18] #pattern readout = a5a5
+[20:31:18] pattern readout passed!
+[20:31:18] @Get Tracy Signature
+[20:31:18] @Get Tracy Signature
+[20:31:18] #signature from core0 = 636044867
+[20:31:18] signature from core0 passed!
+[20:31:18] @Set Opcode Value
+[20:31:18] @Set Comp Value
+[20:31:18] @Set Mask Value
+[20:31:18] @Set Then Num
+[20:31:18] @Set NEXT THEN
+[20:31:18] @Set Cnt Cntg
+[20:31:18] @Set Event Count
+[20:31:18] @Get BurstWrite CRC
+[20:31:18] @Set Truth Tbl Addr Cnter Init
+[20:31:18] @Set Truth Table Prog
+[20:31:18] Configuring in burst mode....
+[20:31:18] @Get BurstWrite CRC
+[20:31:18] @Enable TE Trig
+[20:31:18] @Enable Trig Output OR All readback
+[20:31:18] @Enable Trig Output OR All
+[20:31:18] @Set Pre-Trig Sample
+[20:31:18] @Set Post-Trig Sample
+[20:31:18] finished configuration of core0
+[20:31:18] Starting all active cores....
+[20:31:18] @ShiftIR,8,0,ER1
+[20:31:18] @ShiftDR,21,0,data (select active cores)
+[20:31:18] @ShiftIR,8,0,ER2
+[20:31:18] @Set LA Start cores
+[20:31:18] @UnlockCable
+[20:31:18] Running all active cores....
+[20:31:18] @LockCable
+[20:31:18] Polling trigger memory of core0....
+[20:31:18] @ShiftIR,8,0,ER1
+[20:31:18] @ShiftDR,21,0,data (select core0)
+[20:31:18] @ShiftIR,8,0,ER2
+[20:31:18] @Get Force Trigger bit
+[20:31:18] #TM_CTL_0=5
+[20:31:18] @Get Trig Detected Cnt
+[20:31:18] #numDetectedTriggers = 1
+[20:31:18] @Get Mem Block Full Cnt
+[20:31:18] #memFullCnt = 1
+[20:31:18] Downloading trigger memory of core0....
+[20:31:18] @Is LA Armed
+[20:31:18] @Set LA Start/Stop readback
+[20:31:18] @Set LA Start/Stop 
+[20:31:18] @Set LA Start/Stop readback
+[20:31:18] @Set LA Start/Stop 
+[20:31:18] @Get Trig Detected Cnt
+[20:31:18] #numDetectedTriggers = 1
+[20:31:18] @Get Mem Block Full Cnt
+[20:31:18] #memFullCnt = 1
+[20:31:18] @Get Last Addr Written
+[20:31:18] #lastAddrWritten = 1920
+[20:31:18] @Get Multiple Trig Enbl
+[20:31:18] #traceWidth=33, userSelectedTriggers=1, numTrigEnable=1
+[20:31:18] @Get BurstRead CRC
+[20:31:18] @Set Trace Mem Cnter Init
+[20:31:18] Uploading in burst mode....
+[20:31:18] @ShiftDR,67584,1,data (burst read)
+[20:31:18] @GetTDO,data,67584
+[20:31:18] @Get BurstRead CRC
+[20:31:18] @Get BurstRead CRC
+[20:31:18] @Get Pre-Trig Sample Num
+[20:31:18] @Get Post-Trig Sample Num
+[20:31:18] @Get Pre-Trig Samples Captured
+[20:31:18] @Get Trig Ptr
+[20:31:18] #trigPtr = 6
+[20:31:18] #dataSize=5, numRead=2048, trace_out=1921
+[20:31:18] #trig0={blockPosition:0,triggerPosition:1}
+[20:31:18] finished download trigger memory of core0
+[20:31:18] @UnlockCable
+[20:31:18] @ReleaseCablePort
+[20:31:18] @Disconnect
+[20:31:18] All messages logged in file C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/reveal_debug.log
+[20:31:19] runProject on device [JTAG_SOFT] using C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/top.rva [top.rvl]
+[20:31:19] Connecting cableserver to run Reveal debugger....
+[20:31:19] @Connect
+[20:31:19] @SetSharableApplications,2,Reveal,Mico
+[20:31:19] @SetCablePort,USB,EzUSB-0,8,0,0,1,1,0,0,0,1
+[20:31:19] @LockCable
+[20:31:19] @GetServerStatus
+[20:31:19] @Read
+[20:31:19] @SetTargetDevice,0
+[20:31:19] Connecting core0....
+[20:31:19] @ShiftIR,8,0,ER1
+[20:31:19] @ShiftDR,21,0,data (select core0)
+[20:31:19] @ShiftIR,8,0,ER2
+[20:31:19] Configuring core0....
+[20:31:19] @JumpState,RUN_TEST_IDLE
+[20:31:19] @JumpState,RUN_TEST_IDLE
+[20:31:19] @JumpState,RUN_TEST_IDLE
+[20:31:19] @ShiftIR,8,0,NOP
+[20:31:19] @JumpState,RUN_TEST_IDLE
+[20:31:19] @ShiftIR,8,0,ER2
+[20:31:19] @Set Odd Parity readback
+[20:31:19] @Set Odd Parity
+[20:31:19] @Set LA Start/Stop readback
+[20:31:19] @Set LA Start/Stop 
+[20:31:19] #Reveal IP Version = 1_6_042617
+[20:31:19] @Get Pattern
+[20:31:19] #pattern readout = a5a5
+[20:31:19] pattern readout passed!
+[20:31:19] @Get Tracy Signature
+[20:31:19] @Get Tracy Signature
+[20:31:19] #signature from core0 = 636044867
+[20:31:19] signature from core0 passed!
+[20:31:19] @Set Opcode Value
+[20:31:19] @Set Comp Value
+[20:31:19] @Set Mask Value
+[20:31:19] @Set Then Num
+[20:31:19] @Set NEXT THEN
+[20:31:19] @Set Cnt Cntg
+[20:31:19] @Set Event Count
+[20:31:19] @Get BurstWrite CRC
+[20:31:19] @Set Truth Tbl Addr Cnter Init
+[20:31:19] @Set Truth Table Prog
+[20:31:19] Configuring in burst mode....
+[20:31:19] @Get BurstWrite CRC
+[20:31:19] @Enable TE Trig
+[20:31:19] @Enable Trig Output OR All readback
+[20:31:19] @Enable Trig Output OR All
+[20:31:19] @Set Pre-Trig Sample
+[20:31:19] @Set Post-Trig Sample
+[20:31:19] finished configuration of core0
+[20:31:19] Starting all active cores....
+[20:31:19] @ShiftIR,8,0,ER1
+[20:31:19] @ShiftDR,21,0,data (select active cores)
+[20:31:19] @ShiftIR,8,0,ER2
+[20:31:19] @Set LA Start cores
+[20:31:19] @UnlockCable
+[20:31:19] Running all active cores....
+[20:31:19] @LockCable
+[20:31:19] Polling trigger memory of core0....
+[20:31:19] @ShiftIR,8,0,ER1
+[20:31:19] @ShiftDR,21,0,data (select core0)
+[20:31:19] @ShiftIR,8,0,ER2
+[20:31:19] @Get Force Trigger bit
+[20:31:19] #TM_CTL_0=5
+[20:31:19] @Get Trig Detected Cnt
+[20:31:19] #numDetectedTriggers = 1
+[20:31:19] @Get Mem Block Full Cnt
+[20:31:19] #memFullCnt = 1
+[20:31:19] Downloading trigger memory of core0....
+[20:31:19] @Is LA Armed
+[20:31:19] @Set LA Start/Stop readback
+[20:31:19] @Set LA Start/Stop 
+[20:31:19] @Set LA Start/Stop readback
+[20:31:19] @Set LA Start/Stop 
+[20:31:19] @Get Trig Detected Cnt
+[20:31:19] #numDetectedTriggers = 1
+[20:31:19] @Get Mem Block Full Cnt
+[20:31:19] #memFullCnt = 1
+[20:31:19] @Get Last Addr Written
+[20:31:19] #lastAddrWritten = 1920
+[20:31:19] @Get Multiple Trig Enbl
+[20:31:19] #traceWidth=33, userSelectedTriggers=1, numTrigEnable=1
+[20:31:19] @Get BurstRead CRC
+[20:31:19] @Set Trace Mem Cnter Init
+[20:31:19] Uploading in burst mode....
+[20:31:19] @ShiftDR,67584,1,data (burst read)
+[20:31:19] @GetTDO,data,67584
+[20:31:19] @Get BurstRead CRC
+[20:31:19] @Get BurstRead CRC
+[20:31:19] @Get Pre-Trig Sample Num
+[20:31:19] @Get Post-Trig Sample Num
+[20:31:19] @Get Pre-Trig Samples Captured
+[20:31:19] @Get Trig Ptr
+[20:31:19] #trigPtr = 6
+[20:31:19] #dataSize=5, numRead=2048, trace_out=1921
+[20:31:19] #trig0={blockPosition:0,triggerPosition:1}
+[20:31:19] finished download trigger memory of core0
+[20:31:19] @UnlockCable
+[20:31:19] @ReleaseCablePort
+[20:31:19] @Disconnect
+[20:31:19] All messages logged in file C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/reveal_debug.log
+[20:31:19] runProject on device [JTAG_SOFT] using C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/top.rva [top.rvl]
+[20:31:19] Connecting cableserver to run Reveal debugger....
+[20:31:19] @Connect
+[20:31:19] @SetSharableApplications,2,Reveal,Mico
+[20:31:20] @SetCablePort,USB,EzUSB-0,8,0,0,1,1,0,0,0,1
+[20:31:20] @LockCable
+[20:31:20] @GetServerStatus
+[20:31:20] @Read
+[20:31:20] @SetTargetDevice,0
+[20:31:20] Connecting core0....
+[20:31:20] @ShiftIR,8,0,ER1
+[20:31:20] @ShiftDR,21,0,data (select core0)
+[20:31:20] @ShiftIR,8,0,ER2
+[20:31:20] Configuring core0....
+[20:31:20] @JumpState,RUN_TEST_IDLE
+[20:31:20] @JumpState,RUN_TEST_IDLE
+[20:31:20] @JumpState,RUN_TEST_IDLE
+[20:31:20] @ShiftIR,8,0,NOP
+[20:31:20] @JumpState,RUN_TEST_IDLE
+[20:31:20] @ShiftIR,8,0,ER2
+[20:31:20] @Set Odd Parity readback
+[20:31:20] @Set Odd Parity
+[20:31:20] @Set LA Start/Stop readback
+[20:31:20] @Set LA Start/Stop 
+[20:31:20] #Reveal IP Version = 1_6_042617
+[20:31:20] @Get Pattern
+[20:31:20] #pattern readout = a5a5
+[20:31:20] pattern readout passed!
+[20:31:20] @Get Tracy Signature
+[20:31:20] @Get Tracy Signature
+[20:31:20] #signature from core0 = 636044867
+[20:31:20] signature from core0 passed!
+[20:31:20] @Set Opcode Value
+[20:31:20] @Set Comp Value
+[20:31:20] @Set Mask Value
+[20:31:20] @Set Then Num
+[20:31:20] @Set NEXT THEN
+[20:31:20] @Set Cnt Cntg
+[20:31:20] @Set Event Count
+[20:31:20] @Get BurstWrite CRC
+[20:31:20] @Set Truth Tbl Addr Cnter Init
+[20:31:20] @Set Truth Table Prog
+[20:31:20] Configuring in burst mode....
+[20:31:20] @Get BurstWrite CRC
+[20:31:20] @Enable TE Trig
+[20:31:20] @Enable Trig Output OR All readback
+[20:31:20] @Enable Trig Output OR All
+[20:31:20] @Set Pre-Trig Sample
+[20:31:20] @Set Post-Trig Sample
+[20:31:20] finished configuration of core0
+[20:31:20] Starting all active cores....
+[20:31:20] @ShiftIR,8,0,ER1
+[20:31:20] @ShiftDR,21,0,data (select active cores)
+[20:31:20] @ShiftIR,8,0,ER2
+[20:31:20] @Set LA Start cores
+[20:31:20] @UnlockCable
+[20:31:20] Running all active cores....
+[20:31:20] @LockCable
+[20:31:20] Polling trigger memory of core0....
+[20:31:20] @ShiftIR,8,0,ER1
+[20:31:20] @ShiftDR,21,0,data (select core0)
+[20:31:20] @ShiftIR,8,0,ER2
+[20:31:20] @Get Force Trigger bit
+[20:31:20] #TM_CTL_0=5
+[20:31:20] @Get Trig Detected Cnt
+[20:31:20] #numDetectedTriggers = 1
+[20:31:20] @Get Mem Block Full Cnt
+[20:31:20] #memFullCnt = 1
+[20:31:20] Downloading trigger memory of core0....
+[20:31:20] @Is LA Armed
+[20:31:20] @Set LA Start/Stop readback
+[20:31:20] @Set LA Start/Stop 
+[20:31:20] @Set LA Start/Stop readback
+[20:31:20] @Set LA Start/Stop 
+[20:31:20] @Get Trig Detected Cnt
+[20:31:20] #numDetectedTriggers = 1
+[20:31:20] @Get Mem Block Full Cnt
+[20:31:20] #memFullCnt = 1
+[20:31:20] @Get Last Addr Written
+[20:31:20] #lastAddrWritten = 1920
+[20:31:20] @Get Multiple Trig Enbl
+[20:31:20] #traceWidth=33, userSelectedTriggers=1, numTrigEnable=1
+[20:31:20] @Get BurstRead CRC
+[20:31:20] @Set Trace Mem Cnter Init
+[20:31:20] Uploading in burst mode....
+[20:31:20] @ShiftDR,67584,1,data (burst read)
+[20:31:20] @GetTDO,data,67584
+[20:31:20] @Get BurstRead CRC
+[20:31:20] @Get BurstRead CRC
+[20:31:20] @Get Pre-Trig Sample Num
+[20:31:20] @Get Post-Trig Sample Num
+[20:31:20] @Get Pre-Trig Samples Captured
+[20:31:20] @Get Trig Ptr
+[20:31:20] #trigPtr = 6
+[20:31:20] #dataSize=5, numRead=2048, trace_out=1921
+[20:31:20] #trig0={blockPosition:0,triggerPosition:1}
+[20:31:20] finished download trigger memory of core0
+[20:31:20] @UnlockCable
+[20:31:20] @ReleaseCablePort
+[20:31:20] @Disconnect
+[20:31:20] All messages logged in file C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/reveal_debug.log
+[20:31:20] runProject on device [JTAG_SOFT] using C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/top.rva [top.rvl]
+[20:31:20] Connecting cableserver to run Reveal debugger....
+[20:31:20] @Connect
+[20:31:20] @SetSharableApplications,2,Reveal,Mico
+[20:31:20] @SetCablePort,USB,EzUSB-0,8,0,0,1,1,0,0,0,1
+[20:31:20] @LockCable
+[20:31:20] @GetServerStatus
+[20:31:20] @Read
+[20:31:20] @SetTargetDevice,0
+[20:31:20] Connecting core0....
+[20:31:20] @ShiftIR,8,0,ER1
+[20:31:20] @ShiftDR,21,0,data (select core0)
+[20:31:20] @ShiftIR,8,0,ER2
+[20:31:20] Configuring core0....
+[20:31:20] @JumpState,RUN_TEST_IDLE
+[20:31:20] @JumpState,RUN_TEST_IDLE
+[20:31:20] @JumpState,RUN_TEST_IDLE
+[20:31:20] @ShiftIR,8,0,NOP
+[20:31:20] @JumpState,RUN_TEST_IDLE
+[20:31:20] @ShiftIR,8,0,ER2
+[20:31:20] @Set Odd Parity readback
+[20:31:20] @Set Odd Parity
+[20:31:20] @Set LA Start/Stop readback
+[20:31:20] @Set LA Start/Stop 
+[20:31:20] #Reveal IP Version = 1_6_042617
+[20:31:21] @Get Pattern
+[20:31:21] #pattern readout = a5a5
+[20:31:21] pattern readout passed!
+[20:31:21] @Get Tracy Signature
+[20:31:21] @Get Tracy Signature
+[20:31:21] #signature from core0 = 636044867
+[20:31:21] signature from core0 passed!
+[20:31:21] @Set Opcode Value
+[20:31:21] @Set Comp Value
+[20:31:21] @Set Mask Value
+[20:31:21] @Set Then Num
+[20:31:21] @Set NEXT THEN
+[20:31:21] @Set Cnt Cntg
+[20:31:21] @Set Event Count
+[20:31:21] @Get BurstWrite CRC
+[20:31:21] @Set Truth Tbl Addr Cnter Init
+[20:31:21] @Set Truth Table Prog
+[20:31:21] Configuring in burst mode....
+[20:31:21] @Get BurstWrite CRC
+[20:31:21] @Enable TE Trig
+[20:31:21] @Enable Trig Output OR All readback
+[20:31:21] @Enable Trig Output OR All
+[20:31:21] @Set Pre-Trig Sample
+[20:31:21] @Set Post-Trig Sample
+[20:31:21] finished configuration of core0
+[20:31:21] Starting all active cores....
+[20:31:21] @ShiftIR,8,0,ER1
+[20:31:21] @ShiftDR,21,0,data (select active cores)
+[20:31:21] @ShiftIR,8,0,ER2
+[20:31:21] @Set LA Start cores
+[20:31:21] @UnlockCable
+[20:31:21] Running all active cores....
+[20:31:21] @LockCable
+[20:31:21] Polling trigger memory of core0....
+[20:31:21] @ShiftIR,8,0,ER1
+[20:31:21] @ShiftDR,21,0,data (select core0)
+[20:31:21] @ShiftIR,8,0,ER2
+[20:31:21] @Get Force Trigger bit
+[20:31:21] #TM_CTL_0=5
+[20:31:21] @Get Trig Detected Cnt
+[20:31:21] #numDetectedTriggers = 1
+[20:31:21] @Get Mem Block Full Cnt
+[20:31:21] #memFullCnt = 1
+[20:31:21] Downloading trigger memory of core0....
+[20:31:21] @Is LA Armed
+[20:31:21] @Set LA Start/Stop readback
+[20:31:21] @Set LA Start/Stop 
+[20:31:21] @Set LA Start/Stop readback
+[20:31:21] @Set LA Start/Stop 
+[20:31:21] @Get Trig Detected Cnt
+[20:31:21] #numDetectedTriggers = 1
+[20:31:21] @Get Mem Block Full Cnt
+[20:31:21] #memFullCnt = 1
+[20:31:21] @Get Last Addr Written
+[20:31:21] #lastAddrWritten = 1920
+[20:31:21] @Get Multiple Trig Enbl
+[20:31:21] #traceWidth=33, userSelectedTriggers=1, numTrigEnable=1
+[20:31:21] @Get BurstRead CRC
+[20:31:21] @Set Trace Mem Cnter Init
+[20:31:21] Uploading in burst mode....
+[20:31:21] @ShiftDR,67584,1,data (burst read)
+[20:31:21] @GetTDO,data,67584
+[20:31:21] @Get BurstRead CRC
+[20:31:21] @Get BurstRead CRC
+[20:31:21] @Get Pre-Trig Sample Num
+[20:31:21] @Get Post-Trig Sample Num
+[20:31:21] @Get Pre-Trig Samples Captured
+[20:31:21] @Get Trig Ptr
+[20:31:21] #trigPtr = 6
+[20:31:21] #dataSize=5, numRead=2048, trace_out=1921
+[20:31:21] #trig0={blockPosition:0,triggerPosition:1}
+[20:31:21] finished download trigger memory of core0
+[20:31:21] @UnlockCable
+[20:31:21] @ReleaseCablePort
+[20:31:21] @Disconnect
+[20:31:21] All messages logged in file C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/reveal_debug.log
+[20:31:21] runProject on device [JTAG_SOFT] using C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/top.rva [top.rvl]
+[20:31:21] Connecting cableserver to run Reveal debugger....
+[20:31:21] @Connect
+[20:31:21] @SetSharableApplications,2,Reveal,Mico
+[20:31:21] @SetCablePort,USB,EzUSB-0,8,0,0,1,1,0,0,0,1
+[20:31:21] @LockCable
+[20:31:21] @GetServerStatus
+[20:31:21] @Read
+[20:31:21] @SetTargetDevice,0
+[20:31:21] Connecting core0....
+[20:31:21] @ShiftIR,8,0,ER1
+[20:31:21] @ShiftDR,21,0,data (select core0)
+[20:31:21] @ShiftIR,8,0,ER2
+[20:31:21] Configuring core0....
+[20:31:21] @JumpState,RUN_TEST_IDLE
+[20:31:21] @JumpState,RUN_TEST_IDLE
+[20:31:21] @JumpState,RUN_TEST_IDLE
+[20:31:21] @ShiftIR,8,0,NOP
+[20:31:21] @JumpState,RUN_TEST_IDLE
+[20:31:21] @ShiftIR,8,0,ER2
+[20:31:21] @Set Odd Parity readback
+[20:31:21] @Set Odd Parity
+[20:31:21] @Set LA Start/Stop readback
+[20:31:21] @Set LA Start/Stop 
+[20:31:21] #Reveal IP Version = 1_6_042617
+[20:31:21] @Get Pattern
+[20:31:21] #pattern readout = a5a5
+[20:31:21] pattern readout passed!
+[20:31:21] @Get Tracy Signature
+[20:31:21] @Get Tracy Signature
+[20:31:21] #signature from core0 = 636044867
+[20:31:21] signature from core0 passed!
+[20:31:21] @Set Opcode Value
+[20:31:21] @Set Comp Value
+[20:31:21] @Set Mask Value
+[20:31:21] @Set Then Num
+[20:31:21] @Set NEXT THEN
+[20:31:21] @Set Cnt Cntg
+[20:31:21] @Set Event Count
+[20:31:21] @Get BurstWrite CRC
+[20:31:21] @Set Truth Tbl Addr Cnter Init
+[20:31:21] @Set Truth Table Prog
+[20:31:21] Configuring in burst mode....
+[20:31:21] @Get BurstWrite CRC
+[20:31:21] @Enable TE Trig
+[20:31:21] @Enable Trig Output OR All readback
+[20:31:21] @Enable Trig Output OR All
+[20:31:21] @Set Pre-Trig Sample
+[20:31:21] @Set Post-Trig Sample
+[20:31:21] finished configuration of core0
+[20:31:21] Starting all active cores....
+[20:31:21] @ShiftIR,8,0,ER1
+[20:31:21] @ShiftDR,21,0,data (select active cores)
+[20:31:21] @ShiftIR,8,0,ER2
+[20:31:21] @Set LA Start cores
+[20:31:21] @UnlockCable
+[20:31:21] Running all active cores....
+[20:31:21] @LockCable
+[20:31:21] Polling trigger memory of core0....
+[20:31:21] @ShiftIR,8,0,ER1
+[20:31:21] @ShiftDR,21,0,data (select core0)
+[20:31:21] @ShiftIR,8,0,ER2
+[20:31:21] @Get Force Trigger bit
+[20:31:21] #TM_CTL_0=5
+[20:31:21] @Get Trig Detected Cnt
+[20:31:21] #numDetectedTriggers = 1
+[20:31:21] @Get Mem Block Full Cnt
+[20:31:21] #memFullCnt = 1
+[20:31:21] Downloading trigger memory of core0....
+[20:31:21] @Is LA Armed
+[20:31:21] @Set LA Start/Stop readback
+[20:31:21] @Set LA Start/Stop 
+[20:31:21] @Set LA Start/Stop readback
+[20:31:21] @Set LA Start/Stop 
+[20:31:21] @Get Trig Detected Cnt
+[20:31:21] #numDetectedTriggers = 1
+[20:31:21] @Get Mem Block Full Cnt
+[20:31:21] #memFullCnt = 1
+[20:31:21] @Get Last Addr Written
+[20:31:21] #lastAddrWritten = 368
+[20:31:21] @Get Multiple Trig Enbl
+[20:31:21] #traceWidth=33, userSelectedTriggers=1, numTrigEnable=1
+[20:31:21] @Get BurstRead CRC
+[20:31:21] @Set Trace Mem Cnter Init
+[20:31:21] Uploading in burst mode....
+[20:31:21] @ShiftDR,67584,1,data (burst read)
+[20:31:21] @GetTDO,data,67584
+[20:31:21] @Get BurstRead CRC
+[20:31:21] @Get BurstRead CRC
+[20:31:21] @Get Pre-Trig Sample Num
+[20:31:21] @Get Post-Trig Sample Num
+[20:31:21] @Get Pre-Trig Samples Captured
+[20:31:21] @Get Trig Ptr
+[20:31:21] #trigPtr = 502
+[20:31:21] #dataSize=5, numRead=2048, trace_out=2048
+[20:31:21] #trig0={blockPosition:0,triggerPosition:128}
+[20:31:21] finished download trigger memory of core0
+[20:31:21] @UnlockCable
+[20:31:21] @ReleaseCablePort
+[20:31:21] @Disconnect
+[20:31:21] All messages logged in file C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/reveal_debug.log
+[20:31:22] runProject on device [JTAG_SOFT] using C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/top.rva [top.rvl]
+[20:31:22] Connecting cableserver to run Reveal debugger....
+[20:31:22] @Connect
+[20:31:22] @SetSharableApplications,2,Reveal,Mico
+[20:31:22] @SetCablePort,USB,EzUSB-0,8,0,0,1,1,0,0,0,1
+[20:31:22] @LockCable
+[20:31:22] @GetServerStatus
+[20:31:22] @Read
+[20:31:22] @SetTargetDevice,0
+[20:31:22] Connecting core0....
+[20:31:22] @ShiftIR,8,0,ER1
+[20:31:22] @ShiftDR,21,0,data (select core0)
+[20:31:22] @ShiftIR,8,0,ER2
+[20:31:22] Configuring core0....
+[20:31:22] @JumpState,RUN_TEST_IDLE
+[20:31:22] @JumpState,RUN_TEST_IDLE
+[20:31:22] @JumpState,RUN_TEST_IDLE
+[20:31:22] @ShiftIR,8,0,NOP
+[20:31:22] @JumpState,RUN_TEST_IDLE
+[20:31:22] @ShiftIR,8,0,ER2
+[20:31:22] @Set Odd Parity readback
+[20:31:22] @Set Odd Parity
+[20:31:22] @Set LA Start/Stop readback
+[20:31:22] @Set LA Start/Stop 
+[20:31:22] #Reveal IP Version = 1_6_042617
+[20:31:22] @Get Pattern
+[20:31:22] #pattern readout = a5a5
+[20:31:22] pattern readout passed!
+[20:31:22] @Get Tracy Signature
+[20:31:22] @Get Tracy Signature
+[20:31:22] #signature from core0 = 636044867
+[20:31:22] signature from core0 passed!
+[20:31:22] @Set Opcode Value
+[20:31:22] @Set Comp Value
+[20:31:22] @Set Mask Value
+[20:31:22] @Set Then Num
+[20:31:22] @Set NEXT THEN
+[20:31:22] @Set Cnt Cntg
+[20:31:22] @Set Event Count
+[20:31:22] @Get BurstWrite CRC
+[20:31:22] @Set Truth Tbl Addr Cnter Init
+[20:31:22] @Set Truth Table Prog
+[20:31:22] Configuring in burst mode....
+[20:31:22] @Get BurstWrite CRC
+[20:31:22] @Enable TE Trig
+[20:31:22] @Enable Trig Output OR All readback
+[20:31:22] @Enable Trig Output OR All
+[20:31:22] @Set Pre-Trig Sample
+[20:31:22] @Set Post-Trig Sample
+[20:31:22] finished configuration of core0
+[20:31:22] Starting all active cores....
+[20:31:22] @ShiftIR,8,0,ER1
+[20:31:22] @ShiftDR,21,0,data (select active cores)
+[20:31:22] @ShiftIR,8,0,ER2
+[20:31:22] @Set LA Start cores
+[20:31:22] @UnlockCable
+[20:31:22] Running all active cores....
+[20:31:22] @LockCable
+[20:31:22] Polling trigger memory of core0....
+[20:31:22] @ShiftIR,8,0,ER1
+[20:31:22] @ShiftDR,21,0,data (select core0)
+[20:31:22] @ShiftIR,8,0,ER2
+[20:31:22] @Get Force Trigger bit
+[20:31:22] #TM_CTL_0=5
+[20:31:22] @Get Trig Detected Cnt
+[20:31:22] #numDetectedTriggers = 1
+[20:31:22] @Get Mem Block Full Cnt
+[20:31:22] #memFullCnt = 1
+[20:31:22] Downloading trigger memory of core0....
+[20:31:22] @Is LA Armed
+[20:31:22] @Set LA Start/Stop readback
+[20:31:22] @Set LA Start/Stop 
+[20:31:22] @Set LA Start/Stop readback
+[20:31:22] @Set LA Start/Stop 
+[20:31:22] @Get Trig Detected Cnt
+[20:31:22] #numDetectedTriggers = 1
+[20:31:22] @Get Mem Block Full Cnt
+[20:31:22] #memFullCnt = 1
+[20:31:22] @Get Last Addr Written
+[20:31:22] #lastAddrWritten = 310
+[20:31:22] @Get Multiple Trig Enbl
+[20:31:22] #traceWidth=33, userSelectedTriggers=1, numTrigEnable=1
+[20:31:22] @Get BurstRead CRC
+[20:31:22] @Set Trace Mem Cnter Init
+[20:31:22] Uploading in burst mode....
+[20:31:22] @ShiftDR,67584,1,data (burst read)
+[20:31:22] @GetTDO,data,67584
+[20:31:22] @Get BurstRead CRC
+[20:31:22] @Get BurstRead CRC
+[20:31:22] @Get Pre-Trig Sample Num
+[20:31:22] @Get Post-Trig Sample Num
+[20:31:22] @Get Pre-Trig Samples Captured
+[20:31:22] @Get Trig Ptr
+[20:31:22] #trigPtr = 444
+[20:31:22] #dataSize=5, numRead=2048, trace_out=2048
+[20:31:22] #trig0={blockPosition:0,triggerPosition:128}
+[20:31:22] finished download trigger memory of core0
+[20:31:22] @UnlockCable
+[20:31:22] @ReleaseCablePort
+[20:31:22] @Disconnect
+[20:31:22] All messages logged in file C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/reveal_debug.log
+[20:49:46] runProject on device [JTAG_SOFT] using C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/top.rva [top.rvl]
+[20:49:46] Connecting cableserver to run Reveal debugger....
+[20:49:53] @Connect
+[20:49:53] @SetSharableApplications,2,Reveal,Mico
+[20:49:54] @SetCablePort,USB,EzUSB-0,8,0,0,1,1,0,0,0,1
+[20:49:54] @LockCable
+[20:49:54] @GetServerStatus
+[20:49:54] @Read
+[20:49:54] @SetTargetDevice,0
+[20:49:54] Connecting core0....
+[20:49:54] @ShiftIR,8,0,ER1
+[20:49:54] @ShiftDR,21,0,data (select core0)
+[20:49:54] @ShiftIR,8,0,ER2
+[20:49:54] Configuring core0....
+[20:49:54] @JumpState,RUN_TEST_IDLE
+[20:49:54] @JumpState,RUN_TEST_IDLE
+[20:49:54] @JumpState,RUN_TEST_IDLE
+[20:49:54] @ShiftIR,8,0,NOP
+[20:49:54] @JumpState,RUN_TEST_IDLE
+[20:49:54] @ShiftIR,8,0,ER2
+[20:49:54] @Set Odd Parity readback
+[20:49:54] @Set Odd Parity
+[20:49:54] @Set LA Start/Stop readback
+[20:49:54] @Set LA Start/Stop 
+[20:49:54] #Reveal IP Version = 1_6_042617
+[20:49:54] @Get Pattern
+[20:49:54] #pattern readout = 1bc
+[20:49:54] #pattern expected = A5A5
+[20:49:54] ERROR: core0 incorrect pattern readout. <a href='file:///C:/lscc/diamond/3.14/docs/manuals/troubleshoot.pdf#FailurePoints'>See Reveal Troubleshooting Guide for more details on Failure Points (8) and (1) to (6)</a>.
+[20:49:54] @UnlockCable
+[20:49:54] @ReleaseCablePort
+[20:49:54] @Disconnect
+[20:49:56] runProject on device [JTAG_SOFT] using C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/top.rva [top.rvl]
+[20:49:56] Connecting cableserver to run Reveal debugger....
+[20:49:56] @Connect
+[20:49:56] @SetSharableApplications,2,Reveal,Mico
+[20:49:56] @SetCablePort,USB,EzUSB-0,8,0,0,1,1,0,0,0,1
+[20:49:56] @LockCable
+[20:49:56] @GetServerStatus
+[20:49:56] @Read
+[20:49:56] @SetTargetDevice,0
+[20:49:56] Connecting core0....
+[20:49:56] @ShiftIR,8,0,ER1
+[20:49:56] @ShiftDR,21,0,data (select core0)
+[20:49:56] @ShiftIR,8,0,ER2
+[20:49:56] Configuring core0....
+[20:49:56] @JumpState,RUN_TEST_IDLE
+[20:49:56] @JumpState,RUN_TEST_IDLE
+[20:49:56] @JumpState,RUN_TEST_IDLE
+[20:49:56] @ShiftIR,8,0,NOP
+[20:49:56] @JumpState,RUN_TEST_IDLE
+[20:49:56] @ShiftIR,8,0,ER2
+[20:49:56] @Set Odd Parity readback
+[20:49:56] @Set Odd Parity
+[20:49:56] @Set LA Start/Stop readback
+[20:49:56] @Set LA Start/Stop 
+[20:49:56] #Reveal IP Version = 1_6_042617
+[20:49:56] @Get Pattern
+[20:49:56] #pattern readout = 1bc
+[20:49:56] #pattern expected = A5A5
+[20:49:56] ERROR: core0 incorrect pattern readout. <a href='file:///C:/lscc/diamond/3.14/docs/manuals/troubleshoot.pdf#FailurePoints'>See Reveal Troubleshooting Guide for more details on Failure Points (8) and (1) to (6)</a>.
+[20:49:56] @UnlockCable
+[20:49:56] @ReleaseCablePort
+[20:49:56] @Disconnect
+[20:49:58] @ReleaseCablePort
+[20:49:58] @Disconnect
+[20:49:58] All messages logged in file C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/reveal_debug.log
+[20:50:02] runProject on device [JTAG_SOFT] using C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/top.rva [top.rvl]
+[20:50:02] Connecting cableserver to run Reveal debugger....
+[20:50:09] @Connect
+[20:50:09] @SetSharableApplications,2,Reveal,Mico
+[20:50:10] @SetCablePort,USB,EzUSB-0,8,0,0,1,1,0,0,0,1
+[20:50:10] @LockCable
+[20:50:10] @GetServerStatus
+[20:50:10] @Read
+[20:50:10] @SetTargetDevice,0
+[20:50:10] Connecting core0....
+[20:50:10] @ShiftIR,8,0,ER1
+[20:50:10] @ShiftDR,21,0,data (select core0)
+[20:50:10] @ShiftIR,8,0,ER2
+[20:50:10] Configuring core0....
+[20:50:10] @JumpState,RUN_TEST_IDLE
+[20:50:10] @JumpState,RUN_TEST_IDLE
+[20:50:10] @JumpState,RUN_TEST_IDLE
+[20:50:10] @ShiftIR,8,0,NOP
+[20:50:10] @JumpState,RUN_TEST_IDLE
+[20:50:10] @ShiftIR,8,0,ER2
+[20:50:10] @Set Odd Parity readback
+[20:50:10] @Set Odd Parity
+[20:50:10] @Set LA Start/Stop readback
+[20:50:10] @Set LA Start/Stop 
+[20:50:10] #Reveal IP Version = 1_6_042617
+[20:50:10] @Get Pattern
+[20:50:10] #pattern readout = a5a5
+[20:50:10] pattern readout passed!
+[20:50:10] @Get Tracy Signature
+[20:50:10] @Get Tracy Signature
+[20:50:10] #signature from core0 = 636044867
+[20:50:10] signature from core0 passed!
+[20:50:10] @Set Opcode Value
+[20:50:10] @Set Comp Value
+[20:50:10] @Set Mask Value
+[20:50:10] @Set Then Num
+[20:50:10] @Set NEXT THEN
+[20:50:10] @Set Cnt Cntg
+[20:50:10] @Set Event Count
+[20:50:10] @Get BurstWrite CRC
+[20:50:10] @Set Truth Tbl Addr Cnter Init
+[20:50:10] @Set Truth Table Prog
+[20:50:10] Configuring in burst mode....
+[20:50:10] @Get BurstWrite CRC
+[20:50:10] @Enable TE Trig
+[20:50:10] @Enable Trig Output OR All readback
+[20:50:10] @Enable Trig Output OR All
+[20:50:10] @Set Pre-Trig Sample
+[20:50:10] @Set Post-Trig Sample
+[20:50:10] finished configuration of core0
+[20:50:10] Starting all active cores....
+[20:50:10] @ShiftIR,8,0,ER1
+[20:50:10] @ShiftDR,21,0,data (select active cores)
+[20:50:10] @ShiftIR,8,0,ER2
+[20:50:10] @Set LA Start cores
+[20:50:10] @UnlockCable
+[20:50:10] Running all active cores....
+[20:50:10] @LockCable
+[20:50:10] Polling trigger memory of core0....
+[20:50:10] @ShiftIR,8,0,ER1
+[20:50:10] @ShiftDR,21,0,data (select core0)
+[20:50:10] @ShiftIR,8,0,ER2
+[20:50:10] @Get Force Trigger bit
+[20:50:10] #TM_CTL_0=5
+[20:50:10] @Get Trig Detected Cnt
+[20:50:10] #numDetectedTriggers = 1
+[20:50:10] @Get Mem Block Full Cnt
+[20:50:10] #memFullCnt = 1
+[20:50:10] Downloading trigger memory of core0....
+[20:50:10] @Is LA Armed
+[20:50:10] @Set LA Start/Stop readback
+[20:50:10] @Set LA Start/Stop 
+[20:50:10] @Set LA Start/Stop readback
+[20:50:10] @Set LA Start/Stop 
+[20:50:10] @Get Trig Detected Cnt
+[20:50:10] #numDetectedTriggers = 1
+[20:50:10] @Get Mem Block Full Cnt
+[20:50:10] #memFullCnt = 1
+[20:50:10] @Get Last Addr Written
+[20:50:10] #lastAddrWritten = 1920
+[20:50:10] @Get Multiple Trig Enbl
+[20:50:10] #traceWidth=33, userSelectedTriggers=1, numTrigEnable=1
+[20:50:10] @Get BurstRead CRC
+[20:50:10] @Set Trace Mem Cnter Init
+[20:50:10] Uploading in burst mode....
+[20:50:10] @ShiftDR,67584,1,data (burst read)
+[20:50:10] @GetTDO,data,67584
+[20:50:10] @Get BurstRead CRC
+[20:50:10] @Get BurstRead CRC
+[20:50:10] @Get Pre-Trig Sample Num
+[20:50:10] @Get Post-Trig Sample Num
+[20:50:10] @Get Pre-Trig Samples Captured
+[20:50:10] @Get Trig Ptr
+[20:50:10] #trigPtr = 6
+[20:50:10] #dataSize=5, numRead=2048, trace_out=1921
+[20:50:10] #trig0={blockPosition:0,triggerPosition:1}
+[20:50:10] finished download trigger memory of core0
+[20:50:10] @UnlockCable
+[20:50:10] @ReleaseCablePort
+[20:50:10] @Disconnect
+[20:50:10] All messages logged in file C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/reveal_debug.log
+[20:50:18] runProject on device [JTAG_SOFT] using C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/top.rva [top.rvl]
+[20:50:18] Connecting cableserver to run Reveal debugger....
+[20:50:18] @Connect
+[20:50:18] @SetSharableApplications,2,Reveal,Mico
+[20:50:18] @SetCablePort,USB,EzUSB-0,8,0,0,1,1,0,0,0,1
+[20:50:18] @LockCable
+[20:50:18] @GetServerStatus
+[20:50:18] @Read
+[20:50:18] @SetTargetDevice,0
+[20:50:18] Connecting core0....
+[20:50:18] @ShiftIR,8,0,ER1
+[20:50:18] @ShiftDR,21,0,data (select core0)
+[20:50:18] @ShiftIR,8,0,ER2
+[20:50:18] Configuring core0....
+[20:50:18] @JumpState,RUN_TEST_IDLE
+[20:50:18] @JumpState,RUN_TEST_IDLE
+[20:50:18] @JumpState,RUN_TEST_IDLE
+[20:50:18] @ShiftIR,8,0,NOP
+[20:50:18] @JumpState,RUN_TEST_IDLE
+[20:50:18] @ShiftIR,8,0,ER2
+[20:50:18] @Set Odd Parity readback
+[20:50:18] @Set Odd Parity
+[20:50:18] @Set LA Start/Stop readback
+[20:50:18] @Set LA Start/Stop 
+[20:50:18] #Reveal IP Version = 1_6_042617
+[20:50:18] @Get Pattern
+[20:50:18] #pattern readout = a5a5
+[20:50:18] pattern readout passed!
+[20:50:18] @Get Tracy Signature
+[20:50:18] @Get Tracy Signature
+[20:50:18] #signature from core0 = 636044867
+[20:50:18] signature from core0 passed!
+[20:50:18] @Set Opcode Value
+[20:50:18] @Set Comp Value
+[20:50:18] @Set Mask Value
+[20:50:18] @Set Then Num
+[20:50:18] @Set NEXT THEN
+[20:50:18] @Set Cnt Cntg
+[20:50:18] @Set Event Count
+[20:50:18] @Get BurstWrite CRC
+[20:50:18] @Set Truth Tbl Addr Cnter Init
+[20:50:18] @Set Truth Table Prog
+[20:50:18] Configuring in burst mode....
+[20:50:18] @Get BurstWrite CRC
+[20:50:18] @Enable TE Trig
+[20:50:18] @Enable Trig Output OR All readback
+[20:50:18] @Enable Trig Output OR All
+[20:50:18] @Set Pre-Trig Sample
+[20:50:18] @Set Post-Trig Sample
+[20:50:18] finished configuration of core0
+[20:50:18] Starting all active cores....
+[20:50:18] @ShiftIR,8,0,ER1
+[20:50:18] @ShiftDR,21,0,data (select active cores)
+[20:50:18] @ShiftIR,8,0,ER2
+[20:50:18] @Set LA Start cores
+[20:50:18] @UnlockCable
+[20:50:18] Running all active cores....
+[20:50:18] @LockCable
+[20:50:18] Polling trigger memory of core0....
+[20:50:18] @ShiftIR,8,0,ER1
+[20:50:18] @ShiftDR,21,0,data (select core0)
+[20:50:18] @ShiftIR,8,0,ER2
+[20:50:18] @Get Force Trigger bit
+[20:50:18] #TM_CTL_0=5
+[20:50:18] @Get Trig Detected Cnt
+[20:50:18] #numDetectedTriggers = 1
+[20:50:18] @Get Mem Block Full Cnt
+[20:50:18] #memFullCnt = 1
+[20:50:18] Downloading trigger memory of core0....
+[20:50:18] @Is LA Armed
+[20:50:18] @Set LA Start/Stop readback
+[20:50:18] @Set LA Start/Stop 
+[20:50:18] @Set LA Start/Stop readback
+[20:50:18] @Set LA Start/Stop 
+[20:50:18] @Get Trig Detected Cnt
+[20:50:18] #numDetectedTriggers = 1
+[20:50:18] @Get Mem Block Full Cnt
+[20:50:18] #memFullCnt = 1
+[20:50:18] @Get Last Addr Written
+[20:50:18] #lastAddrWritten = 1920
+[20:50:18] @Get Multiple Trig Enbl
+[20:50:18] #traceWidth=33, userSelectedTriggers=1, numTrigEnable=1
+[20:50:18] @Get BurstRead CRC
+[20:50:18] @Set Trace Mem Cnter Init
+[20:50:18] Uploading in burst mode....
+[20:50:19] @ShiftDR,67584,1,data (burst read)
+[20:50:19] @GetTDO,data,67584
+[20:50:19] @Get BurstRead CRC
+[20:50:19] @Get BurstRead CRC
+[20:50:19] @Get Pre-Trig Sample Num
+[20:50:19] @Get Post-Trig Sample Num
+[20:50:19] @Get Pre-Trig Samples Captured
+[20:50:19] @Get Trig Ptr
+[20:50:19] #trigPtr = 6
+[20:50:19] #dataSize=5, numRead=2048, trace_out=1921
+[20:50:19] #trig0={blockPosition:0,triggerPosition:1}
+[20:50:19] finished download trigger memory of core0
+[20:50:19] @UnlockCable
+[20:50:19] @ReleaseCablePort
+[20:50:19] @Disconnect
+[20:50:19] All messages logged in file C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/reveal_debug.log
+[20:50:20] runProject on device [JTAG_SOFT] using C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/top.rva [top.rvl]
+[20:50:20] Connecting cableserver to run Reveal debugger....
+[20:50:20] @Connect
+[20:50:20] @SetSharableApplications,2,Reveal,Mico
+[20:50:21] @SetCablePort,USB,EzUSB-0,8,0,0,1,1,0,0,0,1
+[20:50:21] @LockCable
+[20:50:21] @GetServerStatus
+[20:50:21] @Read
+[20:50:21] @SetTargetDevice,0
+[20:50:21] Connecting core0....
+[20:50:21] @ShiftIR,8,0,ER1
+[20:50:21] @ShiftDR,21,0,data (select core0)
+[20:50:21] @ShiftIR,8,0,ER2
+[20:50:21] Configuring core0....
+[20:50:21] @JumpState,RUN_TEST_IDLE
+[20:50:21] @JumpState,RUN_TEST_IDLE
+[20:50:21] @JumpState,RUN_TEST_IDLE
+[20:50:21] @ShiftIR,8,0,NOP
+[20:50:21] @JumpState,RUN_TEST_IDLE
+[20:50:21] @ShiftIR,8,0,ER2
+[20:50:21] @Set Odd Parity readback
+[20:50:21] @Set Odd Parity
+[20:50:21] @Set LA Start/Stop readback
+[20:50:21] @Set LA Start/Stop 
+[20:50:21] #Reveal IP Version = 1_6_042617
+[20:50:21] @Get Pattern
+[20:50:21] #pattern readout = a5a5
+[20:50:21] pattern readout passed!
+[20:50:21] @Get Tracy Signature
+[20:50:21] @Get Tracy Signature
+[20:50:21] #signature from core0 = 636044867
+[20:50:21] signature from core0 passed!
+[20:50:21] @Set Opcode Value
+[20:50:21] @Set Comp Value
+[20:50:21] @Set Mask Value
+[20:50:21] @Set Then Num
+[20:50:21] @Set NEXT THEN
+[20:50:21] @Set Cnt Cntg
+[20:50:21] @Set Event Count
+[20:50:21] @Get BurstWrite CRC
+[20:50:21] @Set Truth Tbl Addr Cnter Init
+[20:50:21] @Set Truth Table Prog
+[20:50:21] Configuring in burst mode....
+[20:50:21] @Get BurstWrite CRC
+[20:50:21] @Enable TE Trig
+[20:50:21] @Enable Trig Output OR All readback
+[20:50:21] @Enable Trig Output OR All
+[20:50:21] @Set Pre-Trig Sample
+[20:50:21] @Set Post-Trig Sample
+[20:50:21] finished configuration of core0
+[20:50:21] Starting all active cores....
+[20:50:21] @ShiftIR,8,0,ER1
+[20:50:21] @ShiftDR,21,0,data (select active cores)
+[20:50:21] @ShiftIR,8,0,ER2
+[20:50:21] @Set LA Start cores
+[20:50:21] @UnlockCable
+[20:50:21] Running all active cores....
+[20:50:21] @LockCable
+[20:50:21] Polling trigger memory of core0....
+[20:50:21] @ShiftIR,8,0,ER1
+[20:50:21] @ShiftDR,21,0,data (select core0)
+[20:50:21] @ShiftIR,8,0,ER2
+[20:50:21] @Get Force Trigger bit
+[20:50:21] #TM_CTL_0=5
+[20:50:21] @Get Trig Detected Cnt
+[20:50:21] #numDetectedTriggers = 1
+[20:50:21] @Get Mem Block Full Cnt
+[20:50:21] #memFullCnt = 1
+[20:50:21] Downloading trigger memory of core0....
+[20:50:21] @Is LA Armed
+[20:50:21] @Set LA Start/Stop readback
+[20:50:21] @Set LA Start/Stop 
+[20:50:21] @Set LA Start/Stop readback
+[20:50:21] @Set LA Start/Stop 
+[20:50:21] @Get Trig Detected Cnt
+[20:50:21] #numDetectedTriggers = 1
+[20:50:21] @Get Mem Block Full Cnt
+[20:50:21] #memFullCnt = 1
+[20:50:21] @Get Last Addr Written
+[20:50:21] #lastAddrWritten = 1920
+[20:50:21] @Get Multiple Trig Enbl
+[20:50:21] #traceWidth=33, userSelectedTriggers=1, numTrigEnable=1
+[20:50:21] @Get BurstRead CRC
+[20:50:21] @Set Trace Mem Cnter Init
+[20:50:21] Uploading in burst mode....
+[20:50:21] @ShiftDR,67584,1,data (burst read)
+[20:50:21] @GetTDO,data,67584
+[20:50:21] @Get BurstRead CRC
+[20:50:21] @Get BurstRead CRC
+[20:50:21] @Get Pre-Trig Sample Num
+[20:50:21] @Get Post-Trig Sample Num
+[20:50:21] @Get Pre-Trig Samples Captured
+[20:50:21] @Get Trig Ptr
+[20:50:21] #trigPtr = 6
+[20:50:21] #dataSize=5, numRead=2048, trace_out=1921
+[20:50:21] #trig0={blockPosition:0,triggerPosition:1}
+[20:50:21] finished download trigger memory of core0
+[20:50:21] @UnlockCable
+[20:50:21] @ReleaseCablePort
+[20:50:21] @Disconnect
+[20:50:21] All messages logged in file C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/reveal_debug.log
+[20:50:21] runProject on device [JTAG_SOFT] using C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/top.rva [top.rvl]
+[20:50:21] Connecting cableserver to run Reveal debugger....
+[20:50:21] @Connect
+[20:50:21] @SetSharableApplications,2,Reveal,Mico
+[20:50:22] @SetCablePort,USB,EzUSB-0,8,0,0,1,1,0,0,0,1
+[20:50:22] @LockCable
+[20:50:22] @GetServerStatus
+[20:50:22] @Read
+[20:50:22] @SetTargetDevice,0
+[20:50:22] Connecting core0....
+[20:50:22] @ShiftIR,8,0,ER1
+[20:50:22] @ShiftDR,21,0,data (select core0)
+[20:50:22] @ShiftIR,8,0,ER2
+[20:50:22] Configuring core0....
+[20:50:22] @JumpState,RUN_TEST_IDLE
+[20:50:22] @JumpState,RUN_TEST_IDLE
+[20:50:22] @JumpState,RUN_TEST_IDLE
+[20:50:22] @ShiftIR,8,0,NOP
+[20:50:22] @JumpState,RUN_TEST_IDLE
+[20:50:22] @ShiftIR,8,0,ER2
+[20:50:22] @Set Odd Parity readback
+[20:50:22] @Set Odd Parity
+[20:50:22] @Set LA Start/Stop readback
+[20:50:22] @Set LA Start/Stop 
+[20:50:22] #Reveal IP Version = 1_6_042617
+[20:50:22] @Get Pattern
+[20:50:22] #pattern readout = a5a5
+[20:50:22] pattern readout passed!
+[20:50:22] @Get Tracy Signature
+[20:50:22] @Get Tracy Signature
+[20:50:22] #signature from core0 = 636044867
+[20:50:22] signature from core0 passed!
+[20:50:22] @Set Opcode Value
+[20:50:22] @Set Comp Value
+[20:50:22] @Set Mask Value
+[20:50:22] @Set Then Num
+[20:50:22] @Set NEXT THEN
+[20:50:22] @Set Cnt Cntg
+[20:50:22] @Set Event Count
+[20:50:22] @Get BurstWrite CRC
+[20:50:22] @Set Truth Tbl Addr Cnter Init
+[20:50:22] @Set Truth Table Prog
+[20:50:22] Configuring in burst mode....
+[20:50:22] @Get BurstWrite CRC
+[20:50:22] @Enable TE Trig
+[20:50:22] @Enable Trig Output OR All readback
+[20:50:22] @Enable Trig Output OR All
+[20:50:22] @Set Pre-Trig Sample
+[20:50:22] @Set Post-Trig Sample
+[20:50:22] finished configuration of core0
+[20:50:22] Starting all active cores....
+[20:50:22] @ShiftIR,8,0,ER1
+[20:50:22] @ShiftDR,21,0,data (select active cores)
+[20:50:22] @ShiftIR,8,0,ER2
+[20:50:22] @Set LA Start cores
+[20:50:22] @UnlockCable
+[20:50:22] Running all active cores....
+[20:50:22] @LockCable
+[20:50:22] Polling trigger memory of core0....
+[20:50:22] @ShiftIR,8,0,ER1
+[20:50:22] @ShiftDR,21,0,data (select core0)
+[20:50:22] @ShiftIR,8,0,ER2
+[20:50:22] @Get Force Trigger bit
+[20:50:22] #TM_CTL_0=5
+[20:50:22] @Get Trig Detected Cnt
+[20:50:22] #numDetectedTriggers = 1
+[20:50:22] @Get Mem Block Full Cnt
+[20:50:22] #memFullCnt = 1
+[20:50:22] Downloading trigger memory of core0....
+[20:50:22] @Is LA Armed
+[20:50:22] @Set LA Start/Stop readback
+[20:50:22] @Set LA Start/Stop 
+[20:50:22] @Set LA Start/Stop readback
+[20:50:22] @Set LA Start/Stop 
+[20:50:22] @Get Trig Detected Cnt
+[20:50:22] #numDetectedTriggers = 1
+[20:50:22] @Get Mem Block Full Cnt
+[20:50:22] #memFullCnt = 1
+[20:50:22] @Get Last Addr Written
+[20:50:22] #lastAddrWritten = 1920
+[20:50:22] @Get Multiple Trig Enbl
+[20:50:22] #traceWidth=33, userSelectedTriggers=1, numTrigEnable=1
+[20:50:22] @Get BurstRead CRC
+[20:50:22] @Set Trace Mem Cnter Init
+[20:50:22] Uploading in burst mode....
+[20:50:22] @ShiftDR,67584,1,data (burst read)
+[20:50:22] @GetTDO,data,67584
+[20:50:22] @Get BurstRead CRC
+[20:50:22] @Get BurstRead CRC
+[20:50:22] @Get Pre-Trig Sample Num
+[20:50:22] @Get Post-Trig Sample Num
+[20:50:22] @Get Pre-Trig Samples Captured
+[20:50:22] @Get Trig Ptr
+[20:50:22] #trigPtr = 6
+[20:50:22] #dataSize=5, numRead=2048, trace_out=1921
+[20:50:22] #trig0={blockPosition:0,triggerPosition:1}
+[20:50:22] finished download trigger memory of core0
+[20:50:22] @UnlockCable
+[20:50:22] @ReleaseCablePort
+[20:50:22] @Disconnect
+[20:50:22] All messages logged in file C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/reveal_debug.log
+[20:50:22] runProject on device [JTAG_SOFT] using C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/top.rva [top.rvl]
+[20:50:22] Connecting cableserver to run Reveal debugger....
+[20:50:22] @Connect
+[20:50:22] @SetSharableApplications,2,Reveal,Mico
+[20:50:23] @SetCablePort,USB,EzUSB-0,8,0,0,1,1,0,0,0,1
+[20:50:23] @LockCable
+[20:50:23] @GetServerStatus
+[20:50:23] @Read
+[20:50:23] @SetTargetDevice,0
+[20:50:23] Connecting core0....
+[20:50:23] @ShiftIR,8,0,ER1
+[20:50:23] @ShiftDR,21,0,data (select core0)
+[20:50:23] @ShiftIR,8,0,ER2
+[20:50:23] Configuring core0....
+[20:50:23] @JumpState,RUN_TEST_IDLE
+[20:50:23] @JumpState,RUN_TEST_IDLE
+[20:50:23] @JumpState,RUN_TEST_IDLE
+[20:50:23] @ShiftIR,8,0,NOP
+[20:50:23] @JumpState,RUN_TEST_IDLE
+[20:50:23] @ShiftIR,8,0,ER2
+[20:50:23] @Set Odd Parity readback
+[20:50:23] @Set Odd Parity
+[20:50:23] @Set LA Start/Stop readback
+[20:50:23] @Set LA Start/Stop 
+[20:50:23] #Reveal IP Version = 1_6_042617
+[20:50:23] @Get Pattern
+[20:50:23] #pattern readout = a5a5
+[20:50:23] pattern readout passed!
+[20:50:23] @Get Tracy Signature
+[20:50:23] @Get Tracy Signature
+[20:50:23] #signature from core0 = 636044867
+[20:50:23] signature from core0 passed!
+[20:50:23] @Set Opcode Value
+[20:50:23] @Set Comp Value
+[20:50:23] @Set Mask Value
+[20:50:23] @Set Then Num
+[20:50:23] @Set NEXT THEN
+[20:50:23] @Set Cnt Cntg
+[20:50:23] @Set Event Count
+[20:50:23] @Get BurstWrite CRC
+[20:50:23] @Set Truth Tbl Addr Cnter Init
+[20:50:23] @Set Truth Table Prog
+[20:50:23] Configuring in burst mode....
+[20:50:23] @Get BurstWrite CRC
+[20:50:23] @Enable TE Trig
+[20:50:23] @Enable Trig Output OR All readback
+[20:50:23] @Enable Trig Output OR All
+[20:50:23] @Set Pre-Trig Sample
+[20:50:23] @Set Post-Trig Sample
+[20:50:23] finished configuration of core0
+[20:50:23] Starting all active cores....
+[20:50:23] @ShiftIR,8,0,ER1
+[20:50:23] @ShiftDR,21,0,data (select active cores)
+[20:50:23] @ShiftIR,8,0,ER2
+[20:50:23] @Set LA Start cores
+[20:50:23] @UnlockCable
+[20:50:23] Running all active cores....
+[20:50:23] @LockCable
+[20:50:23] Polling trigger memory of core0....
+[20:50:23] @ShiftIR,8,0,ER1
+[20:50:23] @ShiftDR,21,0,data (select core0)
+[20:50:23] @ShiftIR,8,0,ER2
+[20:50:23] @Get Force Trigger bit
+[20:50:23] #TM_CTL_0=5
+[20:50:23] @Get Trig Detected Cnt
+[20:50:23] #numDetectedTriggers = 1
+[20:50:23] @Get Mem Block Full Cnt
+[20:50:23] #memFullCnt = 1
+[20:50:23] Downloading trigger memory of core0....
+[20:50:23] @Is LA Armed
+[20:50:23] @Set LA Start/Stop readback
+[20:50:23] @Set LA Start/Stop 
+[20:50:23] @Set LA Start/Stop readback
+[20:50:23] @Set LA Start/Stop 
+[20:50:23] @Get Trig Detected Cnt
+[20:50:23] #numDetectedTriggers = 1
+[20:50:23] @Get Mem Block Full Cnt
+[20:50:23] #memFullCnt = 1
+[20:50:23] @Get Last Addr Written
+[20:50:23] #lastAddrWritten = 1920
+[20:50:23] @Get Multiple Trig Enbl
+[20:50:23] #traceWidth=33, userSelectedTriggers=1, numTrigEnable=1
+[20:50:23] @Get BurstRead CRC
+[20:50:23] @Set Trace Mem Cnter Init
+[20:50:23] Uploading in burst mode....
+[20:50:23] @ShiftDR,67584,1,data (burst read)
+[20:50:23] @GetTDO,data,67584
+[20:50:23] @Get BurstRead CRC
+[20:50:23] @Get BurstRead CRC
+[20:50:23] @Get Pre-Trig Sample Num
+[20:50:23] @Get Post-Trig Sample Num
+[20:50:23] @Get Pre-Trig Samples Captured
+[20:50:23] @Get Trig Ptr
+[20:50:23] #trigPtr = 6
+[20:50:23] #dataSize=5, numRead=2048, trace_out=1921
+[20:50:23] #trig0={blockPosition:0,triggerPosition:1}
+[20:50:23] finished download trigger memory of core0
+[20:50:23] @UnlockCable
+[20:50:23] @ReleaseCablePort
+[20:50:23] @Disconnect
+[20:50:23] All messages logged in file C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/reveal_debug.log
+[20:50:23] runProject on device [JTAG_SOFT] using C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/top.rva [top.rvl]
+[20:50:23] Connecting cableserver to run Reveal debugger....
+[20:50:23] @Connect
+[20:50:23] @SetSharableApplications,2,Reveal,Mico
+[20:50:23] @SetCablePort,USB,EzUSB-0,8,0,0,1,1,0,0,0,1
+[20:50:23] @LockCable
+[20:50:23] @GetServerStatus
+[20:50:23] @Read
+[20:50:23] @SetTargetDevice,0
+[20:50:23] Connecting core0....
+[20:50:23] @ShiftIR,8,0,ER1
+[20:50:23] @ShiftDR,21,0,data (select core0)
+[20:50:23] @ShiftIR,8,0,ER2
+[20:50:23] Configuring core0....
+[20:50:23] @JumpState,RUN_TEST_IDLE
+[20:50:23] @JumpState,RUN_TEST_IDLE
+[20:50:23] @JumpState,RUN_TEST_IDLE
+[20:50:23] @ShiftIR,8,0,NOP
+[20:50:23] @JumpState,RUN_TEST_IDLE
+[20:50:23] @ShiftIR,8,0,ER2
+[20:50:23] @Set Odd Parity readback
+[20:50:23] @Set Odd Parity
+[20:50:23] @Set LA Start/Stop readback
+[20:50:23] @Set LA Start/Stop 
+[20:50:23] #Reveal IP Version = 1_6_042617
+[20:50:23] @Get Pattern
+[20:50:23] #pattern readout = a5a5
+[20:50:23] pattern readout passed!
+[20:50:23] @Get Tracy Signature
+[20:50:23] @Get Tracy Signature
+[20:50:23] #signature from core0 = 636044867
+[20:50:23] signature from core0 passed!
+[20:50:23] @Set Opcode Value
+[20:50:23] @Set Comp Value
+[20:50:23] @Set Mask Value
+[20:50:23] @Set Then Num
+[20:50:23] @Set NEXT THEN
+[20:50:23] @Set Cnt Cntg
+[20:50:23] @Set Event Count
+[20:50:23] @Get BurstWrite CRC
+[20:50:23] @Set Truth Tbl Addr Cnter Init
+[20:50:23] @Set Truth Table Prog
+[20:50:23] Configuring in burst mode....
+[20:50:23] @Get BurstWrite CRC
+[20:50:23] @Enable TE Trig
+[20:50:23] @Enable Trig Output OR All readback
+[20:50:23] @Enable Trig Output OR All
+[20:50:23] @Set Pre-Trig Sample
+[20:50:23] @Set Post-Trig Sample
+[20:50:23] finished configuration of core0
+[20:50:23] Starting all active cores....
+[20:50:23] @ShiftIR,8,0,ER1
+[20:50:23] @ShiftDR,21,0,data (select active cores)
+[20:50:23] @ShiftIR,8,0,ER2
+[20:50:23] @Set LA Start cores
+[20:50:23] @UnlockCable
+[20:50:23] Running all active cores....
+[20:50:23] @LockCable
+[20:50:23] Polling trigger memory of core0....
+[20:50:23] @ShiftIR,8,0,ER1
+[20:50:23] @ShiftDR,21,0,data (select core0)
+[20:50:23] @ShiftIR,8,0,ER2
+[20:50:23] @Get Force Trigger bit
+[20:50:23] #TM_CTL_0=5
+[20:50:23] @Get Trig Detected Cnt
+[20:50:23] #numDetectedTriggers = 1
+[20:50:23] @Get Mem Block Full Cnt
+[20:50:23] #memFullCnt = 1
+[20:50:23] Downloading trigger memory of core0....
+[20:50:23] @Is LA Armed
+[20:50:23] @Set LA Start/Stop readback
+[20:50:23] @Set LA Start/Stop 
+[20:50:23] @Set LA Start/Stop readback
+[20:50:23] @Set LA Start/Stop 
+[20:50:24] @Get Trig Detected Cnt
+[20:50:24] #numDetectedTriggers = 1
+[20:50:24] @Get Mem Block Full Cnt
+[20:50:24] #memFullCnt = 1
+[20:50:24] @Get Last Addr Written
+[20:50:24] #lastAddrWritten = 1920
+[20:50:24] @Get Multiple Trig Enbl
+[20:50:24] #traceWidth=33, userSelectedTriggers=1, numTrigEnable=1
+[20:50:24] @Get BurstRead CRC
+[20:50:24] @Set Trace Mem Cnter Init
+[20:50:24] Uploading in burst mode....
+[20:50:24] @ShiftDR,67584,1,data (burst read)
+[20:50:24] @GetTDO,data,67584
+[20:50:24] @Get BurstRead CRC
+[20:50:24] @Get BurstRead CRC
+[20:50:24] @Get Pre-Trig Sample Num
+[20:50:24] @Get Post-Trig Sample Num
+[20:50:24] @Get Pre-Trig Samples Captured
+[20:50:24] @Get Trig Ptr
+[20:50:24] #trigPtr = 6
+[20:50:24] #dataSize=5, numRead=2048, trace_out=1921
+[20:50:24] #trig0={blockPosition:0,triggerPosition:1}
+[20:50:24] finished download trigger memory of core0
+[20:50:24] @UnlockCable
+[20:50:24] @ReleaseCablePort
+[20:50:24] @Disconnect
+[20:50:24] All messages logged in file C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/reveal_debug.log
+[20:50:24] runProject on device [JTAG_SOFT] using C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/top.rva [top.rvl]
+[20:50:24] Connecting cableserver to run Reveal debugger....
+[20:50:24] @Connect
+[20:50:24] @SetSharableApplications,2,Reveal,Mico
+[20:50:24] @SetCablePort,USB,EzUSB-0,8,0,0,1,1,0,0,0,1
+[20:50:24] @LockCable
+[20:50:24] @GetServerStatus
+[20:50:24] @Read
+[20:50:24] @SetTargetDevice,0
+[20:50:24] Connecting core0....
+[20:50:24] @ShiftIR,8,0,ER1
+[20:50:24] @ShiftDR,21,0,data (select core0)
+[20:50:24] @ShiftIR,8,0,ER2
+[20:50:24] Configuring core0....
+[20:50:24] @JumpState,RUN_TEST_IDLE
+[20:50:24] @JumpState,RUN_TEST_IDLE
+[20:50:24] @JumpState,RUN_TEST_IDLE
+[20:50:24] @ShiftIR,8,0,NOP
+[20:50:24] @JumpState,RUN_TEST_IDLE
+[20:50:24] @ShiftIR,8,0,ER2
+[20:50:24] @Set Odd Parity readback
+[20:50:24] @Set Odd Parity
+[20:50:24] @Set LA Start/Stop readback
+[20:50:24] @Set LA Start/Stop 
+[20:50:24] #Reveal IP Version = 1_6_042617
+[20:50:24] @Get Pattern
+[20:50:24] #pattern readout = a5a5
+[20:50:24] pattern readout passed!
+[20:50:24] @Get Tracy Signature
+[20:50:24] @Get Tracy Signature
+[20:50:24] #signature from core0 = 636044867
+[20:50:24] signature from core0 passed!
+[20:50:24] @Set Opcode Value
+[20:50:24] @Set Comp Value
+[20:50:24] @Set Mask Value
+[20:50:24] @Set Then Num
+[20:50:24] @Set NEXT THEN
+[20:50:24] @Set Cnt Cntg
+[20:50:24] @Set Event Count
+[20:50:24] @Get BurstWrite CRC
+[20:50:24] @Set Truth Tbl Addr Cnter Init
+[20:50:24] @Set Truth Table Prog
+[20:50:24] Configuring in burst mode....
+[20:50:24] @Get BurstWrite CRC
+[20:50:24] @Enable TE Trig
+[20:50:24] @Enable Trig Output OR All readback
+[20:50:24] @Enable Trig Output OR All
+[20:50:24] @Set Pre-Trig Sample
+[20:50:24] @Set Post-Trig Sample
+[20:50:24] finished configuration of core0
+[20:50:24] Starting all active cores....
+[20:50:24] @ShiftIR,8,0,ER1
+[20:50:24] @ShiftDR,21,0,data (select active cores)
+[20:50:24] @ShiftIR,8,0,ER2
+[20:50:24] @Set LA Start cores
+[20:50:24] @UnlockCable
+[20:50:24] Running all active cores....
+[20:50:24] @LockCable
+[20:50:24] Polling trigger memory of core0....
+[20:50:24] @ShiftIR,8,0,ER1
+[20:50:24] @ShiftDR,21,0,data (select core0)
+[20:50:24] @ShiftIR,8,0,ER2
+[20:50:24] @Get Force Trigger bit
+[20:50:24] #TM_CTL_0=5
+[20:50:24] @Get Trig Detected Cnt
+[20:50:24] #numDetectedTriggers = 1
+[20:50:24] @Get Mem Block Full Cnt
+[20:50:24] #memFullCnt = 1
+[20:50:24] Downloading trigger memory of core0....
+[20:50:24] @Is LA Armed
+[20:50:24] @Set LA Start/Stop readback
+[20:50:24] @Set LA Start/Stop 
+[20:50:24] @Set LA Start/Stop readback
+[20:50:24] @Set LA Start/Stop 
+[20:50:24] @Get Trig Detected Cnt
+[20:50:24] #numDetectedTriggers = 1
+[20:50:24] @Get Mem Block Full Cnt
+[20:50:24] #memFullCnt = 1
+[20:50:24] @Get Last Addr Written
+[20:50:24] #lastAddrWritten = 1920
+[20:50:24] @Get Multiple Trig Enbl
+[20:50:24] #traceWidth=33, userSelectedTriggers=1, numTrigEnable=1
+[20:50:24] @Get BurstRead CRC
+[20:50:24] @Set Trace Mem Cnter Init
+[20:50:24] Uploading in burst mode....
+[20:50:24] @ShiftDR,67584,1,data (burst read)
+[20:50:24] @GetTDO,data,67584
+[20:50:24] @Get BurstRead CRC
+[20:50:24] @Get BurstRead CRC
+[20:50:24] @Get Pre-Trig Sample Num
+[20:50:24] @Get Post-Trig Sample Num
+[20:50:24] @Get Pre-Trig Samples Captured
+[20:50:24] @Get Trig Ptr
+[20:50:24] #trigPtr = 6
+[20:50:24] #dataSize=5, numRead=2048, trace_out=1921
+[20:50:24] #trig0={blockPosition:0,triggerPosition:1}
+[20:50:24] finished download trigger memory of core0
+[20:50:24] @UnlockCable
+[20:50:24] @ReleaseCablePort
+[20:50:24] @Disconnect
+[20:50:24] All messages logged in file C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/reveal_debug.log
+[20:50:25] runProject on device [JTAG_SOFT] using C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/top.rva [top.rvl]
+[20:50:25] Connecting cableserver to run Reveal debugger....
+[20:50:25] @Connect
+[20:50:25] @SetSharableApplications,2,Reveal,Mico
+[20:50:25] @SetCablePort,USB,EzUSB-0,8,0,0,1,1,0,0,0,1
+[20:50:25] @LockCable
+[20:50:25] @GetServerStatus
+[20:50:25] @Read
+[20:50:25] @SetTargetDevice,0
+[20:50:25] Connecting core0....
+[20:50:25] @ShiftIR,8,0,ER1
+[20:50:25] @ShiftDR,21,0,data (select core0)
+[20:50:25] @ShiftIR,8,0,ER2
+[20:50:25] Configuring core0....
+[20:50:25] @JumpState,RUN_TEST_IDLE
+[20:50:25] @JumpState,RUN_TEST_IDLE
+[20:50:25] @JumpState,RUN_TEST_IDLE
+[20:50:25] @ShiftIR,8,0,NOP
+[20:50:25] @JumpState,RUN_TEST_IDLE
+[20:50:25] @ShiftIR,8,0,ER2
+[20:50:25] @Set Odd Parity readback
+[20:50:25] @Set Odd Parity
+[20:50:25] @Set LA Start/Stop readback
+[20:50:25] @Set LA Start/Stop 
+[20:50:25] #Reveal IP Version = 1_6_042617
+[20:50:25] @Get Pattern
+[20:50:25] #pattern readout = a5a5
+[20:50:25] pattern readout passed!
+[20:50:25] @Get Tracy Signature
+[20:50:25] @Get Tracy Signature
+[20:50:25] #signature from core0 = 636044867
+[20:50:25] signature from core0 passed!
+[20:50:25] @Set Opcode Value
+[20:50:25] @Set Comp Value
+[20:50:25] @Set Mask Value
+[20:50:25] @Set Then Num
+[20:50:25] @Set NEXT THEN
+[20:50:25] @Set Cnt Cntg
+[20:50:25] @Set Event Count
+[20:50:25] @Get BurstWrite CRC
+[20:50:25] @Set Truth Tbl Addr Cnter Init
+[20:50:25] @Set Truth Table Prog
+[20:50:25] Configuring in burst mode....
+[20:50:25] @Get BurstWrite CRC
+[20:50:25] @Enable TE Trig
+[20:50:25] @Enable Trig Output OR All readback
+[20:50:25] @Enable Trig Output OR All
+[20:50:25] @Set Pre-Trig Sample
+[20:50:25] @Set Post-Trig Sample
+[20:50:25] finished configuration of core0
+[20:50:25] Starting all active cores....
+[20:50:25] @ShiftIR,8,0,ER1
+[20:50:25] @ShiftDR,21,0,data (select active cores)
+[20:50:25] @ShiftIR,8,0,ER2
+[20:50:25] @Set LA Start cores
+[20:50:25] @UnlockCable
+[20:50:25] Running all active cores....
+[20:50:25] @LockCable
+[20:50:25] Polling trigger memory of core0....
+[20:50:25] @ShiftIR,8,0,ER1
+[20:50:25] @ShiftDR,21,0,data (select core0)
+[20:50:25] @ShiftIR,8,0,ER2
+[20:50:25] @Get Force Trigger bit
+[20:50:25] #TM_CTL_0=5
+[20:50:25] @Get Trig Detected Cnt
+[20:50:25] #numDetectedTriggers = 1
+[20:50:25] @Get Mem Block Full Cnt
+[20:50:25] #memFullCnt = 1
+[20:50:25] Downloading trigger memory of core0....
+[20:50:25] @Is LA Armed
+[20:50:25] @Set LA Start/Stop readback
+[20:50:25] @Set LA Start/Stop 
+[20:50:25] @Set LA Start/Stop readback
+[20:50:25] @Set LA Start/Stop 
+[20:50:25] @Get Trig Detected Cnt
+[20:50:25] #numDetectedTriggers = 1
+[20:50:25] @Get Mem Block Full Cnt
+[20:50:25] #memFullCnt = 1
+[20:50:25] @Get Last Addr Written
+[20:50:25] #lastAddrWritten = 94
+[20:50:25] @Get Multiple Trig Enbl
+[20:50:25] #traceWidth=33, userSelectedTriggers=1, numTrigEnable=1
+[20:50:25] @Get BurstRead CRC
+[20:50:25] @Set Trace Mem Cnter Init
+[20:50:25] Uploading in burst mode....
+[20:50:25] @ShiftDR,67584,1,data (burst read)
+[20:50:25] @GetTDO,data,67584
+[20:50:25] @Get BurstRead CRC
+[20:50:25] @Get BurstRead CRC
+[20:50:25] @Get Pre-Trig Sample Num
+[20:50:25] @Get Post-Trig Sample Num
+[20:50:25] @Get Pre-Trig Samples Captured
+[20:50:25] @Get Trig Ptr
+[20:50:25] #trigPtr = 228
+[20:50:25] #dataSize=5, numRead=2048, trace_out=2048
+[20:50:25] #trig0={blockPosition:0,triggerPosition:128}
+[20:50:25] finished download trigger memory of core0
+[20:50:25] @UnlockCable
+[20:50:25] @ReleaseCablePort
+[20:50:25] @Disconnect
+[20:50:25] All messages logged in file C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/reveal_debug.log
+Last closed: 週日 七月 20 21:00:45 2025

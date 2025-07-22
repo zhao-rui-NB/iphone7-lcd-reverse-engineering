@@ -1,0 +1,59 @@
+<Project ModBy="Inserter" SigType="0" Name="C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/top.rvl" Date="2025-07-20">
+    <IP Version="1_6_042617"/>
+    <Design DesignEntry="Schematic/Verilog HDL" Synthesis="lse" DeviceFamily="LIFMD" DesignName="iphone7_mipi_v3" JTAG="soft"/>
+    <Core InsertDataset="0" Insert="1" Reveal_sig="636047501" Name="top_LA0" ID="0">
+        <Setting>
+            <Clock SampleClk="byte_hs_clk" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
+            <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="2048"/>
+            <Capture Mode="0" MinSamplesPerTrig="8"/>
+            <Event CntEnable="0" MaxEventCnt="8"/>
+            <TrigOut Polarity="0" MinPulseWidth="0" TrigOutNetType="1" EnableTrigOut="0" TrigOutNet="reveal_debug_iphone7_mipi_v3_LA0_net"/>
+            <DistRAM Disable="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Sig Type="SIG" Name="mipi_rx/mipi_rx_capture_en_o"/>
+                <Bus Name="mipi_rx/mipi_rx_bd0_o">
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd0_o:0"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd0_o:1"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd0_o:2"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd0_o:3"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd0_o:4"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd0_o:5"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd0_o:6"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd0_o:7"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd0_o:8"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd0_o:9"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd0_o:10"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd0_o:11"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd0_o:12"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd0_o:13"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd0_o:14"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd0_o:15"/>
+                </Bus>
+                <Bus Name="mipi_rx/mipi_rx_bd1_o">
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd1_o:0"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd1_o:1"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd1_o:2"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd1_o:3"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd1_o:4"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd1_o:5"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd1_o:6"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd1_o:7"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd1_o:8"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd1_o:9"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd1_o:10"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd1_o:11"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd1_o:12"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd1_o:13"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd1_o:14"/>
+                    <Sig Type="SIG" Name="mipi_rx/mipi_rx_bd1_o:15"/>
+                </Bus>
+            </Trace>
+            <Trigger>
+                <TU Serialbits="0" Type="0" ID="1" Sig="mipi_rx/mipi_rx_capture_en_o,"/>
+                <TE MaxSequence="1" MaxEvnCnt="1" ID="1" Resource="1"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>

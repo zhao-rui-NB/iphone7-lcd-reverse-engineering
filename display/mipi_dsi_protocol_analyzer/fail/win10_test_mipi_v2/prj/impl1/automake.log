@@ -1,0 +1,1335 @@
+
+istflow -prj "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/byte_align.rvl" -design "win10_test_mipi_v2_impl1.rvp" 
+-- all messages logged in file C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_error.log
+-- Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_byte_aligner.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_lane_state_detection.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/top.v' (VERI-1482)
+C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/top.v(36): WARNING: redeclaration of ansi port 'sys_clk' is not allowed (VERI-1372)
+-- Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/mipi/mipi_rx/mipi_rx.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/mipi/mipi.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/clock/pll_sys_clk/pll_sys_clk.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/clock/clock.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/fifo/dphy_raw_fifo/dphy_raw_fifo.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/fifo/fifo.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_raw_data_controller.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_multi_lane_aligner.v' (VERI-1482)
+C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_multi_lane_aligner.v(7): WARNING: identifier 'LANES' is used before its declaration (VERI-1875)
+C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_multi_lane_aligner.v(8): WARNING: identifier 'LANES' is used before its declaration (VERI-1875)
+C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_multi_lane_aligner.v(12): WARNING: identifier 'LANES' is used before its declaration (VERI-1875)
+-- Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/output_io/ddr_output/ddr_output.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/output_io/output_io.v' (VERI-1482)
+C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/top.v(1): INFO: compiling module 'top' (VERI-1018)
+C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/top.v(298): INFO: elaborating module 'top' (VERI-9000)
+C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/clock/pll_sys_clk/pll_sys_clk.v(80): INFO: elaborating module 'pll_sys_clk_uniq_1' (VERI-9000)
+C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/mipi/mipi_rx/mipi_rx.v(217): INFO: elaborating module 'mipi_rx_uniq_1' (VERI-9000)
+C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_lane_state_detection.v(79): INFO: elaborating module 'mipi_lane_state_detection_uniq_1' (VERI-9000)
+C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/fifo/dphy_raw_fifo/dphy_raw_fifo.v(880): INFO: elaborating module 'dphy_raw_fifo_uniq_1' (VERI-9000)
+C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_raw_data_controller.v(68): INFO: elaborating module 'mipi_raw_data_controller_uniq_1' (VERI-9000)
+C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_byte_aligner.v(119): INFO: elaborating module 'mipi_byte_aligner_uniq_1' (VERI-9000)
+C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_byte_aligner.v(119): INFO: elaborating module 'mipi_byte_aligner_uniq_2' (VERI-9000)
+C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_multi_lane_aligner.v(116): INFO: elaborating module 'mipi_multi_lane_aligner_uniq_1' (VERI-9000)
+C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/output_io/ddr_output/ddr_output.v(245): INFO: elaborating module 'ddr_output_uniq_1' (VERI-9000)
+C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/top.v(137): WARNING: port 'WCNT' remains unconnected for this instance (VERI-1927)
+Copyright (c) 2001-2013 Lattice Semiconductor Corporation. All rights reserved.
+Check Reveal Inserter settings...
+    <postMsg mid="2120344" type="Info"    dynamic="1" navigation="0" arg0="9"  />
+    <postMsg mid="2120346" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Design Rule Check PASSED.
+Finished checking Reveal Inserter settings.
+Generating core template(s)...
+Parameters loaded ok.
+No optional files required.
+IP template generation completed ok.
+
+Finished running Tcl command: "C:/lscc/diamond/3.12/tcltk/bin/tclsh" "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/byte_align_generate.tcl".
+all messages logged in file C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_error.log
+(VERI-1482) Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/byte_align/top_la0_bb.v'
+all messages logged in file C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_error.log
+(VERI-1482) Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_reveal_coretop.v'
+(VERI-1482) Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_byte_aligner.v'
+(VERI-1482) Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_lane_state_detection.v'
+(VERI-1482) Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/top.v'
+    <postMsg mid="2049991" type="Warning" dynamic="1" navigation="2" arg0="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/top.v(36,6-36,13) (VERI-1372) redeclaration of ansi port &apos;sys_clk&apos; is not allowed" arg1="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/top.v" arg2="36"  />
+(VERI-1482) Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/mipi/mipi_rx/mipi_rx.v'
+(VERI-1482) Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/mipi/mipi.v'
+(VERI-1482) Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/clock/pll_sys_clk/pll_sys_clk.v'
+(VERI-1482) Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/clock/clock.v'
+(VERI-1482) Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/fifo/dphy_raw_fifo/dphy_raw_fifo.v'
+(VERI-1482) Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/fifo/fifo.v'
+(VERI-1482) Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_raw_data_controller.v'
+(VERI-1482) Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_multi_lane_aligner.v'
+    <postMsg mid="2049991" type="Warning" dynamic="1" navigation="2" arg0="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_multi_lane_aligner.v(7,13-7,18) (VERI-1875) identifier &apos;LANES&apos; is used before its declaration" arg1="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_multi_lane_aligner.v" arg2="7"  />
+    <postMsg mid="2049991" type="Warning" dynamic="1" navigation="2" arg0="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_multi_lane_aligner.v(8,13-8,18) (VERI-1875) identifier &apos;LANES&apos; is used before its declaration" arg1="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_multi_lane_aligner.v" arg2="8"  />
+    <postMsg mid="2049991" type="Warning" dynamic="1" navigation="2" arg0="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_multi_lane_aligner.v(12,18-12,23) (VERI-1875) identifier &apos;LANES&apos; is used before its declaration" arg1="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_multi_lane_aligner.v" arg2="12"  />
+(VERI-1482) Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/output_io/ddr_output/ddr_output.v'
+(VERI-1482) Analyzing Verilog file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/output_io/output_io.v'
+    <postMsg mid="2049992" type="Info"    dynamic="1" navigation="2" arg0="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/top.v(1,8-1,11) (VERI-1018) compiling module &apos;top&apos;" arg1="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/top.v" arg2="1"  />
+    <postMsg mid="2049992" type="Info"    dynamic="1" navigation="2" arg0="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/top.v(1,1-298,10) (VERI-9000) elaborating module &apos;top&apos;" arg1="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/top.v" arg2="1"  />
+    <postMsg mid="2049992" type="Info"    dynamic="1" navigation="2" arg0="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/clock/pll_sys_clk/pll_sys_clk.v(8,1-80,10) (VERI-9000) elaborating module &apos;pll_sys_clk_uniq_1&apos;" arg1="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/clock/pll_sys_clk/pll_sys_clk.v" arg2="8"  />
+    <postMsg mid="2049992" type="Info"    dynamic="1" navigation="2" arg0="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/mipi/mipi_rx/mipi_rx.v(8,1-217,10) (VERI-9000) elaborating module &apos;mipi_rx_uniq_1&apos;" arg1="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/mipi/mipi_rx/mipi_rx.v" arg2="8"  />
+    <postMsg mid="2049992" type="Info"    dynamic="1" navigation="2" arg0="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_lane_state_detection.v(3,1-79,10) (VERI-9000) elaborating module &apos;mipi_lane_state_detection_uniq_1&apos;" arg1="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_lane_state_detection.v" arg2="3"  />
+    <postMsg mid="2049992" type="Info"    dynamic="1" navigation="2" arg0="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/fifo/dphy_raw_fifo/dphy_raw_fifo.v(8,1-880,10) (VERI-9000) elaborating module &apos;dphy_raw_fifo_uniq_1&apos;" arg1="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/fifo/dphy_raw_fifo/dphy_raw_fifo.v" arg2="8"  />
+    <postMsg mid="2049992" type="Info"    dynamic="1" navigation="2" arg0="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_raw_data_controller.v(1,1-68,10) (VERI-9000) elaborating module &apos;mipi_raw_data_controller_uniq_1&apos;" arg1="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_raw_data_controller.v" arg2="1"  />
+    <postMsg mid="2049992" type="Info"    dynamic="1" navigation="2" arg0="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_byte_aligner.v(2,1-119,10) (VERI-9000) elaborating module &apos;mipi_byte_aligner_uniq_1&apos;" arg1="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_byte_aligner.v" arg2="2"  />
+    <postMsg mid="2049992" type="Info"    dynamic="1" navigation="2" arg0="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_byte_aligner.v(2,1-119,10) (VERI-9000) elaborating module &apos;mipi_byte_aligner_uniq_2&apos;" arg1="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_byte_aligner.v" arg2="2"  />
+    <postMsg mid="2049992" type="Info"    dynamic="1" navigation="2" arg0="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_multi_lane_aligner.v(1,1-116,10) (VERI-9000) elaborating module &apos;mipi_multi_lane_aligner_uniq_1&apos;" arg1="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_multi_lane_aligner.v" arg2="1"  />
+    <postMsg mid="2049992" type="Info"    dynamic="1" navigation="2" arg0="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/output_io/ddr_output/ddr_output.v(8,1-245,10) (VERI-9000) elaborating module &apos;ddr_output_uniq_1&apos;" arg1="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/output_io/ddr_output/ddr_output.v" arg2="8"  />
+    <postMsg mid="2049991" type="Warning" dynamic="1" navigation="2" arg0="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/top.v(123,1-137,3) (VERI-1927) port &apos;WCNT&apos; remains unconnected for this instance" arg1="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/top.v" arg2="123"  />
+(VERI-1491) Pretty printing all design elements in library 'work' to file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v'
+Lpf file 'C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/win10_test_mipi_v2.lpf' is updated.
+
+synthesis -f "win10_test_mipi_v2_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Jul 15 02:06:07 2025
+
+
+Command Line:  synthesis -f win10_test_mipi_v2_impl1_lattice.synproj -gui -msgset C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/promote.xml 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is LIFMD.
+The -s option is 6.
+The -t option is CKFBGA80.
+The -d option is LIF-MD6000.
+Using package CKFBGA80.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : LIFMD
+
+### Device  : LIF-MD6000
+
+### Package : CKFBGA80
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Timing
+Top-level module name = top.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/lscc/diamond/3.12/ispfpga/sn5w00/data (searchpath added)
+-p C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1 (searchpath added)
+-p C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj (searchpath added)
+-p C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/byte_align (searchpath added)
+Key file = C:/lscc/diamond/3.12/module/reveal/document/reveal_test.dat
+File C:/lscc/diamond/3.12/module/reveal/src/ertl/ertl.v is encrypted
+
+File C:/lscc/diamond/3.12/module/reveal/src/rvl_j2w_module/rvl_j2w_module.v is encrypted
+
+File C:/lscc/diamond/3.12/module/reveal/src/ertl/JTAG_SOFT.v is encrypted
+
+Verilog design file = C:/lscc/diamond/3.12/cae_library/synthesis/verilog/pmi_def.v
+Verilog design file = C:/lscc/diamond/3.12/module/reveal/src/ertl/ertl.v
+Verilog design file = C:/lscc/diamond/3.12/module/reveal/src/rvl_j2w_module/rvl_j2w_module.v
+Verilog design file = C:/lscc/diamond/3.12/module/reveal/src/rvl_j2w_module/wb2sci.v
+Verilog design file = C:/lscc/diamond/3.12/module/reveal/src/ertl/JTAG_SOFT.v
+Verilog design file = C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_la0_trig_gen.v
+Verilog design file = C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_la0_gen.v
+Verilog design file = C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v
+NGD file = win10_test_mipi_v2_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Analyzing Verilog file C:/lscc/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/lifmd.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/lscc/diamond/3.12/cae_library/synthesis/verilog/pmi_def.v. VERI-1482
+Analyzing Verilog file c:/lscc/diamond/3.12/module/reveal/src/rvl_j2w_module/wb2sci.v. VERI-1482
+Analyzing Verilog file c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_la0_trig_gen.v. VERI-1482
+Analyzing Verilog file c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_la0_gen.v. VERI-1482
+Analyzing Verilog file c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v. VERI-1482
+    <postMsg mid="35901372" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v(506): " arg1="sys_clk" arg2="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v" arg3="506"  />
+    <postMsg mid="35901875" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v(2850): " arg1="LANES" arg2="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v" arg3="2850"  />
+    <postMsg mid="35901875" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v(2851): " arg1="LANES" arg2="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v" arg3="2851"  />
+    <postMsg mid="35901875" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v(2853): " arg1="LANES" arg2="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v" arg3="2853"  />
+    <postMsg mid="35901875" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v(5775): " arg1="LANES" arg2="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v" arg3="5775"  />
+    <postMsg mid="35901875" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v(5776): " arg1="LANES" arg2="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v" arg3="5776"  />
+    <postMsg mid="35901875" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v(5778): " arg1="LANES" arg2="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v" arg3="5778"  />
+Analyzing Verilog file .__ydixd0.v. VERI-1482
+Top module name (Verilog): top
+Last elaborated design is top()
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/sn5w00/data/sn5wlib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sn5w6000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.38.
+Top-level module name = top.
+No reference clock found on synchronous reset of RAM :fifo_memory, reset not inferred...
+
+Constant propagated thru Write Port :clk_write_port_155.
+
+Constant propagated thru Read Port :read_port_227.
+
+Constant propagated thru Write Port :clk_write_port_231.
+
+Constant propagated thru Read Port :read_port_271.
+
+    <postMsg mid="35001716" type="Warning" dynamic="1" navigation="0" arg0="OFE1P3BX"  />
+    <postMsg mid="35001716" type="Warning" dynamic="1" navigation="0" arg0="OFE1P3DX"  />
+    <postMsg mid="35001716" type="Warning" dynamic="1" navigation="0" arg0="OFE1P3IX"  />
+    <postMsg mid="35001716" type="Warning" dynamic="1" navigation="0" arg0="OFE1P3JX"  />
+    <postMsg mid="35001716" type="Warning" dynamic="1" navigation="0" arg0="ROM16X1"  />
+    <postMsg mid="35001716" type="Warning" dynamic="1" navigation="0" arg0="ROM32X1"  />
+    <postMsg mid="35001716" type="Warning" dynamic="1" navigation="0" arg0="ROM64X1"  />
+    <postMsg mid="35001716" type="Warning" dynamic="1" navigation="0" arg0="ROM128X1"  />
+    <postMsg mid="35001716" type="Warning" dynamic="1" navigation="0" arg0="ROM256X1"  />
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v(4754): " arg1="CIN" arg2="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v" arg3="4754"  />
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v(4822): " arg1="CIN" arg2="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v" arg3="4822"  />
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v(4890): " arg1="CIN" arg2="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v" arg3="4890"  />
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v(4975): " arg1="CIN" arg2="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v" arg3="4975"  />
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v(5060): " arg1="CIN" arg2="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v" arg3="5060"  />
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v(5145): " arg1="CIN" arg2="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v" arg3="5145"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v(5787): " arg1="fifo_memory_1" arg2="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v" arg3="5787"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+######## Missing driver on net n639. Patching with GND.
+######## Missing driver on net n638. Patching with GND.
+######## Missing driver on net n637. Patching with GND.
+######## Missing driver on net n636. Patching with GND.
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v(5893): " arg1="\mipi_multi_lane_aligner_inst/align_error_133" arg2="c:/users/rui/desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/reveal_workspace/tmpreveal/top_rvl.v" arg3="5893"  />
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_tap/state" arg1="one-hot"  />
+original encoding -> new encoding (one-hot encoding)
+
+ 0000 -> 0000000000000001
+
+ 0001 -> 0000000000000010
+
+ 0010 -> 0000000000000100
+
+ 0011 -> 0000000000001000
+
+ 0100 -> 0000000000010000
+
+ 0101 -> 0000000000100000
+
+ 0110 -> 0000000001000000
+
+ 0111 -> 0000000010000000
+
+ 1000 -> 0000000100000000
+
+ 1001 -> 0000001000000000
+
+ 1010 -> 0000010000000000
+
+ 1011 -> 0000100000000000
+
+ 1100 -> 0001000000000000
+
+ 1101 -> 0010000000000000
+
+ 1110 -> 0100000000000000
+
+ 1111 -> 1000000000000000
+
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\mipi_lane_state_detection_inst/rx_state" arg1="one-hot"  />
+original encoding -> new encoding (one-hot encoding)
+
+ 0000 -> 0001
+
+ 0001 -> 0010
+
+ 0010 -> 0100
+
+ 0011 -> 1000
+
+
+
+
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+######## Found 2 RTL RAMs in the design.
+######## Mapping RTL RAM \mipi_multi_lane_aligner_inst/fifo_memory_1 to 4 Distributed blocks in PSEUDO_DUAL_PORT Mode
+
+######## Mapping RTL RAM \mipi_multi_lane_aligner_inst/fifo_memory_0 to 4 Distributed blocks in PSEUDO_DUAL_PORT Mode
+
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OB" arg1="O"  />
+    <postMsg mid="35001537" type="Warning" dynamic="2" navigation="0" arg0="OBZ" arg1="O"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="clk_p"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="clk_n"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="data_p[1]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="data_p[0]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="data_n[1]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="data_n[0]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="ddr_output_clk"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="output_multi_lane_align_data_out[16]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="output_multi_lane_align_data_out[15]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="output_multi_lane_align_data_out[14]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="output_multi_lane_align_data_out[13]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="output_multi_lane_align_data_out[12]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="output_multi_lane_align_data_out[11]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="output_multi_lane_align_data_out[10]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="output_multi_lane_align_data_out[9]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="output_multi_lane_align_data_out[8]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="output_multi_lane_align_data_out[7]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="output_multi_lane_align_data_out[6]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="output_multi_lane_align_data_out[5]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="output_multi_lane_align_data_out[4]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="output_multi_lane_align_data_out[3]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="output_multi_lane_align_data_out[2]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="output_multi_lane_align_data_out[1]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="output_multi_lane_align_data_out[0]"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="JTAG_TDO"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="JTAG_TCK"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="JTAG_TMS"  />
+    <postMsg mid="35001263" type="Warning" dynamic="1" navigation="0" arg0="JTAG_TDI"  />
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+######## GSR will not be inferred because the gsr attribute is present in either the top or sub module or because an instantiated GSR is present.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+    <postMsg mid="35001752" type="Warning" dynamic="1" navigation="0" arg0="\mipi_multi_lane_aligner_inst/fifo_wr_ptr[1]__i4"  />
+    <postMsg mid="35001752" type="Warning" dynamic="1" navigation="0" arg0="\mipi_multi_lane_aligner_inst/fifo_rd_ptr[1]__i4"  />
+    <postMsg mid="35001752" type="Warning" dynamic="1" navigation="0" arg0="\mipi_multi_lane_aligner_inst/fifo_rd_ptr[1]__i8"  />
+    <postMsg mid="35001752" type="Warning" dynamic="1" navigation="0" arg0="\mipi_multi_lane_aligner_inst/fifo_wr_ptr[1]__i8"  />
+Applying 200.000000 MHz constraint to all clocks
+
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_62 is a one-to-one match with \dphy_raw_fifo_inst/FF_56.
+Duplicate register/latch removal. \dphy_raw_fifo_inst/FF_44 is a one-to-one match with \dphy_raw_fifo_inst/FF_38.
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+top_prim.v file will not be written because encrypted design file is being used
+
+Results of NGD DRC are available in top_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/sn5w00/data/sn5wlib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+    <postMsg mid="50001000" type="Warning" dynamic="3" navigation="0" arg0="CLKOS" arg1="FREQUENCY_PIN_CLKOS" arg2="PLLInst_0"  />
+Loading NGO design 'lngotmp/pmi_ram_dplbnonesadr1121121164d4da.ngo'...
+Loading NGO design 'lngotmp/pmi_ram_dplbnonesadr1379512137951211f54079.ngo'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="top_reveal_coretop_instance/n325" arg2="top_reveal_coretop_instance/n325"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="top_reveal_coretop_instance/n318" arg2="top_reveal_coretop_instance/n318"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="top_reveal_coretop_instance/n320" arg2="top_reveal_coretop_instance/n320"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="top_reveal_coretop_instance/jupdate[0]" arg2="top_reveal_coretop_instance/jupdate[0]"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="4"  />
+
+Design Results:
+   2640 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file win10_test_mipi_v2_impl1.ngd.
+
+################### Begin Area Report (top)######################
+Number of register bits => 972 of 6047 (16 % )
+AND2 => 5
+CCU2C => 56
+DPR16X4C => 8
+EHXPLLM => 1
+FD1P3AX => 18
+FD1P3BX => 42
+FD1P3DX => 632
+FD1S3AX => 5
+FD1S3BX => 4
+FD1S3DX => 271
+GSR => 1
+IB => 5
+INV => 6
+L6MUX21 => 1
+LUT4 => 1444
+MIPIDPHYA => 1
+OB => 21
+OBZ => 1
+ODDRX1F => 18
+OR2 => 2
+PDPW8KE => 2
+PFUMX => 53
+PLLREFCS => 1
+ROM16X1A => 14
+XOR2 => 10
+pmi_ram_dpLbnonesadr1121121164d4da => 1
+pmi_ram_dpLbnonesadr1379512137951211f54079 => 1
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 7
+  Net : pll_sys_clk_inst/sys_clk_c, loads : 517
+  Net : mipi_rx_inst/rxhsbyteclk, loads : 33
+  Net : jtck[0], loads : 36
+  Net : clk_50m_c, loads : 1
+  Net : clk_50m_pll_in, loads : 1
+  Net : mipi_rx_inst/clk_p, loads : 1
+  Net : mipi_rx_inst/clk_n, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 62
+Top 10 highest fanout Clock Enables:
+  Net : top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_3, loads : 163
+  Net : top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_129, loads : 50
+  Net : top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_179, loads : 50
+  Net : top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_218, loads : 39
+  Net : mipi_multi_lane_aligner_inst/sys_clk_c_enable_115, loads : 38
+  Net : top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_67, loads : 35
+  Net : mipi_byte_aligner_lane1/sys_clk_c_enable_92, loads : 32
+  Net : dphy_raw_fifo_inst/rden_i, loads : 24
+  Net : dphy_raw_fifo_inst/wren_i, loads : 22
+  Net : top_reveal_coretop_instance/top_la0_inst_0/tm_u/sample_en_d, loads : 18
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : top_reveal_coretop_instance/jtck_N_701, loads : 420
+  Net : top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/jrstn_N_699, loads : 415
+  Net : top_reveal_coretop_instance/top_la0_inst_0/trig_u/tcnt_0/reset_rvl_n, loads : 231
+  Net : sys_rst_n_N_10, loads : 220
+  Net : top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_3, loads : 164
+  Net : top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/n17737, loads : 155
+  Net : top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/n17, loads : 140
+  Net : mipi_byte_aligner_lane1/align_rst_n_d, loads : 96
+  Net : mipi_byte_aligner_lane1/seq_offset[0], loads : 70
+  Net : mipi_lane_state_detection_inst/hs_burst_flag_c, loads : 66
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets rxhsbyteclk]             |  200.000 MHz|  209.293 MHz|     8  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets jtck[0]]                 |  200.000 MHz|   45.143 MHz|     9 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets sys_clk_N]               |  200.000 MHz|   83.347 MHz|    11 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+
+Peak Memory Usage: 95.203  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 4.547  secs
+--------------------------------------------------------------
+
+map -a "LIFMD" -p LIF-MD6000 -t CKFBGA80 -s 6 -oc Industrial   "win10_test_mipi_v2_impl1.ngd" -o "win10_test_mipi_v2_impl1_map.ncd" -pr "win10_test_mipi_v2_impl1.prf" -mp "win10_test_mipi_v2_impl1.mrp" -lpf "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/win10_test_mipi_v2_impl1.lpf" -lpf "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/win10_test_mipi_v2.lpf"             
+map:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: win10_test_mipi_v2_impl1.ngd
+   Picdevice="LIF-MD6000"
+
+   Pictype="CKFBGA80"
+
+   Picspeed=6
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LIF-MD6000CKFBGA80, Performance used: 6.
+
+Loading device for application map from file 'sn5w6000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.38.
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+173 CCU2 constant inputs absorbed.
+
+    <postMsg mid="51001030" type="Warning" dynamic="1" navigation="0" arg0="key1_c"  />
+    <postMsg mid="51001051" type="Warning" dynamic="1" navigation="0" arg0="top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg112112/pmi_ram_dpLbnonesadr1121121164d4da_0_0_0"  />
+    <postMsg mid="51001051" type="Warning" dynamic="1" navigation="0" arg0="top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbnonesadr1379512137951211f54079_0_7_0"  />
+    <postMsg mid="51001051" type="Warning" dynamic="1" navigation="0" arg0="top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbnonesadr1379512137951211f54079_0_0_7"  />
+    <postMsg mid="51001051" type="Warning" dynamic="1" navigation="0" arg0="top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbnonesadr1379512137951211f54079_0_1_6"  />
+    <postMsg mid="51001051" type="Warning" dynamic="1" navigation="0" arg0="top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbnonesadr1379512137951211f54079_0_2_5"  />
+    <postMsg mid="51001051" type="Warning" dynamic="1" navigation="0" arg0="top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbnonesadr1379512137951211f54079_0_3_4"  />
+    <postMsg mid="51001051" type="Warning" dynamic="1" navigation="0" arg0="top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbnonesadr1379512137951211f54079_0_4_3"  />
+    <postMsg mid="51001051" type="Warning" dynamic="1" navigation="0" arg0="top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbnonesadr1379512137951211f54079_0_5_2"  />
+    <postMsg mid="51001051" type="Warning" dynamic="1" navigation="0" arg0="top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg13795121379512/pmi_ram_dpLbnonesadr1379512137951211f54079_0_6_1"  />
+
+
+
+Design Summary:
+   Number of registers:    971 out of  6047 (16%)
+      PFU registers:          971 out of  5936 (16%)
+      PIO registers:            0 out of   111 (0%)
+   Number of SLICEs:      1162 out of  2968 (39%)
+      SLICEs as Logic/ROM:   1138 out of  2968 (38%)
+      SLICEs as RAM:           24 out of  2226 (1%)
+      SLICEs as Carry:         56 out of  2968 (2%)
+   Number of LUT4s:        1630 out of  5936 (27%)
+      Number used as logic LUTs:        1470
+      Number used as distributed RAM:    48
+      Number used as ripple logic:      112
+      Number used as shift registers:     0
+   Number of PIO sites used: 27 out of 37 (73%)
+   Number of IDDR/ODDR/TDDR cells used: 18 out of 111 (16%)
+      Number of IDDR cells:   0
+      Number of ODDR cells:  18
+      Number of TDDR cells:   0
+   Number of PIO using at least one IDDR/ODDR/TDDR: 18 (0 differential)
+      Number of PIO using IDDR only:        0 (0 differential)
+      Number of PIO using ODDR only:       18 (0 differential)
+      Number of PIO using TDDR only:        0 (0 differential)
+      Number of PIO using IDDR/ODDR:        0 (0 differential)
+      Number of PIO using IDDR/TDDR:        0 (0 differential)
+      Number of PIO using ODDR/TDDR:        0 (0 differential)
+      Number of PIO using IDDR/ODDR/TDDR:   0 (0 differential)
+   Number of block RAMs:  11 out of 20 (55%)
+   Number of GSRs:  1 out of 1 (100%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   DTR used :   No
+   Number of Power Management Unit (PMU):  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 2 (0%)
+   Number of Dynamic Bank Controller (BCLVDSOB):  0 out of 2 (0%)
+   Number of DCC:  0 out of 14 (0%)
+   Number of DCS:  0 out of 1 (0%)
+   Number of PLLs:  1 out of 1 (100%)
+   Number of DDRDLLs:  0 out of 2 (0%)
+   Number of CLKDIV:  0 out of 4 (0%)
+   Number of ECLKSYNC:  0 out of 4 (0%)
+   Number of MIPIDPHY:  1 out of 2 (50%)
+   Number of I2C:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  7
+     Net clk_50m_c: 1 loads, 1 rising, 0 falling (Driver: PIO clk_50m )
+     Net clk_50m_pll_in: 1 loads, 1 rising, 0 falling (Driver: PLLREFCS_inst )
+     Net jtck[0]: 263 loads, 21 rising, 242 falling (Driver: PIO JTAG_TCK )
+     Net rxhsbyteclk: 18 loads, 18 rising, 0 falling (Driver: mipi_rx_inst/Inst_MIPIDPHYA )
+     Net sys_clk_c: 337 loads, 337 rising, 0 falling (Driver: pll_sys_clk_inst/PLLInst_0 )
+     Net clk_n: 0 loads, 0 rising, 0 falling (No Driver)
+     Net clk_p: 0 loads, 0 rising, 0 falling (No Driver)
+   Number of Clock Enables:  60
+     Net hs_burst_flag_N: 2 loads, 0 LSLICEs
+     Net mipi_rx_inst/d0rxlpen: 2 loads, 0 LSLICEs
+     Net mipi_byte_aligner_lane1/sys_clk_c_enable_108: 2 loads, 2 LSLICEs
+     Net sys_clk_c_enable_92: 34 loads, 34 LSLICEs
+     Net sys_clk_c_enable_109: 2 loads, 2 LSLICEs
+     Net mipi_multi_lane_aligner_inst/sys_clk_c_enable_116: 2 loads, 2 LSLICEs
+     Net mipi_multi_lane_aligner_inst/sys_clk_c_enable_33: 2 loads, 2 LSLICEs
+     Net mipi_multi_lane_aligner_inst/sys_clk_c_enable_115: 20 loads, 20 LSLICEs
+     Net dphy_raw_fifo_inst/rden_i: 13 loads, 9 LSLICEs
+     Net dphy_raw_fifo_inst/Full: 11 loads, 9 LSLICEs
+     Net top_reveal_coretop_instance/jtck_N_701_enable_82: 8 loads, 8 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/sys_clk_N_keep_enable_106: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/sys_clk_N_keep_enable_107: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/op_code_2__N_1313: 2 loads, 2 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_16: 2 loads, 2 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/jtck_N_701_enable_29: 8 loads, 8 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/sys_clk_N_keep_enable_14: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtck_N_701_enable_3: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/sys_clk_N_keep_enable_93: 8 loads, 8 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_17: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/sys_clk_N_keep_enable_97: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_77: 2 loads, 2 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_78: 2 loads, 2 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/reg0_read_N_1618: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_19: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_43: 5 loads, 5 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_15: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/sample_en_d: 4 loads, 4 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/sys_clk_N_keep_enable_4: 2 loads, 2 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtck_N_701_enable_267: 26 loads, 26 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_35: 6 loads, 6 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/trace_dout_int_136__N_1859: 5 loads, 5 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/sys_clk_N_keep_enable_51: 5 loads, 5 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_59: 5 loads, 5 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/sys_clk_N_keep_enable_67: 5 loads, 5 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/sys_clk_N_keep_enable_75: 5 loads, 5 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_94: 2 loads, 2 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/sys_clk_N_keep_enable_20: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/sys_clk_N_keep_enable_21: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/sys_clk_N_keep_enable_22: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/sys_clk_N_keep_enable_105: 5 loads, 5 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/sys_clk_N_keep_enable_24: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/sys_clk_N_keep_enable_96: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtck_N_701_enable_317: 25 loads, 25 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtck_N_701_enable_354: 19 loads, 19 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/sys_clk_N_keep_enable_95: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_67: 23 loads, 23 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_377: 5 loads, 5 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_218: 20 loads, 20 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_179: 25 loads, 25 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_129: 26 loads, 26 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_4: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_5: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_7: 2 loads, 2 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_32: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_369: 8 loads, 8 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_33: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/JTAG_SOFT_inst_0/ShiftIR: 4 loads, 4 LSLICEs
+     Net top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/tlreset: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instr_cap_upir: 4 loads, 4 LSLICEs
+   Number of local set/reset loads for net key1_c merged into GSR:  220
+   Number of LSRs:  2
+     Net dphy_raw_fifo_Reset: 34 loads, 32 LSLICEs
+     Net top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/tlreset: 229 loads, 229 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/tlreset: 230 loads
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtck_N_701_enable_3: 164 loads
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/n17737: 155 loads
+     Net top_reveal_coretop_instance/n17: 142 loads
+     Net align_rst_n_d: 97 loads
+     Net mipi_byte_aligner_lane1/seq_offset[0]: 70 loads
+     Net hs_burst_flag_N: 66 loads
+     Net mipi_byte_aligner_lane0/seq_offset[0]: 66 loads
+     Net top_reveal_coretop_instance/top_la0_inst_0/addr[0]: 42 loads
+     Net mipi_byte_aligner_lane1/seq_offset[1]: 41 loads
+ 
+
+   Number of warnings:  10
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 68 MB
+
+Dumping design to file win10_test_mipi_v2_impl1_map.ncd.
+
+ncd2vdb "win10_test_mipi_v2_impl1_map.ncd" ".vdbs/win10_test_mipi_v2_impl1_map.vdb"
+
+Loading device for application ncd2vdb from file 'sn5w6000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+
+trce -f "win10_test_mipi_v2_impl1.mt" -o "win10_test_mipi_v2_impl1.tw1" "win10_test_mipi_v2_impl1_map.ncd" "win10_test_mipi_v2_impl1.prf"
+trce:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file win10_test_mipi_v2_impl1_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LIF-MD6000
+Package:     CKFBGA80
+Performance: 6
+Loading device for application trce from file 'sn5w6000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.38.
+Performance Hardware Data Status:   Final          Version 41.1.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
+Tue Jul 15 02:06:15 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o win10_test_mipi_v2_impl1.tw1 -gui -msgset C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/promote.xml win10_test_mipi_v2_impl1_map.ncd win10_test_mipi_v2_impl1.prf 
+Design file:     win10_test_mipi_v2_impl1_map.ncd
+Preference file: win10_test_mipi_v2_impl1.prf
+Device,speed:    LIF-MD6000,6
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 14222 paths, 3 nets, and 4296 connections (53.12% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
+Tue Jul 15 02:06:15 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o win10_test_mipi_v2_impl1.tw1 -gui -msgset C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/promote.xml win10_test_mipi_v2_impl1_map.ncd win10_test_mipi_v2_impl1.prf 
+Design file:     win10_test_mipi_v2_impl1_map.ncd
+Preference file: win10_test_mipi_v2_impl1.prf
+Device,speed:    LIF-MD6000,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 64  Score: 4868
+Cumulative negative slack: 4868
+
+Constraints cover 14222 paths, 3 nets, and 4569 connections (56.50% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 64 (hold)
+Score: 0 (setup), 4868 (hold)
+Cumulative negative slack: 4868 (0+4868)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 66 MB
+
+
+mpartrce -p "win10_test_mipi_v2_impl1.p2t" -f "win10_test_mipi_v2_impl1.p3t" -tf "win10_test_mipi_v2_impl1.pt" "win10_test_mipi_v2_impl1_map.ncd" "win10_test_mipi_v2_impl1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "win10_test_mipi_v2_impl1_map.ncd"
+Tue Jul 15 02:06:15 2025
+
+PAR: Place And Route Diamond (64-bit) 3.12.0.240.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/promote.xml -exp parUseNBR=1:parCDP=auto:parCDR=1:parPathBased=OFF:SLVS_MIPI_LVCMOS_OUTPUT=0 win10_test_mipi_v2_impl1_map.ncd win10_test_mipi_v2_impl1.dir/5_1.ncd win10_test_mipi_v2_impl1.prf
+Preference file: win10_test_mipi_v2_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file win10_test_mipi_v2_impl1_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LIF-MD6000
+Package:     CKFBGA80
+Performance: 6
+Loading device for application par from file 'sn5w6000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.38.
+Performance Hardware Data Status:   Final          Version 41.1.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)      27/39           69% used
+                     27/37           72% bonded
+   IOLOGIC           18/39           46% used
+
+   SLICE           1162/2968         39% used
+
+   GSR                1/1           100% used
+   EBR               11/20           55% used
+   PLL                1/1           100% used
+   PLLREFCS           1/1           100% used
+   MIPIDPHY           1/2            50% used
+   ABPIO              6/20           30% used
+
+
+Number of Signals: 2856
+Number of Connections: 8087
+
+Pin Constraint Summary:
+   24 out of 27 pins locked (88% locked).
+
+The following 3 signals are selected to use the primary clock routing resources:
+    sys_clk_c (driver: pll_sys_clk_inst/PLLInst_0, clk/ce/sr load #: 337/0/0)
+    rxhsbyteclk (driver: mipi_rx_inst/Inst_MIPIDPHYA, clk/ce/sr load #: 18/0/0)
+    jtck[0] (driver: JTAG_TCK, clk/ce/sr load #: 263/0/0)
+
+
+Signal key1_c is selected as Global Set/Reset.
+.
+Starting Placer Phase 0.
+...........
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+..........................
+Placer score = 493370.
+Finished Placer Phase 1.  REAL time: 6 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  486408
+Finished Placer Phase 2.  REAL time: 6 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 1 out of 6 (16%)
+  GR_PCLK    : 0 out of 2 (0%)
+  PLL        : 1 out of 1 (100%)
+  DCS        : 0 out of 1 (0%)
+  DCC        : 0 out of 14 (0%)
+  CLKDIV     : 0 out of 4 (0%)
+  MIPIDPHY   : 1 out of 2 (50%)
+
+Global Clocks:
+  PRIMARY "sys_clk_c" from CLKOP on comp "pll_sys_clk_inst/PLLInst_0" on PLL site "PLL", clk load = 337, ce load = 0, sr load = 0
+  PRIMARY "rxhsbyteclk" from HSBYTECLKD on comp "mipi_rx_inst/Inst_MIPIDPHYA" on site "MIPIDPHY0", clk load = 18, ce load = 0, sr load = 0
+  PRIMARY "jtck[0]" from comp "JTAG_TCK" on CLK_PIN site "K2 (PB47)", clk load = 263, ce load = 0, sr load = 0
+
+  PRIMARY  : 3 out of 8 (37%)
+
+Edge Clocks:
+
+  No edge clock selected.
+
+
+--------------- End of Clock Report ---------------
+
+
+_
+I/O Usage Summary (final):
+   27 out of 39 (69.2%) PIO sites used.
+   27 out of 37 (73.0%) bonded PIO sites used.
+   Number of PIO comps: 27; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+----------------+------------+------------+------------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+----------------+------------+------------+------------+
+| 0        | 3 / 7 ( 42%)   | 2.5V       | -          | -          |
+| 1        | 14 / 14 (100%) | 2.5V       | -          | -          |
+| 2        | 10 / 16 ( 62%) | 2.5V       | -          | -          |
++----------+----------------+------------+------------+------------+
+
+Total placer CPU time: 6 secs 
+
+Dumping design to file win10_test_mipi_v2_impl1.dir/5_1.ncd.
+
+    <postMsg mid="60211008" type="Warning" dynamic="2" navigation="0" arg0="sys_clk_div2" arg1="J2"  />
+0 connections routed; 8087 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 7 secs 
+
+Start NBR router at 02:06:22 07/15/25
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 02:06:22 07/15/25
+
+Start NBR section for initial routing at 02:06:22 07/15/25
+Level 1, iteration 1
+70(0.02%) conflicts; 6577(81.33%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.167ns/0.000ns; real time: 8 secs 
+Level 2, iteration 1
+25(0.01%) conflicts; 6515(80.56%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.105ns/0.000ns; real time: 8 secs 
+Level 3, iteration 1
+101(0.03%) conflicts; 4817(59.56%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.013ns/0.000ns; real time: 8 secs 
+Level 4, iteration 1
+213(0.07%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.013ns/0.000ns; real time: 9 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 02:06:24 07/15/25
+Level 1, iteration 1
+19(0.01%) conflicts; 241(2.98%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.027ns/0.000ns; real time: 9 secs 
+Level 2, iteration 1
+16(0.01%) conflicts; 240(2.97%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.027ns/0.000ns; real time: 9 secs 
+Level 3, iteration 1
+15(0.01%) conflicts; 228(2.82%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.013ns/0.000ns; real time: 9 secs 
+Level 4, iteration 1
+76(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.013ns/0.000ns; real time: 9 secs 
+Level 4, iteration 2
+29(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.013ns/0.000ns; real time: 9 secs 
+Level 4, iteration 3
+11(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.013ns/0.000ns; real time: 9 secs 
+Level 4, iteration 4
+6(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.013ns/0.000ns; real time: 9 secs 
+Level 4, iteration 5
+5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.013ns/0.000ns; real time: 9 secs 
+Level 4, iteration 6
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.013ns/0.000ns; real time: 9 secs 
+Level 4, iteration 7
+7(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.013ns/0.000ns; real time: 9 secs 
+Level 4, iteration 8
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.013ns/0.000ns; real time: 9 secs 
+Level 4, iteration 9
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.013ns/0.000ns; real time: 9 secs 
+Level 4, iteration 10
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.013ns/0.000ns; real time: 10 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 02:06:25 07/15/25
+Level 4, iteration 0
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<hold >: 0.016ns/0.000ns; real time: 11 secs 
+Level 4, iteration 0
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.993ns/0.000ns; real time: 11 secs 
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.993ns/0.000ns; real time: 11 secs 
+
+Start NBR section for re-routing at 02:06:26 07/15/25
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 1.013ns/0.000ns; real time: 11 secs 
+
+Start NBR section for post-routing at 02:06:26 07/15/25
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : 1.012ns
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 11 secs 
+Total REAL time: 12 secs 
+Completely routed.
+End of route.  8087 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file win10_test_mipi_v2_impl1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 1.013
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.021
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 11 secs 
+Total REAL time to completion: 12 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "win10_test_mipi_v2_impl1.pt" -o "win10_test_mipi_v2_impl1.twr" "win10_test_mipi_v2_impl1.ncd" "win10_test_mipi_v2_impl1.prf"
+trce:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file win10_test_mipi_v2_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LIF-MD6000
+Package:     CKFBGA80
+Performance: 6
+Loading device for application trce from file 'sn5w6000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.38.
+Performance Hardware Data Status:   Final          Version 41.1.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
+Tue Jul 15 02:06:28 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o win10_test_mipi_v2_impl1.twr -gui -msgset C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/promote.xml win10_test_mipi_v2_impl1.ncd win10_test_mipi_v2_impl1.prf 
+Design file:     win10_test_mipi_v2_impl1.ncd
+Preference file: win10_test_mipi_v2_impl1.prf
+Device,speed:    LIF-MD6000,6
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 14222 paths, 3 nets, and 4571 connections (56.52% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
+Tue Jul 15 02:06:28 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o win10_test_mipi_v2_impl1.twr -gui -msgset C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/promote.xml win10_test_mipi_v2_impl1.ncd win10_test_mipi_v2_impl1.prf 
+Design file:     win10_test_mipi_v2_impl1.ncd
+Preference file: win10_test_mipi_v2_impl1.prf
+Device,speed:    LIF-MD6000,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 14222 paths, 3 nets, and 4571 connections (56.52% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 67 MB
+
+
+tmcheck -par "win10_test_mipi_v2_impl1.par" 
+
+bitgen -w "win10_test_mipi_v2_impl1.ncd" -f "win10_test_mipi_v2_impl1.t2b"  "win10_test_mipi_v2_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.12.0.240.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file win10_test_mipi_v2_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LIF-MD6000
+Package:     CKFBGA80
+Performance: 6
+Loading device for application Bitgen from file 'sn5w6000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.38.
+Performance Hardware Data Status:   Final          Version 41.1.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from win10_test_mipi_v2_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                        DONE_EX  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                            6**  |
++---------------------------------+---------------------------------+
+|                             ES  |                           No**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                     DisableUES  |                        FALSE**  |
++---------------------------------+---------------------------------+
+|                        TRANSFR  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                     CDONE_PORT  |                CDONE_USER_IO**  |
++---------------------------------+---------------------------------+
+|               BOOT_UP_SEQUENCE  |                         NVCM**  |
++---------------------------------+---------------------------------+
+|          ONE_TIME_PROGRAM_SRAM  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|          ONE_TIME_PROGRAM_NVCM  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SECURITY_SRAM  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SECURITY_NVCM  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 4.9.
+ 
+Saving bit stream in "win10_test_mipi_v2_impl1.bit".
+Total CPU Time: 1 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 85 MB

@@ -1,0 +1,78 @@
+Results of NGD DRC are available in top_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sn5w00/data/sn5wlib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading NGO design 'lngotmp/pmi_ram_dplbnonesadr1121121164d4da.ngo'...
+Loading NGO design 'lngotmp/pmi_ram_dplbnonesadr33112048331120481218f65e.ngo'...
+Loading NGO design 'C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi/mipi_rx/mipi_rx_rx_global_ctrl.ngo'...
+Loading NGO design 'C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi/mipi_rx/mipi_rx_dphy_rx_wrap.ngo'...
+Loading NGO design 'C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi/mipi_rx/pmi_fifo_dcelar151105125125123232104c3636.ngo'...
+Loading NGO design 'C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi/mipi_rx/pmi_fifollr1304416b8506c3.ngo'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'clk_c' has no load.
+WARNING - synthesis: logical net 'top_reveal_coretop_instance/n112' has no load.
+WARNING - synthesis: logical net 'top_reveal_coretop_instance/jupdate[0]' has no load.
+WARNING - synthesis: logical net 'top_reveal_coretop_instance/n110' has no load.
+WARNING - synthesis: logical net 'top_reveal_coretop_instance/n117' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/lp_clk_rx_p' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/lp_clk_rx_n' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/lp_d2_rx_p_o' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/lp_d2_rx_n_o' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/lp_d3_rx_p_o' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/lp_d3_rx_n_o' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/d_sot_det_w[3]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/d_sot_det_w[2]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/d_sot_det_w[1]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/d_sot_det_w[0]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/d_sote_det_w[3]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/d_sote_det_w[2]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/d_sote_det_w[1]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/d_sote_det_w[0]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[15]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[14]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[13]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[12]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[11]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[10]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[9]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[8]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[7]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[6]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[5]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[4]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[3]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[2]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[1]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[0]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[15]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[14]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[13]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[12]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[11]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[10]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[9]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[8]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[7]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[6]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[5]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[4]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[3]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[2]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[1]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[0]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/term_d1_en_o' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/hs_d1_en_o' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/lp_hs_state_d_o[1]' has no load.
+WARNING - synthesis: logical net 'mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/lp_hs_state_d_o[0]' has no load.
+WARNING - synthesis: DRC complete with 55 warnings.
+
+Design Results:
+   2375 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file iphone7_mipi_v3_impl1.ngd.

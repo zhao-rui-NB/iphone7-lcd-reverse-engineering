@@ -1,0 +1,39 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Tue Jul 15 02:06:29 2025 *
+NOTE DESIGN NAME: top *
+NOTE DEVICE NAME: LIF-MD6000-6CKFBGA80 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS clk_50m : F9 : in *
+NOTE PINS ddr_output_clk : E1 : out *
+NOTE PINS output_multi_lane_align_data_out[16] : F1 : out *
+NOTE PINS output_multi_lane_align_data_out[15] : J3 : out *
+NOTE PINS output_multi_lane_align_data_out[14] : K3 : out *
+NOTE PINS output_multi_lane_align_data_out[13] : J4 : out *
+NOTE PINS output_multi_lane_align_data_out[12] : K4 : out *
+NOTE PINS output_multi_lane_align_data_out[11] : J5 : out *
+NOTE PINS output_multi_lane_align_data_out[10] : K5 : out *
+NOTE PINS output_multi_lane_align_data_out[9] : J6 : out *
+NOTE PINS output_multi_lane_align_data_out[8] : K6 : out *
+NOTE PINS output_multi_lane_align_data_out[7] : K7 : out *
+NOTE PINS output_multi_lane_align_data_out[6] : J7 : out *
+NOTE PINS output_multi_lane_align_data_out[5] : J8 : out *
+NOTE PINS output_multi_lane_align_data_out[4] : K8 : out *
+NOTE PINS output_multi_lane_align_data_out[3] : K10 : out *
+NOTE PINS output_multi_lane_align_data_out[2] : K9 : out *
+NOTE PINS output_multi_lane_align_data_out[1] : H9 : out *
+NOTE PINS output_multi_lane_align_data_out[0] : H10 : out *
+NOTE PINS JTAG_TCK : K2 : in *
+NOTE PINS JTAG_TMS : F2 : in *
+NOTE PINS JTAG_TDO : E2 : out *
+NOTE PINS JTAG_TDI : D1 : in *
+NOTE PINS key1 : D9 : in *
+NOTE PINS sys_clk : G9 : out *
+NOTE PINS hs_burst_flag : E9 : out *
+NOTE PINS sys_clk_div2 : J2 : out *
+NOTE PINS SYSCONFIG_PIN_SPI_SS/CSN/SCL : H1 : inout *
+NOTE PINS SYSCONFIG_PIN_SPI_SCK/MCK/SDA : J1 : inout *
+NOTE PINS SYSCONFIG_PIN_MISO_D1 : K1 : inout *
+NOTE PINS SYSCONFIG_PIN_MOSI_D0 : G1 : inout *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: off *

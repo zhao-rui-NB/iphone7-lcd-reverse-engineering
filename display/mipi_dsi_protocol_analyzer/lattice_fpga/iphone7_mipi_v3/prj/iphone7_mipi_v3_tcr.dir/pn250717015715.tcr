@@ -1,0 +1,12 @@
+#Start recording tcl command: 7/16/2025 10:54:35
+#Project Location: C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj; Project name: iphone7_mipi_v3
+prj_project open "C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/iphone7_mipi_v3.ldf"
+sbp_design new -dsgn "mipi" -path "C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi" -device "LIF-MD6000-6KMG80I"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi/dsi_receiver"
+source "C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi/dsi_receiver/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+sbp_builder export_add -comp {mipi/dsi_receiver}
+sbp_design gen
+prj_src add "C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi/mipi.sbx"
+#Stop recording: 7/17/2025 01:57:15

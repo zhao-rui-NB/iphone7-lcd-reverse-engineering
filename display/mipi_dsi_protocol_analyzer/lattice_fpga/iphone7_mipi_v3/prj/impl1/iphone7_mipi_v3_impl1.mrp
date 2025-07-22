@@ -1,0 +1,2580 @@
+
+             Lattice Mapping Report File for Design Module 'top'
+
+
+Design Information
+------------------
+
+Command line:   map -a LIFMD -p LIF-MD6000 -t CKFBGA80 -s 6 -oc Industrial
+     iphone7_mipi_v3_impl1.ngd -o iphone7_mipi_v3_impl1_map.ncd -pr
+     iphone7_mipi_v3_impl1.prf -mp iphone7_mipi_v3_impl1.mrp -lpf C:/Users/rui/D
+     esktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/impl1/ipho
+     ne7_mipi_v3_impl1.lpf -lpf C:/Users/rui/Desktop/iphone_screen/crosslink_fpg
+     a_mipi_prj/iphone7_mipi_v3/prj/iphone7_mipi_v3.lpf -gui -msgset C:/Users/ru
+     i/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/promote
+     .xml 
+Target Vendor:  LATTICE
+Target Device:  LIF-MD6000CKFBGA80
+Target Performance:   6
+Mapper:  sn5w00,  version:  Diamond (64-bit) 3.14.0.75.2
+Mapped on:  07/22/25  00:50:53
+
+Design Summary
+--------------
+
+   Number of registers:    798 out of  6047 (13%)
+      PFU registers:          798 out of  5936 (13%)
+      PIO registers:            0 out of   111 (0%)
+   Number of SLICEs:      1024 out of  2968 (35%)
+      SLICEs as Logic/ROM:   1000 out of  2968 (34%)
+      SLICEs as RAM:           24 out of  2226 (1%)
+      SLICEs as Carry:        121 out of  2968 (4%)
+   Number of LUT4s:        1463 out of  5936 (25%)
+      Number used as logic LUTs:        1173
+      Number used as distributed RAM:    48
+      Number used as ripple logic:      242
+      Number used as shift registers:     0
+   Number of PIO sites used: 23 out of 37 (62%)
+   Number of IDDR/ODDR/TDDR cells used: 18 out of 111 (16%)
+      Number of IDDR cells:   0
+      Number of ODDR cells:  18
+      Number of TDDR cells:   0
+   Number of PIO using at least one IDDR/ODDR/TDDR: 18 (0 differential)
+      Number of PIO using IDDR only:        0 (0 differential)
+      Number of PIO using ODDR only:       18 (0 differential)
+      Number of PIO using TDDR only:        0 (0 differential)
+      Number of PIO using IDDR/ODDR:        0 (0 differential)
+      Number of PIO using IDDR/TDDR:        0 (0 differential)
+      Number of PIO using ODDR/TDDR:        0 (0 differential)
+      Number of PIO using IDDR/ODDR/TDDR:   0 (0 differential)
+   Number of block RAMs:  11 out of 20 (55%)
+   Number of GSRs:  1 out of 1 (100%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   DTR used :   No
+   Number of Power Management Unit (PMU):  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 2 (0%)
+   Number of Dynamic Bank Controller (BCLVDSOB):  0 out of 2 (0%)
+   Number of DCC:  0 out of 14 (0%)
+   Number of DCS:  0 out of 1 (0%)
+   Number of PLLs:  0 out of 1 (0%)
+
+                                    Page 1
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Design Summary (cont)
+---------------------
+   Number of DDRDLLs:  0 out of 2 (0%)
+   Number of CLKDIV:  0 out of 4 (0%)
+   Number of ECLKSYNC:  0 out of 4 (0%)
+   Number of MIPIDPHY:  1 out of 2 (50%)
+   Number of I2C:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  5
+     Net jtck[0]: 163 loads, 21 rising, 142 falling (Driver: PIO JTAG_TCK )
+     Net byte_hs_clk: 344 loads, 344 rising, 0 falling (Driver:
+     mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy )
+     Net mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o: 32 loads, 32
+     rising, 0 falling (Driver:
+     mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy )
+     Net mipi_rx_clk_n_i: 0 loads, 0 rising, 0 falling (No Driver)
+     Net mipi_rx_clk_p_i: 0 loads, 0 rising, 0 falling (No Driver)
+   Number of Clock Enables:  59
+     Net top_reveal_coretop_instance/jtck_N_45_enable_40: 9 loads, 9 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/op_code_2__N_445: 3 loads, 3
+     LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/clk[0]_N_keep_en
+     able_117: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_0/clk[0]_N_keep_en
+     able_118: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/jtck_N_45_enable
+     _167: 8 loads, 8 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/wen_N_298: 1 loads, 1
+     LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtck_N_45_enable_30: 1
+     loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/clk[0]_N_keep_enable_
+     111: 8 loads, 8 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/trig_u/clk[0]_N_keep_enable_16:
+     2 loads, 2 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/clk[0]_N_keep_en
+     able_114: 1 loads, 1 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/trig_u/clk[0]_N_keep_enable_8: 1
+     loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/clk[0]_N_keep_enable_95: 2
+     loads, 2 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/reg0_read_N_750: 1 loads, 1
+     LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/trig_u/tcnt_0/clk[0]_N_keep_
+     enable_96: 2 loads, 2 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/clk[0]_N_keep_enable_70: 6
+     loads, 6 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/clk[0]_N_keep_enable_27: 6
+     loads, 6 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtck_N_45_enable_104: 17
+     loads, 17 LSLICEs
+
+                                    Page 2
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Design Summary (cont)
+---------------------
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/clk[0]_N_keep_enable_40: 8
+     loads, 8 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/clk[0]_N_keep_enable_50: 6
+     loads, 6 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/trace_dout_int_32__N_901: 6
+     loads, 6 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/clk[0]_N_keep_enable_60: 6
+     loads, 6 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/clk[0]_N_keep_enable_80: 6
+     loads, 6 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/clk[0]_N_keep_enable_90: 6
+     loads, 6 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/sample_en_d: 5 loads, 5
+     LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/clk[0]_N_keep_enable_112: 2
+     loads, 2 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/clk[0]_N_keep_enable_13: 1
+     loads, 1 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/clk[0]_N_keep_enable_17: 2
+     loads, 2 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/clk[0]_N_keep_enable_92: 1
+     loads, 1 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/clk[0]_N_keep_enable_93: 1
+     loads, 1 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/clk[0]_N_keep_enable_94: 1
+     loads, 1 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/clk[0]_N_keep_enable_115: 1
+     loads, 1 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/tm_u/clk[0]_N_keep_enable_116: 1
+     loads, 1 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_45_enable_72:
+     19 loads, 19 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_45_enable_
+     144: 22 loads, 22 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_45_enable_
+     160: 8 loads, 8 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_45_enable_
+     166: 4 loads, 4 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_45_enable_26:
+     1 loads, 1 LSLICEs
+     Net
+
+                                    Page 3
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Design Summary (cont)
+---------------------
+     top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_45_enable_28:
+     2 loads, 2 LSLICEs
+     Net
+     top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_45_enable_31:
+     1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_45_enable_
+     110: 1 loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_45_enable_
+     145: 5 loads, 5 LSLICEs
+     Net top_reveal_coretop_instance/JTAG_SOFT_inst_0/ShiftIR: 4 loads, 4
+     LSLICEs
+     Net top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/tlreset: 1
+     loads, 1 LSLICEs
+     Net top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_reg/instr
+     _cap_upir: 4 loads, 4 LSLICEs
+     Net mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/cl
+     k_byte_fr_i_enable_1: 1 loads, 1 LSLICEs
+     Net mipi_rx/mipi_rx_inst/dphy_rx_inst/term_d0_en_w: 2 loads, 0 LSLICEs
+     Net mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp
+     _hs_ctrl_d0/lp11_ncr: 1 loads, 1 LSLICEs
+     Net mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/WORD_ALIGN_O
+     N.w_align/clk_byte_fr_i_enable_13: 2 loads, 2 LSLICEs
+     Net mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/WORD_ALIGN_O
+     N.w_align/clk_byte_fr_i_enable_18: 2 loads, 2 LSLICEs
+     Net mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u
+     _rx_fifo/rx_fifo_single.rx_fifo_single_inst/clk_byte_fr_i_enable_14: 5
+     loads, 5 LSLICEs
+     Net mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u
+     _rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg
+     151105125125123232/wren_i: 17 loads, 15 LSLICEs
+     Net mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u
+     _rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg
+     151105125125123232/rden_i: 20 loads, 20 LSLICEs
+     Net mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_O
+     N.l_align/pmi_genpmi_fifoLIFMDreg1304416/rden_i: 9 loads, 9 LSLICEs
+     Net mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_O
+     N.l_align/pmi_genpmi_fifoLIFMDreg1304416/wren_i: 1 loads, 1 LSLICEs
+     Net mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_O
+     N.l_align/pmi_genpmi_fifoLIFMDreg1304416/fcnt_en: 2 loads, 2 LSLICEs
+     Net mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_O
+     N.l_align/pmi_genpmi_fifoLIFMDreg1304416_18/rden_i: 9 loads, 9 LSLICEs
+     Net mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_O
+     N.l_align/pmi_genpmi_fifoLIFMDreg1304416_18/wren_i: 1 loads, 1 LSLICEs
+     Net mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_O
+     N.l_align/pmi_genpmi_fifoLIFMDreg1304416_18/fcnt_en: 2 loads, 2 LSLICEs
+     Net mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/d_sot_det_o_3__N_5: 2
+     loads, 0 LSLICEs
+   Number of local set/reset loads for net mipi_rx/mipi_rx_inst/dphy_rx_inst/dph
+     y_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/reset_fifo_r merged into GSR:
+     82
+   Number of LSRs:  4
+     Net rst_n_c: 28 loads, 10 LSLICEs
+     Net top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/tlreset:
+     128 loads, 128 LSLICEs
+     Net mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp
+     _hs_ctrl_d0/lp11_reset_n: 1 loads, 1 LSLICEs
+
+                                    Page 4
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Design Summary (cont)
+---------------------
+     Net mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp
+     _hs_ctrl_d0/hs_entry: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/tlreset:
+     129 loads
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtck_N_45_enable_30: 57
+     loads
+     Net top_reveal_coretop_instance/top_la0_inst_0/addr[0]: 55 loads
+     Net addr[1]: 52 loads
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/n8758: 51 loads
+     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/armed: 39 loads
+     Net top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/n13: 36 loads
+     Net addr_15: 35 loads
+     Net jshift_d1: 33 loads
+     Net top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinaryno
+     nespeedasyncdisablereg3311204833112048/raddr10_ff2: 33 loads
+
+
+
+
+   Number of warnings:  12
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: Using local reset signal 'mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_
+     rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/reset_fifo_r' to infer global GSR
+     net.
+WARNING - map: The reset of EBR 'top_reveal_coretop_instance/top_la0_inst_0/trig
+     _u/te_0/pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg112112/pmi_ram_dpLbnon
+     esadr1121121164d4da_0_0_0' cannot be controlled. The local reset is not
+     connected to any control signal and set to GND. The global reset is
+     disabled via GSR property. To control the EBR reset, either connect the
+     local reset to a control signal or force the GSR property to be enabled.
+WARNING - map: The reset of EBR 'top_reveal_coretop_instance/top_la0_inst_0/tm_u
+     /pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg3311204833112048/pmi_ram_dpLb
+     nonesadr33112048331120481218f65e_1_3_0' cannot be controlled. The local
+     reset is not connected to any control signal and set to GND. The global
+     reset is disabled via GSR property. To control the EBR reset, either
+     connect the local reset to a control signal or force the GSR property to be
+     enabled.
+WARNING - map: The reset of EBR 'top_reveal_coretop_instance/top_la0_inst_0/tm_u
+     /pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg3311204833112048/pmi_ram_dpLb
+     nonesadr33112048331120481218f65e_0_0_7' cannot be controlled. The local
+     reset is not connected to any control signal and set to GND. The global
+     reset is disabled via GSR property. To control the EBR reset, either
+     connect the local reset to a control signal or force the GSR property to be
+     enabled.
+WARNING - map: The reset of EBR 'top_reveal_coretop_instance/top_la0_inst_0/tm_u
+     /pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg3311204833112048/pmi_ram_dpLb
+     nonesadr33112048331120481218f65e_0_1_6' cannot be controlled. The local
+     reset is not connected to any control signal and set to GND. The global
+     reset is disabled via GSR property. To control the EBR reset, either
+
+                                    Page 5
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Design Errors/Warnings (cont)
+-----------------------------
+     connect the local reset to a control signal or force the GSR property to be
+     enabled.
+WARNING - map: The reset of EBR 'top_reveal_coretop_instance/top_la0_inst_0/tm_u
+     /pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg3311204833112048/pmi_ram_dpLb
+     nonesadr33112048331120481218f65e_0_2_5' cannot be controlled. The local
+     reset is not connected to any control signal and set to GND. The global
+     reset is disabled via GSR property. To control the EBR reset, either
+     connect the local reset to a control signal or force the GSR property to be
+     enabled.
+WARNING - map: The reset of EBR 'top_reveal_coretop_instance/top_la0_inst_0/tm_u
+     /pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg3311204833112048/pmi_ram_dpLb
+     nonesadr33112048331120481218f65e_0_3_4' cannot be controlled. The local
+     reset is not connected to any control signal and set to GND. The global
+     reset is disabled via GSR property. To control the EBR reset, either
+     connect the local reset to a control signal or force the GSR property to be
+     enabled.
+WARNING - map: The reset of EBR 'top_reveal_coretop_instance/top_la0_inst_0/tm_u
+     /pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg3311204833112048/pmi_ram_dpLb
+     nonesadr33112048331120481218f65e_1_0_3' cannot be controlled. The local
+     reset is not connected to any control signal and set to GND. The global
+     reset is disabled via GSR property. To control the EBR reset, either
+     connect the local reset to a control signal or force the GSR property to be
+     enabled.
+WARNING - map: The reset of EBR 'top_reveal_coretop_instance/top_la0_inst_0/tm_u
+     /pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg3311204833112048/pmi_ram_dpLb
+     nonesadr33112048331120481218f65e_1_1_2' cannot be controlled. The local
+     reset is not connected to any control signal and set to GND. The global
+     reset is disabled via GSR property. To control the EBR reset, either
+     connect the local reset to a control signal or force the GSR property to be
+     enabled.
+WARNING - map: The reset of EBR 'top_reveal_coretop_instance/top_la0_inst_0/tm_u
+     /pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg3311204833112048/pmi_ram_dpLb
+     nonesadr33112048331120481218f65e_1_2_1' cannot be controlled. The local
+     reset is not connected to any control signal and set to GND. The global
+     reset is disabled via GSR property. To control the EBR reset, either
+     connect the local reset to a control signal or force the GSR property to be
+     enabled.
+WARNING - map: The reset of EBR 'mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_
+     inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_gen
+     pmi_fifo_dcLIFMDasyncreg151105125125123232/pdp_ram_0_1_0' cannot be
+     controlled. The local reset is not connected to any control signal and set
+     to GND. The global reset is disabled via GSR property. To control the EBR
+     reset, either connect the local reset to a control signal or force the GSR
+     property to be enabled.
+WARNING - map: The reset of EBR 'mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_
+     inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_gen
+     pmi_fifo_dcLIFMDasyncreg151105125125123232/pdp_ram_0_0_1' cannot be
+     controlled. The local reset is not connected to any control signal and set
+     to GND. The global reset is disabled via GSR property. To control the EBR
+     reset, either connect the local reset to a control signal or force the GSR
+     property to be enabled.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+
+                                    Page 6
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+IO (PIO) Attributes (cont)
+--------------------------
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| ddr_output_clk      | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ddr_data_out[16]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ddr_data_out[15]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ddr_data_out[14]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ddr_data_out[13]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ddr_data_out[12]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ddr_data_out[11]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ddr_data_out[10]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ddr_data_out[9]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ddr_data_out[8]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ddr_data_out[7]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ddr_data_out[6]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ddr_data_out[5]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ddr_data_out[4]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ddr_data_out[3]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ddr_data_out[2]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ddr_data_out[1]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ddr_data_out[0]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| JTAG_TCK            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| JTAG_TMS            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| JTAG_TDO            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| JTAG_TDI            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| rst_n               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/INV_1 undriven or does not drive
+     anything - clipped.
+
+                                    Page 7
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/INV_2 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/INV_3 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/INV_4 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/INV_0 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/AND2_t0 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/af_cmp_1 undriven or does not
+     drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/af_cmp_0 undriven or does not
+     drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/af_cmp_ci_a undriven or does not
+     drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/a2 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/ae_cmp_1 undriven or does not
+     drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/ae_cmp_0 undriven or does not
+     drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/ae_cmp_ci_a undriven or does not
+     drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/r_ctr_1 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/w_ctr_1 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/FF_34 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/FF_37 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/FF_0 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/FF_1 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/a3 undriven or does not drive
+
+                                    Page 8
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/INV_1 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/INV_2 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/INV_3 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/INV_4 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/INV_0 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/AND2_t0 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/af_cmp_1 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/af_cmp_0 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/af_cmp_ci_a undriven or does not
+     drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/a2 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/ae_cmp_1 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/ae_cmp_0 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/ae_cmp_ci_a undriven or does not
+     drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/r_ctr_1 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/w_ctr_1 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/FF_34 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/FF_37 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/FF_0 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+
+                                    Page 9
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+     _align/pmi_genpmi_fifoLIFMDreg1304416/FF_1 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/a3 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/af_set_cmp_4 undriven or does not drive anything - clipped.
+     
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/af_set_cmp_3 undriven or does not drive anything - clipped.
+     
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/af_set_cmp_2 undriven or does not drive anything - clipped.
+     
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/af_set_cmp_1 undriven or does not drive anything - clipped.
+     
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/af_set_cmp_0 undriven or does not drive anything - clipped.
+     
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/af_set_cmp_ci_a undriven or does not drive anything -
+     clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/af_set_ctr_4 undriven or does not drive anything - clipped.
+     
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/af_set_ctr_3 undriven or does not drive anything - clipped.
+     
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/af_set_ctr_2 undriven or does not drive anything - clipped.
+     
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/af_set_ctr_1 undriven or does not drive anything - clipped.
+     
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/af_set_ctr_0 undriven or does not drive anything - clipped.
+     
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/af_set_ctr_cia undriven or does not drive anything -
+     clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/FF_2 undriven or does not drive anything - clipped.
+
+                                   Page 10
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/FF_3 undriven or does not drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/FF_4 undriven or does not drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/FF_5 undriven or does not drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/FF_6 undriven or does not drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/FF_7 undriven or does not drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/FF_8 undriven or does not drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/FF_10 undriven or does not drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/LUT4_1 undriven or does not drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/LUT4_0 undriven or does not drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/FF_0 undriven or does not drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/FF_1 undriven or does not drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/FF_9 undriven or does not drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/a3 undriven or does not drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/i1_2_lut undriven or does not drive anything -
+     clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/i1_4_lut undriven or does not drive anything -
+     clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/lp_rx_p_i_ncr2_I_0_2_lut undriven or does not
+     drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/i479_3_lut undriven or does not drive anything
+     - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/i186_3_lut_4_lut_4_lut undriven or does not
+     drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/i1_3_lut undriven or does not drive anything -
+
+                                   Page 11
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+     clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/i125_3_lut_4_lut_4_lut undriven or does not
+     drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/c_state_FSM_i3 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/c_state_FSM_i2 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/i89_4_lut_4_lut undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/i3_4_lut undriven or does not drive anything -
+     clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/c_state_FSM_i1 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/hs_en_ncr_77 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/lp_rx_p_i_r2_I_0_82_2_lut_rep_18 undriven or
+     does not drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/n155_bdd_4_lut_4_lut undriven or does not
+     drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/i1_2_lut_3_lut_rep_17 undriven or does not
+     drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/lp_rx_p_i_r1_64 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/term_en_r_I_0_2_lut_3_lut_4_lut undriven or
+     does not drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/lp11_ncr_76 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/lp_rx_n_i_ncr2_75 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/lp_rx_n_i_ncr1_74 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/lp_rx_p_i_ncr2_73 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/lp_rx_p_i_ncr1_72 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/lp00_sync_d_71 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+
+                                   Page 12
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+     CONTROL_LANE_1.lp_hs_ctrl_d1/lp00_sync_70 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/i476_2_lut_rep_16 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/term_en_r_69 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/lp_rx_n_i_r2_67 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/lp_rx_n_i_r1_66 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/lp_rx_p_i_r2_65 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/c_state_FSM_i0 undriven or does not drive
+     anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs
+     _ctrl_d0/i1_2_lut_adj_4 undriven or does not drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs
+     _ctrl_d0/i1_2_lut undriven or does not drive anything - clipped.
+Block top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/isptcy_e
+     ner1_I_0_2_lut_4_lut undriven or does not drive anything - clipped.
+Block top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_dec/rti_r_I_
+     0_27_2_lut_4_lut undriven or does not drive anything - clipped.
+Block top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_logic/updr_s
+     s_I_0_2_lut_4_lut undriven or does not drive anything - clipped.
+Block top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_logic/shiftd
+     r_ss_I_0_2_lut_rep_198 undriven or does not drive anything - clipped.
+Block top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_logic/rti_r_
+     I_0_2_lut undriven or does not drive anything - clipped.
+Block top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_tap/rti_r_69
+     undriven or does not drive anything - clipped.
+Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/pmi_ram_dpLIFMDbina
+     rynonespeedasyncdisablereg112112/scuba_vhi_inst undriven or does not drive
+     anything - clipped.
+Block clk_pad undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/rden_i_inv was merged into signal
+      mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/rden_i
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/invout_1 was merged into signal m
+     ipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_a
+     lign/pmi_genpmi_fifoLIFMDreg1304416_18/Empty
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/invout_2 was merged into signal m
+     ipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_a
+     lign/pmi_genpmi_fifoLIFMDreg1304416_18/Full
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/dec0_wre3 was merged into signal 
+     mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_
+     align/pmi_genpmi_fifoLIFMDreg1304416_18/wren_i
+
+                                   Page 13
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/rden_i_inv was merged into signal mi
+     pi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_al
+     ign/pmi_genpmi_fifoLIFMDreg1304416/rden_i
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/invout_1 was merged into signal mipi
+     _rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_alig
+     n/pmi_genpmi_fifoLIFMDreg1304416/Empty
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/invout_2 was merged into signal mipi
+     _rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_alig
+     n/pmi_genpmi_fifoLIFMDreg1304416/Full
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/dec0_wre3 was merged into signal mip
+     i_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_ali
+     gn/pmi_genpmi_fifoLIFMDreg1304416/wren_i
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/invout_1 was merged into signal mipi_rx/mipi_rx_inst/dphy_
+     rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fif
+     o_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/Full
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/invout_0 was merged into signal mipi_rx/mipi_rx_inst/dphy_
+     rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fif
+     o_single_inst/rxemptyfr0_o
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/WORD_ALIGN_ON.
+     w_align/n6_adj_336 was merged into signal mipi_rx/mipi_rx_inst/dphy_rx_inst
+     /dphy_rx_wrap_inst/dsi_rx/byte_data_line1_fifo_out_w[0]
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/WORD_ALIGN_ON.
+     w_align/n1_adj_327 was merged into signal mipi_rx/mipi_rx_inst/dphy_rx_inst
+     /dphy_rx_wrap_inst/dsi_rx/byte_data_line0_fifo_out_w[0]
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/rese
+     t_n_i_N_41 was merged into signal rst_n_c
+Signal n8200 was merged into signal addr_15
+Signal top_reveal_coretop_instance/jtck_N_45 was merged into signal jtck[0]
+Signal top_reveal_coretop_instance/JTAG_SOFT_inst_0/tck_N_1257 was merged into
+     signal jtck[0]
+Signal top_reveal_coretop_instance/jrstn[0] was merged into signal
+     top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/tlreset
+Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_45_enable_24
+     was merged into signal top_reveal_coretop_instance/jrstn[0]
+Signal top_reveal_coretop_instance/er2_tdo[0] was merged into signal
+     top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtdo_N_279
+Signal top_reveal_coretop_instance/top_la0_inst_0/n7535 was merged into signal
+     top_reveal_coretop_instance/jce2[0]
+Signal top_reveal_coretop_instance/top_la0_inst_0/jrstn_N_43 was merged into
+     signal top_reveal_coretop_instance/jrstn[0]
+Signal rst_n_N_2 was merged into signal rst_n_c
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/reset_byte_fr_
+     n_i_N_2 undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/rRst undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/rese
+     t_byte_fr_n_i_N_18 undriven or does not drive anything - clipped.
+
+                                   Page 14
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+Signal top_reveal_coretop_instance/top_la0_inst_0/reset_rvl_n undriven or does
+     not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/VCC_net undriven or
+     does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/scuba_vhi undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/scuba_vhi undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/scuba_vhi undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_term_clk_en_o undriven or does
+     not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinarynone
+     speedasyncdisablereg3311204833112048/scuba_vlo undriven or does not drive
+     anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinarynone
+     speedasyncdisablereg3311204833112048/scuba_vhi undriven or does not drive
+     anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/pmi_ram_dpLIFMDbin
+     arynonespeedasyncdisablereg112112/scuba_vlo undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/lp_clk_rx_n undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/lp_clk_rx_p undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/lp_d3_rx_n_o undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/lp_d3_rx_p_o undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/d_sote_det_w[3] undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/d_sot_det_w[3] undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[15] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[14] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[13] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[12] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[11] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[10] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[9] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[8] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[7] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[6] undriven or does not drive
+
+                                   Page 15
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[5] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[4] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[3] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[2] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[1] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd3_w[0] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/lp_d2_rx_n_o undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/lp_d2_rx_p_o undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/d_sote_det_w[2] undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/d_sot_det_w[2] undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[15] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[14] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[13] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[12] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[11] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[10] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[9] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[8] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[7] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[6] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[5] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[4] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[3] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[2] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[1] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/bd2_w[0] undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/d_sote_det_w[1] undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/d_sot_det_w[1] undriven or does not
+
+                                   Page 16
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/d_sote_det_w[0] undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/d_sot_det_w[0] undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/cnt_con_inv undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/fcnt_en_inv_inv undriven or does
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/invout_0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/af_cmp_1/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/af_cmp_1/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/af_cmp_0/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/af_cmp_0/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/co0_6 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/r_nw_inv undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/af_cmp_ci_a/S1 undriven or does
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/af_cmp_ci_a/S0 undriven or does
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/cmp_ci_3 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/af_cmp_ci_a/CI undriven or does
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/a2/S1 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/a2/CO undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/ae_cmp_1/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/ae_cmp_1/S0 undriven or does not
+     drive anything - clipped.
+
+                                   Page 17
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/ae_d_c undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/ae_cmp_0/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/ae_cmp_0/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/co0_5 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/r_nw undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/fcnt_en_inv undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/ae_cmp_ci_a/S1 undriven or does
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/ae_cmp_ci_a/S0 undriven or does
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/cmp_ci_2 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/ae_cmp_ci_a/CI undriven or does
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/r_ctr_1/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/co1_2 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/co0_4 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/r_ctr_cia/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/r_ctr_cia/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/r_ctr_cia/CI undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/w_ctr_1/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/co1_1 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/co0_3 undriven or does not drive
+
+                                   Page 18
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/w_ctr_cia/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/w_ctr_cia/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/w_ctr_cia/CI undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/a1/S1 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/a1/CO undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/g_cmp_1/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/g_cmp_1/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/g_cmp_0/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/g_cmp_0/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/g_cmp_ci_a/S1 undriven or does
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/g_cmp_ci_a/S0 undriven or does
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/g_cmp_ci_a/CI undriven or does
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/a0/S1 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/a0/CO undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/e_cmp_1/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/e_cmp_1/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/e_cmp_0/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/e_cmp_0/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+
+                                   Page 19
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/e_cmp_ci_a/S1 undriven or does
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/e_cmp_ci_a/S0 undriven or does
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/e_cmp_ci_a/CI undriven or does
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/bdcnt_bctr_1/S1 undriven or does
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/co1 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/bdcnt_bctr_cia/S1 undriven or
+     does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/bdcnt_bctr_cia/S0 undriven or
+     does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/bdcnt_bctr_cia/CI undriven or
+     does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/rcount_2 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/ircount_2 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/wcount_2 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/iwcount_2 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/partial_full undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/partial_empty undriven or does
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/ae_d undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/a3/S1 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/af_d undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/a3/CO undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416_18/af_d_c undriven or does not drive
+     anything - clipped.
+
+                                   Page 20
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/cnt_con_inv undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/fcnt_en_inv_inv undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/invout_0 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/af_cmp_1/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/af_cmp_1/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/af_cmp_0/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/af_cmp_0/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/co0_6 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/r_nw_inv undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/af_cmp_ci_a/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/af_cmp_ci_a/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/cmp_ci_3 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/af_cmp_ci_a/CI undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/a2/S1 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/a2/CO undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/ae_cmp_1/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/ae_cmp_1/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/ae_d_c undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/ae_cmp_0/S1 undriven or does not
+
+                                   Page 21
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/ae_cmp_0/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/co0_5 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/r_nw undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/fcnt_en_inv undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/ae_cmp_ci_a/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/ae_cmp_ci_a/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/cmp_ci_2 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/ae_cmp_ci_a/CI undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/r_ctr_1/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/co1_2 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/co0_4 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/r_ctr_cia/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/r_ctr_cia/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/r_ctr_cia/CI undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/w_ctr_1/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/co1_1 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/co0_3 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/w_ctr_cia/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+
+                                   Page 22
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/w_ctr_cia/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/w_ctr_cia/CI undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/a1/S1 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/a1/CO undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/g_cmp_1/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/g_cmp_1/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/g_cmp_0/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/g_cmp_0/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/g_cmp_ci_a/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/g_cmp_ci_a/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/g_cmp_ci_a/CI undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/a0/S1 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/a0/CO undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/e_cmp_1/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/e_cmp_1/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/e_cmp_0/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/e_cmp_0/S0 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/e_cmp_ci_a/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/e_cmp_ci_a/S0 undriven or does not
+     drive anything - clipped.
+
+                                   Page 23
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/e_cmp_ci_a/CI undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/bdcnt_bctr_1/S1 undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/co1 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/bdcnt_bctr_cia/S1 undriven or does
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/bdcnt_bctr_cia/S0 undriven or does
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/bdcnt_bctr_cia/CI undriven or does
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/rcount_2 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/ircount_2 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/wcount_2 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/iwcount_2 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/partial_full undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/partial_empty undriven or does not
+     drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/ae_d undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/a3/S1 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/af_d undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/a3/CO undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.
+     l_align/pmi_genpmi_fifoLIFMDreg1304416/af_d_c undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/sub_7_add_2_1/S0 undriven or does
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/sub_7_add_2_1/CI undriven or does
+
+                                   Page 24
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/sub_7_add_2_11/S1 undriven or
+     does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/sub_7_add_2_11/CO undriven or
+     does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_set_cmp_4/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_set_cmp_4/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_set_cmp_3/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_set_cmp_3/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/co3_7 undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_set_cmp_2/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_set_cmp_2/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/co2_7 undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_set_cmp_1/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_set_cmp_1/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/co1_7 undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_set_cmp_0/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_set_cmp_0/S0 undriven or does not drive anything -
+     clipped.
+
+                                   Page 25
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/co0_7 undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_set_cmp_ci_a/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_set_cmp_ci_a/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/cmp_ci_3 undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_set_cmp_ci_a/CI undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/co4_3 undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/co3_6 undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/co2_6 undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/co1_6 undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/co0_6 undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_set_ctr_cia/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_set_ctr_cia/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_set_ctr_ci undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_set_ctr_cia/CI undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/a2/S1 undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/a2/CO undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+
+                                   Page 26
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/ae_set_cmp_4/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/ae_set_cmp_4/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/ae_set_cmp_3/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/ae_set_cmp_3/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/ae_set_cmp_2/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/ae_set_cmp_2/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/ae_set_cmp_1/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/ae_set_cmp_1/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/ae_set_cmp_0/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/ae_set_cmp_0/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/ae_set_cmp_ci_a/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/ae_set_cmp_ci_a/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/ae_set_cmp_ci_a/CI undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/co4_2 undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+
+                                   Page 27
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+     1105125125123232/ae_set_ctr_cia/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/ae_set_ctr_cia/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/ae_set_ctr_cia/CI undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/a1/S1 undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/a1/CO undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/full_cmp_4/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/full_cmp_4/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/full_cmp_3/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/full_cmp_3/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/full_cmp_2/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/full_cmp_2/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/full_cmp_1/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/full_cmp_1/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/full_cmp_0/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/full_cmp_0/S0 undriven or does not drive anything -
+     clipped.
+
+                                   Page 28
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/full_cmp_ci_a/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/full_cmp_ci_a/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/full_cmp_ci_a/CI undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/a0/S1 undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/a0/CO undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/empty_cmp_4/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/empty_cmp_4/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/empty_cmp_3/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/empty_cmp_3/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/empty_cmp_2/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/empty_cmp_2/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/empty_cmp_1/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/empty_cmp_1/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/empty_cmp_0/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+
+                                   Page 29
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+     1105125125123232/empty_cmp_0/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/empty_cmp_ci_a/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/empty_cmp_ci_a/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/empty_cmp_ci_a/CI undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/co4_1 undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/r_gctr_cia/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/r_gctr_cia/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/r_gctr_cia/CI undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/co4 undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/w_gctr_cia/S1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/w_gctr_cia/S0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/w_gctr_cia/CI undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_setcount_8 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/iaf_setcount_8 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_setcount_7 undriven or does not drive anything -
+     clipped.
+
+                                   Page 30
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/iaf_setcount_7 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_setcount_6 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/iaf_setcount_6 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_setcount_5 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/iaf_setcount_5 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_setcount_4 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/iaf_setcount_4 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_setcount_3 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/iaf_setcount_3 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_setcount_2 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/iaf_setcount_2 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_setcount_0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/iaf_setcount_0 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_set_cmp_set undriven or does not drive anything -
+     clipped.
+
+                                   Page 31
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_set_cmp_clr undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/partial_full undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_setcount_9 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/iaf_setcount_9 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_setcount_1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/iaf_setcount_1 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/a3/S1 undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_set undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/a3/CO undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_r
+     x_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15
+     1105125125123232/af_set_c undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/n543 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/n260 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/n213 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/n153 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/n270 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/hs_d1_en_o undriven
+     or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/hs_entry undriven or does not drive anything
+     - clipped.
+
+                                   Page 32
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/n778 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/n759 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/n155 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/n777 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/term_d1_en_o
+     undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/term_en_o_N_55 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/lp11_ncr undriven or does not drive anything
+     - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/lp11_reset_n undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/lp11_ncr_N_71 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/lp_rx_n_i_ncr2 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/lp_rx_n_i_ncr1 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/lp_rx_p_i_ncr2 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/lp_rx_p_i_ncr1 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_lp_d1_rx_p_o undriven or does
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/lp00_sync_d undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/lp00_sync undriven or does not drive anything
+     - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/n776 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/term_en_r undriven or does not drive anything
+     - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/n_term_en_c undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+
+                                   Page 33
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/lp_rx_n_i_r2 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/lp_rx_n_i_r1 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_lp_d1_rx_n_o undriven or does
+     not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/lp_rx_p_i_r2 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/lp_rx_p_i_r1 undriven or does not drive
+     anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/n156 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP
+     _CONTROL_LANE_1.lp_hs_ctrl_d1/n280 undriven or does not drive anything -
+     clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/lp_hs_state_d_o[1]
+     undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/lp_hs_state_d_o[0]
+     undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/sub_
+     29_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/sub_
+     29_add_2_1/CI undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/sub_
+     29_add_2_17/S1 undriven or does not drive anything - clipped.
+Signal mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/sub_
+     29_add_2_17/CO undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/n117 undriven or does not drive anything -
+     clipped.
+Signal top_reveal_coretop_instance/n110 undriven or does not drive anything -
+     clipped.
+Signal top_reveal_coretop_instance/jupdate[0] undriven or does not drive
+     anything - clipped.
+Signal top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/n8812
+     undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/n112 undriven or does not drive anything -
+     clipped.
+Signal top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/rti_r
+     undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_811_add_4_7
+     /S1 undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_811_add_4_7
+     /CO undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_811_add_4_1
+     /S0 undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_811_add_4_1
+     /CI undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/sub_14_add_2_11/CO
+     undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_wr_addr_cntr_814_add_4
+     _1/S0 undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_wr_addr_cntr_814_add_4
+
+                                   Page 34
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+     _1/CI undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/sub_12_add_2_1/S0
+     undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/sub_12_add_2_1/CI
+     undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/sub_12_add_2_11/CO
+     undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_wr_addr_cntr_814_add_4
+     _11/CO undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_rd_addr_cntr_813_add_4
+     _1/S0 undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_rd_addr_cntr_813_add_4
+     _1/CI undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_rd_addr_cntr_813_add_4
+     _11/CO undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/sub_14_add_2_1/S0
+     undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/tm_u/sub_14_add_2_1/CI
+     undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_815_add_
+     4_1/S0 undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_815_add_
+     4_1/CI undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_815_add_
+     4_17/S1 undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_815_add_
+     4_17/CO undriven or does not drive anything - clipped.
+Signal top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/pmi_ram_dpLIFMDbin
+     arynonespeedasyncdisablereg112112/scuba_vhi undriven or does not drive
+     anything - clipped.
+Signal clk_c undriven or does not drive anything - clipped.
+Signal clk undriven or does not drive anything - clipped.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/INV_6 was optimized away.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/INV_7 was optimized away.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/INV_8 was optimized away.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/LUT4_0 was optimized away.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/INV_6 was optimized away.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/INV_7 was optimized away.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/INV_8 was optimized away.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/LUT4_0 was optimized away.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/INV_1 was optimized away.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/INV_0 was optimized away.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/WORD_ALIGN_ON.w
+     _align/i1_1_lut_adj_80 was optimized away.
+
+                                   Page 35
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Removed logic (cont)
+--------------------
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/WORD_ALIGN_ON.w
+     _align/i1_1_lut was optimized away.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_
+     CONTROL_LANE_1.lp_hs_ctrl_d1/reset_n_i_I_0_83_1_lut was optimized away.
+Block i7580_3_lut was optimized away.
+Block top_reveal_coretop_instance/i8034 was optimized away.
+Block top_reveal_coretop_instance/JTAG_SOFT_inst_0/i8033 was optimized away.
+Block top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/j_logic/i7741_
+     2_lut was optimized away.
+Block top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i1575_2_lut was
+     optimized away.
+Block top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/i4071_2_lut was
+     optimized away.
+Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/i1_2_lut was
+     optimized away.
+Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/jrstn_I_0_1_lut was
+     optimized away.
+Block rst_n_I_0_1_lut was optimized away.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/reset_byte_fr_n_i_I_0_1_lut was
+     optimized away.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/OR2_t18 was optimized away.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/reset
+     _byte_fr_n_i_I_0_1_lut was optimized away.
+Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/tcnt_0/i7719_2_lut was
+     optimized away.
+Block i2 was optimized away.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/i5 was optimized away.
+     
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416_18/scuba_vhi_inst was optimized away.
+     
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l
+     _align/pmi_genpmi_fifoLIFMDreg1304416/scuba_vhi_inst was optimized away.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx
+     _fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151
+     105125125123232/scuba_vhi_inst was optimized away.
+Block mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/i5 was optimized
+     away.
+Block top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinarynones
+     peedasyncdisablereg3311204833112048/scuba_vlo_inst was optimized away.
+Block top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinarynones
+     peedasyncdisablereg3311204833112048/scuba_vhi_inst was optimized away.
+Block top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/pmi_ram_dpLIFMDbina
+     rynonespeedasyncdisablereg112112/scuba_vlo_inst was optimized away.
+
+Memory Usage
+------------
+
+/mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_alig
+     n/pmi_genpmi_fifoLIFMDreg1304416:
+    EBRs: 0
+    RAM SLICEs: 12
+    Logic SLICEs: 36
+
+                                   Page 36
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Memory Usage (cont)
+-------------------
+    PFU Registers: 41
+/mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_alig
+     n/pmi_genpmi_fifoLIFMDreg1304416_18:
+    EBRs: 0
+    RAM SLICEs: 12
+    Logic SLICEs: 36
+    PFU Registers: 41
+/mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo
+     /rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg15110512
+     5125123232:
+    EBRs: 2
+    RAM SLICEs: 0
+    Logic SLICEs: 94
+    PFU Registers: 113
+    -Contains EBR pdp_ram_0_1_0:  TYPE= PDPW8KE,  Width= 14,  Depth_R= 512,
+         Depth_W= 512,  REGMODE= OUTREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  GSR= DISABLED,  MEM_LPC_FILE=
+         pmi_fifo_dcELar151105125125123232104c3636__PMIX__512__32__32__-1A
+    -Contains EBR pdp_ram_0_0_1:  TYPE= PDPW8KE,  Width= 18,  Depth_R= 512,
+         Depth_W= 512,  REGMODE= OUTREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  GSR= DISABLED,  MEM_LPC_FILE=
+         pmi_fifo_dcELar151105125125123232104c3636__PMIX__512__32__32__-1A
+/top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinarynonespeeda
+     syncdisablereg3311204833112048:
+    EBRs: 8
+    RAM SLICEs: 0
+    Logic SLICEs: 1
+    PFU Registers: 2
+    -Contains EBR pmi_ram_dpLbnonesadr33112048331120481218f65e_1_3_0:  TYPE=
+         DP8KE,  Width_B= 6,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpLbnonesadr33112048331120481218f65e__PMIP__2048__33__33__-1B
+    -Contains EBR pmi_ram_dpLbnonesadr33112048331120481218f65e_0_0_7:  TYPE=
+         DP8KE,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpLbnonesadr33112048331120481218f65e__PMIP__2048__33__33__-1B
+    -Contains EBR pmi_ram_dpLbnonesadr33112048331120481218f65e_0_1_6:  TYPE=
+         DP8KE,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpLbnonesadr33112048331120481218f65e__PMIP__2048__33__33__-1B
+    -Contains EBR pmi_ram_dpLbnonesadr33112048331120481218f65e_0_2_5:  TYPE=
+         DP8KE,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpLbnonesadr33112048331120481218f65e__PMIP__2048__33__33__-1B
+    -Contains EBR pmi_ram_dpLbnonesadr33112048331120481218f65e_0_3_4:  TYPE=
+         DP8KE,  Width_B= 6,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+
+                                   Page 37
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+Memory Usage (cont)
+-------------------
+         MEM_LPC_FILE=
+         pmi_ram_dpLbnonesadr33112048331120481218f65e__PMIP__2048__33__33__-1B
+    -Contains EBR pmi_ram_dpLbnonesadr33112048331120481218f65e_1_0_3:  TYPE=
+         DP8KE,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpLbnonesadr33112048331120481218f65e__PMIP__2048__33__33__-1B
+    -Contains EBR pmi_ram_dpLbnonesadr33112048331120481218f65e_1_1_2:  TYPE=
+         DP8KE,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpLbnonesadr33112048331120481218f65e__PMIP__2048__33__33__-1B
+    -Contains EBR pmi_ram_dpLbnonesadr33112048331120481218f65e_1_2_1:  TYPE=
+         DP8KE,  Width_B= 9,  Depth_A= 1024,  Depth_B= 1024,  REGMODE_A= OUTREG,
+         REGMODE_B= OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,
+         WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpLbnonesadr33112048331120481218f65e__PMIP__2048__33__33__-1B
+/top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/pmi_ram_dpLIFMDbinarynon
+     espeedasyncdisablereg112112:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR pmi_ram_dpLbnonesadr1121121164d4da_0_0_0:  TYPE= DP8KE,
+         Width_B= 1,  Depth_A= 2,  Depth_B= 2,  REGMODE_A= OUTREG,  REGMODE_B=
+         OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  WRITEMODE_A=
+         NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,  MEM_LPC_FILE=
+         pmi_ram_dpLbnonesadr1121121164d4da__PMIP__2__1__1__-1B
+
+     
+
+ASIC Components
+---------------
+
+Instance Name: top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/pmi_ram_dp
+     LIFMDbinarynonespeedasyncdisablereg112112/pmi_ram_dpLbnonesadr1121121164d4d
+     a_0_0_0
+         Type: DP8KE
+Instance Name: top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbi
+     narynonespeedasyncdisablereg3311204833112048/pmi_ram_dpLbnonesadr3311204833
+     1120481218f65e_1_3_0
+         Type: DP8KE
+Instance Name: top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbi
+     narynonespeedasyncdisablereg3311204833112048/pmi_ram_dpLbnonesadr3311204833
+     1120481218f65e_0_0_7
+         Type: DP8KE
+Instance Name: top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbi
+     narynonespeedasyncdisablereg3311204833112048/pmi_ram_dpLbnonesadr3311204833
+     1120481218f65e_0_1_6
+         Type: DP8KE
+Instance Name: top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbi
+     narynonespeedasyncdisablereg3311204833112048/pmi_ram_dpLbnonesadr3311204833
+     1120481218f65e_0_2_5
+
+                                   Page 38
+
+
+
+
+Design:  top                                           Date:  07/22/25  00:50:53
+
+ASIC Components (cont)
+----------------------
+         Type: DP8KE
+Instance Name: top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbi
+     narynonespeedasyncdisablereg3311204833112048/pmi_ram_dpLbnonesadr3311204833
+     1120481218f65e_0_3_4
+         Type: DP8KE
+Instance Name: top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbi
+     narynonespeedasyncdisablereg3311204833112048/pmi_ram_dpLbnonesadr3311204833
+     1120481218f65e_1_0_3
+         Type: DP8KE
+Instance Name: top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbi
+     narynonespeedasyncdisablereg3311204833112048/pmi_ram_dpLbnonesadr3311204833
+     1120481218f65e_1_1_2
+         Type: DP8KE
+Instance Name: top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbi
+     narynonespeedasyncdisablereg3311204833112048/pmi_ram_dpLbnonesadr3311204833
+     1120481218f65e_1_2_1
+         Type: DP8KE
+Instance Name: mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIF
+     O_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDas
+     yncreg151105125125123232/pdp_ram_0_1_0
+         Type: PDPW8KE
+Instance Name: mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIF
+     O_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDas
+     yncreg151105125125123232/pdp_ram_0_0_1
+         Type: PDPW8KE
+Instance Name: mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy
+     
+         Type: MIPIDPHYA
+
+GSR Usage
+---------
+
+GSR Component:
+   The local reset signal 'mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/d
+        si_rx/LANE_ALIGN_ON.l_align/reset_fifo_r' of the design has been
+        inferred as Global Set Reset (GSR). The reset signal used for GSR
+        control is 'mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/L
+        ANE_ALIGN_ON.l_align/reset_fifo_r'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 69 MB
+        
+
+
+
+
+                                   Page 39
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights
+     reserved.

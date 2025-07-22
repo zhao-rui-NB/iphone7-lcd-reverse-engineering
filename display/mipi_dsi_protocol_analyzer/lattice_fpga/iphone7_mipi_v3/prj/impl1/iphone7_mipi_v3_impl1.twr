@@ -1,0 +1,1201 @@
+
+Loading design for application trce from file iphone7_mipi_v3_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LIF-MD6000
+Package:     CKFBGA80
+Performance: 6
+Loading device for application trce from file 'sn5w6000.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.38.
+Performance Hardware Data Status:   Final          Version 41.1.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.14.0.75.2
+Tue Jul 22 00:51:02 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o iphone7_mipi_v3_impl1.twr -gui -msgset C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/promote.xml iphone7_mipi_v3_impl1.ncd iphone7_mipi_v3_impl1.prf 
+Design file:     iphone7_mipi_v3_impl1.ncd
+Preference file: iphone7_mipi_v3_impl1.prf
+Device,speed:    LIF-MD6000,6
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o" 75.000000 MHz ;
+            256 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 8.752ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_24  (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FF         Data in        mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_22  (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:               4.162ns  (39.7% logic, 60.3% route), 7 logic levels.
+
+ Constraint Details:
+
+      4.162ns physical path delay mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_214 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71 meets
+     13.333ns delay constraint less
+      0.000ns skew and
+      0.419ns DIN_SET requirement (totaling 12.914ns) by 8.752ns
+
+ Physical Path Details:
+
+      Data path mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_214 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.420      R7C4C.CLK to       R7C4C.Q1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_214 (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+ROUTE         5     1.085       R7C4C.Q1 to       R5C6D.A0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/r_gcount_w29
+CTOF_DEL    ---     0.202       R5C6D.A0 to       R5C6D.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_826
+ROUTE         2     0.389       R5C6D.F0 to       R5C6D.C1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/rcount_w7
+CTOF_DEL    ---     0.202       R5C6D.C1 to       R5C6D.F1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_826
+ROUTE         1     1.035       R5C6D.F1 to       R6C5D.B0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/rcount_w4
+C0TOFCO_DE  ---     0.352       R6C5D.B0 to      R6C5D.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_68
+ROUTE         1     0.000      R6C5D.FCO to      R6C6A.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co2_3
+FCITOFCO_D  ---     0.057      R6C6A.FCI to      R6C6A.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_69
+ROUTE         1     0.000      R6C6A.FCO to      R6C6B.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co3_3
+FCITOFCO_D  ---     0.057      R6C6B.FCI to      R6C6B.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_70
+ROUTE         1     0.000      R6C6B.FCO to      R6C6C.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/full_d_c
+FCITOF0_DE  ---     0.363      R6C6C.FCI to       R6C6C.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71
+ROUTE         1     0.000       R6C6C.F0 to      R6C6C.DI0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/full_d (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+                  --------
+                    4.162   (39.7% logic, 60.3% route), 7 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     1.361 *Y0.HSBYTECLKD to      R7C4C.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     1.361 *Y0.HSBYTECLKD to      R6C6C.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 8.773ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_26  (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FF         Data in        mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_22  (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:               4.141ns  (39.9% logic, 60.1% route), 7 logic levels.
+
+ Constraint Details:
+
+      4.141ns physical path delay mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71 meets
+     13.333ns delay constraint less
+      0.000ns skew and
+      0.419ns DIN_SET requirement (totaling 12.914ns) by 8.773ns
+
+ Physical Path Details:
+
+      Data path mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.420      R6C7B.CLK to       R6C7B.Q1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213 (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+ROUTE         3     1.064       R6C7B.Q1 to       R5C6D.B0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/r_gcount_w27
+CTOF_DEL    ---     0.202       R5C6D.B0 to       R5C6D.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_826
+ROUTE         2     0.389       R5C6D.F0 to       R5C6D.C1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/rcount_w7
+CTOF_DEL    ---     0.202       R5C6D.C1 to       R5C6D.F1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_826
+ROUTE         1     1.035       R5C6D.F1 to       R6C5D.B0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/rcount_w4
+C0TOFCO_DE  ---     0.352       R6C5D.B0 to      R6C5D.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_68
+ROUTE         1     0.000      R6C5D.FCO to      R6C6A.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co2_3
+FCITOFCO_D  ---     0.057      R6C6A.FCI to      R6C6A.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_69
+ROUTE         1     0.000      R6C6A.FCO to      R6C6B.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co3_3
+FCITOFCO_D  ---     0.057      R6C6B.FCI to      R6C6B.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_70
+ROUTE         1     0.000      R6C6B.FCO to      R6C6C.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/full_d_c
+FCITOF0_DE  ---     0.363      R6C6C.FCI to       R6C6C.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71
+ROUTE         1     0.000       R6C6C.F0 to      R6C6C.DI0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/full_d (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+                  --------
+                    4.141   (39.9% logic, 60.1% route), 7 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     1.361 *Y0.HSBYTECLKD to      R6C7B.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     1.361 *Y0.HSBYTECLKD to      R6C6C.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 8.791ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_27  (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FF         Data in        mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_22  (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:               4.123ns  (42.9% logic, 57.1% route), 9 logic levels.
+
+ Constraint Details:
+
+      4.123ns physical path delay mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71 meets
+     13.333ns delay constraint less
+      0.000ns skew and
+      0.419ns DIN_SET requirement (totaling 12.914ns) by 8.791ns
+
+ Physical Path Details:
+
+      Data path mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.422      R6C7B.CLK to       R6C7B.Q0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213 (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+ROUTE         3     1.160       R6C7B.Q0 to       R5C5D.C0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/r_gcount_w26
+CTOF_DEL    ---     0.202       R5C5D.C0 to       R5C5D.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_823
+ROUTE         5     0.419       R5C5D.F0 to       R5C5D.C1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/r_g2b_xor_cluster_0
+CTOF_DEL    ---     0.202       R5C5D.C1 to       R5C5D.F1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_823
+ROUTE         1     0.775       R5C5D.F1 to       R6C5B.A0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/rcount_w0
+C0TOFCO_DE  ---     0.352       R6C5B.A0 to      R6C5B.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_66
+ROUTE         1     0.000      R6C5B.FCO to      R6C5C.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co0_3
+FCITOFCO_D  ---     0.057      R6C5C.FCI to      R6C5C.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_67
+ROUTE         1     0.000      R6C5C.FCO to      R6C5D.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co1_3
+FCITOFCO_D  ---     0.057      R6C5D.FCI to      R6C5D.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_68
+ROUTE         1     0.000      R6C5D.FCO to      R6C6A.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co2_3
+FCITOFCO_D  ---     0.057      R6C6A.FCI to      R6C6A.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_69
+ROUTE         1     0.000      R6C6A.FCO to      R6C6B.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co3_3
+FCITOFCO_D  ---     0.057      R6C6B.FCI to      R6C6B.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_70
+ROUTE         1     0.000      R6C6B.FCO to      R6C6C.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/full_d_c
+FCITOF0_DE  ---     0.363      R6C6C.FCI to       R6C6C.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71
+ROUTE         1     0.000       R6C6C.F0 to      R6C6C.DI0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/full_d (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+                  --------
+                    4.123   (42.9% logic, 57.1% route), 9 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     1.361 *Y0.HSBYTECLKD to      R6C7B.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     1.361 *Y0.HSBYTECLKD to      R6C6C.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 8.794ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_27  (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FF         Data in        mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_22  (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:               4.120ns  (42.9% logic, 57.1% route), 9 logic levels.
+
+ Constraint Details:
+
+      4.120ns physical path delay mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71 meets
+     13.333ns delay constraint less
+      0.000ns skew and
+      0.419ns DIN_SET requirement (totaling 12.914ns) by 8.794ns
+
+ Physical Path Details:
+
+      Data path mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.422      R6C7B.CLK to       R6C7B.Q0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213 (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+ROUTE         3     1.160       R6C7B.Q0 to       R5C5D.C0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/r_gcount_w26
+CTOF_DEL    ---     0.202       R5C5D.C0 to       R5C5D.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_823
+ROUTE         5     0.419       R5C5D.F0 to       R5C5B.C1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/r_g2b_xor_cluster_0
+CTOF_DEL    ---     0.202       R5C5B.C1 to       R5C5B.F1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_824
+ROUTE         1     0.772       R5C5B.F1 to       R6C5B.B1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/rcount_w1
+C1TOFCO_DE  ---     0.352       R6C5B.B1 to      R6C5B.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_66
+ROUTE         1     0.000      R6C5B.FCO to      R6C5C.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co0_3
+FCITOFCO_D  ---     0.057      R6C5C.FCI to      R6C5C.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_67
+ROUTE         1     0.000      R6C5C.FCO to      R6C5D.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co1_3
+FCITOFCO_D  ---     0.057      R6C5D.FCI to      R6C5D.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_68
+ROUTE         1     0.000      R6C5D.FCO to      R6C6A.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co2_3
+FCITOFCO_D  ---     0.057      R6C6A.FCI to      R6C6A.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_69
+ROUTE         1     0.000      R6C6A.FCO to      R6C6B.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co3_3
+FCITOFCO_D  ---     0.057      R6C6B.FCI to      R6C6B.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_70
+ROUTE         1     0.000      R6C6B.FCO to      R6C6C.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/full_d_c
+FCITOF0_DE  ---     0.363      R6C6C.FCI to       R6C6C.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71
+ROUTE         1     0.000       R6C6C.F0 to      R6C6C.DI0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/full_d (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+                  --------
+                    4.120   (42.9% logic, 57.1% route), 9 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     1.361 *Y0.HSBYTECLKD to      R6C7B.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     1.361 *Y0.HSBYTECLKD to      R6C6C.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 8.838ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/hs_en_ncr_77  (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FF         Data in        mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_22  (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:               4.076ns  (39.8% logic, 60.2% route), 9 logic levels.
+
+ Constraint Details:
+
+      4.076ns physical path delay mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_300 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71 meets
+     13.333ns delay constraint less
+      0.000ns skew and
+      0.419ns DIN_SET requirement (totaling 12.914ns) by 8.838ns
+
+ Physical Path Details:
+
+      Data path mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_300 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.422     R12C4D.CLK to      R12C4D.Q0 mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_300 (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+ROUTE         2     1.112      R12C4D.Q0 to       R7C6D.D0 mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_hs_d_en_o
+CTOF_DEL    ---     0.202       R7C6D.D0 to       R7C6D.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_1044
+ROUTE        19     1.340       R7C6D.F0 to       R6C5A.A1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/wren_i
+C1TOFCO_DE  ---     0.352       R6C5A.A1 to      R6C5A.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_65
+ROUTE         1     0.000      R6C5A.FCO to      R6C5B.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/cmp_ci_1
+FCITOFCO_D  ---     0.057      R6C5B.FCI to      R6C5B.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_66
+ROUTE         1     0.000      R6C5B.FCO to      R6C5C.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co0_3
+FCITOFCO_D  ---     0.057      R6C5C.FCI to      R6C5C.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_67
+ROUTE         1     0.000      R6C5C.FCO to      R6C5D.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co1_3
+FCITOFCO_D  ---     0.057      R6C5D.FCI to      R6C5D.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_68
+ROUTE         1     0.000      R6C5D.FCO to      R6C6A.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co2_3
+FCITOFCO_D  ---     0.057      R6C6A.FCI to      R6C6A.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_69
+ROUTE         1     0.000      R6C6A.FCO to      R6C6B.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co3_3
+FCITOFCO_D  ---     0.057      R6C6B.FCI to      R6C6B.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_70
+ROUTE         1     0.000      R6C6B.FCO to      R6C6C.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/full_d_c
+FCITOF0_DE  ---     0.363      R6C6C.FCI to       R6C6C.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71
+ROUTE         1     0.000       R6C6C.F0 to      R6C6C.DI0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/full_d (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+                  --------
+                    4.076   (39.8% logic, 60.2% route), 9 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_300:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     1.361 *Y0.HSBYTECLKD to     R12C4D.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     1.361 *Y0.HSBYTECLKD to      R6C6C.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 8.842ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_27  (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FF         Data in        mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_22  (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:               4.072ns  (42.0% logic, 58.0% route), 8 logic levels.
+
+ Constraint Details:
+
+      4.072ns physical path delay mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71 meets
+     13.333ns delay constraint less
+      0.000ns skew and
+      0.419ns DIN_SET requirement (totaling 12.914ns) by 8.842ns
+
+ Physical Path Details:
+
+      Data path mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.422      R6C7B.CLK to       R6C7B.Q0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213 (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+ROUTE         3     1.160       R6C7B.Q0 to       R5C5D.C0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/r_gcount_w26
+CTOF_DEL    ---     0.202       R5C5D.C0 to       R5C5D.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_823
+ROUTE         5     0.419       R5C5D.F0 to       R5C5A.C0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/r_g2b_xor_cluster_0
+CTOF_DEL    ---     0.202       R5C5A.C0 to       R5C5A.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_856
+ROUTE         1     0.781       R5C5A.F0 to       R6C5C.B0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/rcount_w2
+C0TOFCO_DE  ---     0.352       R6C5C.B0 to      R6C5C.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_67
+ROUTE         1     0.000      R6C5C.FCO to      R6C5D.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co1_3
+FCITOFCO_D  ---     0.057      R6C5D.FCI to      R6C5D.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_68
+ROUTE         1     0.000      R6C5D.FCO to      R6C6A.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co2_3
+FCITOFCO_D  ---     0.057      R6C6A.FCI to      R6C6A.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_69
+ROUTE         1     0.000      R6C6A.FCO to      R6C6B.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co3_3
+FCITOFCO_D  ---     0.057      R6C6B.FCI to      R6C6B.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_70
+ROUTE         1     0.000      R6C6B.FCO to      R6C6C.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/full_d_c
+FCITOF0_DE  ---     0.363      R6C6C.FCI to       R6C6C.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71
+ROUTE         1     0.000       R6C6C.F0 to      R6C6C.DI0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/full_d (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+                  --------
+                    4.072   (42.0% logic, 58.0% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     1.361 *Y0.HSBYTECLKD to      R6C7B.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     1.361 *Y0.HSBYTECLKD to      R6C6C.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 8.848ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_27  (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FF         Data in        mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_22  (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:               4.066ns  (42.1% logic, 57.9% route), 8 logic levels.
+
+ Constraint Details:
+
+      4.066ns physical path delay mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71 meets
+     13.333ns delay constraint less
+      0.000ns skew and
+      0.419ns DIN_SET requirement (totaling 12.914ns) by 8.848ns
+
+ Physical Path Details:
+
+      Data path mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.422      R6C7B.CLK to       R6C7B.Q0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213 (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+ROUTE         3     1.160       R6C7B.Q0 to       R5C5D.C0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/r_gcount_w26
+CTOF_DEL    ---     0.202       R5C5D.C0 to       R5C5D.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_823
+ROUTE         5     0.419       R5C5D.F0 to       R5C5A.C1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/r_g2b_xor_cluster_0
+CTOF_DEL    ---     0.202       R5C5A.C1 to       R5C5A.F1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_856
+ROUTE         1     0.775       R5C5A.F1 to       R6C5C.A1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/rcount_w3
+C1TOFCO_DE  ---     0.352       R6C5C.A1 to      R6C5C.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_67
+ROUTE         1     0.000      R6C5C.FCO to      R6C5D.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co1_3
+FCITOFCO_D  ---     0.057      R6C5D.FCI to      R6C5D.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_68
+ROUTE         1     0.000      R6C5D.FCO to      R6C6A.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co2_3
+FCITOFCO_D  ---     0.057      R6C6A.FCI to      R6C6A.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_69
+ROUTE         1     0.000      R6C6A.FCO to      R6C6B.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co3_3
+FCITOFCO_D  ---     0.057      R6C6B.FCI to      R6C6B.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_70
+ROUTE         1     0.000      R6C6B.FCO to      R6C6C.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/full_d_c
+FCITOF0_DE  ---     0.363      R6C6C.FCI to       R6C6C.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71
+ROUTE         1     0.000       R6C6C.F0 to      R6C6C.DI0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/full_d (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+                  --------
+                    4.066   (42.1% logic, 57.9% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     1.361 *Y0.HSBYTECLKD to      R6C7B.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     1.361 *Y0.HSBYTECLKD to      R6C6C.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 8.868ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_24  (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FF         Data in        mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_22  (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:               4.046ns  (43.7% logic, 56.3% route), 9 logic levels.
+
+ Constraint Details:
+
+      4.046ns physical path delay mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_214 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71 meets
+     13.333ns delay constraint less
+      0.000ns skew and
+      0.419ns DIN_SET requirement (totaling 12.914ns) by 8.868ns
+
+ Physical Path Details:
+
+      Data path mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_214 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.420      R7C4C.CLK to       R7C4C.Q1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_214 (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+ROUTE         5     1.085       R7C4C.Q1 to       R5C5D.A0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/r_gcount_w29
+CTOF_DEL    ---     0.202       R5C5D.A0 to       R5C5D.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_823
+ROUTE         5     0.419       R5C5D.F0 to       R5C5D.C1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/r_g2b_xor_cluster_0
+CTOF_DEL    ---     0.202       R5C5D.C1 to       R5C5D.F1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_823
+ROUTE         1     0.775       R5C5D.F1 to       R6C5B.A0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/rcount_w0
+C0TOFCO_DE  ---     0.352       R6C5B.A0 to      R6C5B.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_66
+ROUTE         1     0.000      R6C5B.FCO to      R6C5C.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co0_3
+FCITOFCO_D  ---     0.057      R6C5C.FCI to      R6C5C.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_67
+ROUTE         1     0.000      R6C5C.FCO to      R6C5D.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co1_3
+FCITOFCO_D  ---     0.057      R6C5D.FCI to      R6C5D.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_68
+ROUTE         1     0.000      R6C5D.FCO to      R6C6A.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co2_3
+FCITOFCO_D  ---     0.057      R6C6A.FCI to      R6C6A.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_69
+ROUTE         1     0.000      R6C6A.FCO to      R6C6B.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co3_3
+FCITOFCO_D  ---     0.057      R6C6B.FCI to      R6C6B.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_70
+ROUTE         1     0.000      R6C6B.FCO to      R6C6C.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/full_d_c
+FCITOF0_DE  ---     0.363      R6C6C.FCI to       R6C6C.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71
+ROUTE         1     0.000       R6C6C.F0 to      R6C6C.DI0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/full_d (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+                  --------
+                    4.046   (43.7% logic, 56.3% route), 9 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     1.361 *Y0.HSBYTECLKD to      R7C4C.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     1.361 *Y0.HSBYTECLKD to      R6C6C.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 8.871ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_24  (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FF         Data in        mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_22  (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:               4.043ns  (43.7% logic, 56.3% route), 9 logic levels.
+
+ Constraint Details:
+
+      4.043ns physical path delay mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_214 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71 meets
+     13.333ns delay constraint less
+      0.000ns skew and
+      0.419ns DIN_SET requirement (totaling 12.914ns) by 8.871ns
+
+ Physical Path Details:
+
+      Data path mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_214 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.420      R7C4C.CLK to       R7C4C.Q1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_214 (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+ROUTE         5     1.085       R7C4C.Q1 to       R5C5D.A0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/r_gcount_w29
+CTOF_DEL    ---     0.202       R5C5D.A0 to       R5C5D.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_823
+ROUTE         5     0.419       R5C5D.F0 to       R5C5B.C1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/r_g2b_xor_cluster_0
+CTOF_DEL    ---     0.202       R5C5B.C1 to       R5C5B.F1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_824
+ROUTE         1     0.772       R5C5B.F1 to       R6C5B.B1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/rcount_w1
+C1TOFCO_DE  ---     0.352       R6C5B.B1 to      R6C5B.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_66
+ROUTE         1     0.000      R6C5B.FCO to      R6C5C.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co0_3
+FCITOFCO_D  ---     0.057      R6C5C.FCI to      R6C5C.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_67
+ROUTE         1     0.000      R6C5C.FCO to      R6C5D.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co1_3
+FCITOFCO_D  ---     0.057      R6C5D.FCI to      R6C5D.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_68
+ROUTE         1     0.000      R6C5D.FCO to      R6C6A.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co2_3
+FCITOFCO_D  ---     0.057      R6C6A.FCI to      R6C6A.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_69
+ROUTE         1     0.000      R6C6A.FCO to      R6C6B.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co3_3
+FCITOFCO_D  ---     0.057      R6C6B.FCI to      R6C6B.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_70
+ROUTE         1     0.000      R6C6B.FCO to      R6C6C.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/full_d_c
+FCITOF0_DE  ---     0.363      R6C6C.FCI to       R6C6C.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71
+ROUTE         1     0.000       R6C6C.F0 to      R6C6C.DI0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/full_d (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+                  --------
+                    4.043   (43.7% logic, 56.3% route), 9 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_214:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     1.361 *Y0.HSBYTECLKD to      R7C4C.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     1.361 *Y0.HSBYTECLKD to      R6C6C.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 8.889ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_26  (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FF         Data in        mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_22  (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:               4.025ns  (43.9% logic, 56.1% route), 9 logic levels.
+
+ Constraint Details:
+
+      4.025ns physical path delay mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71 meets
+     13.333ns delay constraint less
+      0.000ns skew and
+      0.419ns DIN_SET requirement (totaling 12.914ns) by 8.889ns
+
+ Physical Path Details:
+
+      Data path mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.420      R6C7B.CLK to       R6C7B.Q1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213 (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+ROUTE         3     1.064       R6C7B.Q1 to       R5C5D.B0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/r_gcount_w27
+CTOF_DEL    ---     0.202       R5C5D.B0 to       R5C5D.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_823
+ROUTE         5     0.419       R5C5D.F0 to       R5C5D.C1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/r_g2b_xor_cluster_0
+CTOF_DEL    ---     0.202       R5C5D.C1 to       R5C5D.F1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_823
+ROUTE         1     0.775       R5C5D.F1 to       R6C5B.A0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/rcount_w0
+C0TOFCO_DE  ---     0.352       R6C5B.A0 to      R6C5B.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_66
+ROUTE         1     0.000      R6C5B.FCO to      R6C5C.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co0_3
+FCITOFCO_D  ---     0.057      R6C5C.FCI to      R6C5C.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_67
+ROUTE         1     0.000      R6C5C.FCO to      R6C5D.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co1_3
+FCITOFCO_D  ---     0.057      R6C5D.FCI to      R6C5D.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_68
+ROUTE         1     0.000      R6C5D.FCO to      R6C6A.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co2_3
+FCITOFCO_D  ---     0.057      R6C6A.FCI to      R6C6A.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_69
+ROUTE         1     0.000      R6C6A.FCO to      R6C6B.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/co3_3
+FCITOFCO_D  ---     0.057      R6C6B.FCI to      R6C6B.FCO mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_70
+ROUTE         1     0.000      R6C6B.FCO to      R6C6C.FCI mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/full_d_c
+FCITOF0_DE  ---     0.363      R6C6C.FCI to       R6C6C.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71
+ROUTE         1     0.000       R6C6C.F0 to      R6C6C.DI0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/full_d (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+                  --------
+                    4.025   (43.9% logic, 56.1% route), 9 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_213:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     1.361 *Y0.HSBYTECLKD to      R6C7B.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     1.361 *Y0.HSBYTECLKD to      R6C6C.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report:  218.293MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET                           |             |             |
+"mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_|             |             |
+rx_clk_byte_o" 75.000000 MHz ;          |   75.000 MHz|  218.293 MHz|   7  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 3 clocks:
+
+Clock Domain: mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o   Source: mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy.HSBYTECLKD   Loads: 32
+   Covered under: FREQUENCY NET "mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o" 75.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: byte_hs_clk   Source: mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy.CLKHSBYTE
+      Not reported because source and destination domains are unrelated.
+
+Clock Domain: jtck[0]   Source: JTAG_TCK.PAD   Loads: 163
+   No transfer within this clock domain is found
+
+Clock Domain: byte_hs_clk   Source: mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy.CLKHSBYTE   Loads: 344
+   No transfer within this clock domain is found
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 480 paths, 1 nets, and 4239 connections (63.21% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.14.0.75.2
+Tue Jul 22 00:51:02 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o iphone7_mipi_v3_impl1.twr -gui -msgset C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/promote.xml iphone7_mipi_v3_impl1.ncd iphone7_mipi_v3_impl1.prf 
+Design file:     iphone7_mipi_v3_impl1.ncd
+Preference file: iphone7_mipi_v3_impl1.prf
+Device,speed:    LIF-MD6000,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o" 75.000000 MHz ;
+            256 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.018ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/lp_rx_p_i_ncr2_73  (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FF         Data in        mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/lp11_ncr_76  (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:               0.333ns  (62.5% logic, 37.5% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.333ns physical path delay mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_306 to mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_303 meets
+      0.315ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.315ns) by 0.018ns
+
+ Physical Path Details:
+
+      Data path mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_306 to mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_303:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.141     R12C3B.CLK to      R12C3B.Q1 mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_306 (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+ROUTE         1     0.125      R12C3B.Q1 to      R12C3C.D0 mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/lp_rx_p_i_ncr2
+CTOF_DEL    ---     0.067      R12C3C.D0 to      R12C3C.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_303
+ROUTE         1     0.000      R12C3C.F0 to     R12C3C.DI0 mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/lp11_ncr_N_71 (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+                  --------
+                    0.333   (62.5% logic, 37.5% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_306:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     0.442 *Y0.HSBYTECLKD to     R12C3B.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_303:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     0.442 *Y0.HSBYTECLKD to     R12C3C.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.034ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_118  (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FF         Data in        mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_118  (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:               0.348ns  (59.8% logic, 40.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.348ns physical path delay mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_49 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_49 meets
+      0.314ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.314ns) by 0.034ns
+
+ Physical Path Details:
+
+      Data path mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_49 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_49:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.141      R7C5D.CLK to       R7C5D.Q1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_49 (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+ROUTE         5     0.140       R7C5D.Q1 to       R7C5D.A1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/wcount_5
+CTOF_DEL    ---     0.067       R7C5D.A1 to       R7C5D.F1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_49
+ROUTE         1     0.000       R7C5D.F1 to      R7C5D.DI1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/iwcount_5 (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+                  --------
+                    0.348   (59.8% logic, 40.2% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_49:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     0.442 *Y0.HSBYTECLKD to      R7C5D.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_49:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     0.442 *Y0.HSBYTECLKD to      R7C5D.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.035ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_120  (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FF         Data in        mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_120  (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:               0.349ns  (59.6% logic, 40.4% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.349ns physical path delay mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_48 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_48 meets
+      0.314ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.314ns) by 0.035ns
+
+ Physical Path Details:
+
+      Data path mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_48 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_48:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.141      R7C5C.CLK to       R7C5C.Q1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_48 (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+ROUTE         5     0.141       R7C5C.Q1 to       R7C5C.A1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/wcount_3
+CTOF_DEL    ---     0.067       R7C5C.A1 to       R7C5C.F1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_48
+ROUTE         1     0.000       R7C5C.F1 to      R7C5C.DI1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/iwcount_3 (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+                  --------
+                    0.349   (59.6% logic, 40.4% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_48:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     0.442 *Y0.HSBYTECLKD to      R7C5C.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_48:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     0.442 *Y0.HSBYTECLKD to      R7C5C.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.035ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_123  (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FF         Data in        mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_113  (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:               0.350ns  (59.7% logic, 40.3% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.350ns physical path delay mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_47 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_220 meets
+      0.315ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.315ns) by 0.035ns
+
+ Physical Path Details:
+
+      Data path mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_47 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_220:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.142      R7C5B.CLK to       R7C5B.Q0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_47 (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+ROUTE         4     0.141       R7C5B.Q0 to       R7C7A.D0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/wcount_0
+CTOF_DEL    ---     0.067       R7C7A.D0 to       R7C7A.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_220
+ROUTE         1     0.000       R7C7A.F0 to      R7C7A.DI0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/w_gdata_0 (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+                  --------
+                    0.350   (59.7% logic, 40.3% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_47:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     0.442 *Y0.HSBYTECLKD to      R7C5B.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_220:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     0.442 *Y0.HSBYTECLKD to      R7C7A.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.038ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_116  (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FF         Data in        mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_116  (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:               0.352ns  (59.1% logic, 40.9% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.352ns physical path delay mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_50 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_50 meets
+      0.314ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.314ns) by 0.038ns
+
+ Physical Path Details:
+
+      Data path mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_50 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_50:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.141      R7C6A.CLK to       R7C6A.Q1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_50 (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+ROUTE         5     0.144       R7C6A.Q1 to       R7C6A.B1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/wcount_7
+CTOF_DEL    ---     0.067       R7C6A.B1 to       R7C6A.F1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_50
+ROUTE         1     0.000       R7C6A.F1 to      R7C6A.DI1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/iwcount_7 (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+                  --------
+                    0.352   (59.1% logic, 40.9% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_50:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     0.442 *Y0.HSBYTECLKD to      R7C6A.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_50:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     0.442 *Y0.HSBYTECLKD to      R7C6A.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.039ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_122  (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FF         Data in        mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_122  (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:               0.353ns  (58.9% logic, 41.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.353ns physical path delay mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_47 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_47 meets
+      0.314ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.314ns) by 0.039ns
+
+ Physical Path Details:
+
+      Data path mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_47 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_47:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.141      R7C5B.CLK to       R7C5B.Q1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_47 (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+ROUTE         5     0.145       R7C5B.Q1 to       R7C5B.B1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/wcount_1
+CTOF_DEL    ---     0.067       R7C5B.B1 to       R7C5B.F1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_47
+ROUTE         1     0.000       R7C5B.F1 to      R7C5B.DI1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/iwcount_1 (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+                  --------
+                    0.353   (58.9% logic, 41.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_47:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     0.442 *Y0.HSBYTECLKD to      R7C5B.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_47:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     0.442 *Y0.HSBYTECLKD to      R7C5B.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.039ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_114  (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FF         Data in        mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_114  (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:               0.353ns  (58.9% logic, 41.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.353ns physical path delay mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_51 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_51 meets
+      0.314ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.314ns) by 0.039ns
+
+ Physical Path Details:
+
+      Data path mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_51 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_51:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.141      R7C6B.CLK to       R7C6B.Q1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_51 (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+ROUTE         6     0.145       R7C6B.Q1 to       R7C6B.B1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/wcount_9
+CTOF_DEL    ---     0.067       R7C6B.B1 to       R7C6B.F1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_51
+ROUTE         1     0.000       R7C6B.F1 to      R7C6B.DI1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/iwcount_9 (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+                  --------
+                    0.353   (58.9% logic, 41.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_51:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     0.442 *Y0.HSBYTECLKD to      R7C6B.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_51:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     0.442 *Y0.HSBYTECLKD to      R7C6B.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.044ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_119  (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FF         Data in        mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_110  (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:               0.358ns  (58.4% logic, 41.6% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.358ns physical path delay mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_49 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_221 meets
+      0.314ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.314ns) by 0.044ns
+
+ Physical Path Details:
+
+      Data path mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_49 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_221:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.142      R7C5D.CLK to       R7C5D.Q0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_49 (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+ROUTE         5     0.149       R7C5D.Q0 to       R7C7C.C1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/wcount_4
+CTOF_DEL    ---     0.067       R7C7C.C1 to       R7C7C.F1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_221
+ROUTE         1     0.000       R7C7C.F1 to      R7C7C.DI1 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/w_gdata_3 (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+                  --------
+                    0.358   (58.4% logic, 41.6% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_49:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     0.442 *Y0.HSBYTECLKD to      R7C5D.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_221:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     0.442 *Y0.HSBYTECLKD to      R7C7C.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.048ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_121  (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FF         Data in        mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_111  (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:               0.363ns  (57.6% logic, 42.4% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.363ns physical path delay mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_48 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_221 meets
+      0.315ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.315ns) by 0.048ns
+
+ Physical Path Details:
+
+      Data path mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_48 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_221:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.142      R7C5C.CLK to       R7C5C.Q0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_48 (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+ROUTE         5     0.154       R7C5C.Q0 to       R7C7C.C0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/wcount_2
+CTOF_DEL    ---     0.067       R7C7C.C0 to       R7C7C.F0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_221
+ROUTE         1     0.000       R7C7C.F0 to      R7C7C.DI0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/w_gdata_2 (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+                  --------
+                    0.363   (57.6% logic, 42.4% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_48:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     0.442 *Y0.HSBYTECLKD to      R7C5C.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_221:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     0.442 *Y0.HSBYTECLKD to      R7C7C.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.048ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_51  (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+   Destination:    FF         Data in        mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/FF_31  (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o +)
+
+   Delay:               0.361ns  (39.3% logic, 60.7% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.361ns physical path delay mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_206 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_211 meets
+      0.313ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.313ns) by 0.048ns
+
+ Physical Path Details:
+
+      Data path mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_206 to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_211:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.142      R7C4A.CLK to       R7C4A.Q0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_206 (from mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+ROUTE         1     0.219       R7C4A.Q0 to       R5C4C.M0 mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/r_gcount_w2 (to mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o)
+                  --------
+                    0.361   (39.3% logic, 60.7% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_206:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     0.442 *Y0.HSBYTECLKD to      R7C4A.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi_rx/mipi_rx_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/pmi_genpmi_fifo_dcLIFMDasyncreg151105125125123232/SLICE_211:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        32     0.442 *Y0.HSBYTECLKD to      R5C4C.CLK mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET                           |             |             |
+"mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_|             |             |
+rx_clk_byte_o" 75.000000 MHz ;          |     0.000 ns|     0.018 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 3 clocks:
+
+Clock Domain: mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o   Source: mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy.HSBYTECLKD   Loads: 32
+   Covered under: FREQUENCY NET "mipi_rx/mipi_rx_inst/dphy_rx_inst/mipi_rx_clk_byte_o" 75.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: byte_hs_clk   Source: mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy.CLKHSBYTE
+      Not reported because source and destination domains are unrelated.
+
+Clock Domain: jtck[0]   Source: JTAG_TCK.PAD   Loads: 163
+   No transfer within this clock domain is found
+
+Clock Domain: byte_hs_clk   Source: mipi_rx/mipi_rx_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy.CLKHSBYTE   Loads: 344
+   No transfer within this clock domain is found
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 480 paths, 1 nets, and 4239 connections (63.21% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

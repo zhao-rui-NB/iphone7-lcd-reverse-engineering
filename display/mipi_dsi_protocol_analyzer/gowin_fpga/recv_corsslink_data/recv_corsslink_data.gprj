@@ -1,0 +1,30 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW1NR-9C" pn="GW1NR-LV9LQ144PC6/I5">gw1nr9c-012</Device>
+    <FileList>
+        <File path="src/HSPI_Tx.v" type="file.verilog" enable="1"/>
+        <File path="src/crc32_32b.v" type="file.verilog" enable="1"/>
+        <File path="src/data_storage_controller.v" type="file.verilog" enable="1"/>
+        <File path="src/debounce.v" type="file.verilog" enable="1"/>
+        <File path="src/fake_fifo_test_data.v" type="file.verilog" enable="1"/>
+        <File path="src/fifo_hs/fifo_hs_input.v" type="file.verilog" enable="1"/>
+        <File path="src/fifo_hs_output/fifo_hs_output.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_ddr/gowin_ddr.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rpll/gowin_rpll.v" type="file.verilog" enable="1"/>
+        <File path="src/hspi_sender.v" type="file.verilog" enable="1"/>
+        <File path="src/hspi_sender_btn.v" type="file.verilog" enable="1"/>
+        <File path="src/psram_memory_interface_hs_v2/psram_memory_interface_hs_v2.v" type="file.verilog" enable="1"/>
+        <File path="src/top.v" type="file.verilog" enable="1"/>
+        <File path="src/recv_corsslink_data.cst" type="file.cst" enable="1"/>
+        <File path="src/recv_corsslink_data.sdc" type="file.sdc" enable="1"/>
+        <File path="src/hspi_sender.rao" type="file.gao" enable="0"/>
+        <File path="src/input.rao" type="file.gao" enable="0"/>
+        <File path="src/output_fifo.rao" type="file.gao" enable="0"/>
+        <File path="src/recv_corsslink_data.rao" type="file.gao" enable="0"/>
+        <File path="src/test_bili_hspi_tx.rao" type="file.gao" enable="0"/>
+        <File path="src/test_hspi_btn.rao" type="file.gao" enable="0"/>
+    </FileList>
+</Project>

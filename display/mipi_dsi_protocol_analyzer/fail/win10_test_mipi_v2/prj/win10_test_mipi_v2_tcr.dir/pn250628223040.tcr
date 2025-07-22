@@ -1,0 +1,133 @@
+#Start recording tcl command: 6/28/2025 17:34:02
+#Project Location: C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj; Project name: win10_test_mipi_v2
+prj_project open "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/win10_test_mipi_v2.ldf"
+prj_src add "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_byte_aligner.v" "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_lane_state_detection.v" "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/top.v"
+sbp_design new -dsgn "mipi" -path "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/mipi" -device "LIF-MD6000-6KMG80I"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/mipi/mipi_rx"
+source "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/mipi/mipi_rx/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/mipi/mipi_rx"
+source "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/mipi/mipi_rx/generate_ngd.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+sbp_builder export_add -comp {mipi/mipi_rx}
+sbp_design save
+prj_src add "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/mipi/mipi.sbx"
+prj_src add "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/mipi/mipi.sbx"
+sbp_design open -dsgn "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/mipi/mipi.sbx"
+prj_src remove "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/mipi/mipi.sbx"
+sbp_design open -dsgn "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/mipi/mipi.sbx"
+sbp_design gen
+sbp_design open -dsgn "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/mipi/mipi.sbx"
+sbp_design new -dsgn "clock" -path "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/clock" -device "LIF-MD6000-6KMG80I"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/clock/pll_sys_clk"
+source "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/clock/pll_sys_clk/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/clock/pll_sys_clk"
+source "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/clock/pll_sys_clk/generate_ngd.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+sbp_builder export_add -comp {clock/pll_sys_clk}
+sbp_design save
+prj_src add "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/clock/clock.sbx"
+sbp_design open -dsgn "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/clock/clock.sbx"
+sbp_design gen
+sbp_design gen
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Export -impl impl1 -task Bitgen
+pgr_project save "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/impl1.xcf"
+prj_src add -exclude "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/impl1.xcf"
+prj_src enable "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/impl1.xcf"
+pgr_program set -cable 
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_project save "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/impl1.xcf"
+pgr_program run
+rvl_trace trig_option OutNetType=IO
+rvl_project new -overwrite C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvl
+prj_src add -exclude "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvl"
+prj_src enable "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvl"
+rvl_trace trc_option SampleClk=rxhsbyteclk
+rvl_trace trc_option BufferDepth=1024
+rvl_trace add_sig  {{mipi_byte_aligner_lane0/data_in[15:0]} {mipi_byte_aligner_lane0/data_out[15:0]} mipi_byte_aligner_lane0/data_out_valid}
+rvl_trace add_sig  {{mipi_byte_aligner_lane1/data_in[15:0]} {mipi_byte_aligner_lane1/data_out[15:0]} mipi_byte_aligner_lane1/data_out_valid}
+rvl_trace add_sig  {hs_burst_flag}
+rvl_project save -overwrite C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvl
+rvl_tu set -name TU1 -set_sig {hs_burst_flag }
+rvl_tu set -name TU1 -op .RE.
+rvl_te set -expression TU1 TE1
+rvl_project save -overwrite C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvl
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Export -impl impl1 -task Bitgen
+pgr_program run
+rva_project new -rva "hs" -cable USB -rvl "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvl" -dev "" -port 0 -xcf ""
+prj_src add "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rva"
+rva_project run
+rvl_project close
+rvl_trace trig_option OutNetType=IO
+rvl_project open C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvl
+rva_project set -cabletype USB
+rva_project set -cableport 0
+rva_project set -tckdelay 4
+rva_project run
+rva_project run
+rva_project save "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rva"
+rvl_project close
+rvl_trace trig_option OutNetType=IO
+rvl_project open C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvl
+rva_project close
+rvl_trace move_sig -move_to mipi_byte_aligner_lane0/data_in {hs_burst_flag}
+rvl_project save -overwrite C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvl
+rvl_trace move_sig -move_to mipi_byte_aligner_lane0/data_out {mipi_byte_aligner_lane0/data_out_valid}
+rvl_trace move_sig -move_to mipi_byte_aligner_lane1/data_out {mipi_byte_aligner_lane1/data_out_valid}
+rvl_project save -overwrite C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvl
+prj_run Export -impl impl1 -task Bitgen
+pgr_project save "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/impl1.xcf"
+pgr_program run
+rva_project open "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rva"
+rva_project run
+rva_project set -cabletype USB
+rva_project set -cableport 0
+rva_project set -tckdelay 4
+rva_project run
+rva_project run
+rva_project set -cabletype USB
+rva_project set -cableport 0
+rva_project set -tckdelay 8
+rva_project run
+rva_project run
+rvl_trace trig_option OutNetType=IO
+rva_project set -cabletype USB
+rva_project set -cableport 0
+rva_project set -tckdelay 10
+rva_project run
+rva_project run
+prj_run Export -impl impl1 -task Bitgen
+rva_project close
+prj_run Export -impl impl1 -task Bitgen -forceAll
+pgr_project save "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/impl1.xcf"
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+rva_project open "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rva"
+rva_project run
+rva_project run
+rva_project run
+sbp_design open -dsgn "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/mipi/mipi.sbx"
+rva_project save "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rva"
+rva_project close
+rvl_project close -force
+pgr_project close
+#Stop recording: 6/28/2025 22:30:40

@@ -1,0 +1,38 @@
+[
+ {
+  "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/test_mc20901_lvds/src/read_lvds.v",
+  "InstLine" : 1,
+  "InstName" : "read_lvds",
+  "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/test_mc20901_lvds/src/read_lvds.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "read_lvds",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/test_mc20901_lvds/src/read_lvds.v",
+    "InstLine" : 44,
+    "InstName" : "mipi_rx",
+    "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/test_mc20901_lvds/src/mipi_rx_advance/mipi_rx_advance.v",
+    "ModuleLine" : 111,
+    "ModuleName" : "MIPI_RX_Advance_Top",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/test_mc20901_lvds/src/mipi_rx_advance/mipi_rx_advance.v",
+      "InstLine" : 150,
+      "InstName" : "DPHY_RX_INST",
+      "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/test_mc20901_lvds/src/mipi_rx_advance/mipi_rx_advance.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "~DPHY_RX.MIPI_RX_Advance_Top"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/test_mc20901_lvds/src/read_lvds.v",
+    "InstLine" : 232,
+    "InstName" : "mipi_lane_state_detection_inst",
+    "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/test_mc20901_lvds/src/mipi_lane_state_detection.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "mipi_lane_state_detection"
+   }
+  ]
+ }
+]

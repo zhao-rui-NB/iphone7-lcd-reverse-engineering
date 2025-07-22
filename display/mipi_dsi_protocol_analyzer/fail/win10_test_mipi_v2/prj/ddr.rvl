@@ -1,0 +1,57 @@
+<Project ModBy="Inserter" SigType="0" Name="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/ddr.rvl" Date="2025-07-14">
+    <IP Version="1_6_042617"/>
+    <Design DesignEntry="Schematic/Verilog HDL" Synthesis="lse" DeviceFamily="LIFMD" DesignName="win10_test_mipi_v2" JTAG="soft"/>
+    <Core InsertDataset="0" Insert="1" Reveal_sig="635227828" Name="top_LA0" ID="0">
+        <Setting>
+            <Clock SampleClk="pll_sys_clk_inst/CLKOP" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
+            <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="4096"/>
+            <Capture Mode="0" MinSamplesPerTrig="32"/>
+            <Event CntEnable="0" MaxEventCnt="8"/>
+            <TrigOut Polarity="0" MinPulseWidth="0" TrigOutNetType="0" EnableTrigOut="0" TrigOutNet="reveal_debug_win10_test_mipi_v2_LA0_net"/>
+            <DistRAM Disable="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Bus Name="mipi_multi_lane_aligner_inst/lanes_data_out">
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:0"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:1"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:2"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:3"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:4"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:5"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:6"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:7"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:8"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:9"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:10"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:11"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:12"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:13"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:14"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:15"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:16"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:17"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:18"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:19"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:20"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:21"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:22"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:23"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:24"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:25"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:26"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:27"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:28"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:29"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:30"/>
+                    <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out:31"/>
+                </Bus>
+                <Sig Type="SIG" Name="mipi_multi_lane_aligner_inst/lanes_data_out_valid"/>
+            </Trace>
+            <Trigger>
+                <TU Serialbits="0" Type="0" ID="1" Sig="mipi_multi_lane_aligner_inst/lanes_data_out_valid,"/>
+                <TE MaxSequence="1" MaxEvnCnt="1" ID="1" Resource="1"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>

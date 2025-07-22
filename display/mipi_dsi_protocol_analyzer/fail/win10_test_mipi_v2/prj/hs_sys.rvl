@@ -1,0 +1,134 @@
+<Project ModBy="Inserter" SigType="0" Name="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs_sys.rvl" Date="2025-07-14">
+    <IP Version="1_6_042617"/>
+    <Design DesignEntry="Schematic/Verilog HDL" Synthesis="lse" DeviceFamily="LIFMD" DesignName="win10_test_mipi_v2" JTAG="soft"/>
+    <Core InsertDataset="0" Insert="1" Reveal_sig="635233794" Name="top_LA0" ID="0">
+        <Setting>
+            <Clock SampleClk="pll_sys_clk_inst/CLKOP" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
+            <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="512"/>
+            <Capture Mode="0" MinSamplesPerTrig="8"/>
+            <Event CntEnable="0" MaxEventCnt="8"/>
+            <TrigOut Polarity="0" MinPulseWidth="0" TrigOutNetType="1" EnableTrigOut="0" TrigOutNet="reveal_debug_win10_test_mipi_v2_LA0_net"/>
+            <DistRAM Disable="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Sig Type="SIG" Name="mipi_raw_data_controller_inst/hs_burst_flag"/>
+                <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_RdEn"/>
+                <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Empty"/>
+                <Bus Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q">
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:0"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:1"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:2"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:3"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:4"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:5"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:6"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:7"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:8"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:9"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:10"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:11"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:12"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:13"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:14"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:15"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:16"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:17"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:18"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:19"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:20"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:21"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:22"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:23"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:24"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:25"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:26"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:27"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:28"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:29"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:30"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:31"/>
+                </Bus>
+                <Bus Name="mipi_raw_data_controller_inst/raw_data_out_lane0">
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:0"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:1"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:2"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:3"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:4"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:5"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:6"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:7"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:8"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:9"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:10"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:11"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:12"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:13"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:14"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:15"/>
+                </Bus>
+                <Bus Name="mipi_raw_data_controller_inst/raw_data_out_lane1">
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:0"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:1"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:2"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:3"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:4"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:5"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:6"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:7"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:8"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:9"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:10"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:11"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:12"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:13"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:14"/>
+                    <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:15"/>
+                </Bus>
+                <Sig Type="SIG" Name="mipi_raw_data_controller_inst/raw_data_out_valid"/>
+                <Bus Name="mipi_byte_aligner_lane0/data_out">
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane0/data_out:0"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane0/data_out:1"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane0/data_out:2"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane0/data_out:3"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane0/data_out:4"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane0/data_out:5"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane0/data_out:6"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane0/data_out:7"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane0/data_out:8"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane0/data_out:9"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane0/data_out:10"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane0/data_out:11"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane0/data_out:12"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane0/data_out:13"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane0/data_out:14"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane0/data_out:15"/>
+                </Bus>
+                <Sig Type="SIG" Name="mipi_byte_aligner_lane0/data_out_valid"/>
+                <Bus Name="mipi_byte_aligner_lane1/data_out">
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane1/data_out:0"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane1/data_out:1"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane1/data_out:2"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane1/data_out:3"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane1/data_out:4"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane1/data_out:5"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane1/data_out:6"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane1/data_out:7"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane1/data_out:8"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane1/data_out:9"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane1/data_out:10"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane1/data_out:11"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane1/data_out:12"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane1/data_out:13"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane1/data_out:14"/>
+                    <Sig Type="SIG" Name="mipi_byte_aligner_lane1/data_out:15"/>
+                </Bus>
+                <Sig Type="SIG" Name="mipi_byte_aligner_lane1/data_out_valid"/>
+            </Trace>
+            <Trigger>
+                <TU Serialbits="0" Type="0" ID="1" Sig="mipi_raw_data_controller_inst/hs_burst_flag,"/>
+                <TE MaxSequence="1" MaxEvnCnt="1" ID="1" Resource="1"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>

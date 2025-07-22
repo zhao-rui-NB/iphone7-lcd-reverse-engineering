@@ -1,0 +1,1705 @@
+(edif mipi_rx
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2025 6 28 17 35 31)
+      (program "SCUBA" (version "Diamond (64-bit) 3.12.0.240.2"))))
+      (comment "C:\lscc\diamond\3.12\ispfpga\bin\nt64\scuba.exe -w -n mipi_rx -lang verilog -synth lse -bus_exp 7 -bb -arch sn5w00 -type iol -io_type LVDS -mode MIPI -freq_in 600 -width 2 -app DSI_RX_H -gear 16 -fdc C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/mipi/mipi_rx/mipi_rx.fdc ")
+  (library ORCLIB
+    (edifLevel 0)
+    (technology
+      (numberDefinition))
+    (cell AND2
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port A
+            (direction INPUT))
+          (port B
+            (direction INPUT))
+          (port Z
+            (direction OUTPUT)))))
+    (cell INV
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port A
+            (direction INPUT))
+          (port Z
+            (direction OUTPUT)))))
+    (cell OR2
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port A
+            (direction INPUT))
+          (port B
+            (direction INPUT))
+          (port Z
+            (direction OUTPUT)))))
+    (cell VHI
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port Z
+            (direction OUTPUT)))))
+    (cell VLO
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port Z
+            (direction OUTPUT)))))
+    (cell MIPIDPHYA
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port CKP
+            (direction INOUT))
+          (port CKN
+            (direction INOUT))
+          (port CLKHSBYTE
+            (direction OUTPUT))
+          (port CLKRXHSEN
+            (direction INPUT))
+          (port CLKDRXLPP
+            (direction OUTPUT))
+          (port CLKRXLPEN
+            (direction INPUT))
+          (port CLKDRXLPN
+            (direction OUTPUT))
+          (port CLKCDEN
+            (direction INPUT))
+          (port CLKDCDN
+            (direction OUTPUT))
+          (port CLKDTXLPP
+            (direction INPUT))
+          (port CLKTXLPEN
+            (direction INPUT))
+          (port CLKDTXLPN
+            (direction INPUT))
+          (port CLKTXHSEN
+            (direction INPUT))
+          (port CLKTXHSGATE
+            (direction INPUT))
+          (port CLKTXHSPD
+            (direction INPUT))
+          (port CLKDRXHS
+            (direction OUTPUT))
+          (port HSBYTECLKD
+            (direction OUTPUT))
+          (port HSBYTECLKS
+            (direction OUTPUT))
+          (port LBEN
+            (direction INPUT))
+          (port PDDPHY
+            (direction INPUT))
+          (port PDBIAS
+            (direction INPUT))
+          (port PDCKG
+            (direction INPUT))
+          (port CLKREF
+            (direction INPUT))
+          (port LOCK
+            (direction OUTPUT))
+          (port PDPLL
+            (direction INPUT))
+          (port DP0
+            (direction INOUT))
+          (port DP1
+            (direction INOUT))
+          (port DP2
+            (direction INOUT))
+          (port DP3
+            (direction INOUT))
+          (port DN0
+            (direction INOUT))
+          (port DN1
+            (direction INOUT))
+          (port DN2
+            (direction INOUT))
+          (port DN3
+            (direction INOUT))
+          (port D0DRXLPP
+            (direction OUTPUT))
+          (port D0RXLPEN
+            (direction INPUT))
+          (port D0DRXLPN
+            (direction OUTPUT))
+          (port D0DCDP
+            (direction OUTPUT))
+          (port D0CDEN
+            (direction INPUT))
+          (port D0DCDN
+            (direction OUTPUT))
+          (port D0DTXLPP
+            (direction INPUT))
+          (port D0TXLPEN
+            (direction INPUT))
+          (port D0DTXLPN
+            (direction INPUT))
+          (port D0RXHSEN
+            (direction INPUT))
+          (port D0HSRXDATA15
+            (direction OUTPUT))
+          (port D0HSRXDATA14
+            (direction OUTPUT))
+          (port D0HSRXDATA13
+            (direction OUTPUT))
+          (port D0HSRXDATA12
+            (direction OUTPUT))
+          (port D0HSRXDATA11
+            (direction OUTPUT))
+          (port D0HSRXDATA10
+            (direction OUTPUT))
+          (port D0HSRXDATA9
+            (direction OUTPUT))
+          (port D0HSRXDATA8
+            (direction OUTPUT))
+          (port D0HSRXDATA7
+            (direction OUTPUT))
+          (port D0HSRXDATA6
+            (direction OUTPUT))
+          (port D0HSRXDATA5
+            (direction OUTPUT))
+          (port D0HSRXDATA4
+            (direction OUTPUT))
+          (port D0HSRXDATA3
+            (direction OUTPUT))
+          (port D0HSRXDATA2
+            (direction OUTPUT))
+          (port D0HSRXDATA1
+            (direction OUTPUT))
+          (port D0HSRXDATA0
+            (direction OUTPUT))
+          (port D0SYNC
+            (direction OUTPUT))
+          (port D0ERRSYNC
+            (direction OUTPUT))
+          (port D0NOSYNC
+            (direction OUTPUT))
+          (port D0HSDESEREN
+            (direction INPUT))
+          (port D0TXHSEN
+            (direction INPUT))
+          (port D0HSTXDATA15
+            (direction INPUT))
+          (port D0HSTXDATA14
+            (direction INPUT))
+          (port D0HSTXDATA13
+            (direction INPUT))
+          (port D0HSTXDATA12
+            (direction INPUT))
+          (port D0HSTXDATA11
+            (direction INPUT))
+          (port D0HSTXDATA10
+            (direction INPUT))
+          (port D0HSTXDATA9
+            (direction INPUT))
+          (port D0HSTXDATA8
+            (direction INPUT))
+          (port D0HSTXDATA7
+            (direction INPUT))
+          (port D0HSTXDATA6
+            (direction INPUT))
+          (port D0HSTXDATA5
+            (direction INPUT))
+          (port D0HSTXDATA4
+            (direction INPUT))
+          (port D0HSTXDATA3
+            (direction INPUT))
+          (port D0HSTXDATA2
+            (direction INPUT))
+          (port D0HSTXDATA1
+            (direction INPUT))
+          (port D0HSTXDATA0
+            (direction INPUT))
+          (port D0HSSEREN
+            (direction INPUT))
+          (port D0TXHSPD
+            (direction INPUT))
+          (port D0DRXHS
+            (direction OUTPUT))
+          (port D1DRXLPP
+            (direction OUTPUT))
+          (port D1RXLPEN
+            (direction INPUT))
+          (port D1DRXLPN
+            (direction OUTPUT))
+          (port D1DCDP
+            (direction OUTPUT))
+          (port D1CDEN
+            (direction INPUT))
+          (port D1DCDN
+            (direction OUTPUT))
+          (port D1DTXLPP
+            (direction INPUT))
+          (port D1TXLPEN
+            (direction INPUT))
+          (port D1DTXLPN
+            (direction INPUT))
+          (port D1RXHSEN
+            (direction INPUT))
+          (port D1HSRXDATA15
+            (direction OUTPUT))
+          (port D1HSRXDATA14
+            (direction OUTPUT))
+          (port D1HSRXDATA13
+            (direction OUTPUT))
+          (port D1HSRXDATA12
+            (direction OUTPUT))
+          (port D1HSRXDATA11
+            (direction OUTPUT))
+          (port D1HSRXDATA10
+            (direction OUTPUT))
+          (port D1HSRXDATA9
+            (direction OUTPUT))
+          (port D1HSRXDATA8
+            (direction OUTPUT))
+          (port D1HSRXDATA7
+            (direction OUTPUT))
+          (port D1HSRXDATA6
+            (direction OUTPUT))
+          (port D1HSRXDATA5
+            (direction OUTPUT))
+          (port D1HSRXDATA4
+            (direction OUTPUT))
+          (port D1HSRXDATA3
+            (direction OUTPUT))
+          (port D1HSRXDATA2
+            (direction OUTPUT))
+          (port D1HSRXDATA1
+            (direction OUTPUT))
+          (port D1HSRXDATA0
+            (direction OUTPUT))
+          (port D1SYNC
+            (direction OUTPUT))
+          (port D1ERRSYNC
+            (direction OUTPUT))
+          (port D1NOSYNC
+            (direction OUTPUT))
+          (port D1HSDESEREN
+            (direction INPUT))
+          (port D1TXHSEN
+            (direction INPUT))
+          (port D1HSTXDATA15
+            (direction INPUT))
+          (port D1HSTXDATA14
+            (direction INPUT))
+          (port D1HSTXDATA13
+            (direction INPUT))
+          (port D1HSTXDATA12
+            (direction INPUT))
+          (port D1HSTXDATA11
+            (direction INPUT))
+          (port D1HSTXDATA10
+            (direction INPUT))
+          (port D1HSTXDATA9
+            (direction INPUT))
+          (port D1HSTXDATA8
+            (direction INPUT))
+          (port D1HSTXDATA7
+            (direction INPUT))
+          (port D1HSTXDATA6
+            (direction INPUT))
+          (port D1HSTXDATA5
+            (direction INPUT))
+          (port D1HSTXDATA4
+            (direction INPUT))
+          (port D1HSTXDATA3
+            (direction INPUT))
+          (port D1HSTXDATA2
+            (direction INPUT))
+          (port D1HSTXDATA1
+            (direction INPUT))
+          (port D1HSTXDATA0
+            (direction INPUT))
+          (port D1HSSEREN
+            (direction INPUT))
+          (port D1TXHSPD
+            (direction INPUT))
+          (port D1DRXHS
+            (direction OUTPUT))
+          (port D2DRXLPP
+            (direction OUTPUT))
+          (port D2RXLPEN
+            (direction INPUT))
+          (port D2DRXLPN
+            (direction OUTPUT))
+          (port D2DCDP
+            (direction OUTPUT))
+          (port D2CDEN
+            (direction INPUT))
+          (port D2DCDN
+            (direction OUTPUT))
+          (port D2DTXLPP
+            (direction INPUT))
+          (port D2TXLPEN
+            (direction INPUT))
+          (port D2DTXLPN
+            (direction INPUT))
+          (port D2RXHSEN
+            (direction INPUT))
+          (port D2HSRXDATA15
+            (direction OUTPUT))
+          (port D2HSRXDATA14
+            (direction OUTPUT))
+          (port D2HSRXDATA13
+            (direction OUTPUT))
+          (port D2HSRXDATA12
+            (direction OUTPUT))
+          (port D2HSRXDATA11
+            (direction OUTPUT))
+          (port D2HSRXDATA10
+            (direction OUTPUT))
+          (port D2HSRXDATA9
+            (direction OUTPUT))
+          (port D2HSRXDATA8
+            (direction OUTPUT))
+          (port D2HSRXDATA7
+            (direction OUTPUT))
+          (port D2HSRXDATA6
+            (direction OUTPUT))
+          (port D2HSRXDATA5
+            (direction OUTPUT))
+          (port D2HSRXDATA4
+            (direction OUTPUT))
+          (port D2HSRXDATA3
+            (direction OUTPUT))
+          (port D2HSRXDATA2
+            (direction OUTPUT))
+          (port D2HSRXDATA1
+            (direction OUTPUT))
+          (port D2HSRXDATA0
+            (direction OUTPUT))
+          (port D2SYNC
+            (direction OUTPUT))
+          (port D2ERRSYNC
+            (direction OUTPUT))
+          (port D2NOSYNC
+            (direction OUTPUT))
+          (port D2HSDESEREN
+            (direction INPUT))
+          (port D2TXHSEN
+            (direction INPUT))
+          (port D2HSTXDATA15
+            (direction INPUT))
+          (port D2HSTXDATA14
+            (direction INPUT))
+          (port D2HSTXDATA13
+            (direction INPUT))
+          (port D2HSTXDATA12
+            (direction INPUT))
+          (port D2HSTXDATA11
+            (direction INPUT))
+          (port D2HSTXDATA10
+            (direction INPUT))
+          (port D2HSTXDATA9
+            (direction INPUT))
+          (port D2HSTXDATA8
+            (direction INPUT))
+          (port D2HSTXDATA7
+            (direction INPUT))
+          (port D2HSTXDATA6
+            (direction INPUT))
+          (port D2HSTXDATA5
+            (direction INPUT))
+          (port D2HSTXDATA4
+            (direction INPUT))
+          (port D2HSTXDATA3
+            (direction INPUT))
+          (port D2HSTXDATA2
+            (direction INPUT))
+          (port D2HSTXDATA1
+            (direction INPUT))
+          (port D2HSTXDATA0
+            (direction INPUT))
+          (port D2HSSEREN
+            (direction INPUT))
+          (port D2TXHSPD
+            (direction INPUT))
+          (port D2DRXHS
+            (direction OUTPUT))
+          (port D3DRXLPP
+            (direction OUTPUT))
+          (port D3RXLPEN
+            (direction INPUT))
+          (port D3DRXLPN
+            (direction OUTPUT))
+          (port D3DCDP
+            (direction OUTPUT))
+          (port D3CDEN
+            (direction INPUT))
+          (port D3DCDN
+            (direction OUTPUT))
+          (port D3DTXLPP
+            (direction INPUT))
+          (port D3TXLPEN
+            (direction INPUT))
+          (port D3DTXLPN
+            (direction INPUT))
+          (port D3RXHSEN
+            (direction INPUT))
+          (port D3HSRXDATA15
+            (direction OUTPUT))
+          (port D3HSRXDATA14
+            (direction OUTPUT))
+          (port D3HSRXDATA13
+            (direction OUTPUT))
+          (port D3HSRXDATA12
+            (direction OUTPUT))
+          (port D3HSRXDATA11
+            (direction OUTPUT))
+          (port D3HSRXDATA10
+            (direction OUTPUT))
+          (port D3HSRXDATA9
+            (direction OUTPUT))
+          (port D3HSRXDATA8
+            (direction OUTPUT))
+          (port D3HSRXDATA7
+            (direction OUTPUT))
+          (port D3HSRXDATA6
+            (direction OUTPUT))
+          (port D3HSRXDATA5
+            (direction OUTPUT))
+          (port D3HSRXDATA4
+            (direction OUTPUT))
+          (port D3HSRXDATA3
+            (direction OUTPUT))
+          (port D3HSRXDATA2
+            (direction OUTPUT))
+          (port D3HSRXDATA1
+            (direction OUTPUT))
+          (port D3HSRXDATA0
+            (direction OUTPUT))
+          (port D3SYNC
+            (direction OUTPUT))
+          (port D3ERRSYNC
+            (direction OUTPUT))
+          (port D3NOSYNC
+            (direction OUTPUT))
+          (port D3HSDESEREN
+            (direction INPUT))
+          (port D3TXHSEN
+            (direction INPUT))
+          (port D3HSTXDATA15
+            (direction INPUT))
+          (port D3HSTXDATA14
+            (direction INPUT))
+          (port D3HSTXDATA13
+            (direction INPUT))
+          (port D3HSTXDATA12
+            (direction INPUT))
+          (port D3HSTXDATA11
+            (direction INPUT))
+          (port D3HSTXDATA10
+            (direction INPUT))
+          (port D3HSTXDATA9
+            (direction INPUT))
+          (port D3HSTXDATA8
+            (direction INPUT))
+          (port D3HSTXDATA7
+            (direction INPUT))
+          (port D3HSTXDATA6
+            (direction INPUT))
+          (port D3HSTXDATA5
+            (direction INPUT))
+          (port D3HSTXDATA4
+            (direction INPUT))
+          (port D3HSTXDATA3
+            (direction INPUT))
+          (port D3HSTXDATA2
+            (direction INPUT))
+          (port D3HSTXDATA1
+            (direction INPUT))
+          (port D3HSTXDATA0
+            (direction INPUT))
+          (port D3HSSEREN
+            (direction INPUT))
+          (port D3TXHSPD
+            (direction INPUT))
+          (port D3DRXHS
+            (direction OUTPUT)))
+        (property NGD_DRC_MASK (integer 1))
+        (contents
+          (net D3DRXHS
+            (joined
+              (portRef D3DRXHS)))
+          (net D3TXHSPD
+            (joined
+              (portRef D3TXHSPD)))
+          (net D3HSSEREN
+            (joined
+              (portRef D3HSSEREN)))
+          (net D3HSTXDATA0
+            (joined
+              (portRef D3HSTXDATA0)))
+          (net D3HSTXDATA1
+            (joined
+              (portRef D3HSTXDATA1)))
+          (net D3HSTXDATA2
+            (joined
+              (portRef D3HSTXDATA2)))
+          (net D3HSTXDATA3
+            (joined
+              (portRef D3HSTXDATA3)))
+          (net D3HSTXDATA4
+            (joined
+              (portRef D3HSTXDATA4)))
+          (net D3HSTXDATA5
+            (joined
+              (portRef D3HSTXDATA5)))
+          (net D3HSTXDATA6
+            (joined
+              (portRef D3HSTXDATA6)))
+          (net D3HSTXDATA7
+            (joined
+              (portRef D3HSTXDATA7)))
+          (net D3HSTXDATA8
+            (joined
+              (portRef D3HSTXDATA8)))
+          (net D3HSTXDATA9
+            (joined
+              (portRef D3HSTXDATA9)))
+          (net D3HSTXDATA10
+            (joined
+              (portRef D3HSTXDATA10)))
+          (net D3HSTXDATA11
+            (joined
+              (portRef D3HSTXDATA11)))
+          (net D3HSTXDATA12
+            (joined
+              (portRef D3HSTXDATA12)))
+          (net D3HSTXDATA13
+            (joined
+              (portRef D3HSTXDATA13)))
+          (net D3HSTXDATA14
+            (joined
+              (portRef D3HSTXDATA14)))
+          (net D3HSTXDATA15
+            (joined
+              (portRef D3HSTXDATA15)))
+          (net D3TXHSEN
+            (joined
+              (portRef D3TXHSEN)))
+          (net D3HSDESEREN
+            (joined
+              (portRef D3HSDESEREN)))
+          (net D3NOSYNC
+            (joined
+              (portRef D3NOSYNC)))
+          (net D3ERRSYNC
+            (joined
+              (portRef D3ERRSYNC)))
+          (net D3SYNC
+            (joined
+              (portRef D3SYNC)))
+          (net D3HSRXDATA0
+            (joined
+              (portRef D3HSRXDATA0)))
+          (net D3HSRXDATA1
+            (joined
+              (portRef D3HSRXDATA1)))
+          (net D3HSRXDATA2
+            (joined
+              (portRef D3HSRXDATA2)))
+          (net D3HSRXDATA3
+            (joined
+              (portRef D3HSRXDATA3)))
+          (net D3HSRXDATA4
+            (joined
+              (portRef D3HSRXDATA4)))
+          (net D3HSRXDATA5
+            (joined
+              (portRef D3HSRXDATA5)))
+          (net D3HSRXDATA6
+            (joined
+              (portRef D3HSRXDATA6)))
+          (net D3HSRXDATA7
+            (joined
+              (portRef D3HSRXDATA7)))
+          (net D3HSRXDATA8
+            (joined
+              (portRef D3HSRXDATA8)))
+          (net D3HSRXDATA9
+            (joined
+              (portRef D3HSRXDATA9)))
+          (net D3HSRXDATA10
+            (joined
+              (portRef D3HSRXDATA10)))
+          (net D3HSRXDATA11
+            (joined
+              (portRef D3HSRXDATA11)))
+          (net D3HSRXDATA12
+            (joined
+              (portRef D3HSRXDATA12)))
+          (net D3HSRXDATA13
+            (joined
+              (portRef D3HSRXDATA13)))
+          (net D3HSRXDATA14
+            (joined
+              (portRef D3HSRXDATA14)))
+          (net D3HSRXDATA15
+            (joined
+              (portRef D3HSRXDATA15)))
+          (net D3RXHSEN
+            (joined
+              (portRef D3RXHSEN)))
+          (net D3DTXLPN
+            (joined
+              (portRef D3DTXLPN)))
+          (net D3TXLPEN
+            (joined
+              (portRef D3TXLPEN)))
+          (net D3DTXLPP
+            (joined
+              (portRef D3DTXLPP)))
+          (net D3DCDN
+            (joined
+              (portRef D3DCDN)))
+          (net D3CDEN
+            (joined
+              (portRef D3CDEN)))
+          (net D3DCDP
+            (joined
+              (portRef D3DCDP)))
+          (net D3DRXLPN
+            (joined
+              (portRef D3DRXLPN)))
+          (net D3RXLPEN
+            (joined
+              (portRef D3RXLPEN)))
+          (net D3DRXLPP
+            (joined
+              (portRef D3DRXLPP)))
+          (net D2DRXHS
+            (joined
+              (portRef D2DRXHS)))
+          (net D2TXHSPD
+            (joined
+              (portRef D2TXHSPD)))
+          (net D2HSSEREN
+            (joined
+              (portRef D2HSSEREN)))
+          (net D2HSTXDATA0
+            (joined
+              (portRef D2HSTXDATA0)))
+          (net D2HSTXDATA1
+            (joined
+              (portRef D2HSTXDATA1)))
+          (net D2HSTXDATA2
+            (joined
+              (portRef D2HSTXDATA2)))
+          (net D2HSTXDATA3
+            (joined
+              (portRef D2HSTXDATA3)))
+          (net D2HSTXDATA4
+            (joined
+              (portRef D2HSTXDATA4)))
+          (net D2HSTXDATA5
+            (joined
+              (portRef D2HSTXDATA5)))
+          (net D2HSTXDATA6
+            (joined
+              (portRef D2HSTXDATA6)))
+          (net D2HSTXDATA7
+            (joined
+              (portRef D2HSTXDATA7)))
+          (net D2HSTXDATA8
+            (joined
+              (portRef D2HSTXDATA8)))
+          (net D2HSTXDATA9
+            (joined
+              (portRef D2HSTXDATA9)))
+          (net D2HSTXDATA10
+            (joined
+              (portRef D2HSTXDATA10)))
+          (net D2HSTXDATA11
+            (joined
+              (portRef D2HSTXDATA11)))
+          (net D2HSTXDATA12
+            (joined
+              (portRef D2HSTXDATA12)))
+          (net D2HSTXDATA13
+            (joined
+              (portRef D2HSTXDATA13)))
+          (net D2HSTXDATA14
+            (joined
+              (portRef D2HSTXDATA14)))
+          (net D2HSTXDATA15
+            (joined
+              (portRef D2HSTXDATA15)))
+          (net D2TXHSEN
+            (joined
+              (portRef D2TXHSEN)))
+          (net D2HSDESEREN
+            (joined
+              (portRef D2HSDESEREN)))
+          (net D2NOSYNC
+            (joined
+              (portRef D2NOSYNC)))
+          (net D2ERRSYNC
+            (joined
+              (portRef D2ERRSYNC)))
+          (net D2SYNC
+            (joined
+              (portRef D2SYNC)))
+          (net D2HSRXDATA0
+            (joined
+              (portRef D2HSRXDATA0)))
+          (net D2HSRXDATA1
+            (joined
+              (portRef D2HSRXDATA1)))
+          (net D2HSRXDATA2
+            (joined
+              (portRef D2HSRXDATA2)))
+          (net D2HSRXDATA3
+            (joined
+              (portRef D2HSRXDATA3)))
+          (net D2HSRXDATA4
+            (joined
+              (portRef D2HSRXDATA4)))
+          (net D2HSRXDATA5
+            (joined
+              (portRef D2HSRXDATA5)))
+          (net D2HSRXDATA6
+            (joined
+              (portRef D2HSRXDATA6)))
+          (net D2HSRXDATA7
+            (joined
+              (portRef D2HSRXDATA7)))
+          (net D2HSRXDATA8
+            (joined
+              (portRef D2HSRXDATA8)))
+          (net D2HSRXDATA9
+            (joined
+              (portRef D2HSRXDATA9)))
+          (net D2HSRXDATA10
+            (joined
+              (portRef D2HSRXDATA10)))
+          (net D2HSRXDATA11
+            (joined
+              (portRef D2HSRXDATA11)))
+          (net D2HSRXDATA12
+            (joined
+              (portRef D2HSRXDATA12)))
+          (net D2HSRXDATA13
+            (joined
+              (portRef D2HSRXDATA13)))
+          (net D2HSRXDATA14
+            (joined
+              (portRef D2HSRXDATA14)))
+          (net D2HSRXDATA15
+            (joined
+              (portRef D2HSRXDATA15)))
+          (net D2RXHSEN
+            (joined
+              (portRef D2RXHSEN)))
+          (net D2DTXLPN
+            (joined
+              (portRef D2DTXLPN)))
+          (net D2TXLPEN
+            (joined
+              (portRef D2TXLPEN)))
+          (net D2DTXLPP
+            (joined
+              (portRef D2DTXLPP)))
+          (net D2DCDN
+            (joined
+              (portRef D2DCDN)))
+          (net D2CDEN
+            (joined
+              (portRef D2CDEN)))
+          (net D2DCDP
+            (joined
+              (portRef D2DCDP)))
+          (net D2DRXLPN
+            (joined
+              (portRef D2DRXLPN)))
+          (net D2RXLPEN
+            (joined
+              (portRef D2RXLPEN)))
+          (net D2DRXLPP
+            (joined
+              (portRef D2DRXLPP)))
+          (net D1DRXHS
+            (joined
+              (portRef D1DRXHS)))
+          (net D1TXHSPD
+            (joined
+              (portRef D1TXHSPD)))
+          (net D1HSSEREN
+            (joined
+              (portRef D1HSSEREN)))
+          (net D1HSTXDATA0
+            (joined
+              (portRef D1HSTXDATA0)))
+          (net D1HSTXDATA1
+            (joined
+              (portRef D1HSTXDATA1)))
+          (net D1HSTXDATA2
+            (joined
+              (portRef D1HSTXDATA2)))
+          (net D1HSTXDATA3
+            (joined
+              (portRef D1HSTXDATA3)))
+          (net D1HSTXDATA4
+            (joined
+              (portRef D1HSTXDATA4)))
+          (net D1HSTXDATA5
+            (joined
+              (portRef D1HSTXDATA5)))
+          (net D1HSTXDATA6
+            (joined
+              (portRef D1HSTXDATA6)))
+          (net D1HSTXDATA7
+            (joined
+              (portRef D1HSTXDATA7)))
+          (net D1HSTXDATA8
+            (joined
+              (portRef D1HSTXDATA8)))
+          (net D1HSTXDATA9
+            (joined
+              (portRef D1HSTXDATA9)))
+          (net D1HSTXDATA10
+            (joined
+              (portRef D1HSTXDATA10)))
+          (net D1HSTXDATA11
+            (joined
+              (portRef D1HSTXDATA11)))
+          (net D1HSTXDATA12
+            (joined
+              (portRef D1HSTXDATA12)))
+          (net D1HSTXDATA13
+            (joined
+              (portRef D1HSTXDATA13)))
+          (net D1HSTXDATA14
+            (joined
+              (portRef D1HSTXDATA14)))
+          (net D1HSTXDATA15
+            (joined
+              (portRef D1HSTXDATA15)))
+          (net D1TXHSEN
+            (joined
+              (portRef D1TXHSEN)))
+          (net D1HSDESEREN
+            (joined
+              (portRef D1HSDESEREN)))
+          (net D1NOSYNC
+            (joined
+              (portRef D1NOSYNC)))
+          (net D1ERRSYNC
+            (joined
+              (portRef D1ERRSYNC)))
+          (net D1SYNC
+            (joined
+              (portRef D1SYNC)))
+          (net D1HSRXDATA0
+            (joined
+              (portRef D1HSRXDATA0)))
+          (net D1HSRXDATA1
+            (joined
+              (portRef D1HSRXDATA1)))
+          (net D1HSRXDATA2
+            (joined
+              (portRef D1HSRXDATA2)))
+          (net D1HSRXDATA3
+            (joined
+              (portRef D1HSRXDATA3)))
+          (net D1HSRXDATA4
+            (joined
+              (portRef D1HSRXDATA4)))
+          (net D1HSRXDATA5
+            (joined
+              (portRef D1HSRXDATA5)))
+          (net D1HSRXDATA6
+            (joined
+              (portRef D1HSRXDATA6)))
+          (net D1HSRXDATA7
+            (joined
+              (portRef D1HSRXDATA7)))
+          (net D1HSRXDATA8
+            (joined
+              (portRef D1HSRXDATA8)))
+          (net D1HSRXDATA9
+            (joined
+              (portRef D1HSRXDATA9)))
+          (net D1HSRXDATA10
+            (joined
+              (portRef D1HSRXDATA10)))
+          (net D1HSRXDATA11
+            (joined
+              (portRef D1HSRXDATA11)))
+          (net D1HSRXDATA12
+            (joined
+              (portRef D1HSRXDATA12)))
+          (net D1HSRXDATA13
+            (joined
+              (portRef D1HSRXDATA13)))
+          (net D1HSRXDATA14
+            (joined
+              (portRef D1HSRXDATA14)))
+          (net D1HSRXDATA15
+            (joined
+              (portRef D1HSRXDATA15)))
+          (net D1RXHSEN
+            (joined
+              (portRef D1RXHSEN)))
+          (net D1DTXLPN
+            (joined
+              (portRef D1DTXLPN)))
+          (net D1TXLPEN
+            (joined
+              (portRef D1TXLPEN)))
+          (net D1DTXLPP
+            (joined
+              (portRef D1DTXLPP)))
+          (net D1DCDN
+            (joined
+              (portRef D1DCDN)))
+          (net D1CDEN
+            (joined
+              (portRef D1CDEN)))
+          (net D1DCDP
+            (joined
+              (portRef D1DCDP)))
+          (net D1DRXLPN
+            (joined
+              (portRef D1DRXLPN)))
+          (net D1RXLPEN
+            (joined
+              (portRef D1RXLPEN)))
+          (net D1DRXLPP
+            (joined
+              (portRef D1DRXLPP)))
+          (net D0DRXHS
+            (joined
+              (portRef D0DRXHS)))
+          (net D0TXHSPD
+            (joined
+              (portRef D0TXHSPD)))
+          (net D0HSSEREN
+            (joined
+              (portRef D0HSSEREN)))
+          (net D0HSTXDATA0
+            (joined
+              (portRef D0HSTXDATA0)))
+          (net D0HSTXDATA1
+            (joined
+              (portRef D0HSTXDATA1)))
+          (net D0HSTXDATA2
+            (joined
+              (portRef D0HSTXDATA2)))
+          (net D0HSTXDATA3
+            (joined
+              (portRef D0HSTXDATA3)))
+          (net D0HSTXDATA4
+            (joined
+              (portRef D0HSTXDATA4)))
+          (net D0HSTXDATA5
+            (joined
+              (portRef D0HSTXDATA5)))
+          (net D0HSTXDATA6
+            (joined
+              (portRef D0HSTXDATA6)))
+          (net D0HSTXDATA7
+            (joined
+              (portRef D0HSTXDATA7)))
+          (net D0HSTXDATA8
+            (joined
+              (portRef D0HSTXDATA8)))
+          (net D0HSTXDATA9
+            (joined
+              (portRef D0HSTXDATA9)))
+          (net D0HSTXDATA10
+            (joined
+              (portRef D0HSTXDATA10)))
+          (net D0HSTXDATA11
+            (joined
+              (portRef D0HSTXDATA11)))
+          (net D0HSTXDATA12
+            (joined
+              (portRef D0HSTXDATA12)))
+          (net D0HSTXDATA13
+            (joined
+              (portRef D0HSTXDATA13)))
+          (net D0HSTXDATA14
+            (joined
+              (portRef D0HSTXDATA14)))
+          (net D0HSTXDATA15
+            (joined
+              (portRef D0HSTXDATA15)))
+          (net D0TXHSEN
+            (joined
+              (portRef D0TXHSEN)))
+          (net D0HSDESEREN
+            (joined
+              (portRef D0HSDESEREN)))
+          (net D0NOSYNC
+            (joined
+              (portRef D0NOSYNC)))
+          (net D0ERRSYNC
+            (joined
+              (portRef D0ERRSYNC)))
+          (net D0SYNC
+            (joined
+              (portRef D0SYNC)))
+          (net D0HSRXDATA0
+            (joined
+              (portRef D0HSRXDATA0)))
+          (net D0HSRXDATA1
+            (joined
+              (portRef D0HSRXDATA1)))
+          (net D0HSRXDATA2
+            (joined
+              (portRef D0HSRXDATA2)))
+          (net D0HSRXDATA3
+            (joined
+              (portRef D0HSRXDATA3)))
+          (net D0HSRXDATA4
+            (joined
+              (portRef D0HSRXDATA4)))
+          (net D0HSRXDATA5
+            (joined
+              (portRef D0HSRXDATA5)))
+          (net D0HSRXDATA6
+            (joined
+              (portRef D0HSRXDATA6)))
+          (net D0HSRXDATA7
+            (joined
+              (portRef D0HSRXDATA7)))
+          (net D0HSRXDATA8
+            (joined
+              (portRef D0HSRXDATA8)))
+          (net D0HSRXDATA9
+            (joined
+              (portRef D0HSRXDATA9)))
+          (net D0HSRXDATA10
+            (joined
+              (portRef D0HSRXDATA10)))
+          (net D0HSRXDATA11
+            (joined
+              (portRef D0HSRXDATA11)))
+          (net D0HSRXDATA12
+            (joined
+              (portRef D0HSRXDATA12)))
+          (net D0HSRXDATA13
+            (joined
+              (portRef D0HSRXDATA13)))
+          (net D0HSRXDATA14
+            (joined
+              (portRef D0HSRXDATA14)))
+          (net D0HSRXDATA15
+            (joined
+              (portRef D0HSRXDATA15)))
+          (net D0RXHSEN
+            (joined
+              (portRef D0RXHSEN)))
+          (net D0DTXLPN
+            (joined
+              (portRef D0DTXLPN)))
+          (net D0TXLPEN
+            (joined
+              (portRef D0TXLPEN)))
+          (net D0DTXLPP
+            (joined
+              (portRef D0DTXLPP)))
+          (net D0DCDN
+            (joined
+              (portRef D0DCDN)))
+          (net D0CDEN
+            (joined
+              (portRef D0CDEN)))
+          (net D0DCDP
+            (joined
+              (portRef D0DCDP)))
+          (net D0DRXLPN
+            (joined
+              (portRef D0DRXLPN)))
+          (net D0RXLPEN
+            (joined
+              (portRef D0RXLPEN)))
+          (net D0DRXLPP
+            (joined
+              (portRef D0DRXLPP)))
+          (net DN3
+            (joined
+              (portRef DN3)))
+          (net DN2
+            (joined
+              (portRef DN2)))
+          (net DN1
+            (joined
+              (portRef DN1)))
+          (net DN0
+            (joined
+              (portRef DN0)))
+          (net DP3
+            (joined
+              (portRef DP3)))
+          (net DP2
+            (joined
+              (portRef DP2)))
+          (net DP1
+            (joined
+              (portRef DP1)))
+          (net DP0
+            (joined
+              (portRef DP0)))
+          (net PDPLL
+            (joined
+              (portRef PDPLL)))
+          (net LOCK
+            (joined
+              (portRef LOCK)))
+          (net CLKREF
+            (joined
+              (portRef CLKREF)))
+          (net PDCKG
+            (joined
+              (portRef PDCKG)))
+          (net PDBIAS
+            (joined
+              (portRef PDBIAS)))
+          (net PDDPHY
+            (joined
+              (portRef PDDPHY)))
+          (net LBEN
+            (joined
+              (portRef LBEN)))
+          (net HSBYTECLKS
+            (joined
+              (portRef HSBYTECLKS)))
+          (net HSBYTECLKD
+            (joined
+              (portRef HSBYTECLKD)))
+          (net CLKDRXHS
+            (joined
+              (portRef CLKDRXHS)))
+          (net CLKTXHSPD
+            (joined
+              (portRef CLKTXHSPD)))
+          (net CLKTXHSGATE
+            (joined
+              (portRef CLKTXHSGATE)))
+          (net CLKTXHSEN
+            (joined
+              (portRef CLKTXHSEN)))
+          (net CLKDTXLPN
+            (joined
+              (portRef CLKDTXLPN)))
+          (net CLKTXLPEN
+            (joined
+              (portRef CLKTXLPEN)))
+          (net CLKDTXLPP
+            (joined
+              (portRef CLKDTXLPP)))
+          (net CLKDCDN
+            (joined
+              (portRef CLKDCDN)))
+          (net CLKCDEN
+            (joined
+              (portRef CLKCDEN)))
+          (net CLKDRXLPN
+            (joined
+              (portRef CLKDRXLPN)))
+          (net CLKRXLPEN
+            (joined
+              (portRef CLKRXLPEN)))
+          (net CLKDRXLPP
+            (joined
+              (portRef CLKDRXLPP)))
+          (net CLKRXHSEN
+            (joined
+              (portRef CLKRXHSEN)))
+          (net CLKHSBYTE
+            (joined
+              (portRef CLKHSBYTE)))
+          (net CKN
+            (joined
+              (portRef CKN)))
+          (net CKP
+            (joined
+              (portRef CKP))))))
+    (cell mipi_rx
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port clk_cd
+            (direction OUTPUT))
+          (port clk_n
+            (direction INOUT))
+          (port clk_p
+            (direction INOUT))
+          (port clk_rxhsen
+            (direction INPUT))
+          (port clk_rxlpen
+            (direction INPUT))
+          (port clk_rxlpn
+            (direction OUTPUT))
+          (port clk_rxlpp
+            (direction OUTPUT))
+          (port clkhsbyte
+            (direction OUTPUT))
+          (port d0_cd
+            (direction OUTPUT))
+          (port d0_hsdeseren
+            (direction INPUT))
+          (port d0_rxhsen
+            (direction INPUT))
+          (port d0_rxlpen
+            (direction INPUT))
+          (port d0_rxlpn
+            (direction OUTPUT))
+          (port d0_rxlpp
+            (direction OUTPUT))
+          (port d0_txlpn
+            (direction INPUT))
+          (port d0_txlpp
+            (direction INPUT))
+          (port rxhsbyteclk
+            (direction OUTPUT))
+          (port usrstdby
+            (direction INPUT))
+          (port (array (rename data_n "data_n(1:0)") 2)
+            (direction INOUT))
+          (port (array (rename data_p "data_p(1:0)") 2)
+            (direction INOUT))
+          (port (array (rename q "q(31:0)") 32)
+            (direction OUTPUT)))
+        (property NGD_DRC_MASK (integer 1))
+        (contents
+          (instance OR2_t3
+            (viewRef view1 
+              (cellRef OR2)))
+          (instance INV_2
+            (viewRef view1 
+              (cellRef INV)))
+          (instance AND2_t2
+            (viewRef view1 
+              (cellRef AND2)))
+          (instance INV_1
+            (viewRef view1 
+              (cellRef INV)))
+          (instance AND2_t1
+            (viewRef view1 
+              (cellRef AND2)))
+          (instance INV_0
+            (viewRef view1 
+              (cellRef INV)))
+          (instance AND2_t0
+            (viewRef view1 
+              (cellRef AND2)))
+          (instance scuba_vlo_inst
+            (viewRef view1 
+              (cellRef VLO)))
+          (instance scuba_vhi_inst
+            (viewRef view1 
+              (cellRef VHI)))
+          (instance Inst_MIPIDPHYA
+            (viewRef view1 
+              (cellRef MIPIDPHYA))
+            (property HS_16BIT_EN
+              (string "1"))
+            (property HSEL
+              (string "1"))
+            (property HS_MODE
+              (string "RX"))
+            (property DIR_PIN_DN1
+              (string "INPUT"))
+            (property DIR_PIN_DP1
+              (string "INPUT"))
+            (property DIR_PIN_CKN
+              (string "INPUT"))
+            (property DIR_PIN_CKP
+              (string "INPUT"))
+            (property FREQUENCY_PIN_HSBYTECLKD
+              (string "75.000000"))
+            (property CO
+              (string "0"))
+            (property CM
+              (string "0"))
+            (property CN
+              (string "0")))
+          (net clk_rxhsen_inv
+            (joined
+              (portRef A (instanceRef AND2_t2))
+              (portRef Z (instanceRef INV_2))))
+          (net d0_rxlpen_inv
+            (joined
+              (portRef B (instanceRef AND2_t0))
+              (portRef Z (instanceRef INV_0))))
+          (net d0_rxhsen_inv
+            (joined
+              (portRef A (instanceRef AND2_t0))
+              (portRef Z (instanceRef INV_1))
+              (portRef A (instanceRef AND2_t1))))
+          (net stop
+            (joined))
+          (net d0txlpen
+            (joined
+              (portRef D0TXLPEN (instanceRef Inst_MIPIDPHYA))
+              (portRef Z (instanceRef AND2_t0))))
+          (net d0_olsn
+            (joined
+              (portRef D0DCDN (instanceRef Inst_MIPIDPHYA))
+              (portRef B (instanceRef OR2_t3))))
+          (net d0_olsp
+            (joined
+              (portRef D0DCDP (instanceRef Inst_MIPIDPHYA))
+              (portRef A (instanceRef OR2_t3))))
+          (net d0rxlpen
+            (joined
+              (portRef D0RXLPEN (instanceRef Inst_MIPIDPHYA))
+              (portRef Z (instanceRef AND2_t1))
+              (portRef D1RXLPEN (instanceRef Inst_MIPIDPHYA))))
+          (net scuba_vlo
+            (joined
+              (portRef Z (instanceRef scuba_vlo_inst))
+              (portRef D3HSSEREN (instanceRef Inst_MIPIDPHYA))
+              (portRef D3HSTXDATA0 (instanceRef Inst_MIPIDPHYA))
+              (portRef D3HSTXDATA1 (instanceRef Inst_MIPIDPHYA))
+              (portRef D3HSTXDATA2 (instanceRef Inst_MIPIDPHYA))
+              (portRef D3HSTXDATA3 (instanceRef Inst_MIPIDPHYA))
+              (portRef D3HSTXDATA4 (instanceRef Inst_MIPIDPHYA))
+              (portRef D3HSTXDATA5 (instanceRef Inst_MIPIDPHYA))
+              (portRef D3HSTXDATA6 (instanceRef Inst_MIPIDPHYA))
+              (portRef D3HSTXDATA7 (instanceRef Inst_MIPIDPHYA))
+              (portRef D3HSTXDATA8 (instanceRef Inst_MIPIDPHYA))
+              (portRef D3HSTXDATA9 (instanceRef Inst_MIPIDPHYA))
+              (portRef D3HSTXDATA10 (instanceRef Inst_MIPIDPHYA))
+              (portRef D3HSTXDATA11 (instanceRef Inst_MIPIDPHYA))
+              (portRef D3HSTXDATA12 (instanceRef Inst_MIPIDPHYA))
+              (portRef D3HSTXDATA13 (instanceRef Inst_MIPIDPHYA))
+              (portRef D3HSTXDATA14 (instanceRef Inst_MIPIDPHYA))
+              (portRef D3HSTXDATA15 (instanceRef Inst_MIPIDPHYA))
+              (portRef D3TXHSEN (instanceRef Inst_MIPIDPHYA))
+              (portRef D3HSDESEREN (instanceRef Inst_MIPIDPHYA))
+              (portRef D3RXHSEN (instanceRef Inst_MIPIDPHYA))
+              (portRef D3DTXLPN (instanceRef Inst_MIPIDPHYA))
+              (portRef D3TXLPEN (instanceRef Inst_MIPIDPHYA))
+              (portRef D3DTXLPP (instanceRef Inst_MIPIDPHYA))
+              (portRef D3CDEN (instanceRef Inst_MIPIDPHYA))
+              (portRef D3RXLPEN (instanceRef Inst_MIPIDPHYA))
+              (portRef D2HSSEREN (instanceRef Inst_MIPIDPHYA))
+              (portRef D2HSTXDATA0 (instanceRef Inst_MIPIDPHYA))
+              (portRef D2HSTXDATA1 (instanceRef Inst_MIPIDPHYA))
+              (portRef D2HSTXDATA2 (instanceRef Inst_MIPIDPHYA))
+              (portRef D2HSTXDATA3 (instanceRef Inst_MIPIDPHYA))
+              (portRef D2HSTXDATA4 (instanceRef Inst_MIPIDPHYA))
+              (portRef D2HSTXDATA5 (instanceRef Inst_MIPIDPHYA))
+              (portRef D2HSTXDATA6 (instanceRef Inst_MIPIDPHYA))
+              (portRef D2HSTXDATA7 (instanceRef Inst_MIPIDPHYA))
+              (portRef D2HSTXDATA8 (instanceRef Inst_MIPIDPHYA))
+              (portRef D2HSTXDATA9 (instanceRef Inst_MIPIDPHYA))
+              (portRef D2HSTXDATA10 (instanceRef Inst_MIPIDPHYA))
+              (portRef D2HSTXDATA11 (instanceRef Inst_MIPIDPHYA))
+              (portRef D2HSTXDATA12 (instanceRef Inst_MIPIDPHYA))
+              (portRef D2HSTXDATA13 (instanceRef Inst_MIPIDPHYA))
+              (portRef D2HSTXDATA14 (instanceRef Inst_MIPIDPHYA))
+              (portRef D2HSTXDATA15 (instanceRef Inst_MIPIDPHYA))
+              (portRef D2TXHSEN (instanceRef Inst_MIPIDPHYA))
+              (portRef D2HSDESEREN (instanceRef Inst_MIPIDPHYA))
+              (portRef D2RXHSEN (instanceRef Inst_MIPIDPHYA))
+              (portRef D2DTXLPN (instanceRef Inst_MIPIDPHYA))
+              (portRef D2TXLPEN (instanceRef Inst_MIPIDPHYA))
+              (portRef D2DTXLPP (instanceRef Inst_MIPIDPHYA))
+              (portRef D2CDEN (instanceRef Inst_MIPIDPHYA))
+              (portRef D2RXLPEN (instanceRef Inst_MIPIDPHYA))
+              (portRef D1HSSEREN (instanceRef Inst_MIPIDPHYA))
+              (portRef D1HSTXDATA0 (instanceRef Inst_MIPIDPHYA))
+              (portRef D1HSTXDATA1 (instanceRef Inst_MIPIDPHYA))
+              (portRef D1HSTXDATA2 (instanceRef Inst_MIPIDPHYA))
+              (portRef D1HSTXDATA3 (instanceRef Inst_MIPIDPHYA))
+              (portRef D1HSTXDATA4 (instanceRef Inst_MIPIDPHYA))
+              (portRef D1HSTXDATA5 (instanceRef Inst_MIPIDPHYA))
+              (portRef D1HSTXDATA6 (instanceRef Inst_MIPIDPHYA))
+              (portRef D1HSTXDATA7 (instanceRef Inst_MIPIDPHYA))
+              (portRef D1HSTXDATA8 (instanceRef Inst_MIPIDPHYA))
+              (portRef D1HSTXDATA9 (instanceRef Inst_MIPIDPHYA))
+              (portRef D1HSTXDATA10 (instanceRef Inst_MIPIDPHYA))
+              (portRef D1HSTXDATA11 (instanceRef Inst_MIPIDPHYA))
+              (portRef D1HSTXDATA12 (instanceRef Inst_MIPIDPHYA))
+              (portRef D1HSTXDATA13 (instanceRef Inst_MIPIDPHYA))
+              (portRef D1HSTXDATA14 (instanceRef Inst_MIPIDPHYA))
+              (portRef D1HSTXDATA15 (instanceRef Inst_MIPIDPHYA))
+              (portRef D1TXHSEN (instanceRef Inst_MIPIDPHYA))
+              (portRef D1DTXLPN (instanceRef Inst_MIPIDPHYA))
+              (portRef D1TXLPEN (instanceRef Inst_MIPIDPHYA))
+              (portRef D1DTXLPP (instanceRef Inst_MIPIDPHYA))
+              (portRef D1CDEN (instanceRef Inst_MIPIDPHYA))
+              (portRef D0HSSEREN (instanceRef Inst_MIPIDPHYA))
+              (portRef D0HSTXDATA0 (instanceRef Inst_MIPIDPHYA))
+              (portRef D0HSTXDATA1 (instanceRef Inst_MIPIDPHYA))
+              (portRef D0HSTXDATA2 (instanceRef Inst_MIPIDPHYA))
+              (portRef D0HSTXDATA3 (instanceRef Inst_MIPIDPHYA))
+              (portRef D0HSTXDATA4 (instanceRef Inst_MIPIDPHYA))
+              (portRef D0HSTXDATA5 (instanceRef Inst_MIPIDPHYA))
+              (portRef D0HSTXDATA6 (instanceRef Inst_MIPIDPHYA))
+              (portRef D0HSTXDATA7 (instanceRef Inst_MIPIDPHYA))
+              (portRef D0HSTXDATA8 (instanceRef Inst_MIPIDPHYA))
+              (portRef D0HSTXDATA9 (instanceRef Inst_MIPIDPHYA))
+              (portRef D0HSTXDATA10 (instanceRef Inst_MIPIDPHYA))
+              (portRef D0HSTXDATA11 (instanceRef Inst_MIPIDPHYA))
+              (portRef D0HSTXDATA12 (instanceRef Inst_MIPIDPHYA))
+              (portRef D0HSTXDATA13 (instanceRef Inst_MIPIDPHYA))
+              (portRef D0HSTXDATA14 (instanceRef Inst_MIPIDPHYA))
+              (portRef D0HSTXDATA15 (instanceRef Inst_MIPIDPHYA))
+              (portRef D0TXHSEN (instanceRef Inst_MIPIDPHYA))
+              (portRef CLKREF (instanceRef Inst_MIPIDPHYA))
+              (portRef PDCKG (instanceRef Inst_MIPIDPHYA))
+              (portRef PDBIAS (instanceRef Inst_MIPIDPHYA))
+              (portRef LBEN (instanceRef Inst_MIPIDPHYA))
+              (portRef CLKTXHSGATE (instanceRef Inst_MIPIDPHYA))
+              (portRef CLKTXHSEN (instanceRef Inst_MIPIDPHYA))
+              (portRef CLKDTXLPN (instanceRef Inst_MIPIDPHYA))
+              (portRef CLKTXLPEN (instanceRef Inst_MIPIDPHYA))
+              (portRef CLKDTXLPP (instanceRef Inst_MIPIDPHYA))))
+          (net scuba_vhi
+            (joined
+              (portRef Z (instanceRef scuba_vhi_inst))
+              (portRef D3TXHSPD (instanceRef Inst_MIPIDPHYA))
+              (portRef D2TXHSPD (instanceRef Inst_MIPIDPHYA))
+              (portRef D1TXHSPD (instanceRef Inst_MIPIDPHYA))
+              (portRef D0TXHSPD (instanceRef Inst_MIPIDPHYA))
+              (portRef D0CDEN (instanceRef Inst_MIPIDPHYA))
+              (portRef PDPLL (instanceRef Inst_MIPIDPHYA))
+              (portRef CLKTXHSPD (instanceRef Inst_MIPIDPHYA))
+              (portRef CLKCDEN (instanceRef Inst_MIPIDPHYA))))
+          (net clkrxlpen
+            (joined
+              (portRef CLKRXLPEN (instanceRef Inst_MIPIDPHYA))
+              (portRef Z (instanceRef AND2_t2))))
+          (net q31
+            (joined
+              (portRef (member q 0))
+              (portRef D1HSRXDATA15 (instanceRef Inst_MIPIDPHYA))))
+          (net q30
+            (joined
+              (portRef (member q 1))
+              (portRef D0HSRXDATA15 (instanceRef Inst_MIPIDPHYA))))
+          (net q29
+            (joined
+              (portRef (member q 2))
+              (portRef D1HSRXDATA14 (instanceRef Inst_MIPIDPHYA))))
+          (net q28
+            (joined
+              (portRef (member q 3))
+              (portRef D0HSRXDATA14 (instanceRef Inst_MIPIDPHYA))))
+          (net q27
+            (joined
+              (portRef (member q 4))
+              (portRef D1HSRXDATA13 (instanceRef Inst_MIPIDPHYA))))
+          (net q26
+            (joined
+              (portRef (member q 5))
+              (portRef D0HSRXDATA13 (instanceRef Inst_MIPIDPHYA))))
+          (net q25
+            (joined
+              (portRef (member q 6))
+              (portRef D1HSRXDATA12 (instanceRef Inst_MIPIDPHYA))))
+          (net q24
+            (joined
+              (portRef (member q 7))
+              (portRef D0HSRXDATA12 (instanceRef Inst_MIPIDPHYA))))
+          (net q23
+            (joined
+              (portRef (member q 8))
+              (portRef D1HSRXDATA11 (instanceRef Inst_MIPIDPHYA))))
+          (net q22
+            (joined
+              (portRef (member q 9))
+              (portRef D0HSRXDATA11 (instanceRef Inst_MIPIDPHYA))))
+          (net q21
+            (joined
+              (portRef (member q 10))
+              (portRef D1HSRXDATA10 (instanceRef Inst_MIPIDPHYA))))
+          (net q20
+            (joined
+              (portRef (member q 11))
+              (portRef D0HSRXDATA10 (instanceRef Inst_MIPIDPHYA))))
+          (net q19
+            (joined
+              (portRef (member q 12))
+              (portRef D1HSRXDATA9 (instanceRef Inst_MIPIDPHYA))))
+          (net q18
+            (joined
+              (portRef (member q 13))
+              (portRef D0HSRXDATA9 (instanceRef Inst_MIPIDPHYA))))
+          (net q17
+            (joined
+              (portRef (member q 14))
+              (portRef D1HSRXDATA8 (instanceRef Inst_MIPIDPHYA))))
+          (net q16
+            (joined
+              (portRef (member q 15))
+              (portRef D0HSRXDATA8 (instanceRef Inst_MIPIDPHYA))))
+          (net q15
+            (joined
+              (portRef (member q 16))
+              (portRef D1HSRXDATA7 (instanceRef Inst_MIPIDPHYA))))
+          (net q14
+            (joined
+              (portRef (member q 17))
+              (portRef D0HSRXDATA7 (instanceRef Inst_MIPIDPHYA))))
+          (net q13
+            (joined
+              (portRef (member q 18))
+              (portRef D1HSRXDATA6 (instanceRef Inst_MIPIDPHYA))))
+          (net q12
+            (joined
+              (portRef (member q 19))
+              (portRef D0HSRXDATA6 (instanceRef Inst_MIPIDPHYA))))
+          (net q11
+            (joined
+              (portRef (member q 20))
+              (portRef D1HSRXDATA5 (instanceRef Inst_MIPIDPHYA))))
+          (net q10
+            (joined
+              (portRef (member q 21))
+              (portRef D0HSRXDATA5 (instanceRef Inst_MIPIDPHYA))))
+          (net q9
+            (joined
+              (portRef (member q 22))
+              (portRef D1HSRXDATA4 (instanceRef Inst_MIPIDPHYA))))
+          (net q8
+            (joined
+              (portRef (member q 23))
+              (portRef D0HSRXDATA4 (instanceRef Inst_MIPIDPHYA))))
+          (net q7
+            (joined
+              (portRef (member q 24))
+              (portRef D1HSRXDATA3 (instanceRef Inst_MIPIDPHYA))))
+          (net q6
+            (joined
+              (portRef (member q 25))
+              (portRef D0HSRXDATA3 (instanceRef Inst_MIPIDPHYA))))
+          (net q5
+            (joined
+              (portRef (member q 26))
+              (portRef D1HSRXDATA2 (instanceRef Inst_MIPIDPHYA))))
+          (net q4
+            (joined
+              (portRef (member q 27))
+              (portRef D0HSRXDATA2 (instanceRef Inst_MIPIDPHYA))))
+          (net q3
+            (joined
+              (portRef (member q 28))
+              (portRef D1HSRXDATA1 (instanceRef Inst_MIPIDPHYA))))
+          (net q2
+            (joined
+              (portRef (member q 29))
+              (portRef D0HSRXDATA1 (instanceRef Inst_MIPIDPHYA))))
+          (net q1
+            (joined
+              (portRef (member q 30))
+              (portRef D1HSRXDATA0 (instanceRef Inst_MIPIDPHYA))))
+          (net q0
+            (joined
+              (portRef (member q 31))
+              (portRef D0HSRXDATA0 (instanceRef Inst_MIPIDPHYA))))
+          (net data_p1
+            (joined
+              (portRef (member data_p 0))
+              (portRef DP1 (instanceRef Inst_MIPIDPHYA))))
+          (net data_p0
+            (joined
+              (portRef (member data_p 1))
+              (portRef DP0 (instanceRef Inst_MIPIDPHYA))))
+          (net data_n1
+            (joined
+              (portRef (member data_n 0))
+              (portRef DN1 (instanceRef Inst_MIPIDPHYA))))
+          (net data_n0
+            (joined
+              (portRef (member data_n 1))
+              (portRef DN0 (instanceRef Inst_MIPIDPHYA))))
+          (net usrstdby
+            (joined
+              (portRef usrstdby)
+              (portRef PDDPHY (instanceRef Inst_MIPIDPHYA))))
+          (net rxhsbyteclk
+            (joined
+              (portRef rxhsbyteclk)
+              (portRef HSBYTECLKD (instanceRef Inst_MIPIDPHYA))))
+          (net d0_txlpp
+            (joined
+              (portRef d0_txlpp)
+              (portRef D0DTXLPP (instanceRef Inst_MIPIDPHYA))))
+          (net d0_txlpn
+            (joined
+              (portRef d0_txlpn)
+              (portRef D0DTXLPN (instanceRef Inst_MIPIDPHYA))))
+          (net d0_rxlpp
+            (joined
+              (portRef d0_rxlpp)
+              (portRef D0DRXLPP (instanceRef Inst_MIPIDPHYA))))
+          (net d0_rxlpn
+            (joined
+              (portRef d0_rxlpn)
+              (portRef D0DRXLPN (instanceRef Inst_MIPIDPHYA))))
+          (net d0_rxlpen
+            (joined
+              (portRef d0_rxlpen)
+              (portRef B (instanceRef AND2_t1))
+              (portRef A (instanceRef INV_0))))
+          (net d0_rxhsen
+            (joined
+              (portRef d0_rxhsen)
+              (portRef A (instanceRef INV_1))
+              (portRef D1RXHSEN (instanceRef Inst_MIPIDPHYA))
+              (portRef D0RXHSEN (instanceRef Inst_MIPIDPHYA))))
+          (net d0_hsdeseren
+            (joined
+              (portRef d0_hsdeseren)
+              (portRef D1HSDESEREN (instanceRef Inst_MIPIDPHYA))
+              (portRef D0HSDESEREN (instanceRef Inst_MIPIDPHYA))))
+          (net d0_cd
+            (joined
+              (portRef d0_cd)
+              (portRef Z (instanceRef OR2_t3))))
+          (net clkhsbyte
+            (joined
+              (portRef clkhsbyte)
+              (portRef CLKHSBYTE (instanceRef Inst_MIPIDPHYA))))
+          (net clk_rxlpp
+            (joined
+              (portRef clk_rxlpp)
+              (portRef CLKDRXLPP (instanceRef Inst_MIPIDPHYA))))
+          (net clk_rxlpn
+            (joined
+              (portRef clk_rxlpn)
+              (portRef CLKDRXLPN (instanceRef Inst_MIPIDPHYA))))
+          (net clk_rxlpen
+            (joined
+              (portRef clk_rxlpen)
+              (portRef B (instanceRef AND2_t2))))
+          (net clk_rxhsen
+            (joined
+              (portRef clk_rxhsen)
+              (portRef A (instanceRef INV_2))
+              (portRef CLKRXHSEN (instanceRef Inst_MIPIDPHYA))))
+          (net clk_p
+            (joined
+              (portRef clk_p)
+              (portRef CKP (instanceRef Inst_MIPIDPHYA))))
+          (net clk_n
+            (joined
+              (portRef clk_n)
+              (portRef CKN (instanceRef Inst_MIPIDPHYA))))
+          (net clk_cd
+            (joined
+              (portRef clk_cd)
+              (portRef CLKDCDN (instanceRef Inst_MIPIDPHYA))))))))
+  (design mipi_rx
+    (cellRef mipi_rx
+      (libraryRef ORCLIB)))
+)

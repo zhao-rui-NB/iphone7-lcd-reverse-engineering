@@ -1,0 +1,6 @@
+#Start recording tcl command: 7/16/2025 10:50:03
+#Project Location: C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3; Project name: iphone7_mipi_v3
+prj_project new -name "iphone7_mipi_v3" -impl "impl1" -dev LIF-MD6000-6KMG80I -synthesis "lse"
+prj_project save
+sbp_design new -dsgn "mipi" -path "C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi" -device "LIF-MD6000-6KMG80I"
+#Stop recording: 7/16/2025 10:53:31

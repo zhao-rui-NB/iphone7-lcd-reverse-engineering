@@ -1,0 +1,95 @@
+<Project ModBy="Analyzer" Name="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvs" Date="2025-06-29">
+ <Core Name="top_LA0">
+  <Setting>
+   <Capture SamplesPerTrig="1024" NumTrigsCap="1"/>
+   <Event EventCnt="0" CntEnableRun="0"/>
+   <TrigSetting PreTrgSamples="" AND_ALL="0" PostTrgSamples="" TURadix="0"/>
+  </Setting>
+  <Dataset Name="Base">
+   <Trace>
+    <Sig Name="hs_burst_flag"/>
+    <Bus Name="q" Radix="0">
+     <Sig Name="q:0"/>
+     <Sig Name="q:1"/>
+     <Sig Name="q:2"/>
+     <Sig Name="q:3"/>
+     <Sig Name="q:4"/>
+     <Sig Name="q:5"/>
+     <Sig Name="q:6"/>
+     <Sig Name="q:7"/>
+     <Sig Name="q:8"/>
+     <Sig Name="q:9"/>
+     <Sig Name="q:10"/>
+     <Sig Name="q:11"/>
+     <Sig Name="q:12"/>
+     <Sig Name="q:13"/>
+     <Sig Name="q:14"/>
+     <Sig Name="q:15"/>
+     <Sig Name="q:16"/>
+     <Sig Name="q:17"/>
+     <Sig Name="q:18"/>
+     <Sig Name="q:19"/>
+     <Sig Name="q:20"/>
+     <Sig Name="q:21"/>
+     <Sig Name="q:22"/>
+     <Sig Name="q:23"/>
+     <Sig Name="q:24"/>
+     <Sig Name="q:25"/>
+     <Sig Name="q:26"/>
+     <Sig Name="q:27"/>
+     <Sig Name="q:28"/>
+     <Sig Name="q:29"/>
+     <Sig Name="q:30"/>
+     <Sig Name="q:31"/>
+    </Bus>
+    <Sig Name="dphy_raw_fifo_inst/WrEn"/>
+    <Bus Name="dphy_raw_fifo_inst/Data" Radix="0">
+     <Sig Name="dphy_raw_fifo_inst/Data:0"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:1"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:2"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:3"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:4"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:5"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:6"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:7"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:8"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:9"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:10"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:11"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:12"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:13"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:14"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:15"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:16"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:17"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:18"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:19"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:20"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:21"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:22"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:23"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:24"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:25"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:26"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:27"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:28"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:29"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:30"/>
+     <Sig Name="dphy_raw_fifo_inst/Data:31"/>
+    </Bus>
+    <Bus Name="dphy_raw_fifo_inst/WCNT" Radix="0">
+     <Sig Name="dphy_raw_fifo_inst/WCNT:0"/>
+     <Sig Name="dphy_raw_fifo_inst/WCNT:1"/>
+     <Sig Name="dphy_raw_fifo_inst/WCNT:2"/>
+     <Sig Name="dphy_raw_fifo_inst/WCNT:3"/>
+     <Sig Name="dphy_raw_fifo_inst/WCNT:4"/>
+     <Sig Name="dphy_raw_fifo_inst/WCNT:5"/>
+    </Bus>
+   </Trace>
+   <Trigger>
+    <TU Operator="6" Name="TU1" ID="1" Value="0" Radix="0"/>
+    <TE Enable="1" Expression="TU1" Name="TE1" ID="1"/>
+   </Trigger>
+  </Dataset>
+ </Core>
+</Project>

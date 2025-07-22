@@ -1,0 +1,1116 @@
+<!DOCTYPE mipi>
+<lattice:project>
+    <spirit:component>
+        <spirit:vendor>LATTICE</spirit:vendor>
+        <spirit:library>LOCAL</spirit:library>
+        <spirit:name>mipi</spirit:name>
+        <spirit:version>1.0</spirit:version>
+        <spirit:fileSets>
+            <spirit:fileset>
+                <spirit:name>Diamond_Synthesis</spirit:name>
+                <spirit:group>synthesis</spirit:group>
+                <spirit:file>
+                    <spirit:name>./mipi.v</spirit:name>
+                    <spirit:fileType>verilogSource</spirit:fileType>
+                </spirit:file>
+            </spirit:fileset>
+            <spirit:fileset>
+                <spirit:name>Diamond_Simulation</spirit:name>
+                <spirit:group>simulation</spirit:group>
+                <spirit:file>
+                    <spirit:name>./mipi.v</spirit:name>
+                    <spirit:fileType>verilogSource</spirit:fileType>
+                </spirit:file>
+            </spirit:fileset>
+        </spirit:fileSets>
+        <spirit:componentGenerators/>
+        <spirit:model>
+            <spirit:views/>
+            <spirit:ports>
+                <spirit:port>
+                    <spirit:name>mipi_rx_clk_cd</spirit:name>
+                    <spirit:displayName>mipi_rx_clk_cd</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mipi_rx.clk_cd</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mipi_rx_clk_n</spirit:name>
+                    <spirit:displayName>mipi_rx_clk_n</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>inout</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mipi_rx.clk_n</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mipi_rx_clk_p</spirit:name>
+                    <spirit:displayName>mipi_rx_clk_p</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>inout</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mipi_rx.clk_p</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mipi_rx_clk_rxhsen</spirit:name>
+                    <spirit:displayName>mipi_rx_clk_rxhsen</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mipi_rx.clk_rxhsen</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mipi_rx_clk_rxlpen</spirit:name>
+                    <spirit:displayName>mipi_rx_clk_rxlpen</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mipi_rx.clk_rxlpen</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mipi_rx_clk_rxlpn</spirit:name>
+                    <spirit:displayName>mipi_rx_clk_rxlpn</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mipi_rx.clk_rxlpn</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mipi_rx_clk_rxlpp</spirit:name>
+                    <spirit:displayName>mipi_rx_clk_rxlpp</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mipi_rx.clk_rxlpp</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mipi_rx_clkhsbyte</spirit:name>
+                    <spirit:displayName>mipi_rx_clkhsbyte</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mipi_rx.clkhsbyte</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mipi_rx_d0_cd</spirit:name>
+                    <spirit:displayName>mipi_rx_d0_cd</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mipi_rx.d0_cd</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mipi_rx_d0_hsdeseren</spirit:name>
+                    <spirit:displayName>mipi_rx_d0_hsdeseren</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mipi_rx.d0_hsdeseren</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mipi_rx_d0_rxhsen</spirit:name>
+                    <spirit:displayName>mipi_rx_d0_rxhsen</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mipi_rx.d0_rxhsen</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mipi_rx_d0_rxlpen</spirit:name>
+                    <spirit:displayName>mipi_rx_d0_rxlpen</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mipi_rx.d0_rxlpen</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mipi_rx_d0_rxlpn</spirit:name>
+                    <spirit:displayName>mipi_rx_d0_rxlpn</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mipi_rx.d0_rxlpn</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mipi_rx_d0_rxlpp</spirit:name>
+                    <spirit:displayName>mipi_rx_d0_rxlpp</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mipi_rx.d0_rxlpp</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mipi_rx_d0_txlpn</spirit:name>
+                    <spirit:displayName>mipi_rx_d0_txlpn</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mipi_rx.d0_txlpn</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mipi_rx_d0_txlpp</spirit:name>
+                    <spirit:displayName>mipi_rx_d0_txlpp</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mipi_rx.d0_txlpp</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mipi_rx_rxhsbyteclk</spirit:name>
+                    <spirit:displayName>mipi_rx_rxhsbyteclk</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mipi_rx.rxhsbyteclk</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mipi_rx_usrstdby</spirit:name>
+                    <spirit:displayName>mipi_rx_usrstdby</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mipi_rx.usrstdby</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mipi_rx_data_n</spirit:name>
+                    <spirit:displayName>mipi_rx_data_n</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>inout</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>1</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mipi_rx.data_n</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mipi_rx_data_p</spirit:name>
+                    <spirit:displayName>mipi_rx_data_p</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>inout</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>1</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mipi_rx.data_p</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mipi_rx_q</spirit:name>
+                    <spirit:displayName>mipi_rx_q</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>31</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mipi_rx.q</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+            </spirit:ports>
+        </spirit:model>
+        <spirit:vendorExtensions>
+            <lattice:device>LIF-MD6000-6KMG80I</lattice:device>
+            <lattice:synthesis>lse</lattice:synthesis>
+            <lattice:date>2025-06-28.17:34:48</lattice:date>
+            <lattice:modified>2025-06-28.17:36:57</lattice:modified>
+            <lattice:diamond>3.12.0.240.2</lattice:diamond>
+            <lattice:attributes>
+                <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
+                <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeConfig">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeConnect">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeDevice">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeLocate">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangePack">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangePart">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeSynthesis">false</lattice:attribute>
+                <lattice:attribute lattice:name="Migrate">false</lattice:attribute>
+                <lattice:attribute lattice:name="RemovedComponent">false</lattice:attribute>
+            </lattice:attributes>
+            <lattice:elements/>
+            <lattice:lpc/>
+            <lattice:groups/>
+        </spirit:vendorExtensions>
+    </spirit:component>
+    <spirit:design>
+        <spirit:vendor>LATTICE</spirit:vendor>
+        <spirit:library>LOCAL</spirit:library>
+        <spirit:name>mipi</spirit:name>
+        <spirit:version>1.0</spirit:version>
+        <spirit:componentInstances>
+            <spirit:componentInstance>
+                <spirit:instanceName>mipi_rx</spirit:instanceName>
+                <spirit:componentRef>
+                    <spirit:vendor>Lattice Semiconductor Corporation</spirit:vendor>
+                    <spirit:library>LEGACY</spirit:library>
+                    <spirit:name>MIPI_DPHY</spirit:name>
+                    <spirit:version>1.1</spirit:version>
+                    <spirit:fileSets>
+                        <spirit:fileset>
+                            <spirit:name>Diamond_Simulation</spirit:name>
+                            <spirit:group>simulation</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./mipi_rx/mipi_rx.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                        </spirit:fileset>
+                        <spirit:fileset>
+                            <spirit:name>Diamond_Synthesis</spirit:name>
+                            <spirit:group>synthesis</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./mipi_rx/mipi_rx.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                        </spirit:fileset>
+                    </spirit:fileSets>
+                    <spirit:componentGenerators>
+                        <spirit:componentGenerator spirit:hidden="true" spirit:scope="instance">
+                            <spirit:name>Configuration</spirit:name>
+                            <spirit:apiType>none</spirit:apiType>
+                            <spirit:generatorExe>${sbp_path}/${instance}/generate_core.tcl</spirit:generatorExe>
+                            <spirit:group>CONFIG</spirit:group>
+                        </spirit:componentGenerator>
+                        <spirit:componentGenerator spirit:hidden="true" spirit:scope="instance">
+                            <spirit:name>CreateNGD</spirit:name>
+                            <spirit:apiType>none</spirit:apiType>
+                            <spirit:generatorExe>${sbp_path}/${instance}/generate_ngd.tcl</spirit:generatorExe>
+                            <spirit:group>CONFIG</spirit:group>
+                        </spirit:componentGenerator>
+                        <spirit:componentGenerator spirit:hidden="true" spirit:scope="instance">
+                            <spirit:name>Generation</spirit:name>
+                            <spirit:apiType>none</spirit:apiType>
+                            <spirit:generatorExe>${sbp_path}/${instance}/generate_core.tcl</spirit:generatorExe>
+                            <spirit:group>GENERATE</spirit:group>
+                        </spirit:componentGenerator>
+                    </spirit:componentGenerators>
+                    <spirit:model>
+                        <spirit:views/>
+                        <spirit:ports>
+                            <spirit:port>
+                                <spirit:name>clk_cd</spirit:name>
+                                <spirit:displayName>clk_cd</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>clk_n</spirit:name>
+                                <spirit:displayName>clk_n</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>inout</spirit:direction>
+                                </spirit:wire>
+                                <spirit:vendorExtensions>
+                                    <lattice:attributes>
+                                        <lattice:attribute lattice:name="PadPin">true</lattice:attribute>
+                                    </lattice:attributes>
+                                </spirit:vendorExtensions>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>clk_p</spirit:name>
+                                <spirit:displayName>clk_p</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>inout</spirit:direction>
+                                </spirit:wire>
+                                <spirit:vendorExtensions>
+                                    <lattice:attributes>
+                                        <lattice:attribute lattice:name="PadPin">true</lattice:attribute>
+                                    </lattice:attributes>
+                                </spirit:vendorExtensions>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>clk_rxhsen</spirit:name>
+                                <spirit:displayName>clk_rxhsen</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>clk_rxlpen</spirit:name>
+                                <spirit:displayName>clk_rxlpen</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>clk_rxlpn</spirit:name>
+                                <spirit:displayName>clk_rxlpn</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>clk_rxlpp</spirit:name>
+                                <spirit:displayName>clk_rxlpp</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>clkhsbyte</spirit:name>
+                                <spirit:displayName>clkhsbyte</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>d0_cd</spirit:name>
+                                <spirit:displayName>d0_cd</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>d0_hsdeseren</spirit:name>
+                                <spirit:displayName>d0_hsdeseren</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>d0_rxhsen</spirit:name>
+                                <spirit:displayName>d0_rxhsen</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>d0_rxlpen</spirit:name>
+                                <spirit:displayName>d0_rxlpen</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>d0_rxlpn</spirit:name>
+                                <spirit:displayName>d0_rxlpn</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>d0_rxlpp</spirit:name>
+                                <spirit:displayName>d0_rxlpp</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>d0_txlpn</spirit:name>
+                                <spirit:displayName>d0_txlpn</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>d0_txlpp</spirit:name>
+                                <spirit:displayName>d0_txlpp</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>rxhsbyteclk</spirit:name>
+                                <spirit:displayName>rxhsbyteclk</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>usrstdby</spirit:name>
+                                <spirit:displayName>usrstdby</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>data_n</spirit:name>
+                                <spirit:displayName>data_n</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>inout</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>1</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                                <spirit:vendorExtensions>
+                                    <lattice:attributes>
+                                        <lattice:attribute lattice:name="PadPin">true</lattice:attribute>
+                                    </lattice:attributes>
+                                </spirit:vendorExtensions>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>data_p</spirit:name>
+                                <spirit:displayName>data_p</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>inout</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>1</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                                <spirit:vendorExtensions>
+                                    <lattice:attributes>
+                                        <lattice:attribute lattice:name="PadPin">true</lattice:attribute>
+                                    </lattice:attributes>
+                                </spirit:vendorExtensions>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>q</spirit:name>
+                                <spirit:displayName>q</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>31</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                            </spirit:port>
+                        </spirit:ports>
+                    </spirit:model>
+                    <spirit:vendorExtensions>
+                        <lattice:synthesis>lse</lattice:synthesis>
+                        <lattice:modified>2025-06-28.17:36:57</lattice:modified>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
+                            <lattice:attribute lattice:name="BBox">false</lattice:attribute>
+                            <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeConfig">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeConnect">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeDevice">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeLocate">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangePack">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangePart">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeSynthesis">false</lattice:attribute>
+                            <lattice:attribute lattice:name="CoreType">LPM</lattice:attribute>
+                            <lattice:attribute lattice:name="DCU_RXREFCLK">PRIMARY</lattice:attribute>
+                            <lattice:attribute lattice:name="DCU_TXREFCLK">PRIMARY</lattice:attribute>
+                            <lattice:attribute lattice:name="Migrate">false</lattice:attribute>
+                            <lattice:attribute lattice:name="RemovedComponent">false</lattice:attribute>
+                        </lattice:attributes>
+                        <lattice:elements/>
+                        <lattice:lpc>
+                            <lattice:lpcsection lattice:name="Device"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Family</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">lifmd</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>OperatingCondition</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">IND</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Package</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">CKFBGA80</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>PartName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LIF-MD6000-6KMG80I</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>PartType</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LIF-MD6000</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>SpeedGrade</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">6</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Status</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">S</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcsection lattice:name="IP"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">MIPI_DPHY</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreRevision</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1.1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreStatus</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Demo</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreType</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LPM</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Date</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">06/28/2025</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>ModuleName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">mipi_rx</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>ParameterFileVersion</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1.0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>SourceFormat</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">verilog</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Time</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">17:35:28</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>VendorName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Lattice Semiconductor Corporation</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcsection lattice:name="Parameters"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>ClkIBuf</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LVDS</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Destination</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Synplicity</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>EDIF</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Expression</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">BusA(0 to 7)</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>IO</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Order</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Big Endian [MSB:LSB]</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Pll_Freq</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant"></lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>VHDL</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Verilog</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Width</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">2</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>cbIncludeStartUp</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>data_rate</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1200</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>dphy_module_type</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Hard MIPI DPHY</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>enClkIBuf</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>freq_in</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">600</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>gear</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1:16</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>mipi_app</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">DSI</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>mode</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Receive</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcsection lattice:name="Command"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>cmd_line</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">-w -n mipi_rx -lang verilog -synth lse -bus_exp 7 -bb -arch sn5w00 -type iol -io_type LVDS -mode MIPI -freq_in 600 -width 2 -app DSI_RX_H -gear 16</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                        </lattice:lpc>
+                        <lattice:groups/>
+                    </spirit:vendorExtensions>
+                </spirit:componentRef>
+            </spirit:componentInstance>
+        </spirit:componentInstances>
+        <spirit:adHocConnections>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_clk_cd</spirit:name>
+                <spirit:displayName>mipi_rx_clk_cd</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="clk_cd" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_clk_cd"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_clk_n</spirit:name>
+                <spirit:displayName>mipi_rx_clk_n</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="clk_n" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_clk_n"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_clk_p</spirit:name>
+                <spirit:displayName>mipi_rx_clk_p</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="clk_p" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_clk_p"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_clk_rxhsen</spirit:name>
+                <spirit:displayName>mipi_rx_clk_rxhsen</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="clk_rxhsen" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_clk_rxhsen"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_clk_rxlpen</spirit:name>
+                <spirit:displayName>mipi_rx_clk_rxlpen</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="clk_rxlpen" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_clk_rxlpen"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_clk_rxlpn</spirit:name>
+                <spirit:displayName>mipi_rx_clk_rxlpn</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="clk_rxlpn" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_clk_rxlpn"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_clk_rxlpp</spirit:name>
+                <spirit:displayName>mipi_rx_clk_rxlpp</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="clk_rxlpp" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_clk_rxlpp"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_clkhsbyte</spirit:name>
+                <spirit:displayName>mipi_rx_clkhsbyte</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="clkhsbyte" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_clkhsbyte"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_d0_cd</spirit:name>
+                <spirit:displayName>mipi_rx_d0_cd</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="d0_cd" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_d0_cd"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_d0_hsdeseren</spirit:name>
+                <spirit:displayName>mipi_rx_d0_hsdeseren</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="d0_hsdeseren" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_d0_hsdeseren"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_d0_rxhsen</spirit:name>
+                <spirit:displayName>mipi_rx_d0_rxhsen</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="d0_rxhsen" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_d0_rxhsen"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_d0_rxlpen</spirit:name>
+                <spirit:displayName>mipi_rx_d0_rxlpen</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="d0_rxlpen" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_d0_rxlpen"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_d0_rxlpn</spirit:name>
+                <spirit:displayName>mipi_rx_d0_rxlpn</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="d0_rxlpn" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_d0_rxlpn"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_d0_rxlpp</spirit:name>
+                <spirit:displayName>mipi_rx_d0_rxlpp</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="d0_rxlpp" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_d0_rxlpp"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_d0_txlpn</spirit:name>
+                <spirit:displayName>mipi_rx_d0_txlpn</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="d0_txlpn" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_d0_txlpn"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_d0_txlpp</spirit:name>
+                <spirit:displayName>mipi_rx_d0_txlpp</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="d0_txlpp" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_d0_txlpp"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_rxhsbyteclk</spirit:name>
+                <spirit:displayName>mipi_rx_rxhsbyteclk</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="rxhsbyteclk" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_rxhsbyteclk"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_usrstdby</spirit:name>
+                <spirit:displayName>mipi_rx_usrstdby</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="usrstdby" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_usrstdby"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_data_n</spirit:name>
+                <spirit:displayName>mipi_rx_data_n</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="data_n" spirit:componentRef="mipi_rx" spirit:left="1"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="mipi_rx_data_n" spirit:left="1"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_data_n[0]</spirit:name>
+                <spirit:displayName>mipi_rx_data_n[0]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="data_n[0]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_data_n[0]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_data_n[1]</spirit:name>
+                <spirit:displayName>mipi_rx_data_n[1]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="data_n[1]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_data_n[1]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_data_p</spirit:name>
+                <spirit:displayName>mipi_rx_data_p</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="data_p" spirit:componentRef="mipi_rx" spirit:left="1"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="mipi_rx_data_p" spirit:left="1"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_data_p[0]</spirit:name>
+                <spirit:displayName>mipi_rx_data_p[0]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="data_p[0]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_data_p[0]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_data_p[1]</spirit:name>
+                <spirit:displayName>mipi_rx_data_p[1]</spirit:displayName>
+                <spirit:vendorExtensions>
+                    <lattice:attributes>
+                        <lattice:attribute lattice:name="export">sys_yes</lattice:attribute>
+                    </lattice:attributes>
+                </spirit:vendorExtensions>
+                <spirit:internalPortReference spirit:portRef="data_p[1]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_data_p[1]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q</spirit:name>
+                <spirit:displayName>mipi_rx_q</spirit:displayName>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="q" spirit:componentRef="mipi_rx" spirit:left="31"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="mipi_rx_q" spirit:left="31"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[0]</spirit:name>
+                <spirit:displayName>mipi_rx_q[0]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[0]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[0]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[10]</spirit:name>
+                <spirit:displayName>mipi_rx_q[10]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[10]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[10]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[11]</spirit:name>
+                <spirit:displayName>mipi_rx_q[11]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[11]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[11]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[12]</spirit:name>
+                <spirit:displayName>mipi_rx_q[12]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[12]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[12]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[13]</spirit:name>
+                <spirit:displayName>mipi_rx_q[13]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[13]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[13]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[14]</spirit:name>
+                <spirit:displayName>mipi_rx_q[14]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[14]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[14]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[15]</spirit:name>
+                <spirit:displayName>mipi_rx_q[15]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[15]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[15]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[16]</spirit:name>
+                <spirit:displayName>mipi_rx_q[16]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[16]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[16]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[17]</spirit:name>
+                <spirit:displayName>mipi_rx_q[17]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[17]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[17]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[18]</spirit:name>
+                <spirit:displayName>mipi_rx_q[18]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[18]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[18]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[19]</spirit:name>
+                <spirit:displayName>mipi_rx_q[19]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[19]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[19]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[1]</spirit:name>
+                <spirit:displayName>mipi_rx_q[1]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[1]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[1]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[20]</spirit:name>
+                <spirit:displayName>mipi_rx_q[20]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[20]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[20]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[21]</spirit:name>
+                <spirit:displayName>mipi_rx_q[21]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[21]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[21]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[22]</spirit:name>
+                <spirit:displayName>mipi_rx_q[22]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[22]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[22]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[23]</spirit:name>
+                <spirit:displayName>mipi_rx_q[23]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[23]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[23]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[24]</spirit:name>
+                <spirit:displayName>mipi_rx_q[24]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[24]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[24]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[25]</spirit:name>
+                <spirit:displayName>mipi_rx_q[25]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[25]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[25]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[26]</spirit:name>
+                <spirit:displayName>mipi_rx_q[26]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[26]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[26]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[27]</spirit:name>
+                <spirit:displayName>mipi_rx_q[27]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[27]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[27]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[28]</spirit:name>
+                <spirit:displayName>mipi_rx_q[28]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[28]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[28]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[29]</spirit:name>
+                <spirit:displayName>mipi_rx_q[29]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[29]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[29]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[2]</spirit:name>
+                <spirit:displayName>mipi_rx_q[2]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[2]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[2]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[30]</spirit:name>
+                <spirit:displayName>mipi_rx_q[30]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[30]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[30]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[31]</spirit:name>
+                <spirit:displayName>mipi_rx_q[31]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[31]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[31]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[3]</spirit:name>
+                <spirit:displayName>mipi_rx_q[3]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[3]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[3]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[4]</spirit:name>
+                <spirit:displayName>mipi_rx_q[4]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[4]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[4]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[5]</spirit:name>
+                <spirit:displayName>mipi_rx_q[5]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[5]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[5]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[6]</spirit:name>
+                <spirit:displayName>mipi_rx_q[6]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[6]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[6]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[7]</spirit:name>
+                <spirit:displayName>mipi_rx_q[7]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[7]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[7]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[8]</spirit:name>
+                <spirit:displayName>mipi_rx_q[8]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[8]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[8]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mipi_rx_q[9]</spirit:name>
+                <spirit:displayName>mipi_rx_q[9]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="q[9]" spirit:componentRef="mipi_rx"/>
+                <spirit:externalPortReference spirit:portRef="mipi_rx_q[9]"/>
+            </spirit:adHocConnection>
+        </spirit:adHocConnections>
+    </spirit:design>
+</lattice:project>

@@ -1,0 +1,28 @@
+PAR: Place And Route Diamond (64-bit) 3.14.0.75.2.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Jul 22 00:50:54 2025
+
+C:/lscc/diamond/3.14/ispfpga\bin\nt64\par -f iphone7_mipi_v3_impl1.p2t
+iphone7_mipi_v3_impl1_map.ncd iphone7_mipi_v3_impl1.dir
+iphone7_mipi_v3_impl1.prf -gui -msgset
+C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/promote.xml
+
+
+Preference file: iphone7_mipi_v3_impl1.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            8.752        0            0.018        0            07           Completed
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 7 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.

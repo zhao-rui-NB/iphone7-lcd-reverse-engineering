@@ -1,0 +1,259 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn250628173244"></A><B><U><big>pn250628173244</big></U></B>
+#Start recording tcl command: 6/28/2025 17:32:19
+#Project Location: C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2; Project name: win10_test_mipi_v2
+prj_project new -name "win10_test_mipi_v2" -impl "impl1" -dev LIF-MD6000-6KMG80I -synthesis "lse"
+prj_project save
+#Stop recording: 6/28/2025 17:32:44
+
+
+
+<A name="pn250628223040"></A><B><U><big>pn250628223040</big></U></B>
+#Start recording tcl command: 6/28/2025 17:34:02
+#Project Location: C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj; Project name: win10_test_mipi_v2
+prj_project open "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/win10_test_mipi_v2.ldf"
+prj_src add "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_byte_aligner.v" "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/mipi_lane_state_detection.v" "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/src/top.v"
+sbp_design new -dsgn "mipi" -path "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/mipi" -device "LIF-MD6000-6KMG80I"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/mipi/mipi_rx"
+source "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/mipi/mipi_rx/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/mipi/mipi_rx"
+source "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/mipi/mipi_rx/generate_ngd.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+sbp_builder export_add -comp {mipi/mipi_rx}
+sbp_design save
+prj_src add "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/mipi/mipi.sbx"
+prj_src add "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/mipi/mipi.sbx"
+sbp_design open -dsgn "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/mipi/mipi.sbx"
+prj_src remove "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/mipi/mipi.sbx"
+sbp_design open -dsgn "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/mipi/mipi.sbx"
+sbp_design gen
+sbp_design open -dsgn "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/mipi/mipi.sbx"
+sbp_design new -dsgn "clock" -path "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/clock" -device "LIF-MD6000-6KMG80I"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/clock/pll_sys_clk"
+source "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/clock/pll_sys_clk/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/clock/pll_sys_clk"
+source "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/clock/pll_sys_clk/generate_ngd.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+sbp_builder export_add -comp {clock/pll_sys_clk}
+sbp_design save
+prj_src add "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/clock/clock.sbx"
+sbp_design open -dsgn "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/clock/clock.sbx"
+sbp_design gen
+sbp_design gen
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Export -impl impl1 -task Bitgen
+pgr_project save "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/impl1.xcf"
+prj_src add -exclude "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/impl1.xcf"
+prj_src enable "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/impl1.xcf"
+pgr_program set -cable 
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_project save "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/impl1.xcf"
+pgr_program run
+rvl_trace trig_option OutNetType=IO
+rvl_project new -overwrite C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvl
+prj_src add -exclude "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvl"
+prj_src enable "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvl"
+rvl_trace trc_option SampleClk=rxhsbyteclk
+rvl_trace trc_option BufferDepth=1024
+rvl_trace add_sig  {{mipi_byte_aligner_lane0/data_in[15:0]} {mipi_byte_aligner_lane0/data_out[15:0]} mipi_byte_aligner_lane0/data_out_valid}
+rvl_trace add_sig  {{mipi_byte_aligner_lane1/data_in[15:0]} {mipi_byte_aligner_lane1/data_out[15:0]} mipi_byte_aligner_lane1/data_out_valid}
+rvl_trace add_sig  {hs_burst_flag}
+rvl_project save -overwrite C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvl
+rvl_tu set -name TU1 -set_sig {hs_burst_flag }
+rvl_tu set -name TU1 -op .RE.
+rvl_te set -expression TU1 TE1
+rvl_project save -overwrite C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvl
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Export -impl impl1 -task Bitgen
+pgr_program run
+rva_project new -rva "hs" -cable USB -rvl "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvl" -dev "" -port 0 -xcf ""
+prj_src add "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rva"
+rva_project run
+rvl_project close
+rvl_trace trig_option OutNetType=IO
+rvl_project open C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvl
+rva_project set -cabletype USB
+rva_project set -cableport 0
+rva_project set -tckdelay 4
+rva_project run
+rva_project run
+rva_project save "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rva"
+rvl_project close
+rvl_trace trig_option OutNetType=IO
+rvl_project open C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvl
+rva_project close
+rvl_trace move_sig -move_to mipi_byte_aligner_lane0/data_in {hs_burst_flag}
+rvl_project save -overwrite C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvl
+rvl_trace move_sig -move_to mipi_byte_aligner_lane0/data_out {mipi_byte_aligner_lane0/data_out_valid}
+rvl_trace move_sig -move_to mipi_byte_aligner_lane1/data_out {mipi_byte_aligner_lane1/data_out_valid}
+rvl_project save -overwrite C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvl
+prj_run Export -impl impl1 -task Bitgen
+pgr_project save "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/impl1.xcf"
+pgr_program run
+rva_project open "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rva"
+rva_project run
+rva_project set -cabletype USB
+rva_project set -cableport 0
+rva_project set -tckdelay 4
+rva_project run
+rva_project run
+rva_project set -cabletype USB
+rva_project set -cableport 0
+rva_project set -tckdelay 8
+rva_project run
+rva_project run
+rvl_trace trig_option OutNetType=IO
+rva_project set -cabletype USB
+rva_project set -cableport 0
+rva_project set -tckdelay 10
+rva_project run
+rva_project run
+prj_run Export -impl impl1 -task Bitgen
+rva_project close
+prj_run Export -impl impl1 -task Bitgen -forceAll
+pgr_project save "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/impl1/impl1.xcf"
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+rva_project open "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rva"
+rva_project run
+rva_project run
+rva_project run
+sbp_design open -dsgn "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/mipi/mipi.sbx"
+rva_project save "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rva"
+rva_project close
+rvl_project close -force
+pgr_project close
+#Stop recording: 6/28/2025 22:30:40
+
+
+
+<A name="pn250702001903"></A><B><U><big>pn250702001903</big></U></B>
+#Start recording tcl command: 7/1/2025 16:54:06
+#Project Location: C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj; Project name: win10_test_mipi_v2
+prj_project open "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/win10_test_mipi_v2.ldf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+#Stop recording: 7/2/2025 00:19:03
+
+
+
+<A name="pn250706015359"></A><B><U><big>pn250706015359</big></U></B>
+#Start recording tcl command: 7/6/2025 00:19:01
+#Project Location: C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj; Project name: win10_test_mipi_v2
+prj_project open "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/win10_test_mipi_v2.ldf"
+prj_src exclude "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs_align.rvl"
+prj_run Export -impl impl1 -task Bitgen
+sbp_design new -dsgn "output_io" -path "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/output_io" -device "LIF-MD6000-6KMG80I"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/output_io/ddr_io"
+source "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/output_io/ddr_io/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/output_io/ddr_io"
+source "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/output_io/ddr_io/generate_ngd.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+sbp_builder export_add -comp {output_io/ddr_io}
+sbp_design gen
+prj_src add "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/output_io/output_io.sbx"
+rvl_trace trig_option OutNetType=IO
+rvl_project open C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs_align.rvl
+prj_src enable "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs_align.rvl"
+prj_src exclude "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs_align.rvl"
+rva_project open "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs_align.rva"
+rvl_project close -force
+rva_project close
+#Stop recording: 7/6/2025 01:53:59
+
+
+
+<A name="pn250720212954"></A><B><U><big>pn250720212954</big></U></B>
+#Start recording tcl command: 7/20/2025 20:15:22
+#Project Location: C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj; Project name: win10_test_mipi_v2
+prj_project open "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/win10_test_mipi_v2.ldf"
+#Stop recording: 7/20/2025 21:29:54
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

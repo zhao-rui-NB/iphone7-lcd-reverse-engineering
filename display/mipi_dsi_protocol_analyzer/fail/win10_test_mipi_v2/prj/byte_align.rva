@@ -1,0 +1,202 @@
+<!DOCTYPE ispTLA>
+<ispTLA>
+ <CreationDate>?g?@ ?C?? 14 14:41:02 2025</CreationDate>
+ <XCFFileName/>
+ <CableSetting>
+  <IsTRSTConnected val="false"/>
+  <TRSTSetting val="0"/>
+  <IsBSCANConnected val="false"/>
+  <BSCANSetting val="0"/>
+  <CableType val="USB"/>
+  <PortAddress val="0"/>
+  <PortSetting val="0"/>
+  <TCKDelay val="1"/>
+ </CableSetting>
+ <DeviceCount>1</DeviceCount>
+ <Device>
+  <DeviceIndex>0</DeviceIndex>
+  <DeviceName/>
+  <DeviceID/>
+  <HasIspTRACY>true</HasIspTRACY>
+  <HasJTAG2WB>false</HasJTAG2WB>
+  <SERDES/>
+  <IRBypassLen>8</IRBypassLen>
+  <RVLFileName>byte_align.rvl</RVLFileName>
+  <RVSFileName>byte_align.rvs</RVSFileName>
+  <LACoreCount>1</LACoreCount>
+  <WinUI CoreIndex="0">
+   <TraceSigTreeData>
+    <TraceSignal IsHidden="false" Name="hs_burst_flag" NodeType="0" PortIndex="0"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q" NodeType="1" PortIndex="1">
+     <BusRadix Radix="3"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:0" NodeType="2" PortIndex="1"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:1" NodeType="2" PortIndex="2"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:2" NodeType="2" PortIndex="3"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:3" NodeType="2" PortIndex="4"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:4" NodeType="2" PortIndex="5"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:5" NodeType="2" PortIndex="6"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:6" NodeType="2" PortIndex="7"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:7" NodeType="2" PortIndex="8"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:8" NodeType="2" PortIndex="9"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:9" NodeType="2" PortIndex="10"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:10" NodeType="2" PortIndex="11"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:11" NodeType="2" PortIndex="12"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:12" NodeType="2" PortIndex="13"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:13" NodeType="2" PortIndex="14"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:14" NodeType="2" PortIndex="15"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:15" NodeType="2" PortIndex="16"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:16" NodeType="2" PortIndex="17"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:17" NodeType="2" PortIndex="18"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:18" NodeType="2" PortIndex="19"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:19" NodeType="2" PortIndex="20"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:20" NodeType="2" PortIndex="21"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:21" NodeType="2" PortIndex="22"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:22" NodeType="2" PortIndex="23"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:23" NodeType="2" PortIndex="24"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:24" NodeType="2" PortIndex="25"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:25" NodeType="2" PortIndex="26"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:26" NodeType="2" PortIndex="27"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:27" NodeType="2" PortIndex="28"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:28" NodeType="2" PortIndex="29"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:29" NodeType="2" PortIndex="30"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:30" NodeType="2" PortIndex="31"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Q:31" NodeType="2" PortIndex="32"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Reset" NodeType="0" PortIndex="33"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_Empty" NodeType="0" PortIndex="34"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/dphy_raw_fifo_RdEn" NodeType="0" PortIndex="35"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_valid" NodeType="0" PortIndex="36"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane0" NodeType="1" PortIndex="37">
+     <BusRadix Radix="3"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:0" NodeType="2" PortIndex="37"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:1" NodeType="2" PortIndex="38"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:2" NodeType="2" PortIndex="39"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:3" NodeType="2" PortIndex="40"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:4" NodeType="2" PortIndex="41"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:5" NodeType="2" PortIndex="42"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:6" NodeType="2" PortIndex="43"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:7" NodeType="2" PortIndex="44"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:8" NodeType="2" PortIndex="45"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:9" NodeType="2" PortIndex="46"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:10" NodeType="2" PortIndex="47"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:11" NodeType="2" PortIndex="48"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:12" NodeType="2" PortIndex="49"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:13" NodeType="2" PortIndex="50"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:14" NodeType="2" PortIndex="51"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane0:15" NodeType="2" PortIndex="52"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane1" NodeType="1" PortIndex="53">
+     <BusRadix Radix="3"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:0" NodeType="2" PortIndex="53"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:1" NodeType="2" PortIndex="54"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:2" NodeType="2" PortIndex="55"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:3" NodeType="2" PortIndex="56"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:4" NodeType="2" PortIndex="57"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:5" NodeType="2" PortIndex="58"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:6" NodeType="2" PortIndex="59"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:7" NodeType="2" PortIndex="60"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:8" NodeType="2" PortIndex="61"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:9" NodeType="2" PortIndex="62"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:10" NodeType="2" PortIndex="63"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:11" NodeType="2" PortIndex="64"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:12" NodeType="2" PortIndex="65"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:13" NodeType="2" PortIndex="66"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:14" NodeType="2" PortIndex="67"/>
+    <TraceSignal IsHidden="false" Name="mipi_raw_data_controller_inst/raw_data_out_lane1:15" NodeType="2" PortIndex="68"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_in" NodeType="1" PortIndex="69">
+     <BusRadix Radix="3"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_in:0" NodeType="2" PortIndex="69"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_in:1" NodeType="2" PortIndex="70"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_in:2" NodeType="2" PortIndex="71"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_in:3" NodeType="2" PortIndex="72"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_in:4" NodeType="2" PortIndex="73"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_in:5" NodeType="2" PortIndex="74"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_in:6" NodeType="2" PortIndex="75"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_in:7" NodeType="2" PortIndex="76"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_in:8" NodeType="2" PortIndex="77"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_in:9" NodeType="2" PortIndex="78"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_in:10" NodeType="2" PortIndex="79"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_in:11" NodeType="2" PortIndex="80"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_in:12" NodeType="2" PortIndex="81"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_in:13" NodeType="2" PortIndex="82"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_in:14" NodeType="2" PortIndex="83"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_in:15" NodeType="2" PortIndex="84"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_in_valid" NodeType="0" PortIndex="85"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_out" NodeType="1" PortIndex="86">
+     <BusRadix Radix="3"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_out:0" NodeType="2" PortIndex="86"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_out:1" NodeType="2" PortIndex="87"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_out:2" NodeType="2" PortIndex="88"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_out:3" NodeType="2" PortIndex="89"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_out:4" NodeType="2" PortIndex="90"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_out:5" NodeType="2" PortIndex="91"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_out:6" NodeType="2" PortIndex="92"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_out:7" NodeType="2" PortIndex="93"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_out:8" NodeType="2" PortIndex="94"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_out:9" NodeType="2" PortIndex="95"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_out:10" NodeType="2" PortIndex="96"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_out:11" NodeType="2" PortIndex="97"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_out:12" NodeType="2" PortIndex="98"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_out:13" NodeType="2" PortIndex="99"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_out:14" NodeType="2" PortIndex="100"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_out:15" NodeType="2" PortIndex="101"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane0/data_out_valid" NodeType="0" PortIndex="102"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_in" NodeType="1" PortIndex="103">
+     <BusRadix Radix="0"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_in:0" NodeType="2" PortIndex="103"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_in:1" NodeType="2" PortIndex="104"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_in:2" NodeType="2" PortIndex="105"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_in:3" NodeType="2" PortIndex="106"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_in:4" NodeType="2" PortIndex="107"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_in:5" NodeType="2" PortIndex="108"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_in:6" NodeType="2" PortIndex="109"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_in:7" NodeType="2" PortIndex="110"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_in:8" NodeType="2" PortIndex="111"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_in:9" NodeType="2" PortIndex="112"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_in:10" NodeType="2" PortIndex="113"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_in:11" NodeType="2" PortIndex="114"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_in:12" NodeType="2" PortIndex="115"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_in:13" NodeType="2" PortIndex="116"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_in:14" NodeType="2" PortIndex="117"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_in:15" NodeType="2" PortIndex="118"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_in_valid" NodeType="0" PortIndex="119"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_out" NodeType="1" PortIndex="120">
+     <BusRadix Radix="3"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_out:0" NodeType="2" PortIndex="120"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_out:1" NodeType="2" PortIndex="121"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_out:2" NodeType="2" PortIndex="122"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_out:3" NodeType="2" PortIndex="123"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_out:4" NodeType="2" PortIndex="124"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_out:5" NodeType="2" PortIndex="125"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_out:6" NodeType="2" PortIndex="126"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_out:7" NodeType="2" PortIndex="127"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_out:8" NodeType="2" PortIndex="128"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_out:9" NodeType="2" PortIndex="129"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_out:10" NodeType="2" PortIndex="130"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_out:11" NodeType="2" PortIndex="131"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_out:12" NodeType="2" PortIndex="132"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_out:13" NodeType="2" PortIndex="133"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_out:14" NodeType="2" PortIndex="134"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_out:15" NodeType="2" PortIndex="135"/>
+    <TraceSignal IsHidden="false" Name="mipi_byte_aligner_lane1/data_out_valid" NodeType="0" PortIndex="136"/>
+   </TraceSigTreeData>
+   <TriggerUI UserSelect="0" PreSelectType="0" PreSelect="1" UserSelectPos="0"/>
+   <CoreRun Run="true"/>
+   <CoreWndUIData>
+    <ClockFrequency Unit="ns" Frequency="-1.0"/>
+   </CoreWndUIData>
+  </WinUI>
+ </Device>
+</ispTLA>

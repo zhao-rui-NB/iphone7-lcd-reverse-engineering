@@ -1,0 +1,5 @@
+read_verilog -sv -formal -overwrite {workspace}/src/gowin_rpll/gowin_rpll.v
+read_verilog -sv -formal -overwrite {workspace}/tb/prim_sim.v
+read_verilog -sv -formal -overwrite {workspace}/src/test_psram.v
+design -reset-vlog; proc;
+write_json {workspace}/netlist/test_psram.json

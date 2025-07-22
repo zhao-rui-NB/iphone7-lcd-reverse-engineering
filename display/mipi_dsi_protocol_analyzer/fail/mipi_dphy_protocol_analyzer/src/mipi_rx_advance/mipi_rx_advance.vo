@@ -1,0 +1,350 @@
+//Copyright (C)2014-2025 Gowin Semiconductor Corporation.
+//All rights reserved.
+//File Title: Post-PnR Verilog Simulation Model file
+//Tool Version: V1.9.11.02 (64-bit)
+//Created Time: Mon May 22 23:43:48 2023
+
+`timescale 100 ps/100 ps
+module MIPI_RX_Advance_Top(
+	reset_n,
+	lp_clk_in,
+	lp_clk_dir,
+	lp_data2_in,
+	lp_data2_dir,
+	lp_data1_in,
+	lp_data1_dir,
+	lp_data0_in,
+	lp_data0_dir,
+	hs_en,
+	clk_term_en,
+	data_term_en,
+	lp_clk_out,
+	clk_byte_out,
+	data_out2,
+	lp_data2_out,
+	data_out1,
+	lp_data1_out,
+	data_out0,
+	lp_data0_out,
+	ready,
+	MIPI_CLK_P,
+	MIPI_CLK_N,
+	MIPI_LANE2_P,
+	MIPI_LANE2_N,
+	MIPI_LANE1_P,
+	MIPI_LANE1_N,
+	MIPI_LANE0_P,
+	MIPI_LANE0_N
+);
+input reset_n;
+input [1:0] lp_clk_in;
+input lp_clk_dir;
+input [1:0] lp_data2_in;
+input lp_data2_dir;
+input [1:0] lp_data1_in;
+input lp_data1_dir;
+input [1:0] lp_data0_in;
+input lp_data0_dir;
+input hs_en;
+input clk_term_en;
+input data_term_en;
+output [1:0] lp_clk_out;
+output clk_byte_out;
+output [7:0] data_out2;
+output [1:0] lp_data2_out;
+output [7:0] data_out1;
+output [1:0] lp_data1_out;
+output [7:0] data_out0;
+output [1:0] lp_data0_out;
+output ready;
+inout MIPI_CLK_P;
+inout MIPI_CLK_N;
+inout MIPI_LANE2_P;
+inout MIPI_LANE2_N;
+inout MIPI_LANE1_P;
+inout MIPI_LANE1_N;
+inout MIPI_LANE0_P;
+inout MIPI_LANE0_N;
+wire GND;
+wire MIPI_CLK_N;
+wire MIPI_CLK_P;
+wire MIPI_LANE0_N;
+wire MIPI_LANE0_P;
+wire MIPI_LANE1_N;
+wire MIPI_LANE1_P;
+wire MIPI_LANE2_N;
+wire MIPI_LANE2_P;
+wire VCC;
+wire clk_byte_out;
+wire clk_term_en;
+wire [7:0] data_out0;
+wire [7:0] data_out1;
+wire [7:0] data_out2;
+wire data_term_en;
+wire hs_en;
+wire lp_clk_dir;
+wire [1:0] lp_clk_in;
+wire [1:0] lp_clk_out;
+wire lp_data0_dir;
+wire [1:0] lp_data0_in;
+wire [1:0] lp_data0_out;
+wire lp_data1_dir;
+wire [1:0] lp_data1_in;
+wire [1:0] lp_data1_out;
+wire lp_data2_dir;
+wire [1:0] lp_data2_in;
+wire [1:0] lp_data2_out;
+wire ready;
+wire reset_n;
+wire \DPHY_RX_INST/HS_CLK ;
+wire \DPHY_RX_INST/n11_4 ;
+wire \DPHY_RX_INST/n18_3 ;
+wire \DPHY_RX_INST/n9_6 ;
+wire \DPHY_RX_INST/n16_6 ;
+wire \DPHY_RX_INST/n22_6 ;
+wire \DPHY_RX_INST/n28_6 ;
+wire \DPHY_RX_INST/n31_6 ;
+wire [2:0] \DPHY_RX_INST/HS_DATA ;
+wire \DPHY_RX_INST/u_idesx8/opensync_cken ;
+wire \DPHY_RX_INST/u_idesx8/xstop ;
+wire \DPHY_RX_INST/u_idesx8/dataini_t2 ;
+wire \DPHY_RX_INST/u_idesx8/udel_dataini2_1_DF ;
+wire \DPHY_RX_INST/u_idesx8/dataini_t1 ;
+wire \DPHY_RX_INST/u_idesx8/udel_dataini1_1_DF ;
+wire \DPHY_RX_INST/u_idesx8/dataini_t0 ;
+wire \DPHY_RX_INST/u_idesx8/udel_dataini0_1_DF ;
+wire \DPHY_RX_INST/u_idesx8/eclko ;
+wire [3:0] \DPHY_RX_INST/u_idesx8/opensync ;
+VCC VCC_cZ (
+  .V(VCC)
+);
+GND GND_cZ (
+  .G(GND)
+);
+GSR GSR (
+	.GSRI(VCC)
+);
+OBUF gowin_buf_0 (
+	.I(GND),
+	.O(ready)
+);
+MIPI_IBUF \DPHY_RX_INST/MIPI_IBUF_CLK  (
+	.I(lp_clk_in[1]),
+	.OEN(\DPHY_RX_INST/n9_6 ),
+	.IO(MIPI_CLK_P),
+	.IB(lp_clk_in[0]),
+	.IOB(MIPI_CLK_N),
+	.OENB(\DPHY_RX_INST/n9_6 ),
+	.HSREN(\DPHY_RX_INST/n11_4 ),
+	.OB(lp_clk_out[0]),
+	.OL(lp_clk_out[1]),
+	.OH(\DPHY_RX_INST/HS_CLK )
+);
+MIPI_IBUF \DPHY_RX_INST/MIPI_IBUF_LANE2  (
+	.I(lp_data2_in[1]),
+	.OEN(\DPHY_RX_INST/n16_6 ),
+	.IO(MIPI_LANE2_P),
+	.IB(lp_data2_in[0]),
+	.IOB(MIPI_LANE2_N),
+	.OENB(\DPHY_RX_INST/n16_6 ),
+	.HSREN(\DPHY_RX_INST/n18_3 ),
+	.OB(lp_data2_out[0]),
+	.OL(lp_data2_out[1]),
+	.OH(\DPHY_RX_INST/HS_DATA [2])
+);
+MIPI_IBUF \DPHY_RX_INST/MIPI_IBUF_LANE1  (
+	.I(lp_data1_in[1]),
+	.OEN(\DPHY_RX_INST/n22_6 ),
+	.IO(MIPI_LANE1_P),
+	.IB(lp_data1_in[0]),
+	.IOB(MIPI_LANE1_N),
+	.OENB(\DPHY_RX_INST/n22_6 ),
+	.HSREN(\DPHY_RX_INST/n18_3 ),
+	.OB(lp_data1_out[0]),
+	.OL(lp_data1_out[1]),
+	.OH(\DPHY_RX_INST/HS_DATA [1])
+);
+MIPI_IBUF \DPHY_RX_INST/MIPI_IBUF_LANE0  (
+	.I(lp_data0_in[1]),
+	.OEN(\DPHY_RX_INST/n28_6 ),
+	.IO(MIPI_LANE0_P),
+	.IB(lp_data0_in[0]),
+	.IOB(MIPI_LANE0_N),
+	.OENB(\DPHY_RX_INST/n28_6 ),
+	.HSREN(\DPHY_RX_INST/n18_3 ),
+	.OB(lp_data0_out[0]),
+	.OL(lp_data0_out[1]),
+	.OH(\DPHY_RX_INST/HS_DATA [0])
+);
+LUT2 \DPHY_RX_INST/n11_s0  (
+	.I0(clk_term_en),
+	.I1(hs_en),
+	.F(\DPHY_RX_INST/n11_4 )
+);
+defparam \DPHY_RX_INST/n11_s0 .INIT=4'h8;
+LUT2 \DPHY_RX_INST/n18_s0  (
+	.I0(hs_en),
+	.I1(data_term_en),
+	.F(\DPHY_RX_INST/n18_3 )
+);
+defparam \DPHY_RX_INST/n18_s0 .INIT=4'h8;
+INV \DPHY_RX_INST/n9_s2  (
+	.I(lp_clk_dir),
+	.O(\DPHY_RX_INST/n9_6 )
+);
+INV \DPHY_RX_INST/n16_s2  (
+	.I(lp_data2_dir),
+	.O(\DPHY_RX_INST/n16_6 )
+);
+INV \DPHY_RX_INST/n22_s2  (
+	.I(lp_data1_dir),
+	.O(\DPHY_RX_INST/n22_6 )
+);
+INV \DPHY_RX_INST/n28_s2  (
+	.I(lp_data0_dir),
+	.O(\DPHY_RX_INST/n28_6 )
+);
+INV \DPHY_RX_INST/n31_s2  (
+	.I(reset_n),
+	.O(\DPHY_RX_INST/n31_6 )
+);
+LUT4 \DPHY_RX_INST/u_idesx8/LUT4_1  (
+	.I0(VCC),
+	.I1(VCC),
+	.I2(\DPHY_RX_INST/u_idesx8/opensync [3]),
+	.I3(\DPHY_RX_INST/u_idesx8/opensync [0]),
+	.F(\DPHY_RX_INST/u_idesx8/opensync_cken )
+);
+defparam \DPHY_RX_INST/u_idesx8/LUT4_1 .INIT=16'h0A78;
+LUT4 \DPHY_RX_INST/u_idesx8/LUT4_0  (
+	.I0(GND),
+	.I1(GND),
+	.I2(\DPHY_RX_INST/u_idesx8/opensync [1]),
+	.I3(\DPHY_RX_INST/u_idesx8/opensync [0]),
+	.F(\DPHY_RX_INST/u_idesx8/xstop )
+);
+defparam \DPHY_RX_INST/u_idesx8/LUT4_0 .INIT=16'hFFFE;
+DFFCE \DPHY_RX_INST/u_idesx8/opensync_2_s0  (
+	.D(\DPHY_RX_INST/u_idesx8/opensync [1]),
+	.CLK(\DPHY_RX_INST/HS_CLK ),
+	.CE(\DPHY_RX_INST/u_idesx8/opensync_cken ),
+	.CLEAR(\DPHY_RX_INST/n31_6 ),
+	.Q(\DPHY_RX_INST/u_idesx8/opensync [2])
+);
+defparam \DPHY_RX_INST/u_idesx8/opensync_2_s0 .INIT=1'b0;
+DFFCE \DPHY_RX_INST/u_idesx8/opensync_1_s0  (
+	.D(\DPHY_RX_INST/u_idesx8/opensync [0]),
+	.CLK(\DPHY_RX_INST/HS_CLK ),
+	.CE(\DPHY_RX_INST/u_idesx8/opensync_cken ),
+	.CLEAR(\DPHY_RX_INST/n31_6 ),
+	.Q(\DPHY_RX_INST/u_idesx8/opensync [1])
+);
+defparam \DPHY_RX_INST/u_idesx8/opensync_1_s0 .INIT=1'b0;
+DFFCE \DPHY_RX_INST/u_idesx8/opensync_3_s0  (
+	.D(\DPHY_RX_INST/u_idesx8/opensync [2]),
+	.CLK(\DPHY_RX_INST/HS_CLK ),
+	.CE(\DPHY_RX_INST/u_idesx8/opensync_cken ),
+	.CLEAR(\DPHY_RX_INST/n31_6 ),
+	.Q(\DPHY_RX_INST/u_idesx8/opensync [3])
+);
+defparam \DPHY_RX_INST/u_idesx8/opensync_3_s0 .INIT=1'b0;
+DFFPE \DPHY_RX_INST/u_idesx8/opensync_0_s0  (
+	.D(\DPHY_RX_INST/u_idesx8/opensync [3]),
+	.CLK(\DPHY_RX_INST/HS_CLK ),
+	.CE(\DPHY_RX_INST/u_idesx8/opensync_cken ),
+	.PRESET(\DPHY_RX_INST/n31_6 ),
+	.Q(\DPHY_RX_INST/u_idesx8/opensync [0])
+);
+defparam \DPHY_RX_INST/u_idesx8/opensync_0_s0 .INIT=1'b1;
+IODELAY \DPHY_RX_INST/u_idesx8/udel_dataini2  (
+	.DI(\DPHY_RX_INST/HS_DATA [2]),
+	.SETN(GND),
+	.SDTAP(GND),
+	.VALUE(GND),
+	.DO(\DPHY_RX_INST/u_idesx8/dataini_t2 ),
+	.DF(\DPHY_RX_INST/u_idesx8/udel_dataini2_1_DF )
+);
+defparam \DPHY_RX_INST/u_idesx8/udel_dataini2 .C_STATIC_DLY=0;
+IDES8 \DPHY_RX_INST/u_idesx8/Inst4_IDES82  (
+	.D(\DPHY_RX_INST/u_idesx8/dataini_t2 ),
+	.PCLK(clk_byte_out),
+	.FCLK(\DPHY_RX_INST/u_idesx8/eclko ),
+	.RESET(\DPHY_RX_INST/n31_6 ),
+	.CALIB(GND),
+	.Q0(data_out2[0]),
+	.Q1(data_out2[1]),
+	.Q2(data_out2[2]),
+	.Q3(data_out2[3]),
+	.Q4(data_out2[4]),
+	.Q5(data_out2[5]),
+	.Q6(data_out2[6]),
+	.Q7(data_out2[7])
+);
+defparam \DPHY_RX_INST/u_idesx8/Inst4_IDES82 .GSREN="false";
+defparam \DPHY_RX_INST/u_idesx8/Inst4_IDES82 .LSREN="true";
+IODELAY \DPHY_RX_INST/u_idesx8/udel_dataini1  (
+	.DI(\DPHY_RX_INST/HS_DATA [1]),
+	.SETN(GND),
+	.SDTAP(GND),
+	.VALUE(GND),
+	.DO(\DPHY_RX_INST/u_idesx8/dataini_t1 ),
+	.DF(\DPHY_RX_INST/u_idesx8/udel_dataini1_1_DF )
+);
+defparam \DPHY_RX_INST/u_idesx8/udel_dataini1 .C_STATIC_DLY=0;
+IDES8 \DPHY_RX_INST/u_idesx8/Inst4_IDES81  (
+	.D(\DPHY_RX_INST/u_idesx8/dataini_t1 ),
+	.PCLK(clk_byte_out),
+	.FCLK(\DPHY_RX_INST/u_idesx8/eclko ),
+	.RESET(\DPHY_RX_INST/n31_6 ),
+	.CALIB(GND),
+	.Q0(data_out1[0]),
+	.Q1(data_out1[1]),
+	.Q2(data_out1[2]),
+	.Q3(data_out1[3]),
+	.Q4(data_out1[4]),
+	.Q5(data_out1[5]),
+	.Q6(data_out1[6]),
+	.Q7(data_out1[7])
+);
+defparam \DPHY_RX_INST/u_idesx8/Inst4_IDES81 .GSREN="false";
+defparam \DPHY_RX_INST/u_idesx8/Inst4_IDES81 .LSREN="true";
+IODELAY \DPHY_RX_INST/u_idesx8/udel_dataini0  (
+	.DI(\DPHY_RX_INST/HS_DATA [0]),
+	.SETN(GND),
+	.SDTAP(GND),
+	.VALUE(GND),
+	.DO(\DPHY_RX_INST/u_idesx8/dataini_t0 ),
+	.DF(\DPHY_RX_INST/u_idesx8/udel_dataini0_1_DF )
+);
+defparam \DPHY_RX_INST/u_idesx8/udel_dataini0 .C_STATIC_DLY=0;
+IDES8 \DPHY_RX_INST/u_idesx8/Inst4_IDES80  (
+	.D(\DPHY_RX_INST/u_idesx8/dataini_t0 ),
+	.PCLK(clk_byte_out),
+	.FCLK(\DPHY_RX_INST/u_idesx8/eclko ),
+	.RESET(\DPHY_RX_INST/n31_6 ),
+	.CALIB(GND),
+	.Q0(data_out0[0]),
+	.Q1(data_out0[1]),
+	.Q2(data_out0[2]),
+	.Q3(data_out0[3]),
+	.Q4(data_out0[4]),
+	.Q5(data_out0[5]),
+	.Q6(data_out0[6]),
+	.Q7(data_out0[7])
+);
+defparam \DPHY_RX_INST/u_idesx8/Inst4_IDES80 .GSREN="false";
+defparam \DPHY_RX_INST/u_idesx8/Inst4_IDES80 .LSREN="true";
+DHCEN \DPHY_RX_INST/u_idesx8/u_DHCEN  (
+	.CLKIN(\DPHY_RX_INST/HS_CLK ),
+	.CE(\DPHY_RX_INST/u_idesx8/xstop ),
+	.CLKOUT(\DPHY_RX_INST/u_idesx8/eclko )
+);
+CLKDIV \DPHY_RX_INST/u_idesx8/Inst3_CLKDIV  (
+	.HCLKIN(\DPHY_RX_INST/u_idesx8/eclko ),
+	.RESETN(reset_n),
+	.CALIB(GND),
+	.CLKOUT(clk_byte_out)
+);
+defparam \DPHY_RX_INST/u_idesx8/Inst3_CLKDIV .GSREN="false";
+defparam \DPHY_RX_INST/u_idesx8/Inst3_CLKDIV .DIV_MODE="4";
+endmodule

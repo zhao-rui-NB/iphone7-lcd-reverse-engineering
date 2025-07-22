@@ -1,0 +1,254 @@
+<HTML>
+<HEAD><TITLE>PAD Specification File</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Pad"></A>PAD Specification File
+***************************
+
+PART TYPE:        LIF-MD6000
+Performance Grade:      6
+PACKAGE:          CKFBGA80
+Package Status:                     Final          Version 1.38
+
+Tue Jul 15 02:06:21 2025
+
+Pinout by Port Name:
++--------------------------------------+----------+--------------+-----------+-----------+---------------------------------+
+| Port Name                            | Pin/Bank | Buffer Type  | Site      | BC Enable | Properties                      |
++--------------------------------------+----------+--------------+-----------+-----------+---------------------------------+
+| JTAG_TCK                             | K2/0     | LVCMOS25_IN  | PB47      |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| JTAG_TDI                             | D1/0     | LVCMOS25_IN  | PB48      |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| JTAG_TDO                             | E2/1     | LVCMOS25_OUT | PB34B     |           | DRIVE:6mA CLAMP:ON              |
+| JTAG_TMS                             | F2/1     | LVCMOS25_IN  | PB38B     |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| clk_50m                              | F9/2     | LVCMOS25_IN  | PB6A      |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| clk_n                                | A8/60    | DPHY_IN      | DPHY0_CKN |           |                                 |
+| clk_p                                | B8/60    | DPHY_IN      | DPHY0_CKP |           |                                 |
+| data_n[0]                            | A7/60    | DPHY_BIDI    | DPHY0_DN0 |           |                                 |
+| data_n[1]                            | A9/60    | DPHY_IN      | DPHY0_DN1 |           |                                 |
+| data_p[0]                            | B7/60    | DPHY_BIDI    | DPHY0_DP0 |           |                                 |
+| data_p[1]                            | B9/60    | DPHY_IN      | DPHY0_DP1 |           |                                 |
+| ddr_output_clk                       | E1/1     | LVCMOS25_OUT | PB34A     |           | DRIVE:6mA CLAMP:ON              |
+| hs_burst_flag                        | E9/2     | LVCMOS25_OUT | PB12A     |           | DRIVE:6mA CLAMP:ON              |
+| key1                                 | D9/2     | LVCMOS25_IN  | PB16A     |           | PULL:UP CLAMP:ON HYSTERESIS:ON  |
+| output_multi_lane_align_data_out[0]  | H10/2    | LVCMOS25_OUT | PB2C      |           | DRIVE:6mA CLAMP:ON              |
+| output_multi_lane_align_data_out[10] | K5/1     | LVCMOS25_OUT | PB34C     |           | DRIVE:6mA CLAMP:ON              |
+| output_multi_lane_align_data_out[11] | J5/1     | LVCMOS25_OUT | PB34D     |           | DRIVE:6mA CLAMP:ON              |
+| output_multi_lane_align_data_out[12] | K4/1     | LVCMOS25_OUT | PB38C     |           | DRIVE:6mA CLAMP:ON              |
+| output_multi_lane_align_data_out[13] | J4/1     | LVCMOS25_OUT | PB38D     |           | DRIVE:6mA CLAMP:ON              |
+| output_multi_lane_align_data_out[14] | K3/1     | LVCMOS25_OUT | PB43C     |           | DRIVE:6mA CLAMP:ON              |
+| output_multi_lane_align_data_out[15] | J3/1     | LVCMOS25_OUT | PB43D     |           | DRIVE:6mA CLAMP:ON              |
+| output_multi_lane_align_data_out[16] | F1/1     | LVCMOS25_OUT | PB38A     |           | DRIVE:6mA CLAMP:ON              |
+| output_multi_lane_align_data_out[1]  | H9/2     | LVCMOS25_OUT | PB2D      |           | DRIVE:6mA CLAMP:ON              |
+| output_multi_lane_align_data_out[2]  | K9/2     | LVCMOS25_OUT | PB12D     |           | DRIVE:6mA CLAMP:ON              |
+| output_multi_lane_align_data_out[3]  | K10/2    | LVCMOS25_OUT | PB12C     |           | DRIVE:6mA CLAMP:ON              |
+| output_multi_lane_align_data_out[4]  | K8/2     | LVCMOS25_OUT | PB16C     |           | DRIVE:6mA CLAMP:ON              |
+| output_multi_lane_align_data_out[5]  | J8/2     | LVCMOS25_OUT | PB16D     |           | DRIVE:6mA CLAMP:ON              |
+| output_multi_lane_align_data_out[6]  | J7/1     | LVCMOS25_OUT | PB29A     |           | DRIVE:6mA CLAMP:ON              |
+| output_multi_lane_align_data_out[7]  | K7/1     | LVCMOS25_OUT | PB29B     |           | DRIVE:6mA CLAMP:ON              |
+| output_multi_lane_align_data_out[8]  | K6/1     | LVCMOS25_OUT | PB29C     |           | DRIVE:6mA CLAMP:ON              |
+| output_multi_lane_align_data_out[9]  | J6/1     | LVCMOS25_OUT | PB29D     |           | DRIVE:6mA CLAMP:ON              |
+| sys_clk                              | G9/2     | LVCMOS25_OUT | PB2A      |           | DRIVE:6mA CLAMP:ON              |
+| sys_clk_div2                         | J2/0     | LVCMOS25_OUT | PB49      |           | DRIVE:6mA CLAMP:ON              |
++--------------------------------------+----------+--------------+-----------+-----------+---------------------------------+
+
+Vccio by Bank:
++------+-------+
+| Bank | Vccio |
++------+-------+
+| 0    | 2.5V  |
+| 1    | 2.5V  |
+| 2    | 2.5V  |
++------+-------+
+
+<A name="pad_pin"></A><B><U><big>Pinout by Pin Number:</big></U></B>
++----------+--------------------------------------+------------+---------------+-----------+-------------------+-----------+
+| Pin/Bank | Pin Info                             | Preference | Buffer Type   | Site      | Dual Function     | BC Enable |
++----------+--------------------------------------+------------+---------------+-----------+-------------------+-----------+
+| A1/61    |                                      |            |               | DPHY1_DN2 |                   |           |
+| A2/61    |                                      |            |               | DPHY1_DN0 |                   |           |
+| A3/61    |                                      |            |               | DPHY1_CKN |                   |           |
+| A4/61    |                                      |            |               | DPHY1_DN1 |                   |           |
+| A5/61    |                                      |            |               | DPHY1_DN3 |                   |           |
+| A6/60    |                                      |            |               | DPHY0_DN2 |                   |           |
+| A7/60    | data_n[0]                            |            |               | DPHY0_DN0 |                   |           |
+| A8/60    | clk_n                                |            |               | DPHY0_CKN |                   |           |
+| A9/60    | data_n[1]                            |            |               | DPHY0_DN1 |                   |           |
+| A10/60   |                                      |            |               | DPHY0_DN3 |                   |           |
+| B1/61    |                                      |            |               | DPHY1_DP2 |                   |           |
+| B2/61    |                                      |            |               | DPHY1_DP0 |                   |           |
+| B3/61    |                                      |            |               | DPHY1_CKP |                   |           |
+| B4/61    |                                      |            |               | DPHY1_DP1 |                   |           |
+| B5/61    |                                      |            |               | DPHY1_DP3 |                   |           |
+| B6/60    |                                      |            |               | DPHY0_DP2 |                   |           |
+| B7/60    | data_p[0]                            |            |               | DPHY0_DP0 |                   |           |
+| B8/60    | clk_p                                |            |               | DPHY0_CKP |                   |           |
+| B9/60    | data_p[1]                            |            |               | DPHY0_DP1 |                   |           |
+| B10/60   |                                      |            |               | DPHY0_DP3 |                   |           |
+| D1/0     | JTAG_TDI                             | LOCATED    | LVCMOS25_IN   | PB48      | PCLKT0_1/USER_SCL |           |
+| D9/2     | key1                                 | LOCATED    | LVCMOS25_IN   | PB16A     | PCLKT2_0          |           |
+| D10/2    |     unused, PULL:UP                  |            |               | PB16B     | PCLKC2_0          |           |
+| E1/1     | ddr_output_clk                       | LOCATED    | LVCMOS25_OUT  | PB34A     | GR_PCLK1_0        |           |
+| E2/1     | JTAG_TDO                             | LOCATED    | LVCMOS25_OUT  | PB34B     |                   |           |
+| E9/2     | hs_burst_flag                        |            | LVCMOS25_OUT  | PB12A     | GPLLT2_0          |           |
+| E10/2    |     unused, PULL:UP                  |            |               | PB12B     | GPLLC2_0          |           |
+| F1/1     | output_multi_lane_align_data_out[16] | LOCATED    | LVCMOS25_OUT  | PB38A     |                   |           |
+| F2/1     | JTAG_TMS                             | LOCATED    | LVCMOS25_IN   | PB38B     |                   |           |
+| F9/2     | clk_50m                              | LOCATED    | LVCMOS25_IN   | PB6A      | GR_PCLK2_0        |           |
+| F10/2    |     unused, PULL:UP                  |            |               | PB6B      |                   |           |
+| G1/0     | Reserved: sysCONFIG                  |            | LVCMOS25_BIDI | PB50      | MOSI              |           |
+| G9/2     | sys_clk                              |            | LVCMOS25_OUT  | PB2A      |                   |           |
+| G10/2    |     unused, PULL:UP                  |            |               | PB2B      |                   |           |
+| H1/0     | Reserved: sysCONFIG                  |            | LVCMOS25_BIDI | PB52      | SPI_SS/CSN/SCL    |           |
+| H9/2     | output_multi_lane_align_data_out[1]  | LOCATED    | LVCMOS25_OUT  | PB2D      | MIPI_CLKC2_0      |           |
+| H10/2    | output_multi_lane_align_data_out[0]  | LOCATED    | LVCMOS25_OUT  | PB2C      | MIPI_CLKT2_0      |           |
+| J1/0     | Reserved: sysCONFIG                  |            | LVCMOS25_BIDI | PB53      | SPI_SCK/MCK/SDA   |           |
+| J2/0     | sys_clk_div2                         |            | LVCMOS25_OUT  | PB49      | PMU_WKUPN         |           |
+| J3/1     | output_multi_lane_align_data_out[15] | LOCATED    | LVCMOS25_OUT  | PB43D     |                   |           |
+| J4/1     | output_multi_lane_align_data_out[13] | LOCATED    | LVCMOS25_OUT  | PB38D     |                   |           |
+| J5/1     | output_multi_lane_align_data_out[11] | LOCATED    | LVCMOS25_OUT  | PB34D     | MIPI_CLKC1_0      |           |
+| J6/1     | output_multi_lane_align_data_out[9]  | LOCATED    | LVCMOS25_OUT  | PB29D     | PCLKC1_1          |           |
+| J7/1     | output_multi_lane_align_data_out[6]  | LOCATED    | LVCMOS25_OUT  | PB29A     | PCLKT1_0          |           |
+| J8/2     | output_multi_lane_align_data_out[5]  | LOCATED    | LVCMOS25_OUT  | PB16D     | PCLKC2_1          |           |
+| J9/2     |     unused, PULL:UP                  |            |               | PB6D      |                   |           |
+| J10/2    |     unused, PULL:UP                  |            |               | PB6C      |                   |           |
+| K1/0     | Reserved: sysCONFIG                  |            | LVCMOS25_BIDI | PB51      | MISO              |           |
+| K2/0     | JTAG_TCK                             | LOCATED    | LVCMOS25_IN   | PB47      | PCLKT0_0/USER_SDA |           |
+| K3/1     | output_multi_lane_align_data_out[14] | LOCATED    | LVCMOS25_OUT  | PB43C     |                   |           |
+| K4/1     | output_multi_lane_align_data_out[12] | LOCATED    | LVCMOS25_OUT  | PB38C     |                   |           |
+| K5/1     | output_multi_lane_align_data_out[10] | LOCATED    | LVCMOS25_OUT  | PB34C     | MIPI_CLKT1_0      |           |
+| K6/1     | output_multi_lane_align_data_out[8]  | LOCATED    | LVCMOS25_OUT  | PB29C     | PCLKT1_1          |           |
+| K7/1     | output_multi_lane_align_data_out[7]  | LOCATED    | LVCMOS25_OUT  | PB29B     | PCLKC1_0          |           |
+| K8/2     | output_multi_lane_align_data_out[4]  | LOCATED    | LVCMOS25_OUT  | PB16C     | PCLKT2_1          |           |
+| K9/2     | output_multi_lane_align_data_out[2]  | LOCATED    | LVCMOS25_OUT  | PB12D     |                   |           |
+| K10/2    | output_multi_lane_align_data_out[3]  | LOCATED    | LVCMOS25_OUT  | PB12C     |                   |           |
+| PB43A/1  |     unused, PULL:UP                  |            |               | PB43A     |                   |           |
+| PB43B/1  |     unused, PULL:UP                  |            |               | PB43B     |                   |           |
++----------+--------------------------------------+------------+---------------+-----------+-------------------+-----------+
+
+Shared Persistent sysCONFIG Pins:
++----------+--------------------+-----------------------+----------+---------------+-------------------+
+| Pad Name | sysCONFIG Pin Name | sysCONFIG Settings    | Pin/Bank | Buffer Type   | Config Pull Mode  |
++----------+--------------------+-----------------------+----------+---------------+-------------------+
+| PB52     | SPI_SS/CSN/SCL     | SLAVE_SPI_PORT=ENABLE | H1/0     | LVCMOS25_BIDI | PULLUP            |
+| PB53     | SPI_SCK/MCK/SDA    | SLAVE_SPI_PORT=ENABLE | J1/0     | LVCMOS25_BIDI | PULLUP            |
+| PB51     | MISO_D1            | SLAVE_SPI_PORT=ENABLE | K1/0     | LVCMOS25_BIDI | NO pull up/down   |
+| PB50     | MOSI_D0            | SLAVE_SPI_PORT=ENABLE | G1/0     | LVCMOS25_BIDI | PULLUP            |
++----------+--------------------+-----------------------+----------+---------------+-------------------+
+
+Dedicated sysCONFIG Pins:
++----------+--------------------+-----------------------+
+| Pin/Bank | sysCONFIG Pin Name | sysCONFIG Settings    |
++----------+--------------------+-----------------------+
+| H2/0     | CRESET_B           | SLAVE_SPI_PORT=ENABLE |
++----------+--------------------+-----------------------+
+
+
+List of All Pins' Locate Preferences Based on Final Placement After PAR 
+to Help Users Lock Down ALL the Pins Easily (by Simply Copy & Paste): 
+
+LOCATE  COMP  "JTAG_TCK"  SITE  "K2";
+LOCATE  COMP  "JTAG_TDI"  SITE  "D1";
+LOCATE  COMP  "JTAG_TDO"  SITE  "E2";
+LOCATE  COMP  "JTAG_TMS"  SITE  "F2";
+LOCATE  COMP  "SYSCONFIG_PIN_MISO_D1"  SITE  "K1";
+LOCATE  COMP  "SYSCONFIG_PIN_MOSI_D0"  SITE  "G1";
+LOCATE  COMP  "SYSCONFIG_PIN_SPI_SCK/MCK/SDA"  SITE  "J1";
+LOCATE  COMP  "SYSCONFIG_PIN_SPI_SS/CSN/SCL"  SITE  "H1";
+LOCATE  COMP  "clk_50m"  SITE  "F9";
+LOCATE  COMP  "ddr_output_clk"  SITE  "E1";
+LOCATE  COMP  "hs_burst_flag"  SITE  "E9";
+LOCATE  COMP  "key1"  SITE  "D9";
+LOCATE  COMP  "output_multi_lane_align_data_out[0]"  SITE  "H10";
+LOCATE  COMP  "output_multi_lane_align_data_out[10]"  SITE  "K5";
+LOCATE  COMP  "output_multi_lane_align_data_out[11]"  SITE  "J5";
+LOCATE  COMP  "output_multi_lane_align_data_out[12]"  SITE  "K4";
+LOCATE  COMP  "output_multi_lane_align_data_out[13]"  SITE  "J4";
+LOCATE  COMP  "output_multi_lane_align_data_out[14]"  SITE  "K3";
+LOCATE  COMP  "output_multi_lane_align_data_out[15]"  SITE  "J3";
+LOCATE  COMP  "output_multi_lane_align_data_out[16]"  SITE  "F1";
+LOCATE  COMP  "output_multi_lane_align_data_out[1]"  SITE  "H9";
+LOCATE  COMP  "output_multi_lane_align_data_out[2]"  SITE  "K9";
+LOCATE  COMP  "output_multi_lane_align_data_out[3]"  SITE  "K10";
+LOCATE  COMP  "output_multi_lane_align_data_out[4]"  SITE  "K8";
+LOCATE  COMP  "output_multi_lane_align_data_out[5]"  SITE  "J8";
+LOCATE  COMP  "output_multi_lane_align_data_out[6]"  SITE  "J7";
+LOCATE  COMP  "output_multi_lane_align_data_out[7]"  SITE  "K7";
+LOCATE  COMP  "output_multi_lane_align_data_out[8]"  SITE  "K6";
+LOCATE  COMP  "output_multi_lane_align_data_out[9]"  SITE  "J6";
+LOCATE  COMP  "sys_clk"  SITE  "G9";
+LOCATE  COMP  "sys_clk_div2"  SITE  "J2";
+
+#PLL
+LOCATE  COMP  "pll_sys_clk_inst/PLLInst_0"  SITE  "PLL" ;
+
+
+
+
+PAR: Place And Route Diamond (64-bit) 3.12.0.240.2.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Jul 15 02:06:21 2025
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

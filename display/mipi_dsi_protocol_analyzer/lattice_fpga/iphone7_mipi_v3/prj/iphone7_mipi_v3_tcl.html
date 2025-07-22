@@ -1,0 +1,104 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn250716105331"></A><B><U><big>pn250716105331</big></U></B>
+#Start recording tcl command: 7/16/2025 10:50:03
+#Project Location: C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3; Project name: iphone7_mipi_v3
+prj_project new -name "iphone7_mipi_v3" -impl "impl1" -dev LIF-MD6000-6KMG80I -synthesis "lse"
+prj_project save
+sbp_design new -dsgn "mipi" -path "C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi" -device "LIF-MD6000-6KMG80I"
+#Stop recording: 7/16/2025 10:53:31
+
+
+
+<A name="pn250716105422"></A><B><U><big>pn250716105422</big></U></B>
+#Start recording tcl command: 7/16/2025 10:54:08
+#Project Location: C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj; Project name: iphone7_mipi_v3
+prj_project open "C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/iphone7_mipi_v3.ldf"
+#Stop recording: 7/16/2025 10:54:22
+
+
+
+<A name="pn250717015715"></A><B><U><big>pn250717015715</big></U></B>
+#Start recording tcl command: 7/16/2025 10:54:35
+#Project Location: C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj; Project name: iphone7_mipi_v3
+prj_project open "C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/iphone7_mipi_v3.ldf"
+sbp_design new -dsgn "mipi" -path "C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi" -device "LIF-MD6000-6KMG80I"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi/dsi_receiver"
+source "C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi/dsi_receiver/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+sbp_builder export_add -comp {mipi/dsi_receiver}
+sbp_design gen
+prj_src add "C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi/mipi.sbx"
+#Stop recording: 7/17/2025 01:57:15
+
+
+
+<A name="pn250718132133"></A><B><U><big>pn250718132133</big></U></B>
+#Start recording tcl command: 7/17/2025 20:50:33
+#Project Location: C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj; Project name: iphone7_mipi_v3
+prj_project open "C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/iphone7_mipi_v3.ldf"
+sbp_design open -dsgn "C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/ip/mipi/mipi.sbx"
+#Stop recording: 7/18/2025 13:21:33
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

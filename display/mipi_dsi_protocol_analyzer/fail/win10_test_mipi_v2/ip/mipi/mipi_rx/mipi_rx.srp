@@ -1,0 +1,30 @@
+SCUBA, Version Diamond (64-bit) 3.12.0.240.2
+Sat Jun 28 17:35:31 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : C:\lscc\diamond\3.12\ispfpga\bin\nt64\scuba.exe -w -n mipi_rx -lang verilog -synth lse -bus_exp 7 -bb -arch sn5w00 -type iol -io_type LVDS -mode MIPI -freq_in 600 -width 2 -app DSI_RX_H -gear 16 -fdc C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/mipi/mipi_rx/mipi_rx.fdc 
+    Circuit name     : mipi_rx
+    Module type      : iol
+    Module Version   : 5.8
+    Ports            : 
+	Inputs       : clk_rxhsen, clk_rxlpen, d0_hsdeseren, d0_rxhsen, d0_rxlpen, d0_txlpn, d0_txlpp, usrstdby
+	Outputs      : clk_cd, clk_rxlpn, clk_rxlpp, clkhsbyte, d0_cd, d0_rxlpn, d0_rxlpp, rxhsbyteclk, q[31:0]
+	Inouts       : clk_n, clk_p, data_n[1:0], data_p[1:0]
+    I/O buffer       : not inserted
+    EDIF output      : mipi_rx.edn
+    Verilog output   : mipi_rx.v
+    Verilog template : mipi_rx_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : mipi_rx.srp
+    Element Usage    :
+           AND2 : 3
+            INV : 3
+            OR2 : 1
+    Estimated Resource Usage:
+            LUT : 4

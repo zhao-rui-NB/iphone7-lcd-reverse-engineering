@@ -1,0 +1,117 @@
+[ START MERGED ]
+mipi_rx_inst/d0_rxhsen_inv hs_burst_flag_N
+sys_rst_n_N_10 key1_c
+n16459 addr_15
+dphy_raw_fifo_inst/rRst dphy_raw_fifo_Reset
+dphy_raw_fifo_inst/invout_1 dphy_raw_fifo_inst/Full
+dphy_raw_fifo_inst/invout_0 dphy_raw_fifo_Empty_N
+top_reveal_coretop_instance/jrstn[0] top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/tlreset
+top_reveal_coretop_instance/top_la0_inst_0/jrstn_N_699 top_reveal_coretop_instance/jrstn[0]
+top_reveal_coretop_instance/jtck_N_701 jtck[0]
+top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtck_N_701_enable_27 top_reveal_coretop_instance/jrstn[0]
+top_reveal_coretop_instance/JTAG_SOFT_inst_0/tck_N_2299 jtck[0]
+top_reveal_coretop_instance/er2_tdo[0] top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jtdo_N_1147
+[ END MERGED ]
+[ START CLIPPED ]
+top_reveal_coretop_instance/top_la0_inst_0/reset_rvl_n
+VCC_net
+mipi_rx_inst/clk_rxhsen_inv
+mipi_rx_inst/d0txlpen
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg13795121379512/scuba_vlo
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg13795121379512/scuba_vhi
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg112112/scuba_vlo
+mipi_rx_inst/clkrxlpen
+top_reveal_coretop_instance/jupdate[0]
+top_reveal_coretop_instance/n320
+top_reveal_coretop_instance/n318
+top_reveal_coretop_instance/n325
+top_reveal_coretop_instance/JTAG_SOFT_inst_0/jtag_cntl_inst/rti_r
+top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_1289_add_4_7/S1
+top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_1289_add_4_7/CO
+top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/sub_56_add_2_1/S0
+top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/sub_56_add_2_1/CI
+top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/sub_56_add_2_9/CO
+top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_1289_add_4_1/S0
+top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/bit_cnt_1289_add_4_1/CI
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/sub_59_add_2_9/CO
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/sub_57_add_2_1/S0
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/sub_57_add_2_1/CI
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/sub_59_add_2_1/S0
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/sub_59_add_2_1/CI
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_wr_addr_cntr_1292_add_4_1/S0
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_wr_addr_cntr_1292_add_4_1/CI
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/sub_57_add_2_9/CO
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_wr_addr_cntr_1292_add_4_9/CO
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_rd_addr_cntr_1291_add_4_1/S0
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_rd_addr_cntr_1291_add_4_1/CI
+top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_rd_addr_cntr_1291_add_4_9/CO
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_1293_add_4_1/S0
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_1293_add_4_1/CI
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_1293_add_4_17/S1
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/te_precnt_1293_add_4_17/CO
+top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_0/pmi_ram_dpLIFMDbinarynonespeedasyncdisablereg112112/scuba_vhi
+dphy_raw_fifo_inst/a1/S1
+dphy_raw_fifo_inst/a1/CO
+dphy_raw_fifo_inst/full_cmp_2/S1
+dphy_raw_fifo_inst/full_cmp_2/S0
+dphy_raw_fifo_inst/full_cmp_1/S1
+dphy_raw_fifo_inst/full_cmp_1/S0
+dphy_raw_fifo_inst/full_cmp_0/S1
+dphy_raw_fifo_inst/full_cmp_0/S0
+dphy_raw_fifo_inst/full_cmp_ci_a/S1
+dphy_raw_fifo_inst/full_cmp_ci_a/S0
+dphy_raw_fifo_inst/full_cmp_ci_a/CI
+dphy_raw_fifo_inst/a0/S1
+dphy_raw_fifo_inst/a0/CO
+dphy_raw_fifo_inst/empty_cmp_2/S1
+dphy_raw_fifo_inst/empty_cmp_2/S0
+dphy_raw_fifo_inst/empty_cmp_1/S1
+dphy_raw_fifo_inst/empty_cmp_1/S0
+dphy_raw_fifo_inst/empty_cmp_0/S1
+dphy_raw_fifo_inst/empty_cmp_0/S0
+dphy_raw_fifo_inst/empty_cmp_ci_a/S1
+dphy_raw_fifo_inst/empty_cmp_ci_a/S0
+dphy_raw_fifo_inst/empty_cmp_ci_a/CI
+dphy_raw_fifo_inst/r_gctr_2/CO
+dphy_raw_fifo_inst/r_gctr_cia/S1
+dphy_raw_fifo_inst/r_gctr_cia/S0
+dphy_raw_fifo_inst/r_gctr_cia/CI
+dphy_raw_fifo_inst/w_gctr_2/CO
+dphy_raw_fifo_inst/w_gctr_cia/S1
+dphy_raw_fifo_inst/w_gctr_cia/S0
+dphy_raw_fifo_inst/w_gctr_cia/CI
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Tue Jul 15 02:06:14 2025
+
+SYSCONFIG SLAVE_SPI_PORT=ENABLE MASTER_SPI_PORT=DISABLE I2C_PORT=DISABLE MCCLK_FREQ=6 MY_ASSP=OFF ONE_TIME_PROGRAM_SRAM=DISABLE ONE_TIME_PROGRAM_NVCM=DISABLE SECURITY_SRAM=DISABLE SECURITY_NVCM=DISABLE TRANSFR=OFF BOOT_UP_SEQUENCE=NVCM CDONE_PORT=CDONE_USER_IO DONE_EX=OFF ;
+LOCATE COMP "clk_50m" SITE "F9" ;
+LOCATE COMP "ddr_output_clk" SITE "E1" ;
+LOCATE COMP "output_multi_lane_align_data_out[16]" SITE "F1" ;
+LOCATE COMP "output_multi_lane_align_data_out[15]" SITE "J3" ;
+LOCATE COMP "output_multi_lane_align_data_out[14]" SITE "K3" ;
+LOCATE COMP "output_multi_lane_align_data_out[13]" SITE "J4" ;
+LOCATE COMP "output_multi_lane_align_data_out[12]" SITE "K4" ;
+LOCATE COMP "output_multi_lane_align_data_out[11]" SITE "J5" ;
+LOCATE COMP "output_multi_lane_align_data_out[10]" SITE "K5" ;
+LOCATE COMP "output_multi_lane_align_data_out[9]" SITE "J6" ;
+LOCATE COMP "output_multi_lane_align_data_out[8]" SITE "K6" ;
+LOCATE COMP "output_multi_lane_align_data_out[7]" SITE "K7" ;
+LOCATE COMP "output_multi_lane_align_data_out[6]" SITE "J7" ;
+LOCATE COMP "output_multi_lane_align_data_out[5]" SITE "J8" ;
+LOCATE COMP "output_multi_lane_align_data_out[4]" SITE "K8" ;
+LOCATE COMP "output_multi_lane_align_data_out[3]" SITE "K10" ;
+LOCATE COMP "output_multi_lane_align_data_out[2]" SITE "K9" ;
+LOCATE COMP "output_multi_lane_align_data_out[1]" SITE "H9" ;
+LOCATE COMP "output_multi_lane_align_data_out[0]" SITE "H10" ;
+LOCATE COMP "JTAG_TCK" SITE "K2" ;
+LOCATE COMP "JTAG_TMS" SITE "F2" ;
+LOCATE COMP "JTAG_TDO" SITE "E2" ;
+LOCATE COMP "JTAG_TDI" SITE "D1" ;
+LOCATE COMP "key1" SITE "D9" ;
+FREQUENCY NET "rxhsbyteclk" 75.000000 MHz ;
+FREQUENCY NET "clk_50m_pll_in" 50.000000 MHz ;
+FREQUENCY NET "sys_clk_c" 100.000000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

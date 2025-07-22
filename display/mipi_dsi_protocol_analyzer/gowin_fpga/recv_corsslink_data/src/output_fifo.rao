@@ -1,0 +1,342 @@
+<?xml version="1" encoding="UTF-8"?>
+<GAO_CONFIG>
+    <Version>3.0</Version>
+    <Mode>Standard</Mode>
+    <AoCore index="0" sample_clock="sys_clk" trig_type="0" storage_depth="1024" window_num="1" capture_amount="1024" implementation="0" trigger_pos="0" module_name="top" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
+        <SignalList>
+            <Signal capture_enable="true">data_storage_controller_inst/output_fifo_reset</Signal>
+            <Signal capture_enable="true">data_storage_controller_inst/output_fifo_write_en</Signal>
+            <Signal capture_enable="true">data_storage_controller_inst/output_fifo_almost_full</Signal>
+            <Bus capture_enable="true" name="data_storage_controller_inst/output_fifo_write_data[63:0]">
+                <Signal>data_storage_controller_inst/output_fifo_write_data[63]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[62]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[61]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[60]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[59]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[58]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[57]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[56]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[55]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[54]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[53]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[52]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[51]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[50]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[49]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[48]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[47]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[46]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[45]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[44]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[43]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[42]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[41]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[40]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[39]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[38]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[37]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[36]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[35]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[34]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[33]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[32]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[31]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[30]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[29]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[28]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[27]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[26]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[25]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[24]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[23]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[22]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[21]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[20]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[19]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[18]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[17]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[16]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[15]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[14]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[13]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[12]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[11]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[10]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[9]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[8]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[7]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[6]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[5]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[4]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[3]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[2]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[1]</Signal>
+                <Signal>data_storage_controller_inst/output_fifo_write_data[0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">data_storage_controller_inst/input_fifo_reset</Signal>
+            <Signal capture_enable="true">data_storage_controller_inst/input_fifo_read_en</Signal>
+            <Signal capture_enable="true">data_storage_controller_inst/input_fifo_almost_empty</Signal>
+            <Bus capture_enable="true" name="data_storage_controller_inst/input_fifo_read_data[63:0]">
+                <Signal>data_storage_controller_inst/input_fifo_read_data[63]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[62]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[61]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[60]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[59]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[58]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[57]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[56]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[55]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[54]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[53]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[52]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[51]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[50]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[49]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[48]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[47]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[46]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[45]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[44]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[43]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[42]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[41]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[40]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[39]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[38]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[37]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[36]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[35]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[34]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[33]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[32]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[31]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[30]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[29]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[28]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[27]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[26]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[25]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[24]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[23]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[22]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[21]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[20]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[19]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[18]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[17]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[16]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[15]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[14]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[13]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[12]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[11]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[10]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[9]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[8]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[7]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[6]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[5]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[4]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[3]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[2]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[1]</Signal>
+                <Signal>data_storage_controller_inst/input_fifo_read_data[0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">fifo_hs_input_inst/Empty</Signal>
+            <Signal capture_enable="true">fifo_hs_input_inst/Full</Signal>
+            <Bus capture_enable="true" name="data_storage_controller_inst/psram_write_data[63:0]">
+                <Signal>data_storage_controller_inst/psram_write_data[63]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[62]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[61]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[60]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[59]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[58]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[57]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[56]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[55]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[54]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[53]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[52]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[51]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[50]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[49]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[48]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[47]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[46]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[45]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[44]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[43]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[42]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[41]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[40]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[39]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[38]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[37]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[36]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[35]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[34]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[33]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[32]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[31]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[30]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[29]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[28]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[27]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[26]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[25]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[24]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[23]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[22]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[21]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[20]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[19]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[18]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[17]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[16]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[15]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[14]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[13]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[12]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[11]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[10]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[9]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[8]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[7]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[6]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[5]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[4]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[3]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[2]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[1]</Signal>
+                <Signal>data_storage_controller_inst/psram_write_data[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="data_storage_controller_inst/psram_read_data[63:0]">
+                <Signal>data_storage_controller_inst/psram_read_data[63]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[62]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[61]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[60]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[59]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[58]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[57]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[56]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[55]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[54]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[53]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[52]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[51]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[50]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[49]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[48]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[47]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[46]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[45]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[44]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[43]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[42]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[41]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[40]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[39]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[38]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[37]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[36]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[35]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[34]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[33]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[32]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[31]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[30]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[29]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[28]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[27]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[26]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[25]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[24]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[23]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[22]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[21]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[20]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[19]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[18]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[17]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[16]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[15]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[14]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[13]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[12]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[11]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[10]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[9]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[8]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[7]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[6]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[5]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[4]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[3]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[2]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[1]</Signal>
+                <Signal>data_storage_controller_inst/psram_read_data[0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">data_storage_controller_inst/psram_cmd</Signal>
+            <Signal capture_enable="true">data_storage_controller_inst/psram_cmd_en</Signal>
+            <Signal capture_enable="true">data_storage_controller_inst/psram_read_data_valid</Signal>
+        </SignalList>
+        <Triggers>
+            <Trigger index="0">
+                <SignalList>
+                    <Signal>data_storage_controller_inst/output_fifo_reset</Signal>
+                </SignalList>
+            </Trigger>
+            <Trigger index="1">
+                <SignalList>
+                    <Signal>input_fifo_reset</Signal>
+                    <Signal>data_storage_controller_inst/input_fifo_read_en</Signal>
+                </SignalList>
+            </Trigger>
+            <Trigger index="2">
+                <SignalList>
+                    <Bus restorename="data_storage_controller_inst/state[3:0]">
+                        <Signal>data_storage_controller_inst/state[3]</Signal>
+                        <Signal>data_storage_controller_inst/state[2]</Signal>
+                        <Signal>data_storage_controller_inst/state[1]</Signal>
+                        <Signal>data_storage_controller_inst/state[0]</Signal>
+                    </Bus>
+                </SignalList>
+            </Trigger>
+            <Trigger index="3"/>
+            <Trigger index="4"/>
+            <Trigger index="5"/>
+            <Trigger index="6"/>
+            <Trigger index="7"/>
+            <Trigger index="8"/>
+            <Trigger index="9"/>
+            <Trigger index="10"/>
+            <Trigger index="11"/>
+            <Trigger index="12"/>
+            <Trigger index="13"/>
+            <Trigger index="14"/>
+            <Trigger index="15"/>
+        </Triggers>
+        <MatchUnits>
+            <MatchUnit index="0" enabled="1" match_type="1" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="0" value1="0" trigger="0"/>
+            <MatchUnit index="1" enabled="1" match_type="1" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="01" value1="00" trigger="1"/>
+            <MatchUnit index="2" enabled="1" match_type="1" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="1" value0="0000" value1="0000" trigger="2"/>
+            <MatchUnit index="3" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="4" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="5" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="6" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="7" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="8" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="9" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="10" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="11" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="12" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="13" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="14" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="15" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+        </MatchUnits>
+        <Expressions type="Static">
+            <Expression>(M2&amp;M1)|(M2&amp;M0)</Expression>
+        </Expressions>
+    </AoCore>
+    <GAO_ID>0001100111111001</GAO_ID>
+</GAO_CONFIG>

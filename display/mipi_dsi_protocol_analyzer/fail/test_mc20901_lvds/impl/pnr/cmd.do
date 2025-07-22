@@ -1,0 +1,20 @@
+-d C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\test_mc20901_lvds\impl\gwsynthesis\test_mc20901_lvds.vg
+-p GW1NR-9C-LQFP144P-6
+-pn GW1NR-LV9LQ144PC6/I5
+-cst C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\test_mc20901_lvds\src\test_mc20901_lvds.cst
+-cfg C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\test_mc20901_lvds\impl\pnr\device.cfg
+-sdc C:\Users\rui\Desktop\iphone_screen\gowin_fpga_mipi_prj\test_mc20901_lvds\src\test_mc20901_lvds.sdc
+-gao_crc 1011100000100110
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-place_option 0
+-route_option 0
+-clock_route_order 0
+-correct_hold 1
+-route_maxfan 23
+-global_freq 50.000
+-rtl_gao

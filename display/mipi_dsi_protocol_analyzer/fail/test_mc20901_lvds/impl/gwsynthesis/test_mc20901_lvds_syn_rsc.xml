@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="read_lvds" Lut="1" T_Register="384(0)" T_Alu="14(0)" T_Lut="467(1)" T_Bsram="4(0)">
+ <SubModule name="gw_gao_inst_0" Register="376" Alu="14" Lut="460" Bsram="4" T_Register="376(376)" T_Alu="14(14)" T_Lut="460(460)" T_Bsram="4(4)"/>
+ <SubModule name="mipi_rx" Register="4" Lut="3" T_Register="4(4)" T_Lut="3(3)"/>
+ <SubModule name="mipi_lane_state_detection_inst" Register="4" Lut="3" T_Register="4(4)" T_Lut="3(3)"/>
+</Module>

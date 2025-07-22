@@ -1,0 +1,27 @@
+SCUBA, Version Diamond (64-bit) 3.12.0.240.2
+Mon Jul 14 12:14:24 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : C:\lscc\diamond\3.12\ispfpga\bin\nt64\scuba.exe -w -n ddr_output -lang verilog -synth lse -bus_exp 7 -bb -arch sn5w00 -type iol -mode Transmit -io_type LVTTL33 -width 17 -freq_in 100 -gear 2 -aligned -del -1 -fdc C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/ip/output_io/ddr_output/ddr_output.fdc 
+    Circuit name     : ddr_output
+    Module type      : iol
+    Module Version   : 5.8
+    Ports            : 
+	Inputs       : refclk, reset, data[33:0]
+	Outputs      : clkout, dout[16:0]
+    I/O buffer       : not inserted
+    EDIF output      : ddr_output.edn
+    Verilog output   : ddr_output.v
+    Verilog template : ddr_output_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : ddr_output.srp
+    Element Usage    :
+             OB : 18
+        ODDRX1F : 18
+    Estimated Resource Usage:

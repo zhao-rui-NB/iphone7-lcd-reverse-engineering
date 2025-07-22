@@ -1,0 +1,222 @@
+<?xml version="1" encoding="UTF-8"?>
+<GAO_CONFIG>
+    <Version>3.0</Version>
+    <Mode>Standard</Mode>
+    <AoCore index="0" sample_clock="sys_clk" trig_type="0" storage_depth="2048" window_num="1" capture_amount="2048" implementation="0" trigger_pos="0" module_name="top" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
+        <SignalList>
+            <Bus capture_enable="true" name="data_storage_controller_inst/state[3:0]">
+                <Signal>data_storage_controller_inst/state[3]</Signal>
+                <Signal>data_storage_controller_inst/state[2]</Signal>
+                <Signal>data_storage_controller_inst/state[1]</Signal>
+                <Signal>data_storage_controller_inst/state[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="psram_inst/addr[20:0]">
+                <Signal>psram_inst/addr[20]</Signal>
+                <Signal>psram_inst/addr[19]</Signal>
+                <Signal>psram_inst/addr[18]</Signal>
+                <Signal>psram_inst/addr[17]</Signal>
+                <Signal>psram_inst/addr[16]</Signal>
+                <Signal>psram_inst/addr[15]</Signal>
+                <Signal>psram_inst/addr[14]</Signal>
+                <Signal>psram_inst/addr[13]</Signal>
+                <Signal>psram_inst/addr[12]</Signal>
+                <Signal>psram_inst/addr[11]</Signal>
+                <Signal>psram_inst/addr[10]</Signal>
+                <Signal>psram_inst/addr[9]</Signal>
+                <Signal>psram_inst/addr[8]</Signal>
+                <Signal>psram_inst/addr[7]</Signal>
+                <Signal>psram_inst/addr[6]</Signal>
+                <Signal>psram_inst/addr[5]</Signal>
+                <Signal>psram_inst/addr[4]</Signal>
+                <Signal>psram_inst/addr[3]</Signal>
+                <Signal>psram_inst/addr[2]</Signal>
+                <Signal>psram_inst/addr[1]</Signal>
+                <Signal>psram_inst/addr[0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">psram_inst/cmd</Signal>
+            <Signal capture_enable="true">psram_inst/cmd_en</Signal>
+            <Bus capture_enable="true" name="psram_inst/rd_data[63:0]">
+                <Signal>psram_inst/rd_data[63]</Signal>
+                <Signal>psram_inst/rd_data[62]</Signal>
+                <Signal>psram_inst/rd_data[61]</Signal>
+                <Signal>psram_inst/rd_data[60]</Signal>
+                <Signal>psram_inst/rd_data[59]</Signal>
+                <Signal>psram_inst/rd_data[58]</Signal>
+                <Signal>psram_inst/rd_data[57]</Signal>
+                <Signal>psram_inst/rd_data[56]</Signal>
+                <Signal>psram_inst/rd_data[55]</Signal>
+                <Signal>psram_inst/rd_data[54]</Signal>
+                <Signal>psram_inst/rd_data[53]</Signal>
+                <Signal>psram_inst/rd_data[52]</Signal>
+                <Signal>psram_inst/rd_data[51]</Signal>
+                <Signal>psram_inst/rd_data[50]</Signal>
+                <Signal>psram_inst/rd_data[49]</Signal>
+                <Signal>psram_inst/rd_data[48]</Signal>
+                <Signal>psram_inst/rd_data[47]</Signal>
+                <Signal>psram_inst/rd_data[46]</Signal>
+                <Signal>psram_inst/rd_data[45]</Signal>
+                <Signal>psram_inst/rd_data[44]</Signal>
+                <Signal>psram_inst/rd_data[43]</Signal>
+                <Signal>psram_inst/rd_data[42]</Signal>
+                <Signal>psram_inst/rd_data[41]</Signal>
+                <Signal>psram_inst/rd_data[40]</Signal>
+                <Signal>psram_inst/rd_data[39]</Signal>
+                <Signal>psram_inst/rd_data[38]</Signal>
+                <Signal>psram_inst/rd_data[37]</Signal>
+                <Signal>psram_inst/rd_data[36]</Signal>
+                <Signal>psram_inst/rd_data[35]</Signal>
+                <Signal>psram_inst/rd_data[34]</Signal>
+                <Signal>psram_inst/rd_data[33]</Signal>
+                <Signal>psram_inst/rd_data[32]</Signal>
+                <Signal>psram_inst/rd_data[31]</Signal>
+                <Signal>psram_inst/rd_data[30]</Signal>
+                <Signal>psram_inst/rd_data[29]</Signal>
+                <Signal>psram_inst/rd_data[28]</Signal>
+                <Signal>psram_inst/rd_data[27]</Signal>
+                <Signal>psram_inst/rd_data[26]</Signal>
+                <Signal>psram_inst/rd_data[25]</Signal>
+                <Signal>psram_inst/rd_data[24]</Signal>
+                <Signal>psram_inst/rd_data[23]</Signal>
+                <Signal>psram_inst/rd_data[22]</Signal>
+                <Signal>psram_inst/rd_data[21]</Signal>
+                <Signal>psram_inst/rd_data[20]</Signal>
+                <Signal>psram_inst/rd_data[19]</Signal>
+                <Signal>psram_inst/rd_data[18]</Signal>
+                <Signal>psram_inst/rd_data[17]</Signal>
+                <Signal>psram_inst/rd_data[16]</Signal>
+                <Signal>psram_inst/rd_data[15]</Signal>
+                <Signal>psram_inst/rd_data[14]</Signal>
+                <Signal>psram_inst/rd_data[13]</Signal>
+                <Signal>psram_inst/rd_data[12]</Signal>
+                <Signal>psram_inst/rd_data[11]</Signal>
+                <Signal>psram_inst/rd_data[10]</Signal>
+                <Signal>psram_inst/rd_data[9]</Signal>
+                <Signal>psram_inst/rd_data[8]</Signal>
+                <Signal>psram_inst/rd_data[7]</Signal>
+                <Signal>psram_inst/rd_data[6]</Signal>
+                <Signal>psram_inst/rd_data[5]</Signal>
+                <Signal>psram_inst/rd_data[4]</Signal>
+                <Signal>psram_inst/rd_data[3]</Signal>
+                <Signal>psram_inst/rd_data[2]</Signal>
+                <Signal>psram_inst/rd_data[1]</Signal>
+                <Signal>psram_inst/rd_data[0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">psram_inst/rd_data_valid</Signal>
+            <Bus capture_enable="true" name="output_fifo_write_data[63:0]">
+                <Signal>output_fifo_write_data[63]</Signal>
+                <Signal>output_fifo_write_data[62]</Signal>
+                <Signal>output_fifo_write_data[61]</Signal>
+                <Signal>output_fifo_write_data[60]</Signal>
+                <Signal>output_fifo_write_data[59]</Signal>
+                <Signal>output_fifo_write_data[58]</Signal>
+                <Signal>output_fifo_write_data[57]</Signal>
+                <Signal>output_fifo_write_data[56]</Signal>
+                <Signal>output_fifo_write_data[55]</Signal>
+                <Signal>output_fifo_write_data[54]</Signal>
+                <Signal>output_fifo_write_data[53]</Signal>
+                <Signal>output_fifo_write_data[52]</Signal>
+                <Signal>output_fifo_write_data[51]</Signal>
+                <Signal>output_fifo_write_data[50]</Signal>
+                <Signal>output_fifo_write_data[49]</Signal>
+                <Signal>output_fifo_write_data[48]</Signal>
+                <Signal>output_fifo_write_data[47]</Signal>
+                <Signal>output_fifo_write_data[46]</Signal>
+                <Signal>output_fifo_write_data[45]</Signal>
+                <Signal>output_fifo_write_data[44]</Signal>
+                <Signal>output_fifo_write_data[43]</Signal>
+                <Signal>output_fifo_write_data[42]</Signal>
+                <Signal>output_fifo_write_data[41]</Signal>
+                <Signal>output_fifo_write_data[40]</Signal>
+                <Signal>output_fifo_write_data[39]</Signal>
+                <Signal>output_fifo_write_data[38]</Signal>
+                <Signal>output_fifo_write_data[37]</Signal>
+                <Signal>output_fifo_write_data[36]</Signal>
+                <Signal>output_fifo_write_data[35]</Signal>
+                <Signal>output_fifo_write_data[34]</Signal>
+                <Signal>output_fifo_write_data[33]</Signal>
+                <Signal>output_fifo_write_data[32]</Signal>
+                <Signal>output_fifo_write_data[31]</Signal>
+                <Signal>output_fifo_write_data[30]</Signal>
+                <Signal>output_fifo_write_data[29]</Signal>
+                <Signal>output_fifo_write_data[28]</Signal>
+                <Signal>output_fifo_write_data[27]</Signal>
+                <Signal>output_fifo_write_data[26]</Signal>
+                <Signal>output_fifo_write_data[25]</Signal>
+                <Signal>output_fifo_write_data[24]</Signal>
+                <Signal>output_fifo_write_data[23]</Signal>
+                <Signal>output_fifo_write_data[22]</Signal>
+                <Signal>output_fifo_write_data[21]</Signal>
+                <Signal>output_fifo_write_data[20]</Signal>
+                <Signal>output_fifo_write_data[19]</Signal>
+                <Signal>output_fifo_write_data[18]</Signal>
+                <Signal>output_fifo_write_data[17]</Signal>
+                <Signal>output_fifo_write_data[16]</Signal>
+                <Signal>output_fifo_write_data[15]</Signal>
+                <Signal>output_fifo_write_data[14]</Signal>
+                <Signal>output_fifo_write_data[13]</Signal>
+                <Signal>output_fifo_write_data[12]</Signal>
+                <Signal>output_fifo_write_data[11]</Signal>
+                <Signal>output_fifo_write_data[10]</Signal>
+                <Signal>output_fifo_write_data[9]</Signal>
+                <Signal>output_fifo_write_data[8]</Signal>
+                <Signal>output_fifo_write_data[7]</Signal>
+                <Signal>output_fifo_write_data[6]</Signal>
+                <Signal>output_fifo_write_data[5]</Signal>
+                <Signal>output_fifo_write_data[4]</Signal>
+                <Signal>output_fifo_write_data[3]</Signal>
+                <Signal>output_fifo_write_data[2]</Signal>
+                <Signal>output_fifo_write_data[1]</Signal>
+                <Signal>output_fifo_write_data[0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">output_fifo_write_en</Signal>
+            <Signal capture_enable="true">output_fifo_read_en</Signal>
+            <Signal capture_enable="true">output_fifo_almost_full</Signal>
+            <Signal capture_enable="true">fifo_hs_output_inst/Almost_Full</Signal>
+            <Signal capture_enable="true">fifo_hs_output_inst/Full</Signal>
+        </SignalList>
+        <Triggers>
+            <Trigger index="0">
+                <SignalList>
+                    <Signal>data_storage_controller_inst/negedge_output_data_key</Signal>
+                </SignalList>
+            </Trigger>
+            <Trigger index="1"/>
+            <Trigger index="2"/>
+            <Trigger index="3"/>
+            <Trigger index="4"/>
+            <Trigger index="5"/>
+            <Trigger index="6"/>
+            <Trigger index="7"/>
+            <Trigger index="8"/>
+            <Trigger index="9"/>
+            <Trigger index="10"/>
+            <Trigger index="11"/>
+            <Trigger index="12"/>
+            <Trigger index="13"/>
+            <Trigger index="14"/>
+            <Trigger index="15"/>
+        </Triggers>
+        <MatchUnits>
+            <MatchUnit index="0" enabled="1" match_type="1" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="1" value1="0" trigger="0"/>
+            <MatchUnit index="1" enabled="0" match_type="1" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="1" value1="0" trigger="1"/>
+            <MatchUnit index="2" enabled="0" match_type="1" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="1" value1="0" trigger="2"/>
+            <MatchUnit index="3" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="4" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="5" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="6" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="7" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="8" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="9" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="10" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="11" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="12" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="13" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="14" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="15" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+        </MatchUnits>
+        <Expressions type="Static">
+            <Expression>M0</Expression>
+        </Expressions>
+    </AoCore>
+    <GAO_ID>0010010001101000</GAO_ID>
+</GAO_CONFIG>

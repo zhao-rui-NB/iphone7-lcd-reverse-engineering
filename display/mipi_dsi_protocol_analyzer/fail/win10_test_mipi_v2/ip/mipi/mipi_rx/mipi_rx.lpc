@@ -1,0 +1,43 @@
+[Device]
+Family=lifmd
+PartType=LIF-MD6000
+PartName=LIF-MD6000-6KMG80I
+SpeedGrade=6
+Package=CKFBGA80
+OperatingCondition=IND
+Status=S
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=LPM
+CoreStatus=Demo
+CoreName=MIPI_DPHY
+CoreRevision=1.1
+ModuleName=mipi_rx
+SourceFormat=verilog
+ParameterFileVersion=1.0
+Date=06/28/2025
+Time=17:35:28
+
+[Parameters]
+Verilog=1
+VHDL=0
+EDIF=1
+Destination=Synplicity
+Expression=BusA(0 to 7)
+Order=Big Endian [MSB:LSB]
+IO=0
+mode=Receive
+mipi_app=DSI
+dphy_module_type=Hard MIPI DPHY
+freq_in=600
+data_rate=1200
+gear=1:16
+Width=2
+Pll_Freq=
+enClkIBuf=0
+ClkIBuf=LVDS
+cbIncludeStartUp=0
+
+[Command]
+cmd_line= -w -n mipi_rx -lang verilog -synth lse -bus_exp 7 -bb -arch sn5w00 -type iol -io_type LVDS -mode MIPI -freq_in 600 -width 2 -app DSI_RX_H -gear 16

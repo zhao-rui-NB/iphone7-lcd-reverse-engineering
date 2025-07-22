@@ -1,0 +1,54 @@
+<Project ModBy="Inserter" Name="C:/Users/rui/Desktop/iphone_screen/crosslink_fpga_mipi_prj/iphone7_mipi_v3/prj/top.rvl" Date="2025-07-20">
+    <Core Name="top_LA0">
+        <Setting>
+            <Capture SamplesPerTrig="2048" NumTrigsCap="1"/>
+            <Event EventCnt="0" CntEnableRun="0"/>
+            <TrigSetting PreTrgSamples="" AND_ALL="0" PostTrgSamples="" TURadix="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Sig Name="mipi_rx/mipi_rx_capture_en_o"/>
+                <Bus Name="mipi_rx/mipi_rx_bd0_o" Radix="0">
+                    <Sig Name="mipi_rx/mipi_rx_bd0_o:0"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd0_o:1"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd0_o:2"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd0_o:3"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd0_o:4"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd0_o:5"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd0_o:6"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd0_o:7"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd0_o:8"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd0_o:9"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd0_o:10"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd0_o:11"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd0_o:12"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd0_o:13"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd0_o:14"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd0_o:15"/>
+                </Bus>
+                <Bus Name="mipi_rx/mipi_rx_bd1_o" Radix="0">
+                    <Sig Name="mipi_rx/mipi_rx_bd1_o:0"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd1_o:1"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd1_o:2"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd1_o:3"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd1_o:4"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd1_o:5"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd1_o:6"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd1_o:7"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd1_o:8"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd1_o:9"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd1_o:10"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd1_o:11"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd1_o:12"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd1_o:13"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd1_o:14"/>
+                    <Sig Name="mipi_rx/mipi_rx_bd1_o:15"/>
+                </Bus>
+            </Trace>
+            <Trigger>
+                <TU Operator="6" Name="TU1" ID="1" Value="1" Radix="0"/>
+                <TE Enable="1" Expression="TU1" Name="TE1" ID="1"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>

@@ -1,0 +1,97 @@
+<?xml version="1" encoding="UTF-8"?>
+<GAO_CONFIG>
+    <Version>3.0</Version>
+    <Mode>Standard</Mode>
+    <AoCore index="0" sample_clock="sys_clk" trig_type="0" storage_depth="4096" window_num="1" capture_amount="4096" implementation="0" trigger_pos="0" module_name="top" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
+        <SignalList>
+            <Bus capture_enable="true" name="u_HSPI_Tx/HTD[31:0]">
+                <Signal>u_HSPI_Tx/HTD[31]</Signal>
+                <Signal>u_HSPI_Tx/HTD[30]</Signal>
+                <Signal>u_HSPI_Tx/HTD[29]</Signal>
+                <Signal>u_HSPI_Tx/HTD[28]</Signal>
+                <Signal>u_HSPI_Tx/HTD[27]</Signal>
+                <Signal>u_HSPI_Tx/HTD[26]</Signal>
+                <Signal>u_HSPI_Tx/HTD[25]</Signal>
+                <Signal>u_HSPI_Tx/HTD[24]</Signal>
+                <Signal>u_HSPI_Tx/HTD[23]</Signal>
+                <Signal>u_HSPI_Tx/HTD[22]</Signal>
+                <Signal>u_HSPI_Tx/HTD[21]</Signal>
+                <Signal>u_HSPI_Tx/HTD[20]</Signal>
+                <Signal>u_HSPI_Tx/HTD[19]</Signal>
+                <Signal>u_HSPI_Tx/HTD[18]</Signal>
+                <Signal>u_HSPI_Tx/HTD[17]</Signal>
+                <Signal>u_HSPI_Tx/HTD[16]</Signal>
+                <Signal>u_HSPI_Tx/HTD[15]</Signal>
+                <Signal>u_HSPI_Tx/HTD[14]</Signal>
+                <Signal>u_HSPI_Tx/HTD[13]</Signal>
+                <Signal>u_HSPI_Tx/HTD[12]</Signal>
+                <Signal>u_HSPI_Tx/HTD[11]</Signal>
+                <Signal>u_HSPI_Tx/HTD[10]</Signal>
+                <Signal>u_HSPI_Tx/HTD[9]</Signal>
+                <Signal>u_HSPI_Tx/HTD[8]</Signal>
+                <Signal>u_HSPI_Tx/HTD[7]</Signal>
+                <Signal>u_HSPI_Tx/HTD[6]</Signal>
+                <Signal>u_HSPI_Tx/HTD[5]</Signal>
+                <Signal>u_HSPI_Tx/HTD[4]</Signal>
+                <Signal>u_HSPI_Tx/HTD[3]</Signal>
+                <Signal>u_HSPI_Tx/HTD[2]</Signal>
+                <Signal>u_HSPI_Tx/HTD[1]</Signal>
+                <Signal>u_HSPI_Tx/HTD[0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">u_HSPI_Tx/FIFO_READ_EMPTY</Signal>
+            <Signal capture_enable="true">u_HSPI_Tx/FIFO_READ_RD_EN</Signal>
+            <Signal capture_enable="true">u_HSPI_Tx/HTCLK</Signal>
+            <Signal capture_enable="true">u_HSPI_Tx/HTREQ</Signal>
+            <Signal capture_enable="true">u_HSPI_Tx/HTRDY</Signal>
+            <Signal capture_enable="true">u_HSPI_Tx/HTVLD</Signal>
+            <Signal capture_enable="true">u_HSPI_Tx/wire_crc_en</Signal>
+            <Signal capture_enable="true">u_HSPI_Tx/Tx_En</Signal>
+            <Signal capture_enable="true">u_HSPI_Tx/Tx_Start</Signal>
+            <Signal capture_enable="true">u_HSPI_Tx/Tx_Done</Signal>
+        </SignalList>
+        <Triggers>
+            <Trigger index="0">
+                <SignalList>
+                    <Signal>data_storage_controller_inst/negedge_output_data_key</Signal>
+                </SignalList>
+            </Trigger>
+            <Trigger index="1"/>
+            <Trigger index="2"/>
+            <Trigger index="3"/>
+            <Trigger index="4"/>
+            <Trigger index="5"/>
+            <Trigger index="6"/>
+            <Trigger index="7"/>
+            <Trigger index="8"/>
+            <Trigger index="9"/>
+            <Trigger index="10"/>
+            <Trigger index="11"/>
+            <Trigger index="12"/>
+            <Trigger index="13"/>
+            <Trigger index="14"/>
+            <Trigger index="15"/>
+        </Triggers>
+        <MatchUnits>
+            <MatchUnit index="0" enabled="1" match_type="1" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="1" value1="0" trigger="0"/>
+            <MatchUnit index="1" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="2" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="3" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="4" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="5" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="6" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="7" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="8" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="9" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="10" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="11" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="12" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="13" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="14" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="15" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+        </MatchUnits>
+        <Expressions type="Static">
+            <Expression>M0</Expression>
+        </Expressions>
+    </AoCore>
+    <GAO_ID>0101001100001110</GAO_ID>
+</GAO_CONFIG>

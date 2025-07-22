@@ -1,0 +1,65 @@
+{
+ "Device" : "GW1NR-9C",
+ "Files" : [
+  {
+   "Path" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/HSPI_Tx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/crc32_32b.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/data_storage_controller.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/debounce.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/fake_fifo_test_data.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/fifo_hs/fifo_hs_input.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/fifo_hs_output/fifo_hs_output.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/gowin_ddr/gowin_ddr.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/gowin_rpll/gowin_rpll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/hspi_sender.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/hspi_sender_btn.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/psram_memory_interface_hs_v2/psram_memory_interface_hs_v2.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/top.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/impl/temp/rtl_parser.result",
+ "Top" : "top",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

@@ -1,0 +1,170 @@
+[
+ {
+  "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/HSPI_Tx.v",
+  "InstLine" : 23,
+  "InstName" : "HSPI_Tx",
+  "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/HSPI_Tx.v",
+  "ModuleLine" : 23,
+  "ModuleName" : "HSPI_Tx",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/HSPI_Tx.v",
+    "InstLine" : 110,
+    "InstName" : "m_crc32",
+    "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/HSPI_Tx.v",
+    "ModuleLine" : 228,
+    "ModuleName" : "crc32_32b_2"
+   }
+  ]
+ },
+ {
+  "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/fake_fifo_test_data.v",
+  "InstLine" : 25,
+  "InstName" : "fake_fifo_test_data",
+  "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/fake_fifo_test_data.v",
+  "ModuleLine" : 25,
+  "ModuleName" : "fake_fifo_test_data"
+ },
+ {
+  "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/hspi_sender_btn.v",
+  "InstLine" : 1,
+  "InstName" : "hspi_sender_btn",
+  "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/hspi_sender_btn.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "hspi_sender_btn",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/hspi_sender_btn.v",
+    "InstLine" : 66,
+    "InstName" : "u_crc32_32b",
+    "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/crc32_32b.v",
+    "ModuleLine" : 14,
+    "ModuleName" : "crc32_32b"
+   }
+  ]
+ },
+ {
+  "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/top.v",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/top.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/top.v",
+    "InstLine" : 50,
+    "InstName" : "ddr_inst",
+    "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/gowin_ddr/gowin_ddr.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "Gowin_DDR"
+   },
+   {
+    "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/top.v",
+    "InstLine" : 66,
+    "InstName" : "fifo_hs_input_inst",
+    "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/fifo_hs/fifo_hs_input.v",
+    "ModuleLine" : 436,
+    "ModuleName" : "fifo_hs_input",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/fifo_hs/fifo_hs_input.v",
+      "InstLine" : 461,
+      "InstName" : "fifo_inst",
+      "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/fifo_hs/fifo_hs_input.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "~fifo.fifo_hs_input"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/top.v",
+    "InstLine" : 122,
+    "InstName" : "pll_inst",
+    "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/gowin_rpll/gowin_rpll.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_rPLL"
+   },
+   {
+    "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/top.v",
+    "InstLine" : 137,
+    "InstName" : "psram_inst",
+    "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/psram_memory_interface_hs_v2/psram_memory_interface_hs_v2.v",
+    "ModuleLine" : 4770,
+    "ModuleName" : "PSRAM_Memory_Interface_HS_V2_Top",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/psram_memory_interface_hs_v2/psram_memory_interface_hs_v2.v",
+      "InstLine" : 4815,
+      "InstName" : "u_psram_top",
+      "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/psram_memory_interface_hs_v2/psram_memory_interface_hs_v2.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "~psram_top.PSRAM_Memory_Interface_HS_V2_Top"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/top.v",
+    "InstLine" : 181,
+    "InstName" : "fifo_hs_output_inst",
+    "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/fifo_hs_output/fifo_hs_output.v",
+    "ModuleLine" : 511,
+    "ModuleName" : "fifo_hs_output",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/fifo_hs_output/fifo_hs_output.v",
+      "InstLine" : 538,
+      "InstName" : "fifo_inst",
+      "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/fifo_hs_output/fifo_hs_output.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "~fifo.fifo_hs_output"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/top.v",
+    "InstLine" : 202,
+    "InstName" : "data_storage_controller_inst",
+    "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/data_storage_controller.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "data_storage_controller",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/data_storage_controller.v",
+      "InstLine" : 38,
+      "InstName" : "debounce_save",
+      "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/debounce.v",
+      "ModuleLine" : 21,
+      "ModuleName" : "debounce"
+     },
+     {
+      "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/data_storage_controller.v",
+      "InstLine" : 48,
+      "InstName" : "debounce_output",
+      "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/debounce.v",
+      "ModuleLine" : 21,
+      "ModuleName" : "debounce"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/top.v",
+    "InstLine" : 233,
+    "InstName" : "hspi_sender_inst",
+    "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/hspi_sender.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "hspi_sender",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/hspi_sender.v",
+      "InstLine" : 62,
+      "InstName" : "u_crc32_32b",
+      "ModuleFile" : "C:/Users/rui/Desktop/iphone_screen/gowin_fpga_mipi_prj/recv_corsslink_data/recv_corsslink_data/src/crc32_32b.v",
+      "ModuleLine" : 14,
+      "ModuleName" : "crc32_32b"
+     }
+    ]
+   }
+  ]
+ }
+]

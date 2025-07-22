@@ -1,0 +1,131 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Sun Jun 29 01:00:55 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     mipi_raw_data_controller
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets sys_clk_c]
+            33 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 1.948ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             dphy_raw_fifo_RdEn_16  (from sys_clk_c +)
+   Destination:    FD1S3IX    CD             raw_data_out_lane0__i1  (to sys_clk_c +)
+
+   Delay:                   3.052ns  (0.0% logic, 100.0% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.052ns data_path dphy_raw_fifo_RdEn_16 to raw_data_out_lane0__i1 meets
+      5.000ns delay constraint less
+      0.000ns L_S requirement (totaling 5.000ns) by 1.948ns
+
+ Path Details: dphy_raw_fifo_RdEn_16 to raw_data_out_lane0__i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              dphy_raw_fifo_RdEn_16 (from sys_clk_c)
+Route         3   e 1.339                                  dphy_raw_fifo_RdEn_c
+LUT4        ---     0.000              A to Z              i37_1_lut
+Route        32   e 1.713                                  n125
+                  --------
+                    3.052  (0.0% logic, 100.0% route), 2 logic levels.
+
+
+Passed:  The following path meets requirements by 1.948ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             dphy_raw_fifo_RdEn_16  (from sys_clk_c +)
+   Destination:    FD1S3IX    CD             raw_data_out_lane1__i16  (to sys_clk_c +)
+
+   Delay:                   3.052ns  (0.0% logic, 100.0% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.052ns data_path dphy_raw_fifo_RdEn_16 to raw_data_out_lane1__i16 meets
+      5.000ns delay constraint less
+      0.000ns L_S requirement (totaling 5.000ns) by 1.948ns
+
+ Path Details: dphy_raw_fifo_RdEn_16 to raw_data_out_lane1__i16
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              dphy_raw_fifo_RdEn_16 (from sys_clk_c)
+Route         3   e 1.339                                  dphy_raw_fifo_RdEn_c
+LUT4        ---     0.000              A to Z              i37_1_lut
+Route        32   e 1.713                                  n125
+                  --------
+                    3.052  (0.0% logic, 100.0% route), 2 logic levels.
+
+
+Passed:  The following path meets requirements by 1.948ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             dphy_raw_fifo_RdEn_16  (from sys_clk_c +)
+   Destination:    FD1S3IX    CD             raw_data_out_lane1__i15  (to sys_clk_c +)
+
+   Delay:                   3.052ns  (0.0% logic, 100.0% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.052ns data_path dphy_raw_fifo_RdEn_16 to raw_data_out_lane1__i15 meets
+      5.000ns delay constraint less
+      0.000ns L_S requirement (totaling 5.000ns) by 1.948ns
+
+ Path Details: dphy_raw_fifo_RdEn_16 to raw_data_out_lane1__i15
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.000             CK to Q              dphy_raw_fifo_RdEn_16 (from sys_clk_c)
+Route         3   e 1.339                                  dphy_raw_fifo_RdEn_c
+LUT4        ---     0.000              A to Z              i37_1_lut
+Route        32   e 1.713                                  n125
+                  --------
+                    3.052  (0.0% logic, 100.0% route), 2 logic levels.
+
+Report: 3.052 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets sys_clk_c]               |     5.000 ns|     3.052 ns|     2  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  33 paths, 3 nets, and 69 connections (48.6% coverage)
+
+
+Peak memory: 57204736 bytes, TRCE: 122880 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

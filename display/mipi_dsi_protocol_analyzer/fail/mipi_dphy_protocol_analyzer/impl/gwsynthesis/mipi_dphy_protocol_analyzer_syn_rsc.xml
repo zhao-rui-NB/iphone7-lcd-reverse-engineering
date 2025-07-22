@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Lut="2" T_Register="307(0)" T_Alu="13(0)" T_Lut="412(2)" T_Bsram="1(0)">
+ <SubModule name="gw_gao_inst_0" Register="303" Alu="13" Lut="407" Bsram="1" T_Register="303(303)" T_Alu="13(13)" T_Lut="407(407)" T_Bsram="1(1)"/>
+ <SubModule name="ckdiv8_1"/>
+ <SubModule name="ckdiv8_2"/>
+ <SubModule name="mipi_lane_state_detection_inst" Register="4" Lut="3" T_Register="4(4)" T_Lut="3(3)"/>
+</Module>

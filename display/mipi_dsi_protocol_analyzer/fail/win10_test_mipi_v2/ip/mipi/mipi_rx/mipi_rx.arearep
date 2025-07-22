@@ -1,0 +1,12 @@
+----------------------------------------------------------------------
+Report for cell mipi_rx.TECH
+Register bits:  0 of 6047 (0.000%)
+I/O cells:      0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2         3          100.0
+                                GSR         1          100.0
+                                INV         3          100.0
+                          MIPIDPHYA         1          100.0
+                                OR2         1          100.0
+                              TOTAL         9

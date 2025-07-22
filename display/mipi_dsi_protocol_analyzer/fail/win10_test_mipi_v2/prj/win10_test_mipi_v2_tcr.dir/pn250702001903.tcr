@@ -1,0 +1,11 @@
+#Start recording tcl command: 7/1/2025 16:54:06
+#Project Location: C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj; Project name: win10_test_mipi_v2
+prj_project open "C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/win10_test_mipi_v2.ldf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen
+#Stop recording: 7/2/2025 00:19:03

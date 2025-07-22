@@ -1,0 +1,100 @@
+<Project ModBy="Inserter" SigType="0" Name="C:/Users/rui/Desktop/win10_crosslink/win10_test_mipi_v2/prj/hs.rvl" Date="2025-06-29">
+    <IP Version="1_6_042617"/>
+    <Design DesignEntry="Schematic/Verilog HDL" Synthesis="lse" DeviceFamily="LIFMD" DesignName="win10_test_mipi_v2" JTAG="soft"/>
+    <Core InsertDataset="0" Insert="1" Reveal_sig="632951339" Name="top_LA0" ID="0">
+        <Setting>
+            <Clock SampleClk="rxhsbyteclk" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
+            <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="1024"/>
+            <Capture Mode="0" MinSamplesPerTrig="8"/>
+            <Event CntEnable="0" MaxEventCnt="8"/>
+            <TrigOut Polarity="0" MinPulseWidth="0" TrigOutNetType="1" EnableTrigOut="0" TrigOutNet="reveal_debug_win10_test_mipi_v2_LA0_net"/>
+            <DistRAM Disable="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Sig Type="SIG" Name="hs_burst_flag"/>
+                <Bus Name="q">
+                    <Sig Type="SIG" Name="q:0"/>
+                    <Sig Type="SIG" Name="q:1"/>
+                    <Sig Type="SIG" Name="q:2"/>
+                    <Sig Type="SIG" Name="q:3"/>
+                    <Sig Type="SIG" Name="q:4"/>
+                    <Sig Type="SIG" Name="q:5"/>
+                    <Sig Type="SIG" Name="q:6"/>
+                    <Sig Type="SIG" Name="q:7"/>
+                    <Sig Type="SIG" Name="q:8"/>
+                    <Sig Type="SIG" Name="q:9"/>
+                    <Sig Type="SIG" Name="q:10"/>
+                    <Sig Type="SIG" Name="q:11"/>
+                    <Sig Type="SIG" Name="q:12"/>
+                    <Sig Type="SIG" Name="q:13"/>
+                    <Sig Type="SIG" Name="q:14"/>
+                    <Sig Type="SIG" Name="q:15"/>
+                    <Sig Type="SIG" Name="q:16"/>
+                    <Sig Type="SIG" Name="q:17"/>
+                    <Sig Type="SIG" Name="q:18"/>
+                    <Sig Type="SIG" Name="q:19"/>
+                    <Sig Type="SIG" Name="q:20"/>
+                    <Sig Type="SIG" Name="q:21"/>
+                    <Sig Type="SIG" Name="q:22"/>
+                    <Sig Type="SIG" Name="q:23"/>
+                    <Sig Type="SIG" Name="q:24"/>
+                    <Sig Type="SIG" Name="q:25"/>
+                    <Sig Type="SIG" Name="q:26"/>
+                    <Sig Type="SIG" Name="q:27"/>
+                    <Sig Type="SIG" Name="q:28"/>
+                    <Sig Type="SIG" Name="q:29"/>
+                    <Sig Type="SIG" Name="q:30"/>
+                    <Sig Type="SIG" Name="q:31"/>
+                </Bus>
+                <Sig Type="SIG" Name="dphy_raw_fifo_inst/WrEn"/>
+                <Bus Name="dphy_raw_fifo_inst/Data">
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:0"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:1"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:2"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:3"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:4"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:5"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:6"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:7"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:8"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:9"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:10"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:11"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:12"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:13"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:14"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:15"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:16"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:17"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:18"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:19"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:20"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:21"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:22"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:23"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:24"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:25"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:26"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:27"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:28"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:29"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:30"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/Data:31"/>
+                </Bus>
+                <Bus Name="dphy_raw_fifo_inst/WCNT">
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/WCNT:0"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/WCNT:1"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/WCNT:2"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/WCNT:3"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/WCNT:4"/>
+                    <Sig Type="SIG" Name="dphy_raw_fifo_inst/WCNT:5"/>
+                </Bus>
+            </Trace>
+            <Trigger>
+                <TU Serialbits="0" Type="0" ID="1" Sig="hs_burst_flag,"/>
+                <TE MaxSequence="1" MaxEvnCnt="1" ID="1" Resource="1"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>

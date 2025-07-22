@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "iphone7_mipi_v3_impl1.log"
+-o "iphone7_mipi_v3_impl1.csv"
+-pr "iphone7_mipi_v3_impl1.prf"

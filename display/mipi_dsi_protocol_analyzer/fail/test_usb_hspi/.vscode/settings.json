@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.ino": "cpp",
+        "string.h": "c",
+        "hspi.h": "c",
+        "dma_fifo.h": "c"
+    }
+}

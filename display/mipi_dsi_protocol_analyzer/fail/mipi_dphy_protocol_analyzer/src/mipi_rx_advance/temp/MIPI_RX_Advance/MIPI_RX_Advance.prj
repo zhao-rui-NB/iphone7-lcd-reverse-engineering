@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW1NR-9C" package="QFN88P" speed="6" partNumber="GW1NR-LV9QN88PC6/I5"/>
+    <FileList>
+        <File path="C:/Gowin/Gowin_V1.9.11.02_x64/IDE/ipcore/MIPI_RX_Advance/data/DPHY_RX.vp" type="verilog"/>
+        <File path="C:/Gowin/Gowin_V1.9.11.02_x64/IDE/ipcore/MIPI_RX_Advance/data/DPHY_RX_TOP.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="1"/>
+        <Option type="include_path" value="C:/Users/zhaorui/Desktop/mipi_dphy_protocol_analyzer/src/mipi_rx_advance/temp/MIPI_RX_Advance"/>
+        <Option type="output_file" value="mipi_rx_advance.vg"/>
+        <Option type="output_template" value="mipi_rx_advance_tmp.v"/>
+        <Option type="ram_balance" value="1"/>
+        <Option type="ram_rw_check" value="1"/>
+        <Option type="vcc" value="1.2"/>
+        <Option type="vccx" value="3.3"/>
+        <Option type="verilog_language" value="sysv-2017"/>
+    </OptionList>
+</Project>
