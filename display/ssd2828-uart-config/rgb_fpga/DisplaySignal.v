@@ -33,6 +33,7 @@ KeyDebounce key_debounce (
     .key_pulse(next_img) 
 );
 
+// reg [3:0]img_id = 0;
 reg [1:0]img_id = 0;
 
 
@@ -41,12 +42,48 @@ always @(posedge pclk or negedge rst_n)begin
         img_id <= 0;
     end else begin
         if(next_img)begin
-            img_id <= img_id + 1;
+            if(img_id == 4) begin
+                img_id <= 0; // 循環回到第一張圖片
+            end else
+            begin
+                img_id <= img_id + 1; // 切換到下一張圖片
+            end
         end else begin
             img_id <= img_id;
         end
     end
 end
+
+
+// grid 1 
+reg [23:0] grid1_color;
+// if x or y mod 10 == 0 draw black line 
+// else fill with red blue green white color in order if line is odd reverse the color order
+
+always @(*) begin
+    if (pixel_x % 100 <= 20 || pixel_y % 100 <= 20) begin
+        grid1_color = BLACK; // 畫黑色線條
+    end else begin
+
+        // gx = pixel_x / 50; // 畫面 x 坐標除以 50
+        // gy = pixel_y / 50; // 畫面 y 坐標除以 50
+        case( ((pixel_x / 100)+ (pixel_y / 100)) % 9)
+            0: grid1_color = 24'hFF0000;
+            1: grid1_color = 24'h00FF00;
+            2: grid1_color = 24'h0000FF;
+            3: grid1_color = 24'h00FFFF;
+            4: grid1_color = 24'hFF00FF;
+            5: grid1_color = 24'hFFFF00;
+            6: grid1_color = 24'h7f0000; 
+            7: grid1_color = 24'h007f00; 
+            8: grid1_color = 24'h00007f;
+            default: grid1_color = BLACK; // default color
+        endcase
+
+    end
+end
+
+    
 
 
 always @(negedge pclk or negedge rst_n)begin
@@ -80,7 +117,13 @@ always @(negedge pclk or negedge rst_n)begin
             end
         end else if(img_id == 3)begin // blue
             if(pixel_request)begin
-                pixel_data <= BLUE;
+                pixel_data <= grid1_color;
+            end else begin
+                pixel_data <= BLACK; // default color
+            end
+        end else if(img_id == 4)begin // grid1
+            if(pixel_request)begin
+                pixel_data <= grid1_color;
             end else begin
                 pixel_data <= BLACK; // default color
             end

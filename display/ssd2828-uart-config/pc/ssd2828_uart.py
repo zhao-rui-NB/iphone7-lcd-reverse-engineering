@@ -618,12 +618,12 @@ def ssd2828_init_ip7_1334_750(ser:serial.Serial):
     SSD2828_Reset(ser)
     
     DISP_HSA = 3
-    DISP_HBP = 0
+    DISP_HBP = 3
     DISP_HACT = 750
-    DISP_HFP = 132
+    DISP_HFP = 20
     
     DISP_VSA = 3
-    DISP_VBP = 4
+    DISP_VBP = 3
     DISP_VACT = 1334
     DISP_VFP = 536
 
@@ -632,14 +632,14 @@ def ssd2828_init_ip7_1334_750(ser:serial.Serial):
     DISP_HBP += DISP_HSA
     
     # 2025 0726
-    # HZD = 22
-    # HPD = 10
-    # CZD = 35
-    # CPD = 11
-    # CPED = 10
-    # CPTD = 75
-    # CTD = 10
-    # HTD = 18
+    HZD = 22
+    HPD = 10
+    CZD = 35
+    CPD = 11
+    CPED = 10
+    CPTD = 75
+    CTD = 10
+    HTD = 18
     
     HZD = 22
     HPD = 5
@@ -669,7 +669,7 @@ def ssd2828_init_ip7_1334_750(ser:serial.Serial):
     
     # pll pclk 50mhz*10 = 500mbps
     # bit15-14: 00 - 62.5-125, 01 - 126-250, 10 - 251-500, 11 - 501-1000
-    SSD2828_WriteReg(ser, 0xBA,(0b11000000)<<8 | 15) # pll speed
+    SSD2828_WriteReg(ser, 0xBA,(0b11000000)<<8 | 13) # pll speed
     # SSD2828_WriteReg(ser, 0xBA,(0b11000000)<<8 | 13) # pll speed #### test
     
     # div 12 840mbps/8/LPD = 8.75 MHZ # div 7, 500mbps/8/LPD = 8.92 MHZ
