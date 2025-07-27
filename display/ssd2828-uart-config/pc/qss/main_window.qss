@@ -1,0 +1,56 @@
+
+*{
+    /* font-family: "Arial"; */
+    font-size: 14px;
+    /* color: #000000; */
+}
+
+
+QScrollBar {
+    width: 20px;  
+    height: 20px;
+
+    background: #f0f0f0;
+}
+
+QScrollBar:handle {
+    background: #3498db;
+    border-radius: 10px;
+}
+
+QCheckBox::indicator{
+    width: 24px;
+    height: 24px; 
+}
+
+
+#RegConfig{
+    border: 2px solid #753e59;
+}
+
+#RegConfig #header_container > QLineEdit{
+    border: 3px solid #7f7f7f;
+    /* padding: 2px; */
+
+}
+
+#RegConfig #header_container > QLineEdit:focus{
+    border: 3px solid #346fc3;
+}
+
+#RegConfig #grid_border_frame{
+    border: 3px solid #d2e7d9;
+}
+
+
+#RegConfig QSlider:groove:horizontal {
+    height: 12px;
+    background-color: #2445b1;
+}
+ 
+#RegConfig QSlider:handle:horizontal{
+    width: 28px;
+    background-color: #f3f3ee;
+    border-radius: 14px;
+    margin: -8px 0;
+}

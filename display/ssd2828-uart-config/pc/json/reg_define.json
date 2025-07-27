@@ -1,0 +1,1579 @@
+[
+    {
+        "short_name": "DIR",
+        "long_name": "Device Identification Register",
+        "address": "0xB0",
+        "bit_fields": [
+            {
+                "name": "DIR",
+                "bit": 0,
+                "size": 16
+            }
+        ]
+    },
+    {
+        "short_name": "VICR1",
+        "long_name": "RGB Interface Control Register 1",
+        "address": "0xB1",
+        "bit_fields": [
+            {
+                "name": "VSA",
+                "bit": 8,
+                "size": 8
+            },
+            {
+                "name": "HSA",
+                "bit": 0,
+                "size": 8
+            }
+        ]
+    },
+    {
+        "short_name": "VICR2",
+        "long_name": "RGB Interface Control Register 2",
+        "address": "0xB2",
+        "bit_fields": [
+            {
+                "name": "VBP",
+                "bit": 8,
+                "size": 8
+            },
+            {
+                "name": "HBP",
+                "bit": 0,
+                "size": 8
+            }
+        ]
+    },
+    {
+        "short_name": "VICR3",
+        "long_name": "RGB Interface Control Register 3",
+        "address": "0xB3",
+        "bit_fields": [
+            {
+                "name": "VFP",
+                "bit": 8,
+                "size": 8
+            },
+            {
+                "name": "HFP",
+                "bit": 0,
+                "size": 8
+            }
+        ]
+    },
+    {
+        "short_name": "VICR4",
+        "long_name": "RGB Interface Control Register 4",
+        "address": "0xB4",
+        "bit_fields": [
+            {
+                "name": "HACT",
+                "bit": 0,
+                "size": 16
+            }
+        ]
+    },
+    {
+        "short_name": "VICR5",
+        "long_name": "RGB Interface Control Register 5",
+        "address": "0xB5",
+        "bit_fields": [
+            {
+                "name": "VACT",
+                "bit": 0,
+                "size": 16
+            }
+        ]
+    },
+    {
+        "short_name": "VICR6",
+        "long_name": "RGB Interface Control Register 6",
+        "address": "0xB6",
+        "bit_fields": [
+            {
+                "name": "VS_P",
+                "bit": 15,
+                "size": 1
+            },
+            {
+                "name": "HS_P",
+                "bit": 14,
+                "size": 1
+            },
+            {
+                "name": "PCLK_P",
+                "bit": 13,
+                "size": 1
+            },
+            {
+                "name": "CBM",
+                "bit": 8,
+                "size": 1
+            },
+            {
+                "name": "NVB",
+                "bit": 7,
+                "size": 1
+            },
+            {
+                "name": "NVD",
+                "bit": 6,
+                "size": 1
+            },
+            {
+                "name": "BLLP",
+                "bit": 5,
+                "size": 1
+            },
+            {
+                "name": "VCS",
+                "bit": 4,
+                "size": 1
+            },
+            {
+                "name": "VM",
+                "bit": 2,
+                "size": 2
+            },
+            {
+                "name": "VPF",
+                "bit": 0,
+                "size": 2
+            }
+        ]
+    },
+    {
+        "short_name": "CFGR",
+        "long_name": "Configuration Register",
+        "address": "0xB7",
+        "bit_fields": [
+            {
+                "name": "TXD",
+                "bit": 11,
+                "size": 1
+            },
+            {
+                "name": "LPE",
+                "bit": 10,
+                "size": 1
+            },
+            {
+                "name": "EOT",
+                "bit": 9,
+                "size": 1
+            },
+            {
+                "name": "ECD",
+                "bit": 8,
+                "size": 1
+            },
+            {
+                "name": "REN",
+                "bit": 7,
+                "size": 1
+            },
+            {
+                "name": "DCS",
+                "bit": 6,
+                "size": 1
+            },
+            {
+                "name": "CSS",
+                "bit": 5,
+                "size": 1
+            },
+            {
+                "name": "HCLK",
+                "bit": 4,
+                "size": 1
+            },
+            {
+                "name": "VEN",
+                "bit": 3,
+                "size": 1
+            },
+            {
+                "name": "SLP",
+                "bit": 2,
+                "size": 1
+            },
+            {
+                "name": "CKE",
+                "bit": 1,
+                "size": 1
+            },
+            {
+                "name": "HS",
+                "bit": 0,
+                "size": 1
+            }
+        ]
+    },
+    {
+        "short_name": "VCR",
+        "long_name": "VC Control Register",
+        "address": "0xB8",
+        "bit_fields": [
+            {
+                "name": "VCM",
+                "bit": 6,
+                "size": 2
+            },
+            {
+                "name": "VCE",
+                "bit": 4,
+                "size": 2
+            },
+            {
+                "name": "VC2",
+                "bit": 2,
+                "size": 2
+            },
+            {
+                "name": "VC1",
+                "bit": 0,
+                "size": 2
+            }
+        ]
+    },
+    {
+        "short_name": "PCR",
+        "long_name": "PLL Control Register",
+        "address": "0xB9",
+        "bit_fields": [
+            {
+                "name": "SYSD",
+                "bit": 14,
+                "size": 2
+            },
+            {
+                "name": "SYS_DIS",
+                "bit": 13,
+                "size": 1
+            },
+            {
+                "name": "PEN",
+                "bit": 0,
+                "size": 1
+            }
+        ]
+    },
+    {
+        "short_name": "PLCR",
+        "long_name": "PLL Configuration Register",
+        "address": "0xBA",
+        "bit_fields": [
+            {
+                "name": "FR",
+                "bit": 14,
+                "size": 2
+            },
+            {
+                "name": "MS",
+                "bit": 8,
+                "size": 5
+            },
+            {
+                "name": "NS",
+                "bit": 0,
+                "size": 8
+            }
+        ]
+    },
+    {
+        "short_name": "CCR",
+        "long_name": "Clock Control Register",
+        "address": "0xBB",
+        "bit_fields": [
+            {
+                "name": "LPD",
+                "bit": 0,
+                "size": 6
+            }
+        ]
+    },
+    {
+        "short_name": "PSCR1",
+        "long_name": "Packet Size Control Register1",
+        "address": "0xBC",
+        "bit_fields": [
+            {
+                "name": "TDC",
+                "bit": 0,
+                "size": 16
+            }
+        ]
+    },
+    {
+        "short_name": "PSCR2",
+        "long_name": "Packet Size Control Register2",
+        "address": "0xBD",
+        "bit_fields": [
+            {
+                "name": "TDC",
+                "bit": 0,
+                "size": 16
+            }
+        ]
+    },
+    {
+        "short_name": "PSCR3",
+        "long_name": "Packet Size Control Register3",
+        "address": "0xBE",
+        "bit_fields": [
+            {
+                "name": "PST",
+                "bit": 0,
+                "size": 13
+            }
+        ]
+    },
+    {
+        "short_name": "GPDR",
+        "long_name": "Generic Packet Drop Register",
+        "address": "0xBF",
+        "bit_fields": [
+            {
+                "name": "GPD",
+                "bit": 0,
+                "size": 16
+            }
+        ]
+    },
+    {
+        "short_name": "OCR",
+        "long_name": "Operation Control Register",
+        "address": "0xC0",
+        "bit_fields": [
+            {
+                "name": "RST",
+                "bit": 8,
+                "size": 1
+            },
+            {
+                "name": "COP",
+                "bit": 0,
+                "size": 1
+            }
+        ]
+    },
+    {
+        "short_name": "MRSR",
+        "long_name": "Maximum Return Size Register",
+        "address": "0xC1",
+        "bit_fields": [
+            {
+                "name": "MRS",
+                "bit": 0,
+                "size": 16
+            }
+        ]
+    },
+    {
+        "short_name": "RDCR",
+        "long_name": "Return Data Count Register",
+        "address": "0xC2",
+        "bit_fields": [
+            {
+                "name": "RDC",
+                "bit": 0,
+                "size": 16
+            }
+        ]
+    },
+    {
+        "short_name": "ARSR",
+        "long_name": "ACK Response Status Register",
+        "address": "0xC3",
+        "bit_fields": [
+            {
+                "name": "AR",
+                "bit": 0,
+                "size": 16
+            }
+        ]
+    },
+    {
+        "short_name": "LCR",
+        "long_name": "Line Control Register",
+        "address": "0xC4",
+        "bit_fields": [
+            {
+                "name": "IBC",
+                "bit": 5,
+                "size": 1
+            },
+            {
+                "name": "RT",
+                "bit": 4,
+                "size": 1
+            },
+            {
+                "name": "RTB",
+                "bit": 3,
+                "size": 1
+            },
+            {
+                "name": "FBC",
+                "bit": 2,
+                "size": 1
+            },
+            {
+                "name": "FBT",
+                "bit": 1,
+                "size": 1
+            },
+            {
+                "name": "FBW",
+                "bit": 0,
+                "size": 1
+            }
+        ]
+    },
+    {
+        "short_name": "ICR",
+        "long_name": "Interrupt Control Register",
+        "address": "0xC5",
+        "bit_fields": [
+            {
+                "name": "CBEE",
+                "bit": 15,
+                "size": 1
+            },
+            {
+                "name": "CBAE",
+                "bit": 14,
+                "size": 1
+            },
+            {
+                "name": "MLEE",
+                "bit": 9,
+                "size": 1
+            },
+            {
+                "name": "MLAE",
+                "bit": 8,
+                "size": 1
+            },
+            {
+                "name": "PLSE",
+                "bit": 7,
+                "size": 1
+            },
+            {
+                "name": "LPTOE",
+                "bit": 6,
+                "size": 1
+            },
+            {
+                "name": "HSTOE",
+                "bit": 5,
+                "size": 1
+            },
+            {
+                "name": "ARRE",
+                "bit": 3,
+                "size": 1
+            },
+            {
+                "name": "BTARE",
+                "bit": 2,
+                "size": 1
+            },
+            {
+                "name": "POE",
+                "bit": 1,
+                "size": 1
+            },
+            {
+                "name": "RDRE",
+                "bit": 0,
+                "size": 1
+            }
+        ]
+    },
+    {
+        "short_name": "ISR",
+        "long_name": "Interrupt Status Register",
+        "address": "0xC6",
+        "bit_fields": [
+            {
+                "name": "CBE",
+                "bit": 15,
+                "size": 1
+            },
+            {
+                "name": "CBA",
+                "bit": 14,
+                "size": 1
+            },
+            {
+                "name": "CST",
+                "bit": 11,
+                "size": 1
+            },
+            {
+                "name": "DST",
+                "bit": 10,
+                "size": 1
+            },
+            {
+                "name": "MLE",
+                "bit": 9,
+                "size": 1
+            },
+            {
+                "name": "MLA",
+                "bit": 8,
+                "size": 1
+            },
+            {
+                "name": "PLS",
+                "bit": 7,
+                "size": 1
+            },
+            {
+                "name": "LPTO",
+                "bit": 6,
+                "size": 1
+            },
+            {
+                "name": "HSTO",
+                "bit": 5,
+                "size": 1
+            },
+            {
+                "name": "ATR",
+                "bit": 4,
+                "size": 1
+            },
+            {
+                "name": "ARR",
+                "bit": 3,
+                "size": 1
+            },
+            {
+                "name": "BTAR",
+                "bit": 2,
+                "size": 1
+            },
+            {
+                "name": "PO",
+                "bit": 1,
+                "size": 1
+            },
+            {
+                "name": "RDR",
+                "bit": 0,
+                "size": 1
+            }
+        ]
+    },
+    {
+        "short_name": "ESR",
+        "long_name": "Error Status Register",
+        "address": "0xC7",
+        "bit_fields": [
+            {
+                "name": "CRCE",
+                "bit": 10,
+                "size": 1
+            },
+            {
+                "name": "ECCE2",
+                "bit": 9,
+                "size": 1
+            },
+            {
+                "name": "ECCE1",
+                "bit": 8,
+                "size": 1
+            },
+            {
+                "name": "SO",
+                "bit": 7,
+                "size": 1
+            },
+            {
+                "name": "MLO",
+                "bit": 4,
+                "size": 1
+            },
+            {
+                "name": "CONT",
+                "bit": 2,
+                "size": 1
+            },
+            {
+                "name": "VMM",
+                "bit": 0,
+                "size": 1
+            }
+        ]
+    },
+    {
+        "short_name": "DAR1",
+        "long_name": "Delay Adjustment Register 1",
+        "address": "0xC9",
+        "bit_fields": [
+            {
+                "name": "HZD",
+                "bit": 8,
+                "size": 8
+            },
+            {
+                "name": "HPD",
+                "bit": 0,
+                "size": 8
+            }
+        ]
+    },
+    {
+        "short_name": "DAR2",
+        "long_name": "Delay Adjustment Register 2",
+        "address": "0xCA",
+        "bit_fields": [
+            {
+                "name": "CZD",
+                "bit": 8,
+                "size": 8
+            },
+            {
+                "name": "CPD",
+                "bit": 0,
+                "size": 8
+            }
+        ]
+    },
+    {
+        "short_name": "DAR3",
+        "long_name": "Delay Adjustment Register 3",
+        "address": "0xCB",
+        "bit_fields": [
+            {
+                "name": "CPED",
+                "bit": 8,
+                "size": 8
+            },
+            {
+                "name": "CPTD",
+                "bit": 0,
+                "size": 8
+            }
+        ]
+    },
+    {
+        "short_name": "DAR4",
+        "long_name": "Delay Adjustment Register 4",
+        "address": "0xCC",
+        "bit_fields": [
+            {
+                "name": "CTD",
+                "bit": 8,
+                "size": 8
+            },
+            {
+                "name": "HTD",
+                "bit": 0,
+                "size": 8
+            }
+        ]
+    },
+    {
+        "short_name": "DAR5",
+        "long_name": "Delay Adjustment Register 5",
+        "address": "0xCD",
+        "bit_fields": [
+            {
+                "name": "WUD",
+                "bit": 0,
+                "size": 16
+            }
+        ]
+    },
+    {
+        "short_name": "DAR6",
+        "long_name": "Delay Adjustment Register 6",
+        "address": "0xCE",
+        "bit_fields": [
+            {
+                "name": "TGO",
+                "bit": 8,
+                "size": 4
+            },
+            {
+                "name": "TGET",
+                "bit": 0,
+                "size": 4
+            }
+        ]
+    },
+    {
+        "short_name": "HTTR1",
+        "long_name": "HS TX Timer Register 1",
+        "address": "0xCF",
+        "bit_fields": [
+            {
+                "name": "HTT",
+                "bit": 0,
+                "size": 16
+            }
+        ]
+    },
+    {
+        "short_name": "HTTR2",
+        "long_name": "HS TX Timer Register 2",
+        "address": "0xD0",
+        "bit_fields": [
+            {
+                "name": "HTT",
+                "bit": 0,
+                "size": 16
+            }
+        ]
+    },
+    {
+        "short_name": "LRTR1",
+        "long_name": "LP RX Timer Register 1",
+        "address": "0xD1",
+        "bit_fields": [
+            {
+                "name": "LRT",
+                "bit": 0,
+                "size": 16
+            }
+        ]
+    },
+    {
+        "short_name": "LRTR2",
+        "long_name": "LP RX Timer Register 2",
+        "address": "0xD2",
+        "bit_fields": [
+            {
+                "name": "LRT",
+                "bit": 0,
+                "size": 16
+            }
+        ]
+    },
+    {
+        "short_name": "TSR",
+        "long_name": "TE Status Register",
+        "address": "0xD3",
+        "bit_fields": [
+            {
+                "name": "TER",
+                "bit": 0,
+                "size": 1
+            }
+        ]
+    },
+    {
+        "short_name": "LRR",
+        "long_name": "SPI Read Register",
+        "address": "0xD4",
+        "bit_fields": [
+            {
+                "name": "RRA",
+                "bit": 0,
+                "size": 8
+            }
+        ]
+    },
+    {
+        "short_name": "PLLR",
+        "long_name": "PLL Lock Register",
+        "address": "0xD5",
+        "bit_fields": [
+            {
+                "name": "LOCK",
+                "bit": 0,
+                "size": 16
+            }
+        ]
+    },
+    {
+        "short_name": "TR",
+        "long_name": "Test Register",
+        "address": "0xD6",
+        "bit_fields": [
+            {
+                "name": "TM/FL0",
+                "bit": 14,
+                "size": 2
+            },
+            {
+                "name": "EIC",
+                "bit": 9,
+                "size": 5
+            },
+            {
+                "name": "FLM",
+                "bit": 8,
+                "size": 1
+            },
+            {
+                "name": "PNB",
+                "bit": 2,
+                "size": 6
+            },
+            {
+                "name": "END",
+                "bit": 1,
+                "size": 1
+            },
+            {
+                "name": "CO",
+                "bit": 0,
+                "size": 1
+            }
+        ]
+    },
+    {
+        "short_name": "TECR",
+        "long_name": "TE Count Register",
+        "address": "0xD7",
+        "bit_fields": [
+            {
+                "name": "TEC",
+                "bit": 0,
+                "size": 16
+            }
+        ]
+    },
+    {
+        "short_name": "ACR1",
+        "long_name": "Analog Control 1 Register",
+        "address": "0xD8",
+        "bit_fields": [
+            {
+                "name": "D3_DELAY_SEL",
+                "bit": 14,
+                "size": 2
+            },
+            {
+                "name": "D1_DELAY_SEL",
+                "bit": 8,
+                "size": 6
+            },
+            {
+                "name": "D3_DELAY_SEL",
+                "bit": 6,
+                "size": 2
+            },
+            {
+                "name": "D0_DELAY_SEL",
+                "bit": 0,
+                "size": 6
+            }
+        ]
+    },
+    {
+        "short_name": "ACR2",
+        "long_name": "Analog Control Register 2",
+        "address": "0xD9",
+        "bit_fields": [
+            {
+                "name": "HSTX_Z",
+                "bit": 14,
+                "size": 2
+            },
+            {
+                "name": "LPTXDS",
+                "bit": 11,
+                "size": 3
+            },
+            {
+                "name": "HSTX_DS",
+                "bit": 8,
+                "size": 3
+            },
+            {
+                "name": "D3_DELAY_SEL",
+                "bit": 6,
+                "size": 2
+            },
+            {
+                "name": "D2_DELAY_SEL",
+                "bit": 0,
+                "size": 6
+            }
+        ]
+    },
+    {
+        "short_name": "ACR3",
+        "long_name": "Analog Control Register 3",
+        "address": "0xDA",
+        "bit_fields": [
+            {
+                "name": "TLFT1",
+                "bit": 15,
+                "size": 1
+            },
+            {
+                "name": "TLFT0",
+                "bit": 14,
+                "size": 1
+            },
+            {
+                "name": "PREEM_SEL",
+                "bit": 11,
+                "size": 3
+            },
+            {
+                "name": "PREEM_MOD",
+                "bit": 9,
+                "size": 2
+            },
+            {
+                "name": "PREEM_E",
+                "bit": 8,
+                "size": 1
+            },
+            {
+                "name": "THFT1",
+                "bit": 7,
+                "size": 1
+            },
+            {
+                "name": "THFT0",
+                "bit": 6,
+                "size": 1
+            },
+            {
+                "name": "TC",
+                "bit": 3,
+                "size": 3
+            },
+            {
+                "name": "ISEL",
+                "bit": 0,
+                "size": 3
+            }
+        ]
+    },
+    {
+        "short_name": "ACR4",
+        "long_name": "Analog Control Register 4",
+        "address": "0xDB",
+        "bit_fields": [
+            {
+                "name": "CLK_DELAY_SEL",
+                "bit": 10,
+                "size": 6
+            },
+            {
+                "name": "CKF",
+                "bit": 9,
+                "size": 1
+            },
+            {
+                "name": "TCI",
+                "bit": 5,
+                "size": 3
+            },
+            {
+                "name": "ENLV",
+                "bit": 4,
+                "size": 1
+            },
+            {
+                "name": "CD_EN",
+                "bit": 3,
+                "size": 1
+            },
+            {
+                "name": "GFFT1",
+                "bit": 2,
+                "size": 1
+            },
+            {
+                "name": "GFFT0",
+                "bit": 1,
+                "size": 1
+            },
+            {
+                "name": "GF_E",
+                "bit": 0,
+                "size": 1
+            }
+        ]
+    },
+    {
+        "short_name": "IOCR",
+        "long_name": "Interrupt Output Control Register",
+        "address": "0xDC",
+        "bit_fields": [
+            {
+                "name": "IOT",
+                "bit": 1,
+                "size": 2
+            },
+            {
+                "name": "IAS",
+                "bit": 0,
+                "size": 1
+            }
+        ]
+    },
+    {
+        "short_name": "VICR7",
+        "long_name": "RGB Interface Control Register7",
+        "address": "0xDD",
+        "bit_fields": [
+            {
+                "name": "VBN",
+                "bit": 4,
+                "size": 4
+            },
+            {
+                "name": "VFN",
+                "bit": 0,
+                "size": 4
+            }
+        ]
+    },
+    {
+        "short_name": "LCFR",
+        "long_name": "Lane Configuration Register",
+        "address": "0xDE",
+        "bit_fields": [
+            {
+                "name": "LS",
+                "bit": 0,
+                "size": 1
+            }
+        ]
+    },
+    {
+        "short_name": "DAR7",
+        "long_name": "Delay Adjustment Register 7",
+        "address": "0xDF",
+        "bit_fields": [
+            {
+                "name": "HED",
+                "bit": 0,
+                "size": 6
+            }
+        ]
+    },
+    {
+        "short_name": "PUCR1",
+        "long_name": "Pull Control Register 1",
+        "address": "0xE0",
+        "bit_fields": [
+            {
+                "name": "XTAL_PULL",
+                "bit": 14,
+                "size": 2
+            },
+            {
+                "name": "PS4_PULL",
+                "bit": 12,
+                "size": 2
+            },
+            {
+                "name": "PS3_PULL",
+                "bit": 10,
+                "size": 2
+            },
+            {
+                "name": "PS2_PULL",
+                "bit": 8,
+                "size": 2
+            },
+            {
+                "name": "PS1_PULL",
+                "bit": 6,
+                "size": 2
+            },
+            {
+                "name": "PS0_PULL",
+                "bit": 4,
+                "size": 2
+            },
+            {
+                "name": "IS_PULL",
+                "bit": 2,
+                "size": 2
+            },
+            {
+                "name": "MR_PULL",
+                "bit": 0,
+                "size": 2
+            }
+        ]
+    },
+    {
+        "short_name": "PUCR2",
+        "long_name": "Pull Control Register 2",
+        "address": "0xE1",
+        "bit_fields": [
+            {
+                "name": "DEN_PULL",
+                "bit": 14,
+                "size": 2
+            },
+            {
+                "name": "HS_PULL",
+                "bit": 12,
+                "size": 2
+            },
+            {
+                "name": "PC_PULL",
+                "bit": 10,
+                "size": 2
+            },
+            {
+                "name": "VS_PULL",
+                "bit": 8,
+                "size": 2
+            },
+            {
+                "name": "DH_PULL",
+                "bit": 6,
+                "size": 2
+            },
+            {
+                "name": "DM_PULL",
+                "bit": 4,
+                "size": 2
+            },
+            {
+                "name": "DL_PULL",
+                "bit": 2,
+                "size": 2
+            },
+            {
+                "name": "CSX_PULL",
+                "bit": 0,
+                "size": 2
+            }
+        ]
+    },
+    {
+        "short_name": "PUCR3",
+        "long_name": "Pull Control Register 3",
+        "address": "0xE2",
+        "bit_fields": [
+            {
+                "name": "SPI_PULL",
+                "bit": 8,
+                "size": 2
+            },
+            {
+                "name": "SCK_PULL",
+                "bit": 6,
+                "size": 2
+            },
+            {
+                "name": "SDC_PULL",
+                "bit": 4,
+                "size": 2
+            },
+            {
+                "name": "SHUT_PULL",
+                "bit": 2,
+                "size": 2
+            },
+            {
+                "name": "CM_PULL",
+                "bit": 0,
+                "size": 2
+            }
+        ]
+    },
+    {
+        "short_name": "CBCR1",
+        "long_name": "CABC Brightness Control Register 1",
+        "address": "0xE9",
+        "bit_fields": [
+            {
+                "name": "WDBV",
+                "bit": 8,
+                "size": 8
+            },
+            {
+                "name": "GAM18",
+                "bit": 6,
+                "size": 1
+            },
+            {
+                "name": "BL",
+                "bit": 5,
+                "size": 1
+            },
+            {
+                "name": "DD",
+                "bit": 4,
+                "size": 1
+            },
+            {
+                "name": "BCTR",
+                "bit": 3,
+                "size": 1
+            },
+            {
+                "name": "BP_MODE",
+                "bit": 1,
+                "size": 2
+            },
+            {
+                "name": "CABC_EN",
+                "bit": 0,
+                "size": 1
+            }
+        ]
+    },
+    {
+        "short_name": "CBCR2",
+        "long_name": "CABC Brightness Control Register 2",
+        "address": "0xEA",
+        "bit_fields": [
+            {
+                "name": "PWM_PS",
+                "bit": 12,
+                "size": 4
+            },
+            {
+                "name": "BCB_PS",
+                "bit": 8,
+                "size": 4
+            },
+            {
+                "name": "CABC_MB",
+                "bit": 0,
+                "size": 8
+            }
+        ]
+    },
+    {
+        "short_name": "CBSR",
+        "long_name": "CABC Brightness Status Register",
+        "address": "0xEB",
+        "bit_fields": [
+            {
+                "name": "VGA_SEL",
+                "bit": 12,
+                "size": 4
+            },
+            {
+                "name": "BCL",
+                "bit": 8,
+                "size": 1
+            },
+            {
+                "name": "RDBV",
+                "bit": 0,
+                "size": 8
+            }
+        ]
+    },
+    {
+        "short_name": "ECR",
+        "long_name": "Encoder Control Register",
+        "address": "0xEC",
+        "bit_fields": [
+            {
+                "name": "ENC_LW",
+                "bit": 8,
+                "size": 8
+            },
+            {
+                "name": "ENC_LW",
+                "bit": 4,
+                "size": 4
+            },
+            {
+                "name": "ENC_MODE",
+                "bit": 1,
+                "size": 1
+            },
+            {
+                "name": "ENC_EN",
+                "bit": 0,
+                "size": 1
+            }
+        ]
+    },
+    {
+        "short_name": "VSDR",
+        "long_name": "Video Sync Delay Register",
+        "address": "0xED",
+        "bit_fields": [
+            {
+                "name": "VSD",
+                "bit": 8,
+                "size": 8
+            },
+            {
+                "name": "HSD",
+                "bit": 0,
+                "size": 8
+            }
+        ]
+    },
+    {
+        "short_name": "TMR",
+        "long_name": "Trimming Register",
+        "address": "0xEE",
+        "bit_fields": [
+            {
+                "name": "TRIM_DONE",
+                "bit": 15,
+                "size": 1
+            },
+            {
+                "name": "TRIM_PASS",
+                "bit": 14,
+                "size": 1
+            },
+            {
+                "name": "XORC_DONE",
+                "bit": 13,
+                "size": 1
+            },
+            {
+                "name": "XORC_SEL",
+                "bit": 12,
+                "size": 1
+            },
+            {
+                "name": "XORC_EN",
+                "bit": 11,
+                "size": 1
+            },
+            {
+                "name": "VBIST_SRT",
+                "bit": 10,
+                "size": 1
+            },
+            {
+                "name": "VBIST_EN",
+                "bit": 9,
+                "size": 1
+            },
+            {
+                "name": "TRIM_EN",
+                "bit": 8,
+                "size": 1
+            },
+            {
+                "name": "TRIM_CMD",
+                "bit": 4,
+                "size": 4
+            },
+            {
+                "name": "TRIM_CMD/XORC_FILTER",
+                "bit": 0,
+                "size": 4
+            }
+        ]
+    },
+    {
+        "short_name": "GPIO1",
+        "long_name": "GPIO1 Register",
+        "address": "0xEF",
+        "bit_fields": [
+            {
+                "name": "GPIO1_STAT",
+                "bit": 15,
+                "size": 1
+            },
+            {
+                "name": "GPIO1_CTR",
+                "bit": 8,
+                "size": 7
+            },
+            {
+                "name": "GPIO0_STAT",
+                "bit": 7,
+                "size": 1
+            },
+            {
+                "name": "GPIO0_CTR",
+                "bit": 0,
+                "size": 7
+            }
+        ]
+    },
+    {
+        "short_name": "GPIO2",
+        "long_name": "GPIO2 Register",
+        "address": "0xF0",
+        "bit_fields": [
+            {
+                "name": "GPIO2_STAT",
+                "bit": 7,
+                "size": 1
+            },
+            {
+                "name": "GPIO2_CTR",
+                "bit": 0,
+                "size": 7
+            }
+        ]
+    },
+    {
+        "short_name": "DLYA01",
+        "long_name": "DLYA01 Register",
+        "address": "0xF1",
+        "bit_fields": [
+            {
+                "name": "DELAY_A_1",
+                "bit": 8,
+                "size": 6
+            },
+            {
+                "name": "DELAY_A_0",
+                "bit": 0,
+                "size": 6
+            }
+        ]
+    },
+    {
+        "short_name": "DLYA23",
+        "long_name": "DLYA23 Register",
+        "address": "0xF2",
+        "bit_fields": [
+            {
+                "name": "DELAY_A_3",
+                "bit": 8,
+                "size": 6
+            },
+            {
+                "name": "DELAY_A_2",
+                "bit": 0,
+                "size": 6
+            }
+        ]
+    },
+    {
+        "short_name": "DLYB01",
+        "long_name": "DLYB01 Register",
+        "address": "0xF3",
+        "bit_fields": [
+            {
+                "name": "DELAY_B_1",
+                "bit": 8,
+                "size": 6
+            },
+            {
+                "name": "DELAY_B_0",
+                "bit": 0,
+                "size": 6
+            }
+        ]
+    },
+    {
+        "short_name": "DLYB23",
+        "long_name": "DLYB23 Register",
+        "address": "0xF4",
+        "bit_fields": [
+            {
+                "name": "DELAY_B_3",
+                "bit": 8,
+                "size": 6
+            },
+            {
+                "name": "DELAY_B_2",
+                "bit": 0,
+                "size": 6
+            }
+        ]
+    },
+    {
+        "short_name": "DLYC01",
+        "long_name": "DLYC01 Register",
+        "address": "0xF5",
+        "bit_fields": [
+            {
+                "name": "DELAY_C_1",
+                "bit": 8,
+                "size": 6
+            },
+            {
+                "name": "DELAY_C_0",
+                "bit": 0,
+                "size": 6
+            }
+        ]
+    },
+    {
+        "short_name": "DLYC23",
+        "long_name": "DLYC23 Register",
+        "address": "0xF6",
+        "bit_fields": [
+            {
+                "name": "DELAY_C_3",
+                "bit": 8,
+                "size": 6
+            },
+            {
+                "name": "DELAY_C_2",
+                "bit": 0,
+                "size": 6
+            }
+        ]
+    },
+    {
+        "short_name": "ACR5",
+        "long_name": "ACR5 Register",
+        "address": "0xF7",
+        "bit_fields": [
+            {
+                "name": "DEC_XOR_E",
+                "bit": 7,
+                "size": 1
+            },
+            {
+                "name": "DEC_FB_E",
+                "bit": 6,
+                "size": 1
+            },
+            {
+                "name": "D3_FB_E",
+                "bit": 5,
+                "size": 1
+            },
+            {
+                "name": "D2_FB_E",
+                "bit": 4,
+                "size": 1
+            },
+            {
+                "name": "D1_FB_E",
+                "bit": 3,
+                "size": 1
+            },
+            {
+                "name": "D0_FB_E",
+                "bit": 2,
+                "size": 1
+            },
+            {
+                "name": "XOR_TUNE_EN",
+                "bit": 1,
+                "size": 1
+            },
+            {
+                "name": "REG_CTR",
+                "bit": 0,
+                "size": 1
+            }
+        ]
+    },
+    {
+        "short_name": "RR",
+        "long_name": "Read Register",
+        "address": "0xFF",
+        "bit_fields": [
+            {
+                "name": "RD",
+                "bit": 0,
+                "size": 16
+            }
+        ]
+    }
+]
