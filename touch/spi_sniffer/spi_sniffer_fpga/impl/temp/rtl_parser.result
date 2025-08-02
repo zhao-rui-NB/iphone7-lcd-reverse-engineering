@@ -1,0 +1,54 @@
+[
+ {
+  "InstFile" : "C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/touch/spi_sniffer/spi_sniffer_fpga/src/top.v",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/touch/spi_sniffer/spi_sniffer_fpga/src/top.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/touch/spi_sniffer/spi_sniffer_fpga/src/top.v",
+    "InstLine" : 39,
+    "InstName" : "uart_tx_fifo_inst",
+    "ModuleFile" : "C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/touch/spi_sniffer/spi_sniffer_fpga/src/uart_tx_fifo/uart_tx_fifo.v",
+    "ModuleLine" : 333,
+    "ModuleName" : "uart_tx_fifo",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/touch/spi_sniffer/spi_sniffer_fpga/src/uart_tx_fifo/uart_tx_fifo.v",
+      "InstLine" : 356,
+      "InstName" : "fifo_sc_hs_inst",
+      "ModuleFile" : "C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/touch/spi_sniffer/spi_sniffer_fpga/src/uart_tx_fifo/uart_tx_fifo.v",
+      "ModuleLine" : 12,
+      "ModuleName" : "~fifo_sc_hs.uart_tx_fifo"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/touch/spi_sniffer/spi_sniffer_fpga/src/top.v",
+    "InstLine" : 63,
+    "InstName" : "uart_tx_inst",
+    "ModuleFile" : "C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/touch/spi_sniffer/spi_sniffer_fpga/src/uart_tx.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "uart_tx"
+   },
+   {
+    "InstFile" : "C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/touch/spi_sniffer/spi_sniffer_fpga/src/top.v",
+    "InstLine" : 100,
+    "InstName" : "u_spi",
+    "ModuleFile" : "C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/touch/spi_sniffer/spi_sniffer_fpga/src/spi.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "spi"
+   },
+   {
+    "InstFile" : "C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/touch/spi_sniffer/spi_sniffer_fpga/src/top.v",
+    "InstLine" : 114,
+    "InstName" : "u_data_sender",
+    "ModuleFile" : "C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/touch/spi_sniffer/spi_sniffer_fpga/src/data_sender.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "data_sender"
+   }
+  ]
+ }
+]

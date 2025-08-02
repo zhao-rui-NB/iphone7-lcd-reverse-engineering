@@ -1,0 +1,19 @@
+-d C:\Users\rui\Desktop\iphone7-lcd-reverse-engineering\touch\spi_sniffer\spi_sniffer_fpga\impl\gwsynthesis\spi_sniffer_fpga.vg
+-p GW1NR-9C-LQFP144P-6
+-pn GW1NR-LV9LQ144PC6/I5
+-cst C:\Users\rui\Desktop\iphone7-lcd-reverse-engineering\touch\spi_sniffer\spi_sniffer_fpga\src\spi_sniffer_fpga.cst
+-cfg C:\Users\rui\Desktop\iphone7-lcd-reverse-engineering\touch\spi_sniffer\spi_sniffer_fpga\impl\pnr\device.cfg
+-gao_crc 0001111100111010
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-place_option 0
+-route_option 0
+-clock_route_order 0
+-correct_hold 1
+-route_maxfan 23
+-global_freq 50.000
+-rtl_gao
