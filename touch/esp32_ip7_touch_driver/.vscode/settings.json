@@ -1,0 +1,19 @@
+{
+    "idf.portWin": "COM6",
+    "idf.espIdfPathWin": "C:\\Users\\rui\\esp\\v5.3.2\\esp-idf",
+    "idf.toolsPathWin": "C:\\Users\\rui\\.espressif",
+    "idf.pythonInstallPath": "C:\\Users\\rui\\.espressif\\tools\\idf-python\\3.11.2\\python.exe",
+    "files.associations": {
+        "*.ino": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp",
+        "memory": "cpp",
+        "random": "cpp",
+        "initializer_list": "cpp"
+    }
+}

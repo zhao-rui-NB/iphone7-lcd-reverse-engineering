@@ -9,6 +9,7 @@ def calc_checksum(hex_str):
 
 
 s = input('Enter hex string: ')
+s = s.replace('0x', '').replace(',', '')
 # hex_str = '97 00 00 00 00 01 1E 01 00 00 00 00 00 02 00 02 01 7A 01 B4 00 00 00 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 00 00 11 00'
 res = calc_checksum(s)
 print(f'Checksum: {res}')
