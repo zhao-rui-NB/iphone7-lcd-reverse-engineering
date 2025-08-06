@@ -620,12 +620,12 @@ def ssd2828_init_ip7_1334_750(ser:serial.Serial):
     DISP_HSA = 3
     DISP_HBP = 3
     DISP_HACT = 750
-    DISP_HFP = 20
+    DISP_HFP = 600
     
     DISP_VSA = 3
     DISP_VBP = 3
     DISP_VACT = 1334
-    DISP_VFP = 536
+    DISP_VFP = 500
 
     # non burst with sync events bp need to include vsync and hsync
     DISP_VBP += DISP_VSA
@@ -649,6 +649,26 @@ def ssd2828_init_ip7_1334_750(ser:serial.Serial):
     CPTD = 25
     CTD = 12
     HTD = 13
+    
+    # 1135 
+    HZD = 32
+    HPD = 9
+    CZD = 75
+    CPD = 8
+    CPED = 2
+    CPTD = 31
+    CTD = 18
+    HTD = 19
+    
+    # 1200
+    # HZD = 33
+    # HPD = 10
+    # CZD = 79
+    # CPD = 9
+    # CPED = 2
+    # CPTD = 32
+    # CTD = 19
+    # HTD = 20
 
     SSD2828_WriteReg(ser, 0xB1, (DISP_VSA << 8) | DISP_HSA) # only vaid at sync pulse mode
     SSD2828_WriteReg(ser, 0xB2, (DISP_VBP << 8) | DISP_HBP)

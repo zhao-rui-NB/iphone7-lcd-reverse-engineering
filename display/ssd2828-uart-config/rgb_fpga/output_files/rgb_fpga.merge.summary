@@ -1,14 +1,14 @@
-Partition Merge Status : Successful - Sun Jul 27 15:58:12 2025
+Partition Merge Status : Successful - Thu Aug 07 01:06:32 2025
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : rgb_fpga
 Top-level Entity Name : rgb_fpga
 Family : Cyclone IV E
-Total logic elements : 692
-    Total combinational functions : 668
+Total logic elements : 697
+    Total combinational functions : 673
     Dedicated logic registers : 78
 Total registers : 78
 Total pins : 31
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
-Total PLLs : 0
+Total PLLs : 1

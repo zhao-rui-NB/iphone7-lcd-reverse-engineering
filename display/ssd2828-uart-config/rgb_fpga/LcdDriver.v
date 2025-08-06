@@ -54,16 +54,29 @@ module LcdDriver(
     // parameter V_FRONT_PORCH     = 200;   // 垂直前膺
 
 
-    //IP7 1334x750, H:833 , V:1877, pclk= 833*1877*60hz = 93.8 MHZ
+    //IP7 1334x750, H:776 , V:1540, TOUCH OK
+    // parameter H_SYNC_CYCLES     = 3;   // 水平同步周期
+    // parameter H_BACK_PORCH      = 3;    // 水平後膺
+    // parameter H_ACTIVE_VIDEO    = 750;  // 水平有效顯示區
+    // parameter H_FRONT_PORCH     = 50;   // 水平前膺
+    
+    // parameter V_SYNC_CYCLES     = 3;    // 垂直同步周期
+    // parameter V_BACK_PORCH      = 3;    // 垂直後膺
+    // parameter V_ACTIVE_VIDEO    = 1334; // 垂直有效顯示區
+    // // parameter V_FRONT_PORCH     = 200;   // 垂直前膺
+    // parameter V_FRONT_PORCH     = 500;   // 垂直前膺
+
+
+    //IP7 1334x750, H:776 , V:1540, pclk= 776*1540*60hz = 71.7 MHZ
     parameter H_SYNC_CYCLES     = 3;   // 水平同步周期
     parameter H_BACK_PORCH      = 3;    // 水平後膺
     parameter H_ACTIVE_VIDEO    = 750;  // 水平有效顯示區
-    parameter H_FRONT_PORCH     = 20;   // 水平前膺
+    parameter H_FRONT_PORCH     = 40;   // 水平前膺
     
     parameter V_SYNC_CYCLES     = 3;    // 垂直同步周期
     parameter V_BACK_PORCH      = 3;    // 垂直後膺
     parameter V_ACTIVE_VIDEO    = 1334; // 垂直有效顯示區
-    parameter V_FRONT_PORCH     = 536;   // 垂直前膺
+    parameter V_FRONT_PORCH     = 500;   // 垂直前膺
 
 
     // 計數器

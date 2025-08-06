@@ -1,16 +1,16 @@
-Fitter Status : Successful - Sun Jul 27 15:58:17 2025
+Fitter Status : Successful - Thu Aug 07 01:06:38 2025
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : rgb_fpga
 Top-level Entity Name : rgb_fpga
 Family : Cyclone IV E
 Device : EP4CE10F17C8
 Timing Models : Final
-Total logic elements : 695 / 10,320 ( 7 % )
-    Total combinational functions : 668 / 10,320 ( 6 % )
+Total logic elements : 696 / 10,320 ( 7 % )
+    Total combinational functions : 673 / 10,320 ( 7 % )
     Dedicated logic registers : 78 / 10,320 ( < 1 % )
 Total registers : 78
 Total pins : 31 / 180 ( 17 % )
 Total virtual pins : 0
 Total memory bits : 0 / 423,936 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
-Total PLLs : 0 / 2 ( 0 % )
+Total PLLs : 1 / 2 ( 50 % )

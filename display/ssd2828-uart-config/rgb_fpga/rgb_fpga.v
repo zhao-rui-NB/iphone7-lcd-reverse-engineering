@@ -13,8 +13,8 @@ module rgb_fpga(
     input btn_next_img // 鍵盤輸入信號
 );
 
-    assign pclk = clk; // 直接使用系統時鐘作為像素時鐘
-    // assign pclk = clk_70m; 
+    // assign pclk = clk; // 直接使用系統時鐘作為像素時鐘
+    assign pclk = clk_70m; 
 
     pll	pll_70m (
 	    .areset ( !rst_n ),

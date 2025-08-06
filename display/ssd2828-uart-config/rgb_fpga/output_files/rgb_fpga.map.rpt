@@ -1,5 +1,5 @@
 Analysis & Synthesis report for rgb_fpga
-Sun Jul 27 15:58:10 2025
+Thu Aug 07 01:06:30 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -28,9 +28,8 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
  20. Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Div1
  21. Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Div0
  22. Partition Dependent Files
- 23. Port Connectivity Checks: "pll:pll_70m"
- 24. Elapsed Time Per Partition
- 25. Analysis & Synthesis Messages
+ 23. Elapsed Time Per Partition
+ 24. Analysis & Synthesis Messages
 
 
 
@@ -56,7 +55,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jul 27 15:58:10 2025       ;
+; Analysis & Synthesis Status        ; Successful - Thu Aug 07 01:06:30 2025       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; rgb_fpga                                    ;
 ; Top-level Entity Name              ; rgb_fpga                                    ;
@@ -169,11 +168,12 @@ applicable agreement for further details.
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-24        ;   0.0%      ;
+;     Processor 2            ; < 0.1%      ;
+;     Processors 3-24        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -234,7 +234,7 @@ applicable agreement for further details.
 +----------------------+-------------+-------------------+----------+----------------------------------+----------------------------------+
 ; Hierarchy            ; File Name   ; Relative Location ; Change   ; Old                              ; New                              ;
 +----------------------+-------------+-------------------+----------+----------------------------------+----------------------------------+
-; LcdDriver:lcd_driver ; LcdDriver.v ; Project Directory ; Checksum ; c8ee15b9e6c5d448afcaa1cec08aedb2 ; 70ff561a84132c4806f78889a4f072af ;
+; LcdDriver:lcd_driver ; LcdDriver.v ; Project Directory ; Checksum ; ddd93b4cc9e008e72cd3cc4d3906ec9f ; 924e7f5e44a5ea76a2521b8ba2ea435d ;
 +----------------------+-------------+-------------------+----------+----------------------------------+----------------------------------+
 
 
@@ -243,8 +243,8 @@ applicable agreement for further details.
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                    ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |rgb_fpga                                 ; 670 (0)           ; 78 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |rgb_fpga                                                                                                                              ; work         ;
-;    |DisplaySignal:display_signal|         ; 566 (43)          ; 29 (8)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |rgb_fpga|DisplaySignal:display_signal                                                                                                 ; work         ;
+; |rgb_fpga                                 ; 675 (0)           ; 78 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |rgb_fpga                                                                                                                              ; work         ;
+;    |DisplaySignal:display_signal|         ; 570 (47)          ; 29 (8)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |rgb_fpga|DisplaySignal:display_signal                                                                                                 ; work         ;
 ;       |KeyDebounce:key_debounce|          ; 31 (31)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |rgb_fpga|DisplaySignal:display_signal|KeyDebounce:key_debounce                                                                        ; work         ;
 ;       |lpm_divide:Div0|                   ; 91 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Div0                                                                                 ; work         ;
 ;          |lpm_divide_0jm:auto_generated|  ; 91 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Div0|lpm_divide_0jm:auto_generated                                                   ; work         ;
@@ -270,7 +270,10 @@ applicable agreement for further details.
 ;          |lpm_divide_4bm:auto_generated|  ; 38 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Mod2|lpm_divide_4bm:auto_generated                                                   ; work         ;
 ;             |sign_div_unsign_plh:divider| ; 38 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Mod2|lpm_divide_4bm:auto_generated|sign_div_unsign_plh:divider                       ; work         ;
 ;                |alt_u_div_07f:divider|    ; 38 (38)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |rgb_fpga|DisplaySignal:display_signal|lpm_divide:Mod2|lpm_divide_4bm:auto_generated|sign_div_unsign_plh:divider|alt_u_div_07f:divider ; work         ;
-;    |LcdDriver:lcd_driver|                 ; 104 (104)         ; 49 (49)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |rgb_fpga|LcdDriver:lcd_driver                                                                                                         ; work         ;
+;    |LcdDriver:lcd_driver|                 ; 105 (105)         ; 49 (49)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |rgb_fpga|LcdDriver:lcd_driver                                                                                                         ; work         ;
+;    |pll:pll_70m|                          ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |rgb_fpga|pll:pll_70m                                                                                                                  ; work         ;
+;       |altpll:altpll_component|           ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |rgb_fpga|pll:pll_70m|altpll:altpll_component                                                                                          ; work         ;
+;          |pll_altpll:auto_generated|      ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |rgb_fpga|pll:pll_70m|altpll:altpll_component|pll_altpll:auto_generated                                                                ; work         ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -342,7 +345,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CLK3_MULTIPLY_BY              ; 1                     ; Untyped                  ;
 ; CLK2_MULTIPLY_BY              ; 1                     ; Untyped                  ;
 ; CLK1_MULTIPLY_BY              ; 1                     ; Untyped                  ;
-; CLK0_MULTIPLY_BY              ; 7                     ; Signed Integer           ;
+; CLK0_MULTIPLY_BY              ; 83                    ; Signed Integer           ;
 ; CLK9_DIVIDE_BY                ; 0                     ; Untyped                  ;
 ; CLK8_DIVIDE_BY                ; 0                     ; Untyped                  ;
 ; CLK7_DIVIDE_BY                ; 0                     ; Untyped                  ;
@@ -352,7 +355,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CLK3_DIVIDE_BY                ; 1                     ; Untyped                  ;
 ; CLK2_DIVIDE_BY                ; 1                     ; Untyped                  ;
 ; CLK1_DIVIDE_BY                ; 1                     ; Untyped                  ;
-; CLK0_DIVIDE_BY                ; 5                     ; Signed Integer           ;
+; CLK0_DIVIDE_BY                ; 50                    ; Signed Integer           ;
 ; CLK9_PHASE_SHIFT              ; 0                     ; Untyped                  ;
 ; CLK8_PHASE_SHIFT              ; 0                     ; Untyped                  ;
 ; CLK7_PHASE_SHIFT              ; 0                     ; Untyped                  ;
@@ -682,11 +685,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; H_SYNC_CYCLES  ; 3     ; Signed Integer                           ;
 ; H_BACK_PORCH   ; 3     ; Signed Integer                           ;
 ; H_ACTIVE_VIDEO ; 750   ; Signed Integer                           ;
-; H_FRONT_PORCH  ; 20    ; Signed Integer                           ;
+; H_FRONT_PORCH  ; 40    ; Signed Integer                           ;
 ; V_SYNC_CYCLES  ; 3     ; Signed Integer                           ;
 ; V_BACK_PORCH   ; 3     ; Signed Integer                           ;
 ; V_ACTIVE_VIDEO ; 1334  ; Signed Integer                           ;
-; V_FRONT_PORCH  ; 536   ; Signed Integer                           ;
+; V_FRONT_PORCH  ; 500   ; Signed Integer                           ;
 +----------------+-------+------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -864,22 +867,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; libraries/megafunctions/cycloneii_pll.inc ; Quartus II Install ; work    ; c2ee779f089b03bc181df753ea85b3ef ;
 ; libraries/megafunctions/stratix_pll.inc   ; Quartus II Install ; work    ; a9a94c5b0e18105f7ae8c218a67ec9f7 ;
 ; libraries/megafunctions/stratixii_pll.inc ; Quartus II Install ; work    ; 6797ab505ed700f1a221e4a213e106a6 ;
-; db/pll_altpll.v                           ; Project Directory  ; work    ; 555d41a2f93677d742ee526dce19b052 ;
+; db/pll_altpll.v                           ; Project Directory  ; work    ; 886d41781d943c60f6a1bb28a830ea2a ;
 ; DisplaySignal.v                           ; Project Directory  ; work    ; 5bef8af2838db6736fb16c7e1b9de667 ;
 ; KeyDebounce.v                             ; Project Directory  ; work    ; 5152469ae0ad6101eea6af0e402e9d25 ;
-; LcdDriver.v                               ; Project Directory  ; work    ; 70ff561a84132c4806f78889a4f072af ;
-; pll/pll.v                                 ; Project Directory  ; work    ; c835653f44d4d1898ddc67167c7418d2 ;
-; rgb_fpga.v                                ; Project Directory  ; work    ; 8e252063757306d09ad5933d10a1d052 ;
+; LcdDriver.v                               ; Project Directory  ; work    ; 924e7f5e44a5ea76a2521b8ba2ea435d ;
+; pll/pll.v                                 ; Project Directory  ; work    ; 398c441304c76d4f7751bc5e2cc40c1a ;
+; rgb_fpga.v                                ; Project Directory  ; work    ; 83170bbde53c621ccf13953d92e98685 ;
 +-------------------------------------------+--------------------+---------+----------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "pll:pll_70m"                                                                        ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; c0   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -887,7 +881,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -897,7 +891,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Sun Jul 27 15:58:09 2025
+    Info: Processing started: Thu Aug 07 01:06:28 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off rgb_fpga -c rgb_fpga
 Info (11104): Parallel Compilation has detected 24 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 16 of the 16 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file keydebounce.v
@@ -918,9 +912,9 @@ Info (12128): Elaborating entity "altpll" for hierarchy "pll:pll_70m|altpll:altp
 Info (12130): Elaborated megafunction instantiation "pll:pll_70m|altpll:altpll_component"
 Info (12133): Instantiated megafunction "pll:pll_70m|altpll:altpll_component" with the following parameter:
     Info (12134): Parameter "bandwidth_type" = "AUTO"
-    Info (12134): Parameter "clk0_divide_by" = "5"
+    Info (12134): Parameter "clk0_divide_by" = "50"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
-    Info (12134): Parameter "clk0_multiply_by" = "7"
+    Info (12134): Parameter "clk0_multiply_by" = "83"
     Info (12134): Parameter "clk0_phase_shift" = "0"
     Info (12134): Parameter "compensate_clock" = "CLK0"
     Info (12134): Parameter "inclk0_input_frequency" = "20000"
@@ -975,27 +969,24 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/pll_
     Info (12023): Found entity 1: pll_altpll
 Info (12128): Elaborating entity "pll_altpll" for hierarchy "pll:pll_70m|altpll:altpll_component|pll_altpll:auto_generated"
 Info (12128): Elaborating entity "LcdDriver" for hierarchy "LcdDriver:lcd_driver"
-Warning (10036): Verilog HDL or VHDL warning at LcdDriver.v(136): object "h_pos" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at LcdDriver.v(137): object "v_pos" assigned a value but never read
-Warning (10230): Verilog HDL assignment warning at LcdDriver.v(73): truncated value with size 32 to match size of target (11)
-Warning (10230): Verilog HDL assignment warning at LcdDriver.v(74): truncated value with size 32 to match size of target (11)
-Warning (10230): Verilog HDL assignment warning at LcdDriver.v(76): truncated value with size 32 to match size of target (11)
-Warning (10230): Verilog HDL assignment warning at LcdDriver.v(77): truncated value with size 32 to match size of target (11)
-Warning (10230): Verilog HDL assignment warning at LcdDriver.v(136): truncated value with size 32 to match size of target (11)
-Warning (10230): Verilog HDL assignment warning at LcdDriver.v(137): truncated value with size 32 to match size of target (11)
-Warning (10230): Verilog HDL assignment warning at LcdDriver.v(142): truncated value with size 32 to match size of target (11)
-Warning (10230): Verilog HDL assignment warning at LcdDriver.v(143): truncated value with size 32 to match size of target (11)
-Warning (10230): Verilog HDL assignment warning at LcdDriver.v(144): truncated value with size 32 to match size of target (11)
-Warning (10230): Verilog HDL assignment warning at LcdDriver.v(145): truncated value with size 32 to match size of target (11)
+Warning (10036): Verilog HDL or VHDL warning at LcdDriver.v(149): object "h_pos" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at LcdDriver.v(150): object "v_pos" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at LcdDriver.v(86): truncated value with size 32 to match size of target (11)
+Warning (10230): Verilog HDL assignment warning at LcdDriver.v(87): truncated value with size 32 to match size of target (11)
+Warning (10230): Verilog HDL assignment warning at LcdDriver.v(89): truncated value with size 32 to match size of target (11)
+Warning (10230): Verilog HDL assignment warning at LcdDriver.v(90): truncated value with size 32 to match size of target (11)
+Warning (10230): Verilog HDL assignment warning at LcdDriver.v(149): truncated value with size 32 to match size of target (11)
+Warning (10230): Verilog HDL assignment warning at LcdDriver.v(150): truncated value with size 32 to match size of target (11)
+Warning (10230): Verilog HDL assignment warning at LcdDriver.v(155): truncated value with size 32 to match size of target (11)
+Warning (10230): Verilog HDL assignment warning at LcdDriver.v(156): truncated value with size 32 to match size of target (11)
+Warning (10230): Verilog HDL assignment warning at LcdDriver.v(157): truncated value with size 32 to match size of target (11)
+Warning (10230): Verilog HDL assignment warning at LcdDriver.v(158): truncated value with size 32 to match size of target (11)
 Info (12128): Elaborating entity "DisplaySignal" for hierarchy "DisplaySignal:display_signal"
 Warning (10230): Verilog HDL assignment warning at DisplaySignal.v(49): truncated value with size 32 to match size of target (2)
 Info (12128): Elaborating entity "KeyDebounce" for hierarchy "DisplaySignal:display_signal|KeyDebounce:key_debounce"
 Info (12205): 1 design partition requires Analysis and Synthesis
     Info (12211): Partition "Top" requires synthesis because there were changes to its dependent source files
 Info (12209): No design partitions will skip synthesis in the current incremental compilation
-Warning (14284): Synthesized away the following node(s):
-    Warning (14285): Synthesized away the following PLL node(s):
-        Warning (14320): Synthesized away node "pll:pll_70m|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0]"
 Info (278001): Inferred 6 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DisplaySignal:display_signal|Mod0"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DisplaySignal:display_signal|Mod1"
@@ -1055,14 +1046,15 @@ Info (281020): Starting Logic Optimization and Technology Mapping for Top Partit
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
-Info (21057): Implemented 737 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 743 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 28 output pins
-    Info (21061): Implemented 706 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 4691 megabytes
-    Info: Processing ended: Sun Jul 27 15:58:10 2025
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info (21061): Implemented 711 logic cells
+    Info (21065): Implemented 1 PLLs
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4695 megabytes
+    Info: Processing ended: Thu Aug 07 01:06:30 2025
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 
