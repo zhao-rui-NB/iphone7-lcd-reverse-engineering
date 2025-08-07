@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for rgb_fpga
-Thu Aug 07 01:06:44 2025
+Thu Aug 07 18:01:22 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -127,7 +127,7 @@ applicable agreement for further details.
 +------------------+--------+--------------------------+
 ; SDC File Path    ; Status ; Read at                  ;
 +------------------+--------+--------------------------+
-; rgb_fpga.out.sdc ; OK     ; Thu Aug 07 01:06:43 2025 ;
+; rgb_fpga.out.sdc ; OK     ; Thu Aug 07 18:01:22 2025 ;
 +------------------+--------+--------------------------+
 
 
@@ -136,7 +136,7 @@ applicable agreement for further details.
 +------------+------+--------+-----------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
 ; Clock Name ; Type ; Period ; Frequency ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets      ;
 +------------+------+--------+-----------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
-; ck50m      ; Base ; 10.000 ; 100.0 MHz ; 0.000 ; 5.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk pclk } ;
+; ck50m      ; Base ; 10.000 ; 100.0 MHz ; 0.000 ; 5.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { pclk clk } ;
 +------------+------+--------+-----------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
 
 
@@ -821,8 +821,8 @@ No paths to report.
 ; 1.014 ; DisplaySignal:display_signal|KeyDebounce:key_debounce|cnt_20ms[10] ; DisplaySignal:display_signal|KeyDebounce:key_debounce|cnt_20ms[11] ; ck50m        ; ck50m       ; 0.000        ; 0.073      ; 1.282      ;
 ; 1.014 ; DisplaySignal:display_signal|KeyDebounce:key_debounce|cnt_20ms[13] ; DisplaySignal:display_signal|KeyDebounce:key_debounce|cnt_20ms[14] ; ck50m        ; ck50m       ; 0.000        ; 0.073      ; 1.282      ;
 ; 1.014 ; DisplaySignal:display_signal|KeyDebounce:key_debounce|cnt_20ms[16] ; DisplaySignal:display_signal|KeyDebounce:key_debounce|cnt_20ms[17] ; ck50m        ; ck50m       ; 0.000        ; 0.073      ; 1.282      ;
-; 1.014 ; LcdDriver:lcd_driver|h_count[8]                                    ; LcdDriver:lcd_driver|h_count[4]                                    ; ck50m        ; ck50m       ; 0.000        ; 0.071      ; 1.280      ;
 ; 1.014 ; LcdDriver:lcd_driver|h_count[8]                                    ; LcdDriver:lcd_driver|h_count[9]                                    ; ck50m        ; ck50m       ; 0.000        ; 0.071      ; 1.280      ;
+; 1.014 ; LcdDriver:lcd_driver|h_count[8]                                    ; LcdDriver:lcd_driver|h_count[4]                                    ; ck50m        ; ck50m       ; 0.000        ; 0.071      ; 1.280      ;
 ; 1.015 ; DisplaySignal:display_signal|KeyDebounce:key_debounce|cnt_20ms[8]  ; DisplaySignal:display_signal|KeyDebounce:key_debounce|cnt_20ms[9]  ; ck50m        ; ck50m       ; 0.000        ; 0.072      ; 1.282      ;
 ; 1.015 ; DisplaySignal:display_signal|KeyDebounce:key_debounce|cnt_20ms[12] ; DisplaySignal:display_signal|KeyDebounce:key_debounce|cnt_20ms[13] ; ck50m        ; ck50m       ; 0.000        ; 0.073      ; 1.283      ;
 ; 1.016 ; DisplaySignal:display_signal|KeyDebounce:key_debounce|cnt_20ms[14] ; DisplaySignal:display_signal|KeyDebounce:key_debounce|cnt_20ms[15] ; ck50m        ; ck50m       ; 0.000        ; 0.073      ; 1.284      ;
@@ -1879,7 +1879,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Thu Aug 07 01:06:42 2025
+    Info: Processing started: Thu Aug 07 18:01:21 2025
 Info: Command: quartus_sta rgb_fpga -c rgb_fpga
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 24 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 16 of the 16 physical processors detected instead.
@@ -1965,9 +1965,9 @@ Info (332146): Worst-case minimum pulse width slack is 4.325
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 24 warnings
-    Info: Peak virtual memory: 4829 megabytes
-    Info: Processing ended: Thu Aug 07 01:06:44 2025
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4823 megabytes
+    Info: Processing ended: Thu Aug 07 18:01:22 2025
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:02
 
 

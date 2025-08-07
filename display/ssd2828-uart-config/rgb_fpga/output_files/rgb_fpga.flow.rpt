@@ -1,5 +1,5 @@
 Flow report for rgb_fpga
-Thu Aug 07 01:06:44 2025
+Thu Aug 07 18:01:22 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Aug 07 01:06:40 2025       ;
+; Flow Status                        ; Successful - Thu Aug 07 18:01:20 2025       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; rgb_fpga                                    ;
 ; Top-level Entity Name              ; rgb_fpga                                    ;
@@ -341,7 +341,12 @@ applicable agreement for further details.
 ; Fitter                    ; 00:00:05     ; 1.0                     ; 6156 MB             ; 00:00:08                           ;
 ; Assembler                 ; 00:00:00     ; 1.0                     ; 4601 MB             ; 00:00:01                           ;
 ; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4829 MB             ; 00:00:02                           ;
-; Total                     ; 00:07:21     ; --                      ; --                  ; 00:09:29                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4620 MB             ; 00:00:01                           ;
+; Partition Merge           ; 00:00:01     ; 1.0                     ; 4658 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:04     ; 1.0                     ; 6010 MB             ; 00:00:04                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4601 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4823 MB             ; 00:00:02                           ;
+; Total                     ; 00:07:29     ; --                      ; --                  ; 00:09:38                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -596,6 +601,11 @@ applicable agreement for further details.
 ; Fitter                    ; Zhaorui-i9       ; Windows 7 ; 6.2        ; x86_64         ;
 ; Assembler                 ; Zhaorui-i9       ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; Zhaorui-i9       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; Zhaorui-i9       ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; Zhaorui-i9       ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; Zhaorui-i9       ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; Zhaorui-i9       ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; Zhaorui-i9       ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -638,6 +648,11 @@ quartus_fit --read_settings_files=off --write_settings_files=off rgb_fpga -c rgb
 quartus_asm --read_settings_files=off --write_settings_files=off rgb_fpga -c rgb_fpga
 quartus_sta rgb_fpga -c rgb_fpga
 quartus_cdb rgb_fpga -c rgb_fpga --update_mif
+quartus_map --read_settings_files=on --write_settings_files=off rgb_fpga -c rgb_fpga
+quartus_cdb --read_settings_files=off --write_settings_files=off rgb_fpga -c rgb_fpga --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off rgb_fpga -c rgb_fpga
+quartus_asm --read_settings_files=off --write_settings_files=off rgb_fpga -c rgb_fpga
+quartus_sta rgb_fpga -c rgb_fpga
 quartus_map --read_settings_files=on --write_settings_files=off rgb_fpga -c rgb_fpga
 quartus_cdb --read_settings_files=off --write_settings_files=off rgb_fpga -c rgb_fpga --merge=on
 quartus_fit --read_settings_files=off --write_settings_files=off rgb_fpga -c rgb_fpga

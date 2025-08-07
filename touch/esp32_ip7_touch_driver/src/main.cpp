@@ -68,146 +68,12 @@ SpiCommand touch_init_commands[] = {
 
 uint8_t spi_buffer[1024]; // SPI 緩衝區
 
-
-void listFiles(const char * path) {
-  Serial.printf("列出路徑：%s\n", path);
-
-  File root = SPIFFS.open(path);
-  if (!root || !root.isDirectory()) {
-    Serial.println("開啟目錄失敗或不是資料夾");
-    return;
-  }
-
-  File file = root.openNextFile();
-  while (file) {
-    if (!file.isDirectory()) {
-      Serial.printf("檔案: %s，大小: %d Bytes\n", file.name(), file.size());
-    }
-    file = root.openNextFile();
-  }
-}
-
-
 void spi_send_bytes(uint8_t* data, size_t length) {
     digitalWrite(TOUCH_CS, LOW); // 拉低 CS 以開始 SPI 傳輸
-    SPI.beginTransaction(SPISettings(4000000, MSBFIRST, SPI_MODE0));
+    SPI.beginTransaction(SPISettings(8000000, MSBFIRST, SPI_MODE0));
     SPI.transfer(data, length);
     SPI.endTransaction();
     digitalWrite(TOUCH_CS, HIGH); // 拉高 CS 以結束 SPI 傳輸
-}
-
-void spi_send_bin(const char* fileName) {
-    if (SPIFFS.exists(fileName)) {
-            File file = SPIFFS.open(fileName, "r");
-            if (file) {
-                Serial.printf("Sending firmware %s to touch driver...\n", fileName);
-                size_t size = file.size();
-
-                // 讀取檔案內容到緩衝區
-                digitalWrite(TOUCH_CS, LOW); // 拉低 CS 以開始 SPI 傳輸
-                SPI.beginTransaction(SPISettings(4000000, MSBFIRST, SPI_MODE0));
-                while(size){
-                    uint16_t readSize = min(size, sizeof(spi_buffer));
-                    file.read(spi_buffer, readSize);
-                    SPI.transfer(spi_buffer, readSize);
-                    size -= readSize;
-                }
-                SPI.endTransaction();
-                digitalWrite(TOUCH_CS, HIGH); // 拉高 CS 以結束 SPI 傳輸
-            } else {
-                Serial.printf("Failed to open %s\n", fileName);
-            }
-            file.close();
-        } else {
-            Serial.printf("Firmware %s does not exist.\n", fileName);
-        }
-}
-
-void send_touch_init_bin() {
-    
-    // there are ip7_touch_fw_X.bin files in SPIFFS, x = 0-5
-    // it is the firmware for the touch driver
-    // send them to the touch driver by the SPI interface
-
-    // for(int i = 0; i < 6; i++) {
-    //     String fileName = "/ip7_touch_fw_" + String(i) + ".bin";
-        
-
-    //     delay(20);
-    // }
-
-
-    // send 1A A1 18 E1
-    uint8_t cmd0[] = {0x1A, 0xA1, 0x18, 0xE1};
-    spi_send_bytes(cmd0, sizeof(cmd0)); // 發送初始化命令
-    spi_send_bin("/ip7_touch_fw_0.bin");
-
-
-    // send 1A A1
-    uint8_t cmd1[] = {0x1A, 0xA1};
-    spi_send_bytes(cmd1, sizeof(cmd1)); // 發送初始化命令
-    spi_send_bin("/ip7_touch_fw_1.bin");
-    
-    // send 1A A2
-    uint8_t cmd2[] = {0x1A, 0xA1};
-    spi_send_bytes(cmd2, sizeof(cmd2)); // 發送初始化命令
-    spi_send_bin("/ip7_touch_fw_2.bin");
-    
-    // send 1A A3
-    uint8_t cmd3[] = {0x1A, 0xA1};
-    spi_send_bytes(cmd3, sizeof(cmd3)); // 發送初始化命令
-    spi_send_bin("/ip7_touch_fw_3.bin");
-
-    // send 1A A4
-    uint8_t cmd4[] = {0x1A, 0xA1};
-    spi_send_bytes(cmd4, sizeof(cmd4)); // 發送初始化命令
-    spi_send_bin("/ip7_touch_fw_4.bin");
-    
-    // send 1A A5
-    uint8_t cmd5[] = {0x1A, 0xA1};
-    spi_send_bytes(cmd5, sizeof(cmd5)); // 發送初始化命令
-    spi_send_bin("/ip7_touch_fw_5.bin");
-
-
-    
-    
-    
-    // 37103703-37104391 SPI: MOSI transfer: 1A A1
-    // 37105079-37107879 SPI: MOSI transfer: 1E 33 30 60 10 00 FF FF FF FF 17 D3 00 00 05 86
-    // 37108735-37109067 SPI: MOSI transfer: 1A A1
-    // 37109921-37111792 SPI: MOSI transfer: 1E 33 30 5C 10 00 FF FF FF FF 00 02 00 00 04 9A
-    // 37112452-37113137 SPI: MOSI transfer: 1A A1
-    // 37113737-37116269 SPI: MOSI transfer: 1E 33 30 58 10 00 FF FF FF FF 00 06 00 00 04 9A
-    // 37117058-37117349 SPI: MOSI transfer: 1A A1
-    // 37117952-37121443 SPI: MOSI transfer: 1E 33 30 00 10 00 FF FF FF FF 00 03 00 00 04 3F
-    // 37122046-37122792 SPI: MOSI transfer: 1A A1
-    // 37123392-37126592 SPI: MOSI transfer: 1E 33 35 18 10 00 FF FF FF FF 00 01 00 00 04 5A
-    
-    uint8_t cmd6[] = {0x1A, 0xA1};
-    spi_send_bytes(cmd6, sizeof(cmd6)); // 發送初始化命令
-    uint8_t cmd7[] = {0x1E, 0x33, 0x30, 0x60, 0x10, 0x00, 0xFF, 0xFF, 0xFF, 0xFF, 0x17, 0xD3, 0x00, 0x00, 0x05, 0x86};
-    spi_send_bytes(cmd7, sizeof(cmd7)); // 發送初始化命令
-    uint8_t cmd8[] = {0x1A, 0xA1};
-    spi_send_bytes(cmd8, sizeof(cmd8)); // 發送初始化命令
-    uint8_t cmd9[] = {0x1E, 0x33, 0x30, 0x5C, 0x10, 0x00, 0xFF, 0xFF, 0xFF, 0xFF, 0x00, 0x02, 0x00, 0x00, 0x04, 0x9A};
-    spi_send_bytes(cmd9, sizeof(cmd9)); // 發送初始化命令
-    uint8_t cmd10[] = {0x1A, 0xA1};
-    spi_send_bytes(cmd10, sizeof(cmd10)); // 發送初始化命令
-    uint8_t cmd11[] = {0x1E, 0x33, 0x30, 0x58, 0x10, 0x00, 0xFF, 0xFF, 0xFF, 0xFF, 0x00, 0x06, 0x00, 0x00, 0x04, 0x9A};
-    spi_send_bytes(cmd11, sizeof(cmd11)); // 發送初始化命令
-    uint8_t cmd12[] = {0x1A, 0xA1};
-    spi_send_bytes(cmd12, sizeof(cmd12)); // 發送初始化命令
-    uint8_t cmd13[] = {0x1E, 0x33, 0x30, 0x00, 0x10, 0x00, 0xFF, 0xFF, 0xFF, 0xFF, 0x00, 0x03, 0x00, 0x00, 0x04, 0x3F};
-    spi_send_bytes(cmd13, sizeof(cmd13)); // 發送初始化命令
-    uint8_t cmd14[] = {0x1A, 0xA1};
-    spi_send_bytes(cmd14, sizeof(cmd14)); // 發送初始化命令
-    uint8_t cmd15[] = {0x1E, 0x33, 0x35, 0x18, 0x10, 0x00, 0xFF, 0xFF, 0xFF, 0xFF, 0x00, 0x01, 0x00, 0x00, 0x04, 0x5A};
-    spi_send_bytes(cmd15, sizeof(cmd15)); // 發送初始化命令
-    uint8_t cmd16[] = {0x1A, 0xA1};
-    spi_send_bytes(cmd16, sizeof(cmd16)); // 發送初始化命令
-    Serial.println("Touch driver initialized.");
-
-
 }
 
 void setup() {
@@ -223,7 +89,7 @@ void setup() {
     Serial.println("setting up SPI...");
     SPI.begin(TOUCH_SCLK, TOUCH_MISO, TOUCH_MOSI, TOUCH_CS); // SCK, MISO, MOSI, SS
     // SPI.setHwCs(true);         // 啟用硬體 CS 控制
-    SPI.setFrequency(4000000); // 設定 SPI 頻率為 8MHz
+    SPI.setFrequency(8000000); // 設定 SPI 頻率為 8MHz
 
     pinMode(TOUCH_INT, INPUT_PULLUP);
     
@@ -233,36 +99,16 @@ void setup() {
     digitalWrite(TOUCH_CS, HIGH); // 初始化時將 CS 設為高電平
     pinMode(TOUCH_CS, OUTPUT);
 
-    Serial.print("ESP32 getFlashChipSize: ");
-    Serial.println(ESP.getFlashChipSize());      // Flash 總容量
-    Serial.print("ESP32 getFreeHeap: ");
-    Serial.println(ESP.getFreeHeap());           // 可用 RAM
 
-
-    // if(!SPIFFS.begin()) { // true 參數表示如果 SPIFFS 初始化失敗則格式化
-    //     Serial.println("SPIFFS mount failed");
-    // } else {
-    //     Serial.println("SPIFFS mounted successfully.");
-    // }
-
-    // print all file
-    // Serial.println("Listing SPIFFS files:");
-    // listFiles("/");
-
-
-    delay(1000); // 等待 1 秒以確保所有初始化完成
-
+    // reset the touch driver
+    printf("Resetting touch driver...\n");
     digitalWrite(TOUCH_RST, LOW); // 拉低 RST 以重置觸控 IC
-    delay(30); // 等待 10 毫秒
+    delay(10);
     digitalWrite(TOUCH_RST, HIGH); // 拉高 RST 以啟動觸控 IC
-    delay(30); // 等待 10 毫秒
-    // send_touch_init_bin();
+    delay(10);
 
 
-
-    // send the touch init commands 
-
-
+    printf("Sending touch init commands...\n");
     for(int i=0 ; i < sizeof(touch_init_commands)/sizeof(touch_init_commands[0]); i++) {
         spi_send_bytes(touch_init_commands[i].data, touch_init_commands[i].len);
         // delay(1); 
@@ -273,13 +119,6 @@ void setup() {
                 delay(1);
             }
         }
-
-        if (i==31){
-            delay(10);
-        }
-
-        // delay(10);
-        // printf("[touch init] command %d sent, len: %d\n", i, touch_init_commands[i].len);
     }
     printf("touch init done.\n");
 
@@ -288,81 +127,65 @@ void setup() {
 }
 
 void loop() {
-    
-    // while(1){
-
-    // }
 
     bool type_toggle = false;
     uint16_t read_serid = 0;
 
     while(1){
         if(digitalRead(TOUCH_INT) == LOW) { // 檢查觸控中斷
-            // Serial.println("Touch interrupt detected!");
-            // clear int
-
             uint8_t cmd[] = {0xeb, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xec, 0x00};
             // uint8_t cmd[] = {0xeb, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xed, 0x00};
             if (type_toggle) {
                 spi_send_bytes(cmd, sizeof(cmd));
             } else {
-                cmd[1] = 0x02; // 切換類型
-                cmd[14] = 0xed; // 切換類型
+                cmd[1] = 0x02;
+                cmd[14] = 0xed;
                 spi_send_bytes(cmd, sizeof(cmd));
             }
             type_toggle = !type_toggle; // 切換類型
 
-
-            // delayMicroseconds(200); 
-            
-
-            // clear the spi buffer to A5 first 16 bytes
-            for(int i = 0; i < 16; i++) {
-                spi_buffer[i] = 0xA5;
-            }
+            memset(spi_buffer, 0xA5, 16); // 清空 SPI 緩衝區，填充 A5
 
             // read the data from the touch driver
             uint16_t read_size;
 
             read_size = cmd[2]<<8 | cmd[1];
             read_size += 5;
-            // align to 4
+
             read_size = (read_size + 3) & ~3; // 向上對齊到 4 的倍數
             spi_send_bytes(spi_buffer, read_size); // 讀取數據
-            Serial.printf("[%d] Read %d bytes\n", read_serid++, read_size);
+            
+            
+            uint8_t p_start_index = 33;
+            uint16_t x_pos = (spi_buffer[p_start_index] | (spi_buffer[p_start_index + 1] << 8));
+            uint16_t y_pos = (spi_buffer[p_start_index + 2] | (spi_buffer[p_start_index + 3] << 8));
+            
+
+            // printf("[%d] Read %d bytes\t", read_serid++, read_size);
+            // printf("Touch detected at X: %d, Y: %d\n", x_pos, y_pos);
 
 
+            // send byte stream to serial for pc
+            //     HEADER = [0x94, 0x87]
+            //     END = [0x04, 0x87]
 
+            uint16_t checksum = 0;
+            uint8_t header[] = {0x94, 0x87};
+            uint8_t end[] = {0x04, 0x87};
+            uint8_t checksum_bytes[2];
 
-
-        }
-    }
-
-
-    while(1){
-        if(digitalRead(TOUCH_INT) == LOW) { // 檢查觸控中斷
-            Serial.println("Touch interrupt detected!");
-            // 在這裡處理觸控事件
-            // 例如，讀取觸控資料或執行其他操作
-        
-            // read spi 16byte data 
-            uint8_t touch_data[16] = {0};
-            digitalWrite(TOUCH_CS, LOW); // 拉低 CS 以開始 SPI 傳輸
-            SPI.beginTransaction(SPISettings(4000000, MSBFIRST, SPI_MODE0));
-            SPI.transfer(touch_data, sizeof(touch_data)); // 讀取 16 字
-            SPI.endTransaction();
-            digitalWrite(TOUCH_CS, HIGH); // 拉高 CS 以結束 SPI 傳輸
-            Serial.print("Touch data: ");
-            for (int i = 0; i < sizeof(touch_data); i++) {
-                Serial.printf("%02X ", touch_data[i]);
+            checksum = 0x94 + 0x87;
+            for(int i = 0; i < read_size; i++) {
+                checksum += spi_buffer[i];
             }
-            Serial.println();
+            checksum_bytes[0] = (checksum >> 8) & 0xFF; // 高位
+            checksum_bytes[1] = checksum & 0xFF; // 低位
 
-            delay(2);
+            Serial.write(header, sizeof(header));
+            Serial.write(spi_buffer, read_size);
+            Serial.write(checksum_bytes, sizeof(checksum_bytes));
+            Serial.write(end, sizeof(end));
         }
     }
-
-
-
 }
 

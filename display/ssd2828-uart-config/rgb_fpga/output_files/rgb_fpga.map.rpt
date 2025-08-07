@@ -1,5 +1,5 @@
 Analysis & Synthesis report for rgb_fpga
-Thu Aug 07 01:06:30 2025
+Thu Aug 07 18:01:11 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -13,23 +13,21 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis IP Cores Summary
   7. Partition Status Summary
-  8. Dependent File Changes for Partition Top
-  9. Partition for Top-Level Resource Utilization by Entity
- 10. Registers Removed During Synthesis
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: pll:pll_70m|altpll:altpll_component
- 13. Parameter Settings for User Entity Instance: LcdDriver:lcd_driver
- 14. Parameter Settings for User Entity Instance: DisplaySignal:display_signal
- 15. Parameter Settings for User Entity Instance: DisplaySignal:display_signal|KeyDebounce:key_debounce
- 16. Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Mod0
- 17. Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Mod1
- 18. Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Div3
- 19. Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Mod2
- 20. Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Div1
- 21. Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Div0
- 22. Partition Dependent Files
- 23. Elapsed Time Per Partition
- 24. Analysis & Synthesis Messages
+  8. Partition for Top-Level Resource Utilization by Entity
+  9. Registers Removed During Synthesis
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Mod0
+ 12. Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Mod1
+ 13. Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Div3
+ 14. Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Mod2
+ 15. Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Div1
+ 16. Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Div0
+ 17. Parameter Settings for User Entity Instance: pll:pll_70m|altpll:altpll_component
+ 18. Parameter Settings for User Entity Instance: LcdDriver:lcd_driver
+ 19. Parameter Settings for User Entity Instance: DisplaySignal:display_signal
+ 20. Parameter Settings for User Entity Instance: DisplaySignal:display_signal|KeyDebounce:key_debounce
+ 21. Partition Dependent Files
+ 22. Analysis & Synthesis Messages
 
 
 
@@ -55,7 +53,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Aug 07 01:06:30 2025       ;
+; Analysis & Synthesis Status        ; Successful - Thu Aug 07 18:01:11 2025       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; rgb_fpga                                    ;
 ; Top-level Entity Name              ; rgb_fpga                                    ;
@@ -168,47 +166,31 @@ applicable agreement for further details.
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ; < 0.1%      ;
-;     Processors 3-24        ;   0.0%      ;
+;     Processors 2-24        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                         ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
-; KeyDebounce.v                    ; yes             ; User Verilog HDL File        ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/KeyDebounce.v              ;         ;
-; DisplaySignal.v                  ; yes             ; User Verilog HDL File        ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/DisplaySignal.v            ;         ;
-; rgb_fpga.v                       ; yes             ; User Verilog HDL File        ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/rgb_fpga.v                 ;         ;
-; LcdDriver.v                      ; yes             ; User Verilog HDL File        ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/LcdDriver.v                ;         ;
-; pll/pll.v                        ; yes             ; User Wizard-Generated File   ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/pll/pll.v                  ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/altpll.tdf                                                            ;         ;
-; aglobal131.inc                   ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc                                                        ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/stratix_pll.inc                                                       ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/stratixii_pll.inc                                                     ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/cycloneii_pll.inc                                                     ;         ;
-; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/db/pll_altpll.v            ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                        ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/abs_divider.inc                                                       ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                                   ;         ;
-; db/lpm_divide_3bm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/db/lpm_divide_3bm.tdf      ;         ;
-; db/sign_div_unsign_olh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/db/sign_div_unsign_olh.tdf ;         ;
-; db/alt_u_div_47f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/db/alt_u_div_47f.tdf       ;         ;
-; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/db/add_sub_7pc.tdf         ;         ;
-; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/db/add_sub_8pc.tdf         ;         ;
-; db/lpm_divide_bkm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/db/lpm_divide_bkm.tdf      ;         ;
-; db/sign_div_unsign_3nh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/db/sign_div_unsign_3nh.tdf ;         ;
-; db/alt_u_div_q9f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/db/alt_u_div_q9f.tdf       ;         ;
-; db/lpm_divide_4bm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/db/lpm_divide_4bm.tdf      ;         ;
-; db/sign_div_unsign_plh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/db/sign_div_unsign_plh.tdf ;         ;
-; db/alt_u_div_07f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/db/alt_u_div_07f.tdf       ;         ;
-; db/lpm_divide_0jm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/db/lpm_divide_0jm.tdf      ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                              ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; KeyDebounce.v                    ; yes             ; User Verilog HDL File        ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/KeyDebounce.v   ;         ;
+; DisplaySignal.v                  ; yes             ; User Verilog HDL File        ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/DisplaySignal.v ;         ;
+; rgb_fpga.v                       ; yes             ; User Verilog HDL File        ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/rgb_fpga.v      ;         ;
+; LcdDriver.v                      ; yes             ; User Verilog HDL File        ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/LcdDriver.v     ;         ;
+; pll/pll.v                        ; yes             ; User Wizard-Generated File   ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/pll/pll.v       ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/altpll.tdf                                                 ;         ;
+; aglobal131.inc                   ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc                                             ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/stratix_pll.inc                                            ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/stratixii_pll.inc                                          ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/cycloneii_pll.inc                                          ;         ;
+; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/rui/Desktop/iphone7-lcd-reverse-engineering/display/ssd2828-uart-config/rgb_fpga/db/pll_altpll.v ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -220,22 +202,13 @@ applicable agreement for further details.
 +--------+--------------+---------+--------------+--------------+-----------------------+-----------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------+
-; Partition Status Summary                               ;
-+----------------+-------------+-------------------------+
-; Partition Name ; Synthesized ; Reason                  ;
-+----------------+-------------+-------------------------+
-; Top            ; yes         ; Dependent files changed ;
-+----------------+-------------+-------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------+
-; Dependent File Changes for Partition Top                                                                                                ;
-+----------------------+-------------+-------------------+----------+----------------------------------+----------------------------------+
-; Hierarchy            ; File Name   ; Relative Location ; Change   ; Old                              ; New                              ;
-+----------------------+-------------+-------------------+----------+----------------------------------+----------------------------------+
-; LcdDriver:lcd_driver ; LcdDriver.v ; Project Directory ; Checksum ; ddd93b4cc9e008e72cd3cc4d3906ec9f ; 924e7f5e44a5ea76a2521b8ba2ea435d ;
-+----------------------+-------------+-------------------+----------+----------------------------------+----------------------------------+
++----------------------------------------------------+
+; Partition Status Summary                           ;
++----------------+-------------+---------------------+
+; Partition Name ; Synthesized ; Reason              ;
++----------------+-------------+---------------------+
+; Top            ; no          ; No relevant changes ;
++----------------+-------------+---------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -301,6 +274,144 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |rgb_fpga|DisplaySignal:display_signal|pixel_data[22]                       ;
 ; 3:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |rgb_fpga|LcdDriver:lcd_driver|next_v_count[9]                              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Mod0 ;
++------------------------+----------------+-----------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                ;
++------------------------+----------------+-----------------------------------------------------+
+; LPM_WIDTHN             ; 11             ; Untyped                                             ;
+; LPM_WIDTHD             ; 7              ; Untyped                                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                             ;
+; CBXI_PARAMETER         ; lpm_divide_3bm ; Untyped                                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                      ;
++------------------------+----------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Mod1 ;
++------------------------+----------------+-----------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                ;
++------------------------+----------------+-----------------------------------------------------+
+; LPM_WIDTHN             ; 11             ; Untyped                                             ;
+; LPM_WIDTHD             ; 7              ; Untyped                                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                             ;
+; CBXI_PARAMETER         ; lpm_divide_3bm ; Untyped                                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                      ;
++------------------------+----------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Div3 ;
++------------------------+----------------+-----------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                ;
++------------------------+----------------+-----------------------------------------------------+
+; LPM_WIDTHN             ; 11             ; Untyped                                             ;
+; LPM_WIDTHD             ; 11             ; Untyped                                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                             ;
+; CBXI_PARAMETER         ; lpm_divide_bkm ; Untyped                                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                      ;
++------------------------+----------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Mod2 ;
++------------------------+----------------+-----------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                ;
++------------------------+----------------+-----------------------------------------------------+
+; LPM_WIDTHN             ; 12             ; Untyped                                             ;
+; LPM_WIDTHD             ; 4              ; Untyped                                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                             ;
+; CBXI_PARAMETER         ; lpm_divide_4bm ; Untyped                                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                      ;
++------------------------+----------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Div1 ;
++------------------------+----------------+-----------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                ;
++------------------------+----------------+-----------------------------------------------------+
+; LPM_WIDTHN             ; 11             ; Untyped                                             ;
+; LPM_WIDTHD             ; 7              ; Untyped                                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                             ;
+; CBXI_PARAMETER         ; lpm_divide_0jm ; Untyped                                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                      ;
++------------------------+----------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Div0 ;
++------------------------+----------------+-----------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                ;
++------------------------+----------------+-----------------------------------------------------+
+; LPM_WIDTHN             ; 11             ; Untyped                                             ;
+; LPM_WIDTHD             ; 7              ; Untyped                                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                             ;
+; CBXI_PARAMETER         ; lpm_divide_0jm ; Untyped                                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                      ;
++------------------------+----------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +----------------------------------------------------------------------------------+
@@ -719,144 +830,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Mod0 ;
-+------------------------+----------------+-----------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                                ;
-+------------------------+----------------+-----------------------------------------------------+
-; LPM_WIDTHN             ; 11             ; Untyped                                             ;
-; LPM_WIDTHD             ; 7              ; Untyped                                             ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
-; LPM_PIPELINE           ; 0              ; Untyped                                             ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                             ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                             ;
-; CBXI_PARAMETER         ; lpm_divide_3bm ; Untyped                                             ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                             ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                             ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                          ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                        ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                        ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                      ;
-+------------------------+----------------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Mod1 ;
-+------------------------+----------------+-----------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                                ;
-+------------------------+----------------+-----------------------------------------------------+
-; LPM_WIDTHN             ; 11             ; Untyped                                             ;
-; LPM_WIDTHD             ; 7              ; Untyped                                             ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
-; LPM_PIPELINE           ; 0              ; Untyped                                             ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                             ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                             ;
-; CBXI_PARAMETER         ; lpm_divide_3bm ; Untyped                                             ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                             ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                             ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                          ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                        ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                        ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                      ;
-+------------------------+----------------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Div3 ;
-+------------------------+----------------+-----------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                                ;
-+------------------------+----------------+-----------------------------------------------------+
-; LPM_WIDTHN             ; 11             ; Untyped                                             ;
-; LPM_WIDTHD             ; 11             ; Untyped                                             ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
-; LPM_PIPELINE           ; 0              ; Untyped                                             ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                             ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                             ;
-; CBXI_PARAMETER         ; lpm_divide_bkm ; Untyped                                             ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                             ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                             ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                          ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                        ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                        ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                      ;
-+------------------------+----------------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Mod2 ;
-+------------------------+----------------+-----------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                                ;
-+------------------------+----------------+-----------------------------------------------------+
-; LPM_WIDTHN             ; 12             ; Untyped                                             ;
-; LPM_WIDTHD             ; 4              ; Untyped                                             ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
-; LPM_PIPELINE           ; 0              ; Untyped                                             ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                             ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                             ;
-; CBXI_PARAMETER         ; lpm_divide_4bm ; Untyped                                             ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                             ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                             ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                          ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                        ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                        ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                      ;
-+------------------------+----------------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Div1 ;
-+------------------------+----------------+-----------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                                ;
-+------------------------+----------------+-----------------------------------------------------+
-; LPM_WIDTHN             ; 11             ; Untyped                                             ;
-; LPM_WIDTHD             ; 7              ; Untyped                                             ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
-; LPM_PIPELINE           ; 0              ; Untyped                                             ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                             ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                             ;
-; CBXI_PARAMETER         ; lpm_divide_0jm ; Untyped                                             ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                             ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                             ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                          ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                        ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                        ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                      ;
-+------------------------+----------------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: DisplaySignal:display_signal|lpm_divide:Div0 ;
-+------------------------+----------------+-----------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                                ;
-+------------------------+----------------+-----------------------------------------------------+
-; LPM_WIDTHN             ; 11             ; Untyped                                             ;
-; LPM_WIDTHD             ; 7              ; Untyped                                             ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                             ;
-; LPM_PIPELINE           ; 0              ; Untyped                                             ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                             ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                             ;
-; CBXI_PARAMETER         ; lpm_divide_0jm ; Untyped                                             ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                             ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                             ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                          ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                        ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                        ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                      ;
-+------------------------+----------------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-------------------------------------------------------------------------------------------------------------+
 ; Partition Dependent Files                                                                                   ;
 +-------------------------------------------+--------------------+---------+----------------------------------+
@@ -877,21 +850,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:01     ;
-+----------------+--------------+
-
-
-+-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Thu Aug 07 01:06:28 2025
+    Info: Processing started: Thu Aug 07 18:01:10 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off rgb_fpga -c rgb_fpga
 Info (11104): Parallel Compilation has detected 24 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 16 of the 16 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file keydebounce.v
@@ -984,77 +948,13 @@ Warning (10230): Verilog HDL assignment warning at LcdDriver.v(158): truncated v
 Info (12128): Elaborating entity "DisplaySignal" for hierarchy "DisplaySignal:display_signal"
 Warning (10230): Verilog HDL assignment warning at DisplaySignal.v(49): truncated value with size 32 to match size of target (2)
 Info (12128): Elaborating entity "KeyDebounce" for hierarchy "DisplaySignal:display_signal|KeyDebounce:key_debounce"
-Info (12205): 1 design partition requires Analysis and Synthesis
-    Info (12211): Partition "Top" requires synthesis because there were changes to its dependent source files
-Info (12209): No design partitions will skip synthesis in the current incremental compilation
-Info (278001): Inferred 6 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DisplaySignal:display_signal|Mod0"
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DisplaySignal:display_signal|Mod1"
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DisplaySignal:display_signal|Div3"
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DisplaySignal:display_signal|Mod2"
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DisplaySignal:display_signal|Div1"
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DisplaySignal:display_signal|Div0"
-Info (12130): Elaborated megafunction instantiation "DisplaySignal:display_signal|lpm_divide:Mod0"
-Info (12133): Instantiated megafunction "DisplaySignal:display_signal|lpm_divide:Mod0" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHN" = "11"
-    Info (12134): Parameter "LPM_WIDTHD" = "7"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_3bm.tdf
-    Info (12023): Found entity 1: lpm_divide_3bm
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_olh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_olh
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_47f.tdf
-    Info (12023): Found entity 1: alt_u_div_47f
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
-    Info (12023): Found entity 1: add_sub_7pc
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
-    Info (12023): Found entity 1: add_sub_8pc
-Info (12130): Elaborated megafunction instantiation "DisplaySignal:display_signal|lpm_divide:Div3"
-Info (12133): Instantiated megafunction "DisplaySignal:display_signal|lpm_divide:Div3" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHN" = "11"
-    Info (12134): Parameter "LPM_WIDTHD" = "11"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_bkm.tdf
-    Info (12023): Found entity 1: lpm_divide_bkm
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_3nh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_3nh
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_q9f.tdf
-    Info (12023): Found entity 1: alt_u_div_q9f
-Info (12130): Elaborated megafunction instantiation "DisplaySignal:display_signal|lpm_divide:Mod2"
-Info (12133): Instantiated megafunction "DisplaySignal:display_signal|lpm_divide:Mod2" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHN" = "12"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_4bm.tdf
-    Info (12023): Found entity 1: lpm_divide_4bm
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_plh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_plh
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_07f.tdf
-    Info (12023): Found entity 1: alt_u_div_07f
-Info (12130): Elaborated megafunction instantiation "DisplaySignal:display_signal|lpm_divide:Div1"
-Info (12133): Instantiated megafunction "DisplaySignal:display_signal|lpm_divide:Div1" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHN" = "11"
-    Info (12134): Parameter "LPM_WIDTHD" = "7"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_0jm.tdf
-    Info (12023): Found entity 1: lpm_divide_0jm
-Info (281020): Starting Logic Optimization and Technology Mapping for Top Partition
-Info (13000): Registers with preset signals will power-up high
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Info (286030): Timing-Driven Synthesis is running
-Info (21057): Implemented 743 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 28 output pins
-    Info (21061): Implemented 711 logic cells
-    Info (21065): Implemented 1 PLLs
+Info (12206): 0 design partitions require synthesis
+Info (12207): 1 design partition does not require synthesis
+    Info (12229): Partition "Top" does not require synthesis because there were no relevant design changes
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 4695 megabytes
-    Info: Processing ended: Thu Aug 07 01:06:30 2025
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4621 megabytes
+    Info: Processing ended: Thu Aug 07 18:01:11 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 
